@@ -1,0 +1,352 @@
+{% extends 'layouts/base.html' %}
+{% import 'macros/form_macros.html' as f %}
+{% import 'macros/check_password.html' as check %}
+{#{% import 'macros/post_macros.html' as post_wid %}#}
+
+{% block page_title %}{{ user.first_name }} {{ user.last_name }}, {{ user.profession }},{{ user.city }}, {{ user.state }}{% endblock %}
+{% block custom_head_tags %}
+    <meta name="description"
+          content="{{ user.first_name }} {{ user.last_name }}, {{ user.profession }},{{ user.summary_text }}, {{ user.city }}, {{ user.state }}, {{ user.country }}">
+    <meta name="author" content="{{ config.APP_NAME }}">
+    <meta name="og:title" content="{{ user.first_name }} {{ user.last_name }}, {{ user.profession }},{{ user.city }}, {{ user.state }}"/>
+    <meta name="og:type" content="website"/>
+    <meta name="og:url" content="https://www.{{ config.APP_NAME }}.com"/>
+    <meta name="og:image" content="{{ url_for('static', filename='images/home/slider/hill.png') }}"/>
+    <meta name="og:site_name" content="{{ config.APP_NAME }}"/>
+    <meta name="og:description"
+          content="{{ user.first_name }} {{ user.last_name }}, {{ user.profession }},{{ user.summary_text }}, {{ user.city }}, {{ user.state }}, {{ user.country }}"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@medivillenetwork"/>
+    <meta name="twitter:creator" content="@anioko1"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='slick/slick.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='slick/slick-theme.css') }}"/>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='lightbox/css/lightbox.min.css') }}">
+    <style>
+        .ui.vertical.divider:after, .ui.vertical.divider:before {
+            height: 100%;
+        }
+
+        .display-none {
+            display: none;
+        }
+        .slick-prev:before, .slick-next:before {
+            color: black;
+        }
+        .comment i.icon.ellipsis.vertical:before {
+            font-size: 15px;
+        }
+        .comment .popup li a {
+            color: rgba(0,0,0,.4);
+        }
+    </style>
+{% endblock %}
+{% block content %}
+<div class="ui page grid">
+ <div class="ui segment">
+							 <div class="ui items">
+							  <div class="item">
+								<div class="image">
+								  <img src="{{ user.get_photo() }}">
+								</div>
+								<div class="content">
+									<a class="header">{{ user.first_name or ''}} {{ user.last_name or ''}}</a>
+									<!---full name goes here --->
+									<div class="meta"><a>Profession:{{ user.profession or ''}}</a></div>
+									<div class="meta"><a>Badges Earned:
+									{% if user.newscaster_badge is not none %}
+									 {{ user.newscaster_badge or ''}}
+									 {% elif user.ambassador_badge is not none %}
+									 {{ user.ambassador_badge or ''}}
+									 {% elif user.networker_badge is not none %}
+									 {{ user.networker_badge or ''}}
+									 {% elif user.kw_builder_badge is not none %}
+									 {{ user.kw_builder_badge or ''}}	
+									 {% elif user.kw_seeker_badge is not none %}
+									 {{ user.kw_seeker_badge or ''}}										 
+											{% else %}
+											{% endif %}
+									 
+									</a></div><!---- The code for the badges is not correct, because it doesn't show the badges in multiple areas. Investigate!--->										
+									<div class="meta"><a>Joined : {{ user.created_day or ''}}</a></div>
+									<div class="meta"><a>Joined : {{ resume.location_city_one or ''}}</a></div>
+									<!----year joined goes here---->
+									<div class="meta"><a> {{ user.city or ''}}</a></div>
+									<div class="meta"><a> {{ user.state or ''}}</a></div>
+									<div class="meta"><a> {{ user.country or ''}}</a></div>
+								</div>
+							  </div>
+							  </div>
+								{% if resume.location_city_one is not none %}
+							<div class="ui divided items">
+								  <div class="item">
+									<div class="content">
+									 <a class="header">Profile Summary</a>
+									  <div class="description"> <!---Profile description or summary goes here--->
+										{{ user.summary_text or ''}}
+										</div>
+										 <div class="ui hidden divider"></div>
+										  <a class="header">{{ resume.role_one or ''}}</a>
+										  <div class="meta">
+											<span class="cinema">{{ resume.company_name_one or ''}} {{ resume.start_date_one or ''}}  </span>
+										  </div>
+										  <div class="description">
+											<p>{{ resume.role_description_one or ''}}</p>
+										  </div>
+										  <div class="extra">
+											<span class="cinema">{{ resume.location_city_one or ''}} {{ resume.location_state_one or ''}} </span>
+											<span class="cinema">{{ resume.location_country_one or ''}}</span>
+										  </div>
+									</div>
+								  </div>		
+							</div>
+							{% elif resume.location_city_one is none %}
+								{% else %}
+								{% endif %}
+								{% if resume.location_city_two is not none %}
+							<div class="ui divided items">
+								  <div class="item">
+									<div class="content">
+									  <a class="header">{{ resume.role_two or ''}}</a>
+									  <div class="meta">
+										<span class="cinema">{{ resume.company_name_two or ''}} {{ resume.start_date_two or ''}} </span>
+									  </div>
+									  <div class="description">
+										<p>{{ resume.role_description_two or ''}}</p>
+									  </div>
+									  <div class="extra">
+										<span class="cinema">{{ resume.location_city_two or ''}} {{ resume.location_state_two or ''}} </span>
+										<span class="cinema">{{ resume.location_country_two or ''}}</span>
+									  </div>
+									</div>
+								  </div>		
+							</div>
+							{% elif resume.location_city_two is none %}
+								{% else %}
+								{% endif %}
+								{% if resume.location_city_two is not none %}
+							<div class="ui divided items">
+								  <div class="item">
+									<div class="content">
+									  <a class="header">{{ resume.role_two or ''}}</a>
+									  <div class="meta">
+										<span class="cinema">{{ resume.company_name_two or ''}} {{ resume.start_date_two or ''}} </span>
+									  </div>
+									  <div class="description">
+										<p>{{ resume.role_description_two or ''}}</p>
+									  </div>
+									  <div class="extra">
+										<span class="cinema">{{ resume.location_city_two or ''}} {{ resume.location_state_two or ''}} </span>
+										<span class="cinema">{{ resume.location_country_two or ''}}</span>
+									  </div>
+									</div>
+								  </div>		
+							</div>
+							{% elif resume.location_city_two is none %}
+								{% else %}
+								{% endif %}
+								{% if resume.location_city_three is not none %}
+							<div class="ui divided items">
+								  <div class="item">
+									<div class="content">
+									  <a class="header">{{ resume.role_three or ''}}</a>
+									  <div class="meta">
+										<span class="cinema">{{ resume.company_name_three or ''}} {{ resume.start_date_three or ''}} </span>
+									  </div>
+									  <div class="description">
+										<p>{{ resume.role_description_three or ''}}</p>
+									  </div>
+									  <div class="extra">
+										<span class="cinema">{{ resume.location_city_three or ''}} {{ resume.location_state_three or ''}} </span>
+										<span class="cinema">{{ resume.location_country_three or ''}}</span>
+									  </div>
+									</div>
+								  </div>		
+							</div>
+							{% elif resume.location_city_three is none %}
+								{% else %}
+								{% endif %}
+								{% if resume.location_city_four is not none %}
+							<div class="ui divided items">
+								  <div class="item">
+									<div class="content">
+									  <a class="header">{{ resume.role_four or ''}}</a>
+									  <div class="meta">
+										<span class="cinema">{{ resume.company_name_four or ''}} {{ resume.start_date_four or ''}} </span>
+									  </div>
+									  <div class="description">
+										<p>{{ resume.role_description_four or ''}}</p>
+									  </div>
+									  <div class="extra">
+										<span class="cinema">{{ resume.location_city_four or ''}} {{ resume.location_state_four or ''}} </span>
+										<span class="cinema">{{ resume.location_country_four or ''}}</span>
+									  </div>
+									</div>
+								  </div>		
+							</div>
+							{% elif resume.location_city_four is none %}
+								{% else %}
+								{% endif %}
+								{% if resume.location_city_five is not none %}
+							<div class="ui divided items">
+								  <div class="item">
+									<div class="content">
+									  <a class="header">{{ resume.role_five or ''}}</a>
+									  <div class="meta">
+										<span class="cinema">{{ resume.company_name_five or ''}} {{ resume.start_date_five or ''}} </span>
+									  </div>
+									  <div class="description">
+										<p>{{ resume.role_description_five or ''}}</p>
+									  </div>
+									  <div class="extra">
+										<span class="cinema">{{ resume.location_city_five or ''}} {{ resume.location_state_five or ''}} </span>
+										<span class="cinema">{{ resume.location_country_five or ''}}</span>
+									  </div>
+									</div>
+								  </div>		
+							</div>
+							{% elif resume.location_city_five is none %}
+								{% else %}
+								{% endif %}
+								{% if resume.location_city_six is not none %}
+							<div class="ui divided items">
+								  <div class="item">
+									<div class="content">
+									  <a class="header">{{ resume.role_six or ''}}</a>
+									  <div class="meta">
+										<span class="cinema">{{ resume.company_name_six or ''}} {{ resume.start_date_six or ''}} </span>
+									  </div>
+									  <div class="description">
+										<p>{{ resume.role_description_six or ''}}</p>
+									  </div>
+									  <div class="extra">
+										<span class="cinema">{{ resume.location_city_six or ''}} {{ resume.location_state_six or ''}} </span>
+										<span class="cinema">{{ resume.location_country_six or ''}}</span>
+									  </div>
+									</div>
+								  </div>		
+							</div>
+							{% elif resume.location_city_six is none %}
+								{% else %}
+								{% endif %}
+								{% if resume.school_name_one is not none %}
+							<div class="ui divided items">
+								  <div class="item">
+									<div class="content">
+									  <a class="header">{{ resume.school_name_one or ''}}</a>
+									  <div class="meta">
+										<span class="cinema">{{ resume.degree_description_one or ''}} {{ resume.school_end_date_one or ''}} </span>
+									  </div>
+									  <div class="extra">
+										<span class="cinema">{{ resume.city_school_one or ''}} {{ resume.state_school_one or ''}} </span>
+										<span class="cinema">{{ resume.country_school_one or ''}}</span>
+									  </div>
+									</div>
+								  </div>		
+							</div>
+							{% elif resume.school_name_one is none %}
+								{% else %}
+								{% endif %}
+								{% if resume.school_name_two is not none %}
+							<div class="ui divided items">
+								  <div class="item">
+									<div class="content">
+									  <a class="header">{{ resume.school_name_two or ''}}</a>
+									  <div class="meta">
+										<span class="cinema">{{ resume.degree_description_two or ''}} {{ resume.school_end_date_two or ''}} </span>
+									  </div>
+									  <div class="extra">
+										<span class="cinema">{{ resume.city_school_two or ''}} {{ resume.state_school_two or ''}} </span>
+										<span class="cinema">{{ resume.country_school_two or ''}}</span>
+									  </div>
+									</div>
+								  </div>		
+							</div>
+							{% elif resume.school_name_two is none %}
+								{% else %}
+								{% endif %}
+								{% if resume.school_name_three is not none %}
+							<div class="ui divided items">
+								  <div class="item">
+									<div class="content">
+									  <a class="header">{{ resume.school_name_three or ''}}</a>
+									  <div class="meta">
+										<span class="cinema">{{ resume.degree_description_three or ''}} {{ resume.school_end_date_three or ''}} </span>
+									  </div>
+									  <div class="extra">
+										<span class="cinema">{{ resume.city_school_three or ''}} {{ resume.state_school_three or ''}} </span>
+										<span class="cinema">{{ resume.country_school_three or ''}}</span>
+									  </div>
+									</div>
+								  </div>		
+							</div>
+							{% elif resume.school_name_three is none %}
+								{% else %}
+								{% endif %}
+								{% if resume.school_name_four is not none %}
+							<div class="ui divided items">
+								  <div class="item">
+									<div class="content">
+									  <a class="header">{{ resume.school_name_four or ''}}</a>
+									  <div class="meta">
+										<span class="cinema">{{ resume.degree_description_four or ''}} {{ resume.school_end_date_four or ''}} </span>
+									  </div>
+									  <div class="extra">
+										<span class="cinema">{{ resume.city_school_four or ''}} {{ resume.state_school_four or ''}} </span>
+										<span class="cinema">{{ resume.country_school_four or ''}}</span>
+									  </div>
+									</div>
+								  </div>		
+							</div>
+							{% elif resume.school_name_four is none %}
+								{% else %}
+								{% endif %}
+								{% if resume.school_name_five is not none %}
+							<div class="ui divided items">
+								  <div class="item">
+									<div class="content">
+									  <a class="header">{{ resume.school_name_five or ''}}</a>
+									  <div class="meta">
+										<span class="cinema">{{ resume.degree_description_five or ''}} {{ resume.school_end_date_five or ''}} </span>
+									  </div>
+									  <div class="extra">
+										<span class="cinema">{{ resume.city_school_five or ''}} {{ resume.state_school_five or ''}} </span>
+										<span class="cinema">{{ resume.country_school_five or ''}}</span>
+									  </div>
+									</div>
+								  </div>		
+							</div>
+								{% else %}
+								{% endif %}
+								{{ extra.required_skill_five ''}}
+  </div>						
+</div>
+{% endblock %}
+{% block scripts %}
+    <script type="text/javascript" src="{{ url_for('static', filename='slick/slick.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='lightbox/js/lightbox.min.js') }}"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slick').slick({
+                infinite: false,
+            });
+        });
+
+        function like(post_id, user_id) {
+            $.post("{{url_for('post.like_post', post_id=100, user_id=1000)}}".replace(/100/, post_id).replace(/1000/, user_id),
+                {
+                    csrf_token: "{{csrf_token()}}",
+                },
+                function (data, status) {
+                    data = JSON.parse(data)
+                    if (data.status == 'success') {
+                        $("#like-count-" + post_id).html("(" + data.count + " likes) ");
+                        if (data.liked == 1) {
+                            $("#like-icon-" + post_id).removeClass("outline")
+                        } else {
+                            $("#like-icon-" + post_id).addClass("outline");
+                        }
+                    }
+                });
+        }
+    </script>
+{% endblock %}

@@ -1,0 +1,17 @@
+{% macro product_wid(product) -%}
+    <div class="card">
+        <div class="content">
+            <div class="header">
+                <div class="center aligned ui">
+                    <img height="100" src="{{ product.get_photo() }}">
+                </div>
+                <hr>
+                <a href="{{ url_for('products.product_details', product_id=product.id, product_category=product.product_category, product_name=product.product_name) }}">{{ product.product_name }}</a>
+            </div>
+            <div class="meta">Offered By :<span class="ui primary label">{{ product.organisation.org_name }}</span></div>
+            <div class="meta">Price : {{ product.price_currency }} {{ product.product_price }} </div>
+			<div class="meta">Min Qty : {{ product.min_order_quantity }}</div>
+            <div class="meta">In Stock : {{ product.product_availability }} </div>
+        </div>
+    </div>
+{%- endmacro %}

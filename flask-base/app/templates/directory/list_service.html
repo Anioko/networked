@@ -1,0 +1,111 @@
+{% extends 'layouts/base.html' %}
+{% block content %}
+    <div class="ui two column centered grid">
+        <div class="column">
+            <h1>Available services</h1>
+        </div>
+    </div>
+    <div class="ui grid">
+		<div class="column">
+			  <table class="top attached ui basic table">
+				<thead>
+				  <tr><th>Header</th>
+				  <th>Header</th>
+				  <th>Header</th>
+				</tr></thead>
+				<tbody>
+				  <tr>
+					<td>Cell
+						<div class="content">
+							<div class="header">
+								<a href="{{ url_for('services.service_details', service_id=service.id, service_title=service.service_title, service_category=service.category, service_city=service.service_city, service_state=service.service_state, service_country=service.service_country) }}">{{ service.service_title }}</a>
+							</div>
+							                {% for service in appts %}
+											{{ service.service_title }}
+											{% endfor %}
+
+
+
+						</div>
+
+					</td>
+					<td>Cell</td>
+					<td>Cell</td>
+				  </tr>
+				  <tr>
+					<td>Cell</td>
+					<td>Cell</td>
+					<td>Cell</td>
+				  </tr>
+				  <tr>
+					<td>Cell</td>
+					<td>Cell</td>
+					<td>Cell</td>
+				  </tr>
+				</tbody>
+			  </table>
+			  <table class="attached ui table">
+				<tbody>
+				  <tr>
+					<td>Cell</td>
+					<td>Cell</td>
+					<td>Cell</td>
+				  </tr>
+				  <tr>
+					<td>Cell</td>
+					<td>Cell</td>
+					<td>Cell</td>
+				  </tr>
+				  <tr>
+					<td>Cell</td>
+					<td>Cell</td>
+					<td>Cell</td>
+				  </tr>
+				</tbody>
+			  </table>
+			  <table class="attached ui celled selectable table">
+				<tbody>
+				  <tr>
+					<td>Cell</td>
+					<td>Cell</td>
+					<td>Cell</td>
+				  </tr>
+				  <tr>
+					<td>Cell</td>
+					<td>Cell</td>
+					<td>Cell</td>
+				  </tr>
+				  <tr>
+					<td>Cell</td>
+					<td>Cell</td>
+					<td>Cell</td>
+				  </tr>
+				</tbody>
+			  </table>
+			  <table class="bottom attached ui celled table">
+				<thead>
+				  <tr><th>Header</th>
+				  <th>Header</th>
+				  <th>Header</th>
+				</tr></thead>
+				<tbody>
+				  <tr>
+					<td>Cell</td>
+					<td>Cell</td>
+					<td>Cell</td>
+				  </tr>
+				  <tr>
+					<td>Cell</td>
+					<td>Cell</td>
+					<td>Cell</td>
+				  </tr>
+				  <tr>
+					<td>Cell</td>
+					<td>Cell</td>
+					<td>Cell</td>
+				  </tr>
+				</tbody>
+			  </table>
+			</div>
+    </div>
+{% endblock %}

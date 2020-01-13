@@ -1,0 +1,64 @@
+{% extends 'layouts/base.html' %}
+{% block page_title %}{{ org.org_name }}, {{ org.org_city }}, {{ org.org_country }}{% endblock %}
+{% block custom_head_tags %}
+    <meta name="description"
+          content="{{ org.org_description }}">
+    <meta name="author" content="{{ config.APP_NAME }}">
+    <meta name="og:title" content="{{ org.org_name }}, {{ org.org_city }}, {{ org.org_country }}"/>
+    <meta name="og:type" content="website"/>
+    <meta name="og:url" content="https://www.{{ config.APP_NAME }}"/>
+    <meta name="og:image" content="{{ url_for('static', filename='images/home/slider/hill.png') }}"/>
+    <meta name="og:site_name" content="{{ config.APP_NAME }}"/>
+    <meta name="og:description"
+          content="{{ org.org_description }}"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@networked.ng"/>
+    <meta name="twitter:creator" content="@anioko1"/>
+{% endblock %}
+
+{% block content %}
+<div class="ui stackable centered grid container">
+   <div class="twelve wide column">
+    <table class="ui compact definition table">
+        <tr>
+            <td>Company Name</td>
+            <td>{{ org.org_name }}</td>
+        </tr>
+        <tr>
+            <td>Company Logo</td>
+            <td><img height="200" src="{{ org.get_photo() }}"></td>
+        </tr>
+        <tr>
+            <td>Creator</td>
+            <td><a href="{{ url_for('main.user_public_profile', id=org.user.id, full_name=org.user.full_name) }}">{{ org.user.full_name }}</a>
+	</td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td>{{ org.org_city }}</td>
+        </tr>
+        <tr>
+            <td>State</td>
+            <td>{{ org.org_state }}</td>
+        </tr>
+        <tr>
+            <td>Country</td>
+            <td>{{ org.org_country }}</td>
+        </tr>
+        <tr>
+            <td>Company Website</td>
+            <td><a href="http://{{ org.org_website }}">{{ org.org_website }}</td>
+        </tr>
+        <tr>
+            <td>Industry</td>
+            <td>{{ org.org_industry }}</td>
+        </tr>
+        <tr>
+            <td>Company Description</td>
+            <td>{{ org.org_description }}</td>
+        </tr>
+
+    </table>
+	</div>
+</div>
+{% endblock %}

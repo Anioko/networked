@@ -1,0 +1,114 @@
+{% extends 'layouts/base.html' %}
+
+{% macro dashboard_option(org, title, endpoint, description=None, icon=None) %}
+    <a class="column" href="{{ url_for(endpoint, org_id=org.id) }}">
+        <div class="ui padded segment">
+            <h3 class="ui header">
+                {% if icon is not none %}
+                    <i class="{{ icon }}"></i>
+                {% endif %}
+                <div class="content">
+                    {{ title }}
+                    {% if description is not none %}
+                        <div class="sub header">
+                            {{ description }}
+                        </div>
+                    {% endif %}
+                </div>
+            </h3>
+        </div>
+    </a>
+{% endmacro %}
+
+{% macro org_info(org) %}
+    <table class="ui compact definition table">
+        <tr>
+            <td>Name</td>
+            <td>{{ org.org_name }}</td>
+        </tr>
+        <tr>
+            <td>Default Logo</td>
+            <td><img height="200" src="{{ org.get_photo() }}"></td>
+        </tr>
+        <tr>
+            <td>Creator</td>
+            <td>{{ org.user.full_name }}</td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td>{{ org.org_city }}</td>
+        </tr>
+        <tr>
+            <td>State</td>
+            <td>{{ org.org_country }}</td>
+        </tr>
+        <tr>
+            <td>Country</td>
+            <td>{{ org.name }}</td>
+        </tr>
+        <tr>
+            <td>Website</td>
+            <td>{{ org.org_website }}</td>
+        </tr>
+        <tr>
+            <td>Industry</td>
+            <td>{{ org.org_industry }}</td>
+        </tr>
+        <tr>
+            <td>Description</td>
+            <td>{{ org.org_description }}</td>
+        </tr>
+        <tr>
+            <td>Created</td>
+            <td>{{ org.created_at }}</td>
+        </tr>
+
+    </table>
+{% endmacro %}
+
+{% block content %}
+    <div class="ui stackable centered grid container">
+        <div class="twelve wide column">
+            <a class="ui basic compact button" href="{{ url_for('organisations.org_home') }}">
+                <i class="caret left icon"></i>
+                Back to Organisations List
+            </a>
+            <h2 class="ui header">
+                Organisation Dashboard : {{ org.org_name }}
+                <span class="right floated ui">
+                    <a href="{{ url_for('organisations.edit_org', org_id=org.id )}}">
+                        <i class="icon edit"></i>
+                    </a>
+                </span>
+            </h2>
+            {{ org_info(org) }}
+            <div class="ui two column stackable grid">
+                {{ dashboard_option(org, ' Create job adverts', 'organisations.create_position',
+                                    description='Click here to create job adverts or vacancies.', icon='write square icon') }}
+                {{ dashboard_option(org, ' Create promotions and offers', 'organisations.create_promo',
+                                    description='Click here to create promotions and offers for your customers.', icon='percent icon') }}
+                {{ dashboard_option(org, ' Add staff', 'organisations.invite_user',
+                                    description='Click here to add your staff member(s).', icon='add user icon') }}
+                {{ dashboard_option(org, ' Create event', 'events.create_event',
+                                    description='Click here to create business or professional events.', icon='write square icon') }}
+                {{ dashboard_option(org, ' Add services', 'services.create_service',
+                                    description='Click here to add a service your company offers to clients.', icon='write square icon') }}
+                {{ dashboard_option(org, ' Add products', 'products.create_product',
+                                    description='Click here to add a product your company manufactures or sells.', icon='write square icon') }}
+                {{ dashboard_option(org, 'Products', 'products.products_list',
+                                    description='View products you have added.', icon='unhide icon') }}
+                {{ dashboard_option(org, 'Promos', 'promos.promos_list',
+                                    description='View promos you have added.', icon='unhide icon') }}
+				{{ dashboard_option(org, 'Job adverts', 'organisations.list_positions',
+                                    description='Adverts created are viewable by all members within the network and outside.', icon='unhide icon') }}
+                {{ dashboard_option(org, 'Your Staff', 'organisations.list_staff',
+                                    description='View invites to your staffs to create their own accounts', icon='unhide icon') }}
+                {{ dashboard_option(org, 'Services', 'services.services_list',
+                                    description='View services you have added.', icon='unhide icon') }}
+                {{ dashboard_option(org, 'Events', 'events.events_list',
+                                    description='View events you have added.', icon='unhide icon') }}
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,89 @@
+{% extends 'layouts/base.html' %}
+{% import 'macros/form_macros.html' as f %}
+{% import 'macros/job_macros.html' as job_wid %}
+{% block custom_head_tags %}
+    <style>
+        .conversation-holder:hover .card {
+            border: 1px solid gray;
+        }
+    </style>
+{% endblock %}
+{% block content %}
+    <div class="ui grid container" id="example3">
+        <div class="eight wide computer sixteen wide mobile centered column">
+            <!----<div class="ui segment">----> <!-----Will need to rectify this ui segment thingy ----->
+            <div class="left ui rail">
+                <p></p>
+                <div class="ui sticky">
+                    <h3 class="ui header">Colleagues to follow</h3>
+                    <div class="ui divided items">
+                        {% for user in follow_lists %}
+                            <div class="item">
+                                <div class="ui tiny image">
+                                    <img src="{{ user.get_photo() }}">
+                                </div>
+                                <div class="middle aligned content">
+                                    {% if user == current_user %}
+
+                                    {% elif not current_user.is_following(user) %}
+                                        <div class="ui button"><a
+                                                href="{{ url_for('main.follow', id=user.id, full_name=user.full_name) }}">
+                                            <i class="add icon"></i> Follow</a>
+                                        </div>
+                                    {% else %}
+                                        <div class="ui button"><a
+                                                href="{{ url_for('main.unfollow', id=user.id, full_name=user.full_name) }}">
+                                            <i class="add icon"></i> UnFollow</a>
+                                        </div>
+                                    {% endif %}
+                                    <div class="meta">
+                                        <span class="author">
+                                            <a href="{{ url_for('main.user', id=user.id, full_name=user.full_name) }}">{{ user.full_name }}</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="right ui right rail">
+                <div class="ui sticky">
+                    <div class="ui cards">
+                        {% for job in jobs %}
+                            {{ job_wid.job_wid(job) }}
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            {% for notification in notifications %}
+                <a href="{{ notification.link }}" class="conversation-holder">
+                    <div class="ui fluid card" style="{{ notification.border }}">
+                        <div class="extra content">
+                            <h2 class="left floated ui header">{{ notification.title }} </h2>
+                        </div>
+                        <div class="content">
+                            <div class="description">
+                                {{ notification.text | safe }}
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <br>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
+{% block scripts %}
+    <script>
+        $(document).ready(function() {
+            $('.ui.sticky')
+                .sticky({
+                    offset: 50,
+                    bottomOffset: 50,
+                    context: '#example3'
+                })
+            ;
+        });
+    </script>
+{% endblock %}

@@ -1,0 +1,60 @@
+{% extends 'layouts/base.html' %}
+
+{% macro dashboard_option(title, endpoint, description=None, icon=None) %}
+    <a class="column" href="{{ url_for(endpoint) }}">
+        <div class="ui padded segment">
+            <h3 class="ui header">
+                {% if icon is not none %}
+                    <i class="{{ icon }}"></i>
+                {% endif %}
+                <div class="content">
+                    {{ title }}
+                    {% if description is not none %}
+                        <div class="sub header">
+                            {{ description }}
+                        </div>
+                    {% endif %}
+                </div>
+            </h3>
+        </div>
+    </a>
+{% endmacro %}
+
+{% block content %}
+    <div class="ui stackable centered grid container">
+        <div class="twelve wide column">
+            <h2 class="ui header">
+                Dashboard
+            </h2>
+            <div class="ui two column stackable grid">
+                {{ dashboard_option('Share a thought or post or image', 'post.post_create',
+                                    description='Click here to share your thoughts or writeups or professional images', icon='write icon') }}
+                {{ dashboard_option('Ask a question, get answers', 'main.question',
+                                    description='Click here to ask colleagues and other professionals a question', icon='help icon') }}
+                {{ dashboard_option('Follow colleagues', 'main.select_section',
+                                    description='Find colleagues to add', icon='add user icon') }}
+                {{ dashboard_option('Invite a colleague', 'main.invite_user',
+                                    description='Invite a fellow co worker to create their own account', icon='add user icon') }}
+                {% if check_org_exist is none %}
+                    {{ dashboard_option('Add a business or organization', 'organisations.create_org',description='Add an organization or company', icon='building icon') }}
+				{% elif check_org_exist is not none %}
+				{{ dashboard_option('Organisation', 'organisations.org_home',description='Manage your organizations or company', icon='suitcase icon') }}
+                {% else %}
+                {% endif %}
+                {{ dashboard_option('Apply to jobs', 'jobs.jobs_list',
+                                    description='Find and apply for health and or allied care jobs which are posted here.', icon='search icon') }}
+                {{ dashboard_option('Attend events', 'events.events_list',
+                                    description='Find and register to attend events.', icon='calendar icon') }}
+				{{ dashboard_option('Products', 'products.products_list',
+                                    description='View products listed.', icon='unhide icon') }}
+				{{ dashboard_option('Organizations', 'organisations.org_list',
+                                    description='View organizations listed.', icon='unhide icon') }}
+				                {{ dashboard_option('Services', 'services.services_list',
+                                    description='View services listed.', icon='unhide icon') }}
+                {{ dashboard_option('Promos', 'promos.promos_list',
+                                    description='View promos listed.', icon='unhide icon') }}
+				
+            </div>
+        </div>
+    </div>
+{% endblock %}

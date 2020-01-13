@@ -1,0 +1,20 @@
+{% extends 'layouts/base.html' %}
+{% import 'macros/service_macros.html' as service_wid %}
+
+{% block content %}
+    <div class="ui two column centered grid">
+        <div class="column">
+            <h1>Available services</h1>
+        </div>
+    </div>
+    <div class="ui grid">
+        <div class="four wide column"></div>
+        <div class="eight wide column">
+            <div class="ui cards">
+                {% for service in appts %}
+                    {{ service_wid.service_wid(service) }}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

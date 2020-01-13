@@ -1,0 +1,82 @@
+{% extends 'layouts/base.html' %}
+{% block page_title %}{{ appt.product_name }}, {{ appt.product_category }}, {{ appt.product_price }}{% endblock %}
+{% block custom_head_tags %}
+    <meta name="description"
+          content="{{ appt.product_description }}">
+    <meta name="author" content="{{ config.APP_NAME }}">
+    <meta name="og:title" content="{{ appt.product_name }}, {{ appt.product_category }}, {{ appt.product_price }}"/>
+    <meta name="og:type" content="website"/>
+    <meta name="og:url" content="https://www.{{ config.APP_NAME }}"/>
+    <meta name="og:image" content="{{ appt.get_photo() }}"/>
+    <meta name="og:site_name" content="{{ config.APP_NAME }}"/>
+    <meta name="og:description"
+          content="{{ appt.product_description }}"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@networked.ng"/>
+    <meta name="twitter:creator" content="@anioko1"/>
+{% endblock %}
+
+{% block content %}
+<div class="ui stackable centered grid container">
+   <div class="twelve wide column">
+               <h2 class="ui header">
+                <span class="right floated ui">
+                    <a href="{{ url_for('products.edit_product', org_id=appt.organisation.id, product_id=appt.id  )}}">
+                        <i class="icon edit"></i>
+                    </a>
+                </span>
+            </h2>
+    <table class="ui compact definition table">
+        <tr>
+            <td>Product Name</td>
+            <td>{{ appt.product_name }}</td>
+        </tr>
+		<tr>
+            <td>Category</td>
+            <td>{{ appt.product_category }}</td>
+        </tr>
+		<tr>
+            <td>Price</td>
+            <td>{{ appt.product_price }} {{ appt.price_currency }}</td>
+        </tr>
+        <tr>
+            <td>Length</td>
+            <td>{{ appt.product_length }}</td>
+        </tr>
+        <tr>
+            <td>Weight</td>
+            <td>{{ appt.product_weight }}</td>
+        </tr>
+        <tr>
+            <td>Height</td>
+            <td>{{ appt.product_height }}</td>
+        </tr>
+        <tr>
+            <td>Lead Time</td>
+            <td>{{ appt.lead_time }}</td>
+        </tr>
+        <tr>
+            <td>Minimum order quantity in units</td>
+            <td>{{ appt.min_order_quantity }}</td>
+        </tr>
+        <tr>
+            <td>Inco Terms (Delivery terms)</td>
+            <td>{{ appt.delivery_terms }}</td>
+        </tr>
+        <tr>
+            <td>Availability</td>
+            <td>{{ appt.product_availability }}</td>
+        </tr>
+        <tr>
+            <td>Contact</td>
+            <td> <a href="{{ url_for('organisations.public_org', org_id=appt.organisation.id, org_name=appt.organisation.org_name) }}">{{ appt.organisation.org_name  }}</a></td>
+        </tr>
+        <tr>
+            <td>Product Image</td>
+            <td><img height="450" src="{{ appt.get_photo() }}"></td>
+        </tr>
+
+    </table>
+	</div>
+</div>
+{% endblock %}

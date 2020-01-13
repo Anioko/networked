@@ -1,0 +1,83 @@
+{% extends 'layouts/base.html' %}
+{% import 'macros/form_macros.html' as f %}
+{% import 'macros/check_password.html' as check %}
+
+{% block content %}
+    <div class="ui grid container">
+        <div class="eight wide computer sixteen wide mobile centered column">
+            <h2 class="ui dividing header">Edit your account details</h2>
+
+            {% set flashes = {
+        'error':   get_flashed_messages(category_filter=['form-error']),
+        'warning': get_flashed_messages(category_filter=['form-check-email']),
+        'info':    get_flashed_messages(category_filter=['form-info']),
+        'success': get_flashed_messages(category_filter=['form-success'])
+        } %}
+
+            {{ f.begin_form(form, flashes) }}
+
+
+            <div class="two fields">
+                <div class="field">
+                    {{ f.render_form_field(form.first_name) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.last_name) }}
+                </div>
+            </div>
+			
+            <div class="field">
+                {{ f.render_form_field(form.photo) }}
+            </div>
+            <div class="two fields">
+                <div class="field">
+                    {{ f.render_form_field(form.gender) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.profession) }}
+                </div>
+            </div>
+            <div class="two fields">
+                <div class="field">
+                    {{ f.render_form_field(form.area_code) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.mobile_phone) }}
+                </div>
+            </div>
+            <div class="field">
+                {{ f.render_form_field(form.summary_text) }}
+            </div>
+            <div class="two fields">
+                <div class="field">
+                    {{ f.render_form_field(form.zip) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.city) }}
+                </div>
+
+            </div>
+            <div class="two fields">
+                <div class="field">
+                    {{ f.render_form_field(form.state) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.country) }}
+                </div>
+            </div>
+
+
+
+            {{ f.form_message(flashes['error'], header='Something went wrong.', class='error') }}
+            {{ f.form_message(flashes['warning'], header='Check your email.', class='warning') }}
+            {{ f.form_message(flashes['info'], header='Information', class='info') }}
+            {{ f.form_message(flashes['success'], header='Success!', class='success') }}
+
+            {% for field in form | selectattr('type', 'equalto', 'SubmitField') %}
+                {{ f.render_form_field(field) }}
+            {% endfor %}
+
+            {{ f.end_form(form) }}
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,96 @@
+{% extends 'layouts/base.html' %}
+{% block page_title %}{{ appt.service_category }}, {{ appt.service_title }}{% endblock %}
+{% block custom_head_tags %}
+    <meta name="description"
+          content="{{ appt.description }}">
+    <meta name="author" content="{{ config.APP_NAME }}">
+    <meta name="og:title" content="{{ appt.service_category }}, {{ appt.service_title }}, {{service_city}}"/>
+    <meta name="og:type" content="website"/>
+    <meta name="og:url" content="https://www.{{ config.APP_NAME }}"/>
+    <meta name="og:image" content="{{ url_for('static', filename='images/home/slider/hill.png') }}"/>
+    <meta name="og:site_name" content="{{ config.APP_NAME }}"/>
+    <meta name="og:description"
+          content="{{ appt.description }}"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@networked.ng"/>
+    <meta name="twitter:creator" content="@anioko1"/>
+{% endblock %}
+{% macro dashboard_option(appt, title, endpoint, description=None, icon=None) %}
+    <a class="column" href="{{ url_for(endpoint, appt_id=appt.id) }}">
+        <div class="ui padded segment">
+            <h3 class="ui header">
+                {% if icon is not none %}
+                    <i class="{{ icon }}"></i>
+                {% endif %}
+                <div class="content">
+                    {{ title }}
+                    {% if description is not none %}
+                        <div class="sub header">
+                            {{ description }}
+                        </div>
+                    {% endif %}
+                </div>
+            </h3>
+        </div>
+    </a>
+{% endmacro %}
+
+{% macro appt_info(appt) %}
+    <table class="ui compact definition table">
+        <tr>
+            <td>Service Name</td>
+            <td>{{ appt.service_title }}</td>
+        </tr>
+        <tr>
+            <td>Category</td>
+            <td>{{ appt.service_category }}</td>
+        </tr>
+        <tr>
+            <td>City</td>
+            <td>{{ appt.Service_city }}</td>
+        </tr>
+        <tr>
+            <td>State</td>
+            <td>{{ appt.service_state }}</td>
+        </tr>
+        <tr>
+            <td>Country</td>
+            <td>{{ appt.service_country }}</td>
+        </tr>
+        <tr>
+            <td>Phone</td>
+            <td>{{ appt.mobile_phone }}</td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td>{{ appt.street_address }}</td>
+        </tr>
+        <tr>
+            <td>Contact</td>
+            <td> <a href="{{ url_for('organisations.public_org', org_id=appt.organisation.id, org_name=appt.organisation.org_name) }}">{{ appt.organisation.org_name  }}</a></td>
+        </tr>
+        <tr>
+            <td>Description</td>
+            <td>{{ appt.description }}</td>
+        </tr>
+
+
+    </table>
+{% endmacro %}
+
+{% block content %}
+    <div class="ui stackable centered grid container">
+        <div class="twelve wide column">
+            <h2 class="ui header">
+                            </h2>
+            {{ appt_info(appt) }}
+{#            <div class="ui two column stackable grid">#}
+{#                {{ dashboard_option(appt, 'job adverts', 'apptanisations.list_positions',#}
+{#                                    description='Adverts created are viewable by all members within the network and outside.', icon='write square icon') }}#}
+{#                {{ dashboard_option(appt, 'Your Staff', 'apptanisations.list_staff',#}
+{#                                    description='Send invites to your staffs to create their own accounts', icon='add user icon') }}#}
+{#            </div>#}
+        </div>
+    </div>
+
+{% endblock %}

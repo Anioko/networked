@@ -1,0 +1,27 @@
+{% extends 'layouts/base.html' %}
+{% block content %}
+    <div class="ui two column centered grid">
+        <div class="column">
+            <h1>Promo Submissions</h1>
+        </div>
+    </div>
+    <div class="ui grid">
+        <div class="five wide column"></div>
+        <div class="six wide column">
+            <div class="ui cards">
+                {% for user in submissions %}
+                    <div class="ui very padded segment">
+                        <div class="ui relaxed divided items">
+                            <div class="item">
+								<div class="header">
+									<a href="{{ url_for('main.user', id=user.id, full_name=user.full_name) }}">{{ user.full_name }}</a>
+								</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

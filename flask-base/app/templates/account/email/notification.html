@@ -1,0 +1,30 @@
+<p>Dear {{ user.full_name }},</p>
+
+<p>You have a new notification on  <b>{{ config.APP_NAME }}</b>!</p>
+
+<p>Please Go to <a href="{{ link }}">Notifications</a> To access your account and see the new notification.</p>
+
+<p>Alternatively, you can paste the following link in your browser's address bar:</p>
+
+<p>{{ link }}</p>
+
+<p><b>Notification Summary : </b></p>
+<p>
+    {% if 'unread_message_count' in notification.name %}
+    You Have a new Message
+    {% elif 'post_likes' in notification.name %}
+    You have a New Post Like
+    {% elif 'post_replies' in notification.name %}
+    You have a New Post Reply
+    {% elif 'answer' in notification.name %}
+    You have New Question Answer
+    {% endif %}
+</p>
+<hr>
+<p>Sincerely,</p>
+
+<p>The {{ config.APP_NAME }} Team</p>
+
+<p>
+    <small>Note: replies to this email address are not monitored.</small>
+</p>

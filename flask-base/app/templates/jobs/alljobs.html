@@ -1,0 +1,20 @@
+{% extends 'layouts/base.html' %}
+{% import 'macros/job_macros.html' as job_wid %}
+
+{% block content %}
+    <div class="ui two column centered grid">
+        <div class="column">
+            <h1>Published positions</h1>
+        </div>
+    </div>
+    <div class="ui grid">
+        <div class="four wide column"></div>
+        <div class="eight wide column">
+            <div class="ui cards">
+                {% for job in appts %}
+                    {{ job_wid.job_wid(job) }}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,69 @@
+{% extends 'layouts/base.html' %}
+
+{% macro dashboard_option(title, endpoint, description=None, icon=None) %}
+    <a class="column" href="{{ url_for(endpoint) }}">
+        <div class="ui padded segment">
+            <h3 class="ui header">
+                {% if icon is not none %}
+                    <i class="{{ icon }}"></i>
+                {% endif %}
+                <div class="content">
+                    {{ title }}
+                    {% if description is not none %}
+                        <div class="sub header">
+                            {{ description }}
+                        </div>
+                    {% endif %}
+                </div>
+            </h3>
+        </div>
+    </a>
+{% endmacro %}
+
+{% block content %}
+    <div class="ui stackable centered grid container">
+        <div class="twelve wide column">
+            <h1 class="ui center aligned header">
+				Click one area
+            </h1>
+            <div class="ui two column grid">
+			  <div class="column">
+				<div class="ui raised segment" onclick="location.href='/organisations/home';">
+				  <h3 class="ui center aligned header">
+				      <a class="ui teal label">Businesses (SMEs, Companies, Entrepreneurs)</a>
+				  </h3>
+				  <a class="ui teal ribbon label">Company</a>
+				  <p> A free area to add companies or organizations. All companies or organisations added are visible in search engines.</p>
+				  <a class="ui teal ribbon label">Vacancies</a>
+				  <p> A free area to add vacancies and get candidates to apply to them.</p>
+				  <a class="ui teal ribbon label">Products</a>
+				  <p> A free area to list products you manufacture or sell. All products added are visible in search engines and in the product marketplace.</p>
+				  <a class="ui teal ribbon label">Services</a>
+				  <p> A free area to list services you offer to clients or customers. All services added are visible in search engines.</p>
+				  <a class="ui teal ribbon label">Events</a>
+				  <p> A free area to list your professional or business events. All events added are visible in search engines.</p>
+				  <a class="ui teal ribbon label">Promos</a>
+				  <p> A free area to list promos offered to potential clients or customers. All promos added are visible in search engines.</p>
+				</div>
+			  </div>
+			  <div class="column">
+				<div class="ui raised segment" onclick="location.href='/dashboard';">
+				  <h3 class="ui center aligned header">
+				      <a class="ui blue label">Professionals (Job seekers, Employees, Unemployed)</a>
+				  </h3>
+				  <a class="ui blue ribbon label">Jobs</a>
+				  <p> A free section to find list of jobs posted on the network and apply to them.</p>
+				  <a class="ui blue ribbon label">Networking</a>
+				  <p> A free section to find and follow other Nigerian professionals. Build your professional network.</p>
+				  <a class="ui blue ribbon label">Questions</a>
+				  <p> A free section to find answers or ask questions related to a career or profession.</p>
+				  <a class="ui blue ribbon label">Posts</a>
+				  <p> A free section similar to Facebook or Linkedin or Twitter's posts feature.Add professionally related posts and news.</p>
+				  <a class="ui blue ribbon label">Invites</a>
+				  <p> Use it to invite your friend or colleague or relative. Add their mobile numbers and they will receive an sms invitation.</p>
+				</div>
+			  </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

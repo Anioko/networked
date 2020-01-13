@@ -1,0 +1,27 @@
+{% extends 'layouts/base.html' %}
+{% block content %}
+    <div class="ui two column centered grid">
+        <div class="column">
+            <h1>Event Attendees</h1>
+        </div>
+    </div>
+    <div class="ui grid">
+        <div class="five wide column"></div>
+        <div class="six wide column">
+            <div class="ui cards">
+                {% for user in attendees %}
+                    <div class="ui very padded segment">
+                        <!---<div class="ui relaxed divided items">--->
+                            <div class="item">
+                                <div class="content">
+                                    <a href="{{ url_for('main.user_public_profile', id=user.id, full_name=user.full_name) }}">{{ user.first_name }} {{ user.last_name }}</a>
+                                    </div>
+                                </div>
+                           <!----</div>--->
+                       </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,69 @@
+{% extends 'layouts/base.html' %}
+{% import 'macros/form_macros.html' as f %}
+{% import 'macros/check_password.html' as check %}
+
+
+{% block scripts %}
+{% endblock %}
+
+{% block content %}
+    <div class="ui stackable centered grid container">
+        <div class="twelve wide column">
+            <a class="ui basic compact button" href="{{ url_for('organisations.org_home') }}">
+                <i class="caret left icon"></i>
+                Back to Organizations List
+            </a>
+            <h2 class="ui header">
+                Add a product
+                <div class="sub header">Add a new product</div>
+            </h2>
+
+            {% set flashes = {
+                'error':   get_flashed_messages(category_filter=['form-error']),
+                'warning': get_flashed_messages(category_filter=['form-check-email']),
+                'info':    get_flashed_messages(category_filter=['form-info']),
+                'success': get_flashed_messages(category_filter=['form-success'])
+            } %}
+
+            {{ f.begin_form(form, flashes) }}
+
+            <div class="two fields">
+                {{ f.render_form_field(form.product_name) }}
+                {{ f.render_form_field(form.product_category) }}
+            </div>
+            <div class="field">
+                {{ f.render_form_field(form.product_image) }}
+            </div>
+            <div class="three fields">
+                {{ f.render_form_field(form.product_weight) }}
+                {{ f.render_form_field(form.product_height) }}
+                {{ f.render_form_field(form.product_length) }}
+            </div>
+            <div class="three fields">
+                {{ f.render_form_field(form.product_availability) }}
+                {{ f.render_form_field(form.delivery_terms) }}
+                {{ f.render_form_field(form.lead_time) }}
+            </div>
+            <div class="two fields">
+                {{ f.render_form_field(form.product_price) }}
+                {{ f.render_form_field(form.price_currency) }}
+            </div>
+            <div class="field">
+                {{ f.render_form_field(form.product_description) }}
+            </div>
+
+
+            {{ f.form_message(flashes['error'], header='Something went wrong.', class='error') }}
+            {{ f.form_message(flashes['warning'], header='Check your email.', class='warning') }}
+            {{ f.form_message(flashes['info'], header='Information', class='info') }}
+            {{ f.form_message(flashes['success'], header='Success!', class='success') }}
+
+            {% for field in form | selectattr('type', 'equalto', 'SubmitField') %}
+                {{ f.render_form_field(field) }}
+            {% endfor %}
+
+            {{ f.end_form() }}
+
+        </div>
+    </div>
+{% endblock %}

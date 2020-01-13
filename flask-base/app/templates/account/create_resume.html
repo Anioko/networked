@@ -1,0 +1,388 @@
+{% extends 'layouts/base.html' %}
+{% import 'macros/form_macros.html' as f %}
+{% import 'macros/check_password.html' as check %}
+
+{% block content %}
+    <div class="ui grid container">
+        <div class="eight wide computer sixteen wide mobile centered column">
+            <h2 class="ui dividing header">Add to work and education history to your profile</h2>
+
+            {% set flashes = {
+        'error':   get_flashed_messages(category_filter=['form-error']),
+        'warning': get_flashed_messages(category_filter=['form-check-email']),
+        'info':    get_flashed_messages(category_filter=['form-info']),
+        'success': get_flashed_messages(category_filter=['form-success'])
+        } %}
+
+            {{ f.begin_form(form, flashes) }}
+
+
+            <div class="field">
+                    {{ f.render_form_field(form.company_name_one) }}
+            </div>
+            <div class="field">
+                    {{ f.render_form_field(form.company_summary_one) }}
+            </div>		
+            <div class="two fields">
+                <div class="field">
+                    {{ f.render_form_field(form.role_one) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.currently_one) }}
+                </div>
+            </div>			
+            <div class="field">
+                {{ f.render_form_field(form.role_description_one) }}
+            </div>
+
+            <div class="three fields">
+                <div class="field">
+                    {{ f.render_form_field(form.location_city_one) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.location_state_one) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.location_country_one) }}
+                </div>
+            </div>
+			<h3> Add another company </h3>
+            <div class="field">
+                    {{ f.render_form_field(form.company_name_two) }}
+            </div>
+            <div class="field">
+                    {{ f.render_form_field(form.company_summary_two) }}
+            </div>		
+            <div class="two fields">
+                <div class="field">
+                    {{ f.render_form_field(form.role_two) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.currently_two) }}
+                </div>
+            </div>			
+            <div class="field">
+                {{ f.render_form_field(form.role_description_two) }}
+            </div>
+
+            <div class="three fields">
+                <div class="field">
+                    {{ f.render_form_field(form.location_city_two) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.location_state_two) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.location_country_two) }}
+                </div>
+            </div>
+			<h3> Add another company </h3>
+            <div class="field">
+                    {{ f.render_form_field(form.company_name_three) }}
+            </div>
+            <div class="field">
+                    {{ f.render_form_field(form.company_summary_three) }}
+            </div>		
+            <div class="two fields">
+                <div class="field">
+                    {{ f.render_form_field(form.role_three) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.currently_three) }}
+                </div>
+            </div>			
+            <div class="field">
+                {{ f.render_form_field(form.role_description_three) }}
+            </div>
+
+            <div class="three fields">
+                <div class="field">
+                    {{ f.render_form_field(form.location_city_three) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.location_state_three) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.location_country_three) }}
+                </div>
+            </div>
+			<h3> Add another company </h3>
+            <div class="field">
+                    {{ f.render_form_field(form.company_name_four) }}
+            </div>
+            <div class="field">
+                    {{ f.render_form_field(form.company_summary_four) }}
+            </div>		
+            <div class="two fields">
+                <div class="field">
+                    {{ f.render_form_field(form.role_four) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.currently_four) }}
+                </div>
+            </div>			
+            <div class="field">
+                {{ f.render_form_field(form.role_description_four) }}
+            </div>
+
+            <div class="three fields">
+                <div class="field">
+                    {{ f.render_form_field(form.location_city_four) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.location_state_four) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.location_country_four) }}
+                </div>
+            </div>
+			<h3> Add another company </h3>
+            <div class="field">
+                    {{ f.render_form_field(form.company_name_five) }}
+            </div>
+            <div class="field">
+                    {{ f.render_form_field(form.company_summary_five) }}
+            </div>		
+            <div class="two fields">
+                <div class="field">
+                    {{ f.render_form_field(form.role_five) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.currently_five) }}
+                </div>
+            </div>			
+            <div class="field">
+                {{ f.render_form_field(form.role_description_five) }}
+            </div>
+
+            <div class="three fields">
+                <div class="field">
+                    {{ f.render_form_field(form.location_city_five) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.location_state_five) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.location_country_five) }}
+                </div>
+            </div>
+			<h3> Add another company </h3>
+            <div class="field">
+                    {{ f.render_form_field(form.company_name_six) }}
+            </div>
+            <div class="field">
+                    {{ f.render_form_field(form.company_summary_six) }}
+            </div>		
+            <div class="two fields">
+                <div class="field">
+                    {{ f.render_form_field(form.role_six) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.currently_six) }}
+                </div>
+            </div>			
+            <div class="field">
+                {{ f.render_form_field(form.role_description_six) }}
+            </div>
+
+            <div class="three fields">
+                <div class="field">
+                    {{ f.render_form_field(form.location_city_six) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.location_state_six) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.location_country_six) }}
+                </div>
+            </div>
+			<h3> Add a school or an educational institution  </h3>
+            <div class="field">
+                    {{ f.render_form_field(form.school_name_one) }}
+            </div>
+            <div class="two fields">
+                <div class="field">
+                    {{ f.render_form_field(form.degree_description_one) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.grading_one) }}
+                </div>
+            </div>			
+            <div class="two fields">
+                <div class="field">
+                    {{ f.render_form_field(form.school_start_date_one) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.school_end_date_one) }}
+                </div>
+            </div>			
+            <div class="field">
+                {{ f.render_form_field(form.school_currently_one) }}
+            </div>
+
+            <div class="three fields">
+                <div class="field">
+                    {{ f.render_form_field(form.city_school_one) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.state_school_one) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.country_school_one) }}
+                </div>
+            </div>
+			<h3> Add another school or an educational institution  </h3>
+            <div class="field">
+                    {{ f.render_form_field(form.school_name_two) }}
+            </div>	
+            <div class="two fields">
+                <div class="field">
+                    {{ f.render_form_field(form.degree_description_two) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.grading_two) }}
+                </div>
+
+            </div>	
+            <div class="two fields">
+                <div class="field">
+                    {{ f.render_form_field(form.school_start_date_two) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.school_end_date_two) }}
+                </div>
+            </div>			
+            <div class="field">
+                {{ f.render_form_field(form.school_currently_two) }}
+            </div>
+
+            <div class="three fields">
+                <div class="field">
+                    {{ f.render_form_field(form.city_school_two) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.state_school_two) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.country_school_two) }}
+                </div>
+            </div>
+			<h3> Add another school or an educational institution  </h3>
+            <div class="field">
+                    {{ f.render_form_field(form.school_name_three) }}
+            </div>
+            <div class="two fields">
+                <div class="field">
+                    {{ f.render_form_field(form.school_start_date_three) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.school_end_date_three) }}
+                </div>
+            </div>	
+            <div class="two fields">
+                <div class="field">
+                    {{ f.render_form_field(form.degree_description_three) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.grading_three) }}
+                </div>
+            </div>			
+            <div class="field">
+                {{ f.render_form_field(form.school_currently_three) }}
+            </div>
+
+            <div class="three fields">
+                <div class="field">
+                    {{ f.render_form_field(form.city_school_three) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.state_school_three) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.country_school_three) }}
+                </div>
+            </div>
+			<h3> Add another school or an educational institution  </h3>
+            <div class="field">
+                    {{ f.render_form_field(form.school_name_four) }}
+            </div>	
+            <div class="two fields">
+                <div class="field">
+                    {{ f.render_form_field(form.degree_description_four) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.grading_four) }}
+                </div>
+            </div>
+            <div class="two fields">
+                <div class="field">
+                    {{ f.render_form_field(form.school_start_date_four) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.school_end_date_four) }}
+                </div>
+            </div>			
+            <div class="field">
+                {{ f.render_form_field(form.school_currently_four) }}
+            </div>
+
+            <div class="three fields">
+                <div class="field">
+                    {{ f.render_form_field(form.city_school_four) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.state_school_four) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.country_school_four) }}
+                </div>
+            </div>
+			<h3> Add another school or an educational institution  </h3>
+            <div class="field">
+                    {{ f.render_form_field(form.school_name_five) }}
+            </div>	
+            <div class="two fields">
+                <div class="field">
+                    {{ f.render_form_field(form.degree_description_five) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.grading_five) }}
+                </div>
+            </div>
+            <div class="two fields">
+                <div class="field">
+                    {{ f.render_form_field(form.school_start_date_five) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.school_end_date_five) }}
+                </div>
+            </div>			
+            <div class="field">
+                {{ f.render_form_field(form.school_currently_five) }}
+            </div>
+
+            <div class="three fields">
+                <div class="field">
+                    {{ f.render_form_field(form.city_school_five) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.state_school_five) }}
+                </div>
+                <div class="field">
+                    {{ f.render_form_field(form.country_school_five) }}
+                </div>
+            </div>
+
+            {{ f.form_message(flashes['error'], header='Something went wrong.', class='error') }}
+            {{ f.form_message(flashes['warning'], header='Check your email.', class='warning') }}
+            {{ f.form_message(flashes['info'], header='Information', class='info') }}
+            {{ f.form_message(flashes['success'], header='Success!', class='success') }}
+
+            {% for field in form | selectattr('type', 'equalto', 'SubmitField') %}
+                {{ f.render_form_field(field) }}
+            {% endfor %}
+
+            {{ f.end_form(form) }}
+        </div>
+    </div>
+{% endblock %}

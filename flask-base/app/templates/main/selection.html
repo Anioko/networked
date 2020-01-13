@@ -1,0 +1,97 @@
+{% extends 'layouts/base.html' %}
+
+{% macro dashboard_option(title, endpoint, description=None, icon=None) %}
+    <a class="column" href="{{ url_for(endpoint) }}">
+        <div class="ui padded segment">
+            <h3 class="ui header">
+                {% if icon is not none %}
+                    <i class="{{ icon }}"></i>
+                {% endif %}
+                <div class="content">
+                    {{ title }}
+                    {% if description is not none %}
+                        <div class="sub header">
+                            {{ description }}
+                        </div>
+                    {% endif %}
+                </div>
+            </h3>
+        </div>
+    </a>
+{% endmacro %}
+
+{% block content %}
+    <div class="ui centered grid">
+        <div class="one wide column">
+        </div>
+        <div class="fourteen wide column">
+            <div class="ui centered cards">
+                {% for user in paginated.items %}
+                    <div class="card">
+                        <div class="content">
+                            <img class="right floated mini ui image" src="{{ user.get_photo() }}">
+                            <div class="header">
+                                <a href="{{ url_for('main.user', id=user.id, full_name=user.full_name) }}">{{ user.full_name }}</a>
+                            </div>
+                            <div class="meta">
+                                {{ user.profession }}, {{ user.state }}, {{ user.country }}
+                            </div>
+                            <div class="description">
+
+                            </div>
+                            <div class="extra content">
+                                {% if user == current_user %}
+
+                                {% elif not current_user.is_following(user) %}
+                                    <div class="ui bottom attached button"><a
+                                            href="{{ url_for('main.follow', id=user.id, full_name=user.full_name) }}">
+                                        <i class="add icon"></i> Follow</a>
+                                    </div>
+                                {% else %}
+                                    <div class="ui bottom attached button"><a
+                                            href="{{ url_for('main.unfollow', id=user.id, full_name=user.full_name) }}">
+                                        <i class="add icon"></i> UnFollow</a>
+                                    </div>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="thirteen wide column">
+            <div class="ui centered grid ">
+                <div class="ui pagination menu">
+                    {% for page in paginated.iter_pages() %}
+                        {% if page %}
+                            {% if page != paginated.page %}
+                                {% if request.endpoint != 'main.select_section' %}
+                                    <a class="item" href="{{ url_for(request.endpoint, user_id=user_id, page=page) }}">
+                                        {{ page }}
+                                    </a>
+                                {% else %}
+                                    <a class="item" href="{{ url_for(request.endpoint, page=page) }}">
+                                        {{ page }}
+                                    </a>
+                                {% endif %}
+                            {% else %}
+                                <a class="item active">
+                                    {{ page }}
+                                </a>
+                            {% endif %}
+                        {% else %}
+                            <div class="disabled item">
+                                ...
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+
+

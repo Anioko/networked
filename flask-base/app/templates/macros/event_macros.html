@@ -1,0 +1,20 @@
+{% macro event_wid(event) -%}
+    <div class="card">
+        <div class="content">
+            <div class="header">
+                <div class="center aligned ui">
+                    <img height="100" src="{{ event.get_photo() }}">
+                </div>
+                <hr>
+                <a href="{{ url_for('events.event_details', event_id=event.id, event_title=event.event_title, event_city=event.event_city, event_state=event.event_state, event_country=event.event_country) }}">{{ event.event_title }}</a>
+            </div>
+            <div class="meta">Event Title :<span class="ui primary label">{{ event.event_title }}</span></div>
+            <div class="meta">Event By <span class="ui primary label">{{ event.organisation.org_name }}</span></div>
+            <div class="meta">Start Date&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {{ event.start_date.strftime( '%d %B, %Y ') }}<br>
+                Ends&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: {{ event.end_date.strftime( '%d %B, %Y ') }}</div>
+            <div class="description">
+                {{ event.event_city }}, {{ event.event_state }}, {{ event.event_country }}
+            </div>
+        </div>
+    </div>
+{%- endmacro %}

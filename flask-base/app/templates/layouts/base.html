@@ -1,0 +1,273 @@
+{% import 'macros/nav_macros.html' as nav %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>{% block page_title %}{{ config.APP_NAME }}{% endblock %}</title>
+    {% include 'partials/_head.html' %}
+    {% if config['DEBUG']  != True %}
+        <meta name="ws_url" content="https://www.{{config.APP_NAME}}">
+    {% else %}
+        <meta name="ws_url" content="http://localhost:3000">
+    {% endif %}
+    {% if current_user.is_authenticated %}
+        <meta name="user_id" content="{{ current_user.id }}">
+    {% endif %}
+    {% block custom_head_tags %}{% endblock %}
+    <link rel="icon" type="image/png" sizes="16x16"
+          href="{{ url_for('static', filename='img/favicon-16x16.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32"
+          href="{{ url_for('static', filename='img/favicon-32x32.png') }}">
+    <link rel="apple-touch-icon"
+          href="{{ url_for('static', filename='img/apple-touch-icon.png') }}">
+    <meta name="google-site-verification" content="eO7v2aO6uakHOD3gSnChM4_GSUpar3MVqPZzr9cWENE" />
+    <style>
+        .ui.menu.fixed {
+            z-index: 1001;
+        }
+    </style>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/custom.css') }}">
+</head>
+<body>
+<div class="ui container-fluid {% if current_user.is_authenticated %} min-container {% endif %}">
+    {% block sidebars %}{% endblock %}
+    {% block nav %}
+        {{ nav.render_nav(current_user) }}
+    {% endblock %}
+    {% include 'partials/_flashes.html' %}
+    {% block content %}{% endblock %}
+    {% if csrf_token()|safe %}
+        <div style="visibility: hidden; display: none">
+            <input type="hidden" name="csrf_token" value="{{ csrf_token()|safe }}">
+        </div>
+    {% endif %}
+</div>
+
+<script src="//code.jquery.com/jquery-3.4.1.min.js"></script>
+{% assets 'vendor_js' %}
+    <script type="text/javascript" src="{{ ASSET_URL }}"></script>{% endassets %}
+{% assets 'app_js' %}
+    <script type="text/javascript" src="{{ ASSET_URL }}"></script>{% endassets %}
+<script type="text/javascript" src="/static/scripts/custom.js"></script>
+<script>
+    function getStats(){
+        $(document).ready(function () {
+            $.get("{{ url_for('main.notifications_count') }}", function ( data ) {
+                let messages = parseInt(data.messages);
+                let notifications = parseInt(data.notifications);
+                let label = $('.item.Messages').find('.floating.ui.blue.label');
+                let nlabel = $('.item.Notifications').find('.floating.ui.blue.label');
+                if (messages > 0){
+                    label.html(messages);
+                    if (! label.hasClass('active')){
+                        label.addClass('active')
+                    }
+                }
+                else
+                {
+                    label.html('');
+                    label.removeClass('active');
+                }
+                if (notifications > 0){
+                    nlabel.html(notifications);
+                    if (! nlabel.hasClass('active')){
+                        nlabel.addClass('active')
+                    }
+                }
+                else{
+                    nlabel.html('');
+                    nlabel.removeClass('active');
+                }
+            })
+        });
+    }
+    getStats();
+</script>
+<script>
+    function editPost(post_id, text, privacy) {
+        $('.options.btn.active').click();
+        $(document).ready(function () {
+            $('.edit-post-modal').modal('show');
+            $('.edit-post-modal').find('form').attr('action', "{{ url_for('post.edit_post', post_id=0) }}".replace(0, post_id));
+            $('.edit-post-modal').find('textarea[name=text]').val(text);
+            $('.edit-post-modal').find('input[name=post_privacy][value=' + privacy + ']').attr('checked', true)
+        });
+    }
+
+    function deletePost(post_id) {
+        $('.options.btn.active').click();
+        $(document).ready(function () {
+            $('.delete-post-modal').modal('show');
+            $('.delete-post-modal').find('form').attr('action', "{{ url_for('post.delete_post', post_id=0) }}".replace(0, post_id));
+            {#$('.delete-post-modal').find('input[name=post_id]').val(post_id);#}
+        });
+    }
+    function editComment(comment_id, comment_text) {
+        $('.options.btn.active').click();
+        $(document).ready(function () {
+            $('.edit-comment-modal').modal('show');
+            $('.edit-comment-modal').find('form').attr('action', "{{ url_for('post.edit_comment', comment_id=0) }}".replace(0, comment_id));
+            $('.edit-comment-modal').find('input[name=comment_text]').val(comment_text);
+        });
+    }
+    function deleteComment(comment_id) {
+        $('.options.btn.active').click();
+        $(document).ready(function () {
+            $('.delete-comment-modal').modal('show');
+            $('.delete-comment-modal').find('form').attr('action', "{{ url_for('post.delete_comment', comment_id=0) }}".replace(0, comment_id));
+        });
+    }
+    function editQuestion(question_id, title, desc) {
+        $('.options.btn.active').click();
+        $(document).ready(function () {
+            $('.edit-question-modal').modal('show');
+            $('.edit-question-modal').find('form').attr('action', "{{ url_for('main.edit_question', question_id=0) }}".replace(0, question_id));
+            $('.edit-question-modal').find('input[name=title]').val(title);
+            $('.edit-question-modal').find('textarea[name=description]').val(desc);
+        });
+    }
+    function deleteQuestion(question_id) {
+        $('.options.btn.active').click();
+        $(document).ready(function () {
+            $('.delete-question-modal').modal('show');
+            $('.delete-question-modal').find('form').attr('action', "{{ url_for('main.delete_question', question_id=0) }}".replace(0, question_id));
+        });
+    }
+
+    function editAnswer(answer_id, answer_text) {
+        $('.options.btn.active').click();
+        $(document).ready(function () {
+            $('.edit-answer-modal').modal('show');
+            $('.edit-answer-modal').find('form').attr('action', "{{ url_for('main.edit_answer', answer_id=0) }}".replace(0, answer_id));
+            $('.edit-answer-modal').find('textarea[name=reply]').val(answer_text);
+        });
+    }
+    function deleteAnswer(answer_id) {
+        $('.options.btn.active').click();
+        $(document).ready(function () {
+            $('.delete-answer-modal').modal('show');
+            $('.delete-answer-modal').find('form').attr('action', "{{ url_for('main.delete_answer', answer_id=0) }}".replace(0, answer_id));
+        });
+    }
+
+    function confirmDelete(selector) {
+        $(selector).find('form').submit()
+    }
+</script>
+{% if config.GOOGLE_ANALYTICS_ID %}
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', '{{ config.GOOGLE_ANALYTICS_ID }}', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '505049026771998');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=505049026771998&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+{% endif %}
+
+{% if config.SEGMENT_API_KEY %}
+    <!-- Segment Analytics -->
+    <script>
+        !function () {
+            var analytics = window.analytics = window.analytics || [];
+            if (!analytics.initialize) if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice."); else {
+                analytics.invoked = !0;
+                analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on"];
+                analytics.factory = function (t) {
+                    return function () {
+                        var e = Array.prototype.slice.call(arguments);
+                        e.unshift(t);
+                        analytics.push(e);
+                        return analytics
+                    }
+                };
+                for (var t = 0; t < analytics.methods.length; t++) {
+                    var e = analytics.methods[t];
+                    analytics[e] = analytics.factory(e)
+                }
+                analytics.load = function (t) {
+                    var e = document.createElement("script");
+                    e.type = "text/javascript";
+                    e.async = !0;
+                    e.src = ("https:" === document.location.protocol ? "https://" : "http://") + "cdn.segment.com/analytics.js/v1/" + t + "/analytics.min.js";
+                    var n = document.getElementsByTagName("script")[0];
+                    n.parentNode.insertBefore(e, n)
+                };
+                analytics.SNIPPET_VERSION = "4.0.0";
+                analytics.load('{{ config.SEGMENT_API_KEY }}');
+                analytics.page();
+            }
+        }();
+    </script>
+
+{% endif %}
+
+{{ moment.include_moment() }}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/components/checkbox.min.js"></script>
+<script src="{{ url_for('static', filename='messaging/vue.js') }}"></script>
+<script src="{{ url_for('static', filename='messaging/socket.io.js') }}"></script>
+<script src="{{ url_for('static', filename='messaging/moment.min.js') }}"></script>
+<script>
+    const WS_URL = $('meta[name=ws_url]').attr("content");
+    const USER_ID = Number($('meta[name=user_id]').attr("content"));
+    {% if config['DEBUG']  != True %}
+        var socket = io(WS_URL, { query: "id= "+USER_ID, path: '/sockets/socket.io'});
+    {% else %}
+        var socket = io(WS_URL, { query: "id= "+USER_ID});
+    {% endif %}
+    socket.on('connect', function() {
+        socket.emit('connected');
+    });
+</script>
+<script type="text/javascript" charset="utf-8">
+    function playSound (sound) {
+        if(sound) {
+            var audio = new Audio(sound);
+            var promise = audio.play();
+
+            if (promise !== undefined) {
+                promise.then(_ => {
+                    // Autoplay started!
+                }).catch(error => {
+                    // Autoplay was prevented.
+                    // Show a "Play" button so that user can start playback.
+                });
+            }
+        }
+    }
+    socket.on('message_received', function(data) {
+        getStats();
+        playSound('http://soundbible.com/mp3/Elevator Ding-SoundBible.com-685385892.mp3');
+    });
+</script>
+    <!-- Start of networkedng Zendesk Widget script -->
+    <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=0dc70f78-cc2b-4846-8aa0-294432e620bc"> </script>
+    <!-- End of networkedng Zendesk Widget script -->
+{% block scripts %}{% endblock %}
+</body>
+</html>
