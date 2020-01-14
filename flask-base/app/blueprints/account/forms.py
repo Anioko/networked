@@ -5,7 +5,7 @@ from flask import url_for
 from flask_uploads import UploadSet, IMAGES
 from flask_wtf import FlaskForm
 from flask_wtf.file import FileField, FileAllowed
-from wtforms import ValidationError
+from wtforms import ValidationError, validators
 from wtforms.fields import BooleanField, PasswordField, StringField, SubmitField, IntegerField, SelectField, \
     TextAreaField
 from wtforms.fields.html5 import EmailField, DateField
@@ -34,7 +34,7 @@ class RegistrationForm(BaseModelForm):
     last_name = StringField('Last name', validators=[InputRequired()])
     email = EmailField('Email', validators=[InputRequired(), Email()])
     photo = FileField('Profile Image', validators=[InputRequired(), FileAllowed(images, 'Images only!')])
-    area_code = StringField('Phone area code only e.g +234 or +44 or +1')
+    area_code = StringField('Phone area code only e.g +234 or +44 or +1', validators=[InputRequired(), validators.Regexp('(?:[+]|^)(234|44|1)', message="Phone area code only e.g +234 or +44 or +1")])
     mobile_phone = IntegerField('Phone numbers only e.g 8123456789', validators=[InputRequired(), Unique(User.mobile_phone)])
     city = StringField('City', validators=[InputRequired()])
     state = SelectField(u'Select State in Nigeria', choices=[
