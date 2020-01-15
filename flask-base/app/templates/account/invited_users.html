@@ -26,7 +26,8 @@
                         <th>Area code</th>
                         <th>Phone Numbers</th>
                         <th>Completed registration</th>
-                        <th>Organisations Added</th>
+                        <th>Public Profile</th>
+                        <th>Company or Business Added</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -37,8 +38,9 @@
                             <td>{{ u.last_name }}</td>
                             <td>{{ u.area_code }}</td>
                             <td>{{ u.mobile_phone }}</td>
-							<td>{{ u.verified }}</td>
+							<td>{{ u.confirmed }}</td>
 							<td><a href="{{ url_for('main.user_public_profile', id=u.id, full_name=u.full_name) }}">Public Profile</a></td>
+							<td><a href="/">Coming soon</a></td>
 
                         </tr>
                     {% endfor %}

@@ -279,7 +279,7 @@ def invite_user():
         )
         flash('User {} successfully invited'.format(user.full_name),
               'form-success')
-        return redirect(url_for('main.index'))
+        return redirect(url_for('account.invited_users'))
     else:
         flash('Error! Invitation not sent.', 'error')
     return render_template('main/new_user.html', form=form)

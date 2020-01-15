@@ -24,7 +24,7 @@ account = Blueprint('account', __name__)
 @account.route('/invitees')
 @login_required
 def invited_users():
-    """View all registered users."""
+    """View all invited users."""
     users = db.session.query(User).filter(current_user.full_name==User.invited_by).all()
     return render_template(
         'account/invited_users.html', users=users)
@@ -72,10 +72,6 @@ def login():
     return render_template('account/login.html', form=form, next=next)
 
 
-@account.errorhandler(Exception)
-def page_not_found(error):
-    return render_template('errors/404.html')
-
 @account.route('/register', methods=['GET', 'POST'])
 @anonymous_required
 def register():
@@ -84,55 +80,52 @@ def register():
     if request.method == 'GET':
         return render_template('account/register.html', form=form)
     else:
-        try:
-            if form.validate_on_submit():
-                user_instance = User(
-                    first_name=form.first_name.data,
-                    last_name=form.last_name.data,
-                    email=form.email.data,
-                    gender=form.gender.data,
-                    profession=form.profession.data,
-                    area_code=form.area_code.data,
-                    mobile_phone=form.mobile_phone.data,
-                    #summary_text=form.summary_text.data,
-                    zip=form.zip.data,
-                    city=form.city.data,
-                    state=form.state.data,
-                    country=form.country.data,
-                    password=form.password.data)
-                db.session.add(user_instance)
-                db.session.commit()
-                if request.files['photo']:
-                    image_filename = images.save(request.files['photo'])
-                    image_url = images.url(image_filename)
-                    picture_photo = Photo(
-                        image_filename=image_filename,
-                        image_url=image_url,
-                        user_id=user_instance.id,
-                    )
-                    db.session.add(picture_photo)
-                db.session.commit()
-                token = user_instance.generate_confirmation_token()
-                confirm_link = url_for('account.confirm', token=token, _external=True)
-                area_code = str(form.area_code.data)
-                area_code = area_code.replace(' ', '')
-                phone_number = str(form.mobile_phone.data)
-                phone_number = phone_number.replace(' ', '')
-                if str(area_code)[0] != '+':
-                    area_code = '+' + str(area_code)
-                client.messages.create(
-                    body=f'Your confirmation link is: {confirm_link}',
-                    messaging_service_sid=messaging_service_sid,
-                    to=str(area_code) + str(phone_number)
+        if form.validate_on_submit():
+            user_instance = User(
+                first_name=form.first_name.data,
+                last_name=form.last_name.data,
+                email=form.email.data,
+                gender=form.gender.data,
+                profession=form.profession.data,
+                area_code=form.area_code.data,
+                mobile_phone=form.mobile_phone.data,
+                #summary_text=form.summary_text.data,
+                zip=form.zip.data,
+                city=form.city.data,
+                state=form.state.data,
+                country=form.country.data,
+                password=form.password.data)
+            db.session.add(user_instance)
+            db.session.commit()
+            if request.files['photo']:
+                image_filename = images.save(request.files['photo'])
+                image_url = images.url(image_filename)
+                picture_photo = Photo(
+                    image_filename=image_filename,
+                    image_url=image_url,
+                    user_id=user_instance.id,
                 )
-                flash('A confirmation link has been sent to {}.'.format(str(area_code) + str(phone_number)), 'warning')
-                if current_user.is_anonymous:
-                    return redirect(url_for('account.login'))
-            else:
-                flash('Error! Data was not added.', 'error')
-            return render_template('account/register.html', form=form)
-        except:
-            return render_template('errors/404.html')
+                db.session.add(picture_photo)
+            db.session.commit()
+            token = user_instance.generate_confirmation_token()
+            confirm_link = url_for('account.confirm', token=token, _external=True)
+            area_code = str(form.area_code.data)
+            area_code = area_code.replace(' ', '')
+            phone_number = str(form.mobile_phone.data)
+            phone_number = phone_number.replace(' ', '')
+            if str(area_code)[0] != '+':
+                area_code = '+' + str(area_code)
+            client.messages.create(
+                body=f'Your confirmation link is: {confirm_link}',
+                messaging_service_sid=messaging_service_sid,
+                to=str(area_code) + str(phone_number)
+            )
+            flash('A confirmation link has been sent to {}.'.format(str(area_code) + str(phone_number)), 'warning')
+            if current_user.is_anonymous:
+                return redirect(url_for('account.login'))
+        else:
+            flash('Error! Data was not added.', 'error')
+        return render_template('account/register.html', form=form)
 
 
 @account.route('/logout')
