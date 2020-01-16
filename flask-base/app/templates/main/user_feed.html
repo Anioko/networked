@@ -70,6 +70,21 @@
             <div class="col-md-6 gedf-main">
 
                 <!--- \\\\\\\Post-->
+                {% for post in data[1] %}
+                <p>{{ post.image_filename }}</p>
+                <p>{{ post.image_url }}</p>
+                <p>{{ post.text }}</p>
+                <p>{{ post.post_privacy }}</p>
+                <p>{{ post.user_id }}</p>
+                <p>{{ post.author }}</p>
+                {% endfor %}
+                {% for q in data[0] %}
+                <p>{{ question.title }}</p>
+                <p>{{ question.description }}</p>
+                <p>{{ question.user_id }}</p>
+                <p>{{ question.author }}</p>
+                <p>{{ question.level }}</p>
+                {% endfor %}
                 <div class="card gedf-card">
                     <div class="card-header">
                         <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">

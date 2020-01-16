@@ -3,6 +3,7 @@
 {% import 'macros/post_macros.html' as post_wid %}
 {% import 'macros/job_macros.html' as job_wid %}
 {% import 'macros/follow_macros.html' as follow_wid %}
+{% import 'macros/question_macros.html' as question_wid %}
 
 {% block custom_head_tags %}
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='slick/slick.css') }}"/>
@@ -92,11 +93,34 @@
                     </form>
                 </div>
             </div>
-            {% for post in posts %}
-                {{ post_wid.post_wid(post, moment, current_user) }}
-            {% endfor %}
-			
+            {% for post in data %}
+                {# post_wid.post_wid(post, moment, current_user) #}
+    <div class="ui fluid card post-card">
+                    <div class="extra content">
+                        <h2 class="left floated ui header">
+                            <img class="left floated mini ui image" src="{# post.user.get_photo() #}">
+							{{ post.author }}</a>
 
+                           
+                        </h2>
+	      <div class="meta">
+	       <span class="date">{#post.user.kw_seeker_badge#}</span>
+	      </div>
+                    </div>
+                    <div class="content">
+                        <div class="header">
+                            <a href="/question/{{ post.title }}">{{ post.title }}</a>
+                        </div>
+                        <div class="meta">
+                            <span class="right floated time">{{ moment(post.timestamp).fromNow() }}</span>
+                        </div>
+                    </div>
+    </div>            {% endfor %}
+            {# for question in data[0] #}
+                {# question_wid.question_wid(question, moment, user) #}
+            {# endfor #}			
+
+                
         </div>
         <div class="ui grid">
             <div class="mobile only tablet only row">

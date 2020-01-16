@@ -14,6 +14,7 @@ from app.upload import list_files, download_file, upload_file, upload_fileobj
 import boto3
 from werkzeug import secure_filename
 from flask_weasyprint import HTML, render_pdf
+from app import cache
 #import pdfkit
 
 
@@ -62,15 +63,21 @@ def index():
 @login_required
 def navigation():
     return render_template('main/user_navigation.html')
-
+"""
 ##Abandoned feed design, could be revisited
 @main.route('/feed')
 def home():
     if not current_user.is_authenticated:
         return redirect(url_for('public.index'))
     ''' this is where users will see their feeds'''
-    return render_template('main/user_feed.html')
-"""
+    data = cache.lrange("q")
+    if not data:
+        data = []
+    data1 = cache.lrange("p")
+    if not data1:
+        data1 = []
+
+    return render_template('main/user_feed.html', data = [data, data1])
 
 
 @main.route('/profile', methods=['GET', 'POST'])
@@ -381,6 +388,7 @@ def delete_question(question_id):
 
 @main.route('/questions', methods=['GET', 'POST'])
 @login_required
+#@cache.memoize(timeout=5)
 def question():
     form = QuestionForm()
     edit_form = QuestionForm()
@@ -394,6 +402,11 @@ def question():
                 author=author.full_name,
                 level=1
             )
+            list_of_posts = cache.get("p")
+            if list_of_posts is None or not list_of_posts:
+                list_of_posts = []
+            list_of_posts.append(posts)
+            cache.set("p", list_of_posts)
             author.kw_seeker_points = author.kw_seeker_points + 1
             author.kw_seeker_badge = get_level(author.kw_seeker_points) + " Kw Seeker"
             db.session.add(posts)

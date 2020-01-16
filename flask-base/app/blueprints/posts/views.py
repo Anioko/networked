@@ -44,6 +44,11 @@ def post_create():
                 user_id=current_user.id,
                 author=author.full_name
             )
+            list_of_posts = cache.get("p")
+            if list_of_posts is None or not list_of_posts:
+                list_of_posts = []
+            list_of_posts.append(posts)
+            cache.set("p", list_of_posts)
             author.newscaster_points = author.newscaster_points + 1
             author.newscaster_badge = get_level(author.newscaster_points) + " Newscaster"
             db.session.add(posts)
@@ -65,12 +70,16 @@ def post_create():
         and_(Post.user_id != current_user.id, Post.post_privacy == 0))).limit(15).all()
     clean(posts)
 
+    ''' this is where users will see their feeds'''
+    data = cache.get("p")
+    if not data or data is None:
+        data = []
+    data.reverse()
     #users = User.query.filter(Question.user_id == User.id).first()
     #questions = Question.query.filter(Question.user_id!=None).order_by(desc(Question.timestamp)).all()
     return render_template('posts/create_post.html', form=form,
-                           follow_lists=follow_lists, posts=posts, jobs=jobs, 
-                           author=author, edit_form=edit_form)#, questions=questions, users=users)
-
+                           follow_lists=follow_lists, jobs=jobs, 
+                           author=author, edit_form=edit_form, data = data)#, #questions=questions, users=users)
 
 @post_blueprint.route('/load_more/<count>')
 @flask_profiler.profile()
