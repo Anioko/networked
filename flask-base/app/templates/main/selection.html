@@ -43,7 +43,7 @@
                                 {% if user == current_user %}
 
                                 {% elif not current_user.is_following(user) %}
-                                    <div class="ui bottom attached button"><a
+                                    <div class="ui bottom attached button"><a target="_self"
                                             href="{{ url_for('main.follow', id=user.id, full_name=user.full_name) }}">
                                         <i class="add icon"></i> Follow</a>
                                     </div>
@@ -52,7 +52,7 @@
                                             href="{{ url_for('main.unfollow', id=user.id, full_name=user.full_name) }}">
                                         <i class="add icon"></i> UnFollow</a>
                                     </div>
-                                {% endif %}
+                                {% endif %} 
                             </div>
                         </div>
                     </div>
