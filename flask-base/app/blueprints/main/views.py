@@ -423,9 +423,17 @@ def question():
     return render_template('main/create_question.html', form=form,
                            follow_lists=follow_lists, users=users, results=questions,jobs=jobs, edit_form=edit_form)
 
+@main.route('/question/<int:question_id>/<title>/')
+def question_details(question_id, title):
+    """Provide HTML page with all details on a given question.
+    """
+    # Query: get Position object by ID.
+    post = Question.query.filter(Question.title == title).first()
+    edit_form = QuestionForm()
+    return render_template('main/question_details.html', post=post, edit_form=edit_form)
 
 @main.route('/question/<title>/')
-def question_details(title):
+def posts_question_details(title): ###temp fix so that question_details would serve urls suitable to be indexed by Uncle Google
     """Provide HTML page with all details on a given question.
     """
     # Query: get Position object by ID.

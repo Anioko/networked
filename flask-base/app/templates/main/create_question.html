@@ -128,7 +128,7 @@
                     </div>
                     <div class="content">
                         <div class="header">
-                            <a href="{{ url_for('main.question_details', title=post.title ) }}">{{ post.title }}</a>
+                            <a href="{{ url_for('main.question_details',question_id=post.id, title=post.title, ) }}">{{ post.title }}</a>
                         </div>
                         <div class="meta">
                             <span class="right floated time">{{ moment(post.timestamp).fromNow() }}</span>

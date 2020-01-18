@@ -1,0 +1,43 @@
+{% extends 'layouts/base.html' %}
+{% block page_title %}{{ config.APP_NAME }} - Sitemap of Sitemaps{% endblock %}
+{% block custom_head_tags %}
+    <meta name="description"
+          content="{{ config.APP_NAME }} sitemap of sitemaps">
+    <meta name="author" content="{{ config.APP_NAME }}">
+    <meta name="og:title" content="{{ config.APP_NAME }} sitemap of sitemaps"/>
+    <meta name="og:type" content="website"/>
+    <meta name="og:url" content="https://www.{{ config.APP_NAME }}.com"/>
+    <meta name="og:image" content="{{ url_for('static', filename='images/home/slider/hill.png') }}"/>
+    <meta name="og:site_name" content="{{ config.APP_NAME }}"/>
+    <meta name="og:description"
+          content="{{ config.APP_NAME }} sitemap of sitemaps"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:site" content="@networkedng"/>
+    <meta name="twitter:creator" content="@anioko1"/>
+{% endblock %}
+{% block content %}
+    <div class="ui text container">
+        <h1>Sitemap of sitemaps</h1>
+		<div class="ui list">
+			<a href="/sitemap/ibadan" class="item">Sitemap Ibadan</a>
+			<a href="/sitemap/uyo" class="item">Sitemap Uyo</a>
+			<a href="/sitemap/ikeja" class="item">Sitemap Ikeja</a>
+			<a href="/sitemap/lagos" class="item">Sitemap Lagos</a>
+			<a href="/sitemap/aba" class="item">Sitemap Aba</a>
+			<a href="/sitemap/abakaliki" class="item">Sitemap Abakaliki</a>
+			<a href="/sitemap/kano" class="item">Sitemap Kano</a>
+			<a href="/sitemap/ibadan" class="item">Sitemap Ibadan</a>
+			<a href="/sitemap/maiduguri" class="item">Sitemap Maiduguri</a>
+			<a href="/sitemap/abuja" class="item">Sitemap Abuja</a>
+			<a href="/sitemap/port_harcourt" class="item">Sitemap Port Harcourt</a>
+			<a href="/sitemap/benin_city" class="item">Sitemap Benin city</a>
+			<a href="/sitemap/akure" class="item">Sitemap Akure</a>
+			<a href="/sitemap/kaduna" class="item">Sitemap Kaduna</a>
+			<a href="/sitemap/abeokuta" class="item">Sitemap Abeokuta</a>
+			<a href="/sitemap/enugu" class="item">Sitemap Enugu</a>
+			<a href="/sitemap/jos" class="item">Sitemap Jos</a>
+			<a href="/sitemap/ado_ekiti" class="item">Sitemap Ado-Ekiti</a>
+		</div>
+    </div>
+
+{% endblock %}

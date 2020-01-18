@@ -48576,4 +48576,3739 @@ def port_harcourt_1267():
 @seo_nigeria.route('/YouTube-Professionals-in-Port-Harcourt')
 def port_harcourt_1268():
     return render_template('public/landing_professionals_seo.html',data="YouTube Professionals in Port Harcourt")
+"""
+Enugu Keywords
+
+"""
+
+@seo_nigeria.route('/sitemap/enugu')
+def enugu_sitemap():
+    return render_template('public/nigeria/sitemap_enugu.html')
+
+@seo_nigeria.route('/2D-Animators-in-Enugu')
+def enugu_1():
+    return render_template('public/landing_professionals_seo.html', data="2D Animators in Enugu")
+@seo_nigeria.route('/2D-Art-Professionals-in-Enugu')  
+def enugu_2():
+    return render_template('public/landing_professionals_seo.html',data="2D Art Professionals in Enugu")
+@seo_nigeria.route('/2D-Design-Drawings-Professionals-in-Enugu')
+def enugu_3():
+    return render_template('public/landing_professionals_seo.html',data="2D Design/Drawings Professionals in Enugu")
+@seo_nigeria.route('/2D-Designers-in-Enugu')
+def enugu_4():
+    return render_template('public/landing_professionals_seo.html',data="2D Designers in Enugu")
+@seo_nigeria.route('/2D-Drafting-Professionals-in-Enugu')
+def enugu_5():
+    return render_template('public/landing_professionals_seo.html',data="2D Drafting Professionals in Enugu")
+@seo_nigeria.route('/3D-Animators-in-Enugu')
+def enugu_6():
+    return render_template('public/landing_professionals_seo.html',data="3D Animators in Enugu")
+@seo_nigeria.route('/3D-CAD-Design-Professionals-in-Enugu')
+def enugu_7():
+    return render_template('public/landing_professionals_seo.html',data="3D CAD Design Professionals in Enugu")
+@seo_nigeria.route('/3D-Designers-Artists-in-Enugu')
+def enugu_8():
+    return render_template('public/landing_professionals_seo.html',data="3D Designers & Artists in Enugu")
+@seo_nigeria.route('/3D-Professionals-in-Enugu')
+def enugu_9():
+    return render_template('public/landing_professionals_seo.html',data="3D Professionals in Enugu")
+@seo_nigeria.route('/3D-Max-Professionals-in-Enugu')
+def enugu_10():
+    return render_template('public/landing_professionals_seo.html',data="3D Max Professionals in Enugu")
+@seo_nigeria.route('/3D-Model-Professionals-in-Enugu')
+def enugu_11():
+    return render_template('public/landing_professionals_seo.html',data="3D Model Professionals in Enugu")
+@seo_nigeria.route('/3D-Modelers-in-Enugu')
+def enugu_12():
+    return render_template('public/landing_professionals_seo.html',data="3D Modelers in Enugu")
+@seo_nigeria.route('/3D-Printers-in-Enugu')
+def enugu_13():
+    return render_template('public/landing_professionals_seo.html',data="3D Printers in Enugu")
+@seo_nigeria.route('/3D-Rendering-Artists-in-Enugu')
+def enugu_14():
+    return render_template('public/landing_professionals_seo.html',data="3D Rendering Artists in Enugu")
+@seo_nigeria.route('/3D-Rigging-Specialists-in-Enugu')
+def enugu_15():
+    return render_template('public/landing_professionals_seo.html',data="3D Rigging Specialists in Enugu")
+@seo_nigeria.route('/3D-Visualizations-Professionals-in-Enugu')
+def enugu_16():
+    return render_template('public/landing_professionals_seo.html',data="3D Visualizations Professionals in Enugu")
+@seo_nigeria.route('/3ds-Max-Specialists-in-Enugu')
+def enugu_17():
+    return render_template('public/landing_professionals_seo.html',data="3ds Max Specialists in Enugu")
+@seo_nigeria.route('/A-B-Testing-Specialists-in-Enugu')
+def enugu_18():
+    return render_template('public/landing_professionals_seo.html',data="A/B Testing Specialists in Enugu")
+@seo_nigeria.route('/About-Us-Page-Professionals-in-Enugu')
+def enugu_19():
+    return render_template('public/landing_professionals_seo.html',data="About Us Page Professionals in Enugu")
+@seo_nigeria.route('/Academic-Editing-Professionals-in-Enugu')
+def enugu_20():
+    return render_template('public/landing_professionals_seo.html',data="Academic Editing Professionals in Enugu")
+@seo_nigeria.route('/Academic-Proofreading-Professionals-in-Enugu')
+def enugu_21():
+    return render_template('public/landing_professionals_seo.html',data="Academic Proofreading Professionals in Enugu")
+@seo_nigeria.route('/Academic-Research-Professionals-in-Enugu')
+def enugu_22():
+    return render_template('public/landing_professionals_seo.html',data="Academic Research Professionals in Enugu")
+@seo_nigeria.route('/Academic-Translation-Professionals-in-Enugu')
+def enugu_23():
+    return render_template('public/landing_professionals_seo.html',data="Academic Translation Professionals in Enugu")
+@seo_nigeria.route('/Academic-Writing-Specialists-in-Enugu')
+def enugu_24():
+    return render_template('public/landing_professionals_seo.html',data="Academic Writing Specialists in Enugu")
+@seo_nigeria.route('/Account-Managers-in-Enugu')
+def enugu_25():
+    return render_template('public/landing_professionals_seo.html',data="Account Managers in Enugu")
+@seo_nigeria.route('/Account-Reconciliation-Specialists-in-Enugu')
+def enugu_26():
+    return render_template('public/landing_professionals_seo.html',data="Account Reconciliation Specialists in Enugu")
+@seo_nigeria.route('/Accountants-in-Enugu')
+def enugu_27():
+    return render_template('public/landing_professionals_seo.html',data="Accountants in Enugu")
+@seo_nigeria.route('/Accounting-basics-Professionals-in-Enugu')
+def enugu_28():
+    return render_template('public/landing_professionals_seo.html',data="Accounting basics Professionals in Enugu")
+@seo_nigeria.route('/Accounts-Payable-Professionals-in-Enugu')
+def enugu_29():
+    return render_template('public/landing_professionals_seo.html',data="Accounts Payable Professionals in Enugu")
+@seo_nigeria.route('/Accounts-Payable-Management-Specialists-in-Enugu')
+def enugu_30():
+    return render_template('public/landing_professionals_seo.html',data="Accounts Payable Management Specialists in Enugu")
+@seo_nigeria.route('/Accounts-Receivable-Management-Specialists-in-Enugu')
+def enugu_31():
+    return render_template('public/landing_professionals_seo.html',data="Accounts Receivable Management Specialists in Enugu")
+@seo_nigeria.route('/Accuracy-Verification-Professionals-in-Enugu')
+def enugu_32():
+    return render_template('public/landing_professionals_seo.html',data="Accuracy Verification Professionals in Enugu")
+@seo_nigeria.route('/Active-Directory-Federation-Services-(ADFS)-Professionals-in-Enugu')
+def enugu_33():
+    return render_template('public/landing_professionals_seo.html',data="Active Directory Federation Services (ADFS) Professionals in Enugu")
+@seo_nigeria.route('/Active-Directory-Specialists-in-Enugu')
+def enugu_34():
+    return render_template('public/landing_professionals_seo.html',data="Active Directory Specialists in Enugu")
+@seo_nigeria.route('/Active-Listeners-in-Enugu')
+def enugu_35():
+    return render_template('public/landing_professionals_seo.html',data="Active Listeners in Enugu")
+@seo_nigeria.route('/Ad-Copy-Professionals-in-Enugu')
+def enugu_36():
+    return render_template('public/landing_professionals_seo.html',data="Ad Copy Professionals in Enugu")
+@seo_nigeria.route('/Ad-Servers-Specialists-in-Enugu')
+def enugu_37():
+    return render_template('public/landing_professionals_seo.html',data="Ad Servers Specialists in Enugu")
+@seo_nigeria.route('/Administrative-Assistants-in-Enugu')
+def enugu_38():
+    return render_template('public/landing_professionals_seo.html',data="Administrative Assistants in Enugu")
+@seo_nigeria.route('/Adobe-After-Effects-Specialists-in-Enugu')
+def enugu_39():
+    return render_template('public/landing_professionals_seo.html',data="Adobe After Effects Specialists in Enugu")
+@seo_nigeria.route('/Adobe-Animate-Professionals-in-Enugu')
+def enugu_40():
+    return render_template('public/landing_professionals_seo.html',data="Adobe Animate Professionals in Enugu")
+@seo_nigeria.route('/Adobe-Audition-Specialists-in-Enugu')
+def enugu_41():
+    return render_template('public/landing_professionals_seo.html',data="Adobe Audition Specialists in Enugu")
+@seo_nigeria.route('/Adobe-Captivate-Specialists-in-Enugu')
+def enugu_42():
+    return render_template('public/landing_professionals_seo.html',data="Adobe Captivate Specialists in Enugu")
+@seo_nigeria.route('/Adobe-Content-Server-Specialists-in-Enugu')
+def enugu_43():
+    return render_template('public/landing_professionals_seo.html',data="Adobe Content Server Specialists in Enugu")
+@seo_nigeria.route('/Adobe-Creative-Suite-Specialists-in-Enugu')
+def enugu_44():
+    return render_template('public/landing_professionals_seo.html',data="Adobe Creative Suite Specialists in Enugu")
+@seo_nigeria.route('/Adobe-Dreamweaver-Specialists-in-Enugu')
+def enugu_45():
+    return render_template('public/landing_professionals_seo.html',data="Adobe Dreamweaver Specialists in Enugu")
+@seo_nigeria.route('/Adobe-Fireworks-Specialists-in-Enugu')
+def enugu_46():
+    return render_template('public/landing_professionals_seo.html',data="Adobe Fireworks Specialists in Enugu")
+@seo_nigeria.route('/Adobe-Flash-Specialists-in-Enugu')
+def enugu_47():
+    return render_template('public/landing_professionals_seo.html',data="Adobe Flash Specialists in Enugu")
+@seo_nigeria.route('/Adobe-Illustrator-Experts-in-Enugu')
+def enugu_48():
+    return render_template('public/landing_professionals_seo.html',data="Adobe Illustrator Experts in Enugu")
+@seo_nigeria.route('/Adobe-InDesign-Experts-in-Enugu')
+def enugu_49():
+    return render_template('public/landing_professionals_seo.html',data="Adobe InDesign Experts in Enugu")
+@seo_nigeria.route('/Adobe-PageMaker-Specialists-in-Enugu')
+def enugu_50():
+    return render_template('public/landing_professionals_seo.html',data="Adobe PageMaker Specialists in Enugu")
+@seo_nigeria.route('/Adobe-PDF-Experts-in-Enugu')
+def enugu_51():
+    return render_template('public/landing_professionals_seo.html',data="Adobe PDF Experts in Enugu")
+@seo_nigeria.route('/Adobe-Photoshop-Experts-in-Enugu')
+def enugu_52():
+    return render_template('public/landing_professionals_seo.html',data="Adobe Photoshop Experts in Enugu")
+@seo_nigeria.route('/Adobe-Photoshop-Lightroom-Specialists-in-Enugu')
+def enugu_53():
+    return render_template('public/landing_professionals_seo.html',data="Adobe Photoshop Lightroom Specialists in Enugu")
+@seo_nigeria.route('/Adobe-Premiere-Pro-Specialists-in-Enugu')
+def enugu_54():
+    return render_template('public/landing_professionals_seo.html',data="Adobe Premiere Pro Specialists in Enugu")
+@seo_nigeria.route('/Adobe-Premiere-Specialists-in-Enugu')
+def enugu_55():
+    return render_template('public/landing_professionals_seo.html',data="Adobe Premiere Specialists in Enugu")
+@seo_nigeria.route('/Adobe-XD-Professionals-in-Enugu')
+def enugu_56():
+    return render_template('public/landing_professionals_seo.html',data="Adobe XD Professionals in Enugu")
+@seo_nigeria.route('/Advertising-Consultants-in-Enugu')
+def enugu_57():
+    return render_template('public/landing_professionals_seo.html',data="Advertising Consultants in Enugu")
+@seo_nigeria.route('/Advertising-networks-Professionals-in-Enugu')
+def enugu_58():
+    return render_template('public/landing_professionals_seo.html',data="Advertising networks Professionals in Enugu")
+@seo_nigeria.route('/Affiliate-Marketers-in-Enugu')
+def enugu_59():
+    return render_template('public/landing_professionals_seo.html',data="Affiliate Marketers in Enugu")
+@seo_nigeria.route('/Agile-Professionals-in-Enugu')
+def enugu_61():
+    return render_template('public/landing_professionals_seo.html',data="Agile Professionals in Enugu")
+@seo_nigeria.route('/Agile-Project-Managers-in-Enugu')
+def enugu_62():
+    return render_template('public/landing_professionals_seo.html',data="Agile Project Managers in Enugu")
+@seo_nigeria.route('/Agile-Software-Developers-in-Enugu')
+def enugu_63():
+    return render_template('public/landing_professionals_seo.html',data="Agile Software Developers in Enugu")
+@seo_nigeria.route('/Agriculturists-in-Enugu')
+def enugu_65():
+    return render_template('public/landing_professionals_seo.html',data="Agriculturists in Enugu")
+@seo_nigeria.route('/AJAX-Developers-in-Enugu')
+def enugu_66():
+    return render_template('public/landing_professionals_seo.html',data="AJAX Developers in Enugu")
+@seo_nigeria.route('/Album-Cover-Designers-in-Enugu')
+def enugu_67():
+    return render_template('public/landing_professionals_seo.html',data="Album Cover Designers in Enugu")
+@seo_nigeria.route('/AMP-Web-Development-Professionals-in-Enugu')
+def enugu_68():
+    return render_template('public/landing_professionals_seo.html',data="AMP Web Development Professionals in Enugu")
+@seo_nigeria.route('/Analysis-Professionals-in-Enugu')
+def enugu_69():
+    return render_template('public/landing_professionals_seo.html',data="Analysis Professionals in Enugu")
+@seo_nigeria.route('/Analysts-in-Enugu')
+def enugu_70():
+    return render_template('public/landing_professionals_seo.html',data="Analysts in Enugu")
+@seo_nigeria.route('/Android-App-Developers-in-Enugu')
+def enugu_71():
+    return render_template('public/landing_professionals_seo.html',data="Android App Developers in Enugu")
+@seo_nigeria.route('/Android-Developers-in-Enugu')
+def enugu_72():
+    return render_template('public/landing_professionals_seo.html',data="Android Developers in Enugu")
+@seo_nigeria.route('/Android-SDK-Specialists-in-Enugu')
+def enugu_73():
+    return render_template('public/landing_professionals_seo.html',data="Android SDK Specialists in Enugu")
+@seo_nigeria.route('/Android-Studio-Professionals-in-Enugu')
+def enugu_74():
+    return render_template('public/landing_professionals_seo.html',data="Android Studio Professionals in Enugu")
+@seo_nigeria.route('/AngularJS-Developers-in-Enugu')
+def enugu_79():
+    return render_template('public/landing_professionals_seo.html',data="AngularJS Developers in Enugu")
+@seo_nigeria.route('/Animators-in-Enugu')
+def enugu_80():
+    return render_template('public/landing_professionals_seo.html',data="Animators in Enugu")
+@seo_nigeria.route('/API-Development-Specialists-in-Enugu')
+def enugu_81():
+    return render_template('public/landing_professionals_seo.html',data="API Development Specialists in Enugu")
+@seo_nigeria.route('/API-Professionals-in-Enugu')
+def enugu_82():
+    return render_template('public/landing_professionals_seo.html',data="API Professionals in Enugu")
+@seo_nigeria.route('/API-Integration-Professionals-in-Enugu')
+def enugu_83():
+    return render_template('public/landing_professionals_seo.html',data="API Integration Professionals in Enugu")
+@seo_nigeria.route('/Application-Programmers-in-Enugu')
+def enugu_84():
+    return render_template('public/landing_professionals_seo.html',data="Application Programmers in Enugu")
+@seo_nigeria.route('/Appointment-Scheduling-Professionals-in-Enugu')
+def enugu_85():
+    return render_template('public/landing_professionals_seo.html',data="Appointment Scheduling Professionals in Enugu")
+@seo_nigeria.route('/Appointment-Setters-in-Enugu')
+def enugu_86():
+    return render_template('public/landing_professionals_seo.html',data="Appointment Setters in Enugu")
+@seo_nigeria.route('/Arabic-to-English-Translators-in-Enugu')
+def enugu_87():
+    return render_template('public/landing_professionals_seo.html',data="Arabic to English Translators in Enugu")
+@seo_nigeria.route('/ArcGIS-Developers-in-Enugu')
+def enugu_88():
+    return render_template('public/landing_professionals_seo.html',data="ArcGIS Developers in Enugu")
+@seo_nigeria.route('/ArchiCAD-Designers-in-Enugu')
+def enugu_89():
+    return render_template('public/landing_professionals_seo.html',data="ArchiCAD Designers in Enugu")
+@seo_nigeria.route('/Architectural-Designers-in-Enugu')
+def enugu_90():
+    return render_template('public/landing_professionals_seo.html',data="Architectural Designers in Enugu")
+@seo_nigeria.route('/Architectural-Graphics-Professionals-in-Enugu')
+def enugu_91():
+    return render_template('public/landing_professionals_seo.html',data="Architectural Graphics Professionals in Enugu")
+@seo_nigeria.route('/Architectural-Rendering-Specialists-in-Enugu')
+def enugu_92():
+    return render_template('public/landing_professionals_seo.html',data="Architectural Rendering Specialists in Enugu")
+@seo_nigeria.route('/Architecture-Design-Professionals-in-Enugu')
+def enugu_93():
+    return render_template('public/landing_professionals_seo.html',data="Architecture Design Professionals in Enugu")
+@seo_nigeria.route('/Arduino-Programmers-in-Enugu')
+def enugu_94():
+    return render_template('public/landing_professionals_seo.html',data="Arduino Programmers in Enugu")
+@seo_nigeria.route('/Art & Design-Professionals-in-Enugu')
+def enugu_95():
+    return render_template('public/landing_professionals_seo.html',data="Art & Design Professionals in Enugu")
+@seo_nigeria.route('/Art-Directors-in-Enugu')
+def enugu_96():
+    return render_template('public/landing_professionals_seo.html',data="Art Directors in Enugu")
+@seo_nigeria.route('/Art-Writing-Professionals-in-Enugu')
+def enugu_97():
+    return render_template('public/landing_professionals_seo.html',data="Art Writing Professionals in Enugu")
+@seo_nigeria.route('/Artesian-Specialists-in-Enugu')
+def enugu_98():
+    return render_template('public/landing_professionals_seo.html',data="Artesian Specialists in Enugu")
+@seo_nigeria.route('/Article-Curators-in-Enugu')
+def enugu_99():
+    return render_template('public/landing_professionals_seo.html',data="Article Curators in Enugu")
+@seo_nigeria.route('/Article-Professionals-in-Enugu')
+def enugu_100():
+    return render_template('public/landing_professionals_seo.html',data="Article Professionals in Enugu")
+@seo_nigeria.route('/Article-Rewriters-in-Enugu')
+def enugu_101():
+    return render_template('public/landing_professionals_seo.html',data="Article Rewriters in Enugu")
+@seo_nigeria.route('/Article-Spinners-in-Enugu')
+def enugu_102():
+    return render_template('public/landing_professionals_seo.html',data="Article Spinners in Enugu")
+@seo_nigeria.route('/Article-Writers-in-Enugu')
+def enugu_103():
+    return render_template('public/landing_professionals_seo.html',data="Article Writers in Enugu")
+@seo_nigeria.route('/Articles-Professionals-in-Enugu')
+def enugu_104():
+    return render_template('public/landing_professionals_seo.html',data="Articles Professionals in Enugu")
+@seo_nigeria.route('/Articulate-Presenters-in-Enugu')
+def enugu_105():
+    return render_template('public/landing_professionals_seo.html',data="Articulate Presenters in Enugu")
+@seo_nigeria.route('/Artificial-Intelligence-Engineers-in-Enugu')
+def enugu_106():
+    return render_template('public/landing_professionals_seo.html',data="Artificial Intelligence Engineers in Enugu")
+@seo_nigeria.route('/Arts & Crafts-Specialists-in-Enugu')
+def enugu_107():
+    return render_template('public/landing_professionals_seo.html',data="Arts & Crafts Specialists in Enugu")
+@seo_nigeria.route('/Arts-Professionals-in-Enugu')
+def enugu_108():
+    return render_template('public/landing_professionals_seo.html',data="Arts Professionals in Enugu")
+@seo_nigeria.route('/ASP-Developers-in-Enugu')
+def enugu_109():
+    return render_template('public/landing_professionals_seo.html',data="ASP Developers in Enugu")
+@seo_nigeria.route('/ASP.NET-Core-Professionals-in-Enugu')
+def enugu_110():
+    return render_template('public/landing_professionals_seo.html',data="ASP.NET Core Professionals in Enugu")
+@seo_nigeria.route('/ASP.NET-MVC-Specialists-in-Enugu')
+def enugu_111():
+    return render_template('public/landing_professionals_seo.html',data="ASP.NET MVC Specialists in Enugu")
+@seo_nigeria.route('/ASP.NET-Specialists-in-Enugu')
+def enugu_112():
+    return render_template('public/landing_professionals_seo.html',data="ASP.NET Specialists in Enugu")
+@seo_nigeria.route('/ASP.NET-Web-API-Professionals-in-Enugu')
+def enugu_113():
+    return render_template('public/landing_professionals_seo.html',data="ASP.NET Web API Professionals in Enugu")
+@seo_nigeria.route('/Audio-Designers-in-Enugu')
+def enugu_114():
+    return render_template('public/landing_professionals_seo.html',data="Audio Designers in Enugu")
+@seo_nigeria.route('/Audio-Editors-in-Enugu')
+def enugu_115():
+    return render_template('public/landing_professionals_seo.html',data="Audio Editors in Enugu")
+@seo_nigeria.route('/Audio-Engineers-in-Enugu')
+def enugu_116():
+    return render_template('public/landing_professionals_seo.html',data="Audio Engineers in Enugu")
+@seo_nigeria.route('/Audio-Mastering-Specialists-in-Enugu')
+def enugu_117():
+    return render_template('public/landing_professionals_seo.html',data="Audio Mastering Specialists in Enugu")
+@seo_nigeria.route('/Audio-Mixers-in-Enugu')
+def enugu_118():
+    return render_template('public/landing_professionals_seo.html',data="Audio Mixers in Enugu")
+@seo_nigeria.route('/Audio-Post-Production-Specialists-in-Enugu')
+def enugu_119():
+    return render_template('public/landing_professionals_seo.html',data="Audio Post Production Specialists in Enugu")
+@seo_nigeria.route('/Audio-Postediting-Specialists-in-Enugu')
+def enugu_120():
+    return render_template('public/landing_professionals_seo.html',data="Audio Postediting Specialists in Enugu")
+@seo_nigeria.route('/Audio-Production-Specialists-in-Enugu')
+def enugu_121():
+    return render_template('public/landing_professionals_seo.html',data="Audio Production Specialists in Enugu")
+@seo_nigeria.route('/Enugu')
+def enugu_122():
+    return render_template('public/landing_professionals_seo.html',data="Audio Recording Professionals in Enugu")
+@seo_nigeria.route('/Audiobook/Podcast-Professionals-in-Enugu')
+def enugu_123():
+    return render_template('public/landing_professionals_seo.html',data="Audiobook/Podcast Professionals in Enugu")
+@seo_nigeria.route('/Audiovisual-Translation-Professionals-in-Enugu')
+def enugu_124():
+    return render_template('public/landing_professionals_seo.html',data="Audiovisual Translation Professionals in Enugu")
+@seo_nigeria.route('/Auditors-in-Enugu')
+def enugu_125():
+    return render_template('public/landing_professionals_seo.html',data="Auditors in Enugu")
+@seo_nigeria.route('/AutoCAD-Plant-3D-Professionals-in-Enugu')
+def enugu_126():
+    return render_template('public/landing_professionals_seo.html',data="AutoCAD Plant 3D Professionals in Enugu")
+@seo_nigeria.route('/AutoCAD-Specialists-in-Enugu')
+def enugu_127():
+    return render_template('public/landing_professionals_seo.html',data="AutoCAD Specialists in Enugu")
+@seo_nigeria.route('/Autodesk-3D-Studio-Max-Specialists-in-Enugu')
+def enugu_128():
+    return render_template('public/landing_professionals_seo.html',data="Autodesk 3D Studio Max Specialists in Enugu")
+@seo_nigeria.route('/Autodesk-Architecture-Specialists-in-Enugu')
+def enugu_129():
+    return render_template('public/landing_professionals_seo.html',data="Autodesk Architecture Specialists in Enugu")
+@seo_nigeria.route('/Autodesk-Inventor-Specialists-in-Enugu')
+def enugu_130():
+    return render_template('public/landing_professionals_seo.html',data="Autodesk Inventor Specialists in Enugu")
+@seo_nigeria.route('/Autodesk-Maya-Specialists-in-Enugu')
+def enugu_131():
+    return render_template('public/landing_professionals_seo.html',data="Autodesk Maya Specialists in Enugu")
+@seo_nigeria.route('/Autodesk-Revit-Architecture-Specialists-in-Enugu')
+def enugu_132():
+    return render_template('public/landing_professionals_seo.html',data="Autodesk Revit Architecture Specialists in Enugu")
+@seo_nigeria.route('/Autodesk-Revit-Specialists-in-Enugu')
+def enugu_133():
+    return render_template('public/landing_professionals_seo.html',data="Autodesk Revit Specialists in Enugu")
+@seo_nigeria.route('/Automation-Specialists-in-Enugu')
+def enugu_134():
+    return render_template('public/landing_professionals_seo.html',data="Automation Specialists in Enugu")
+@seo_nigeria.route('/AWS-Developers-in-Enugu')
+def enugu_135():
+    return render_template('public/landing_professionals_seo.html',data="AWS Developers in Enugu")
+@seo_nigeria.route('/AWS-ECS-Professionals-in-Enugu')
+def enugu_136():
+    return render_template('public/landing_professionals_seo.html',data="AWS ECS Professionals in Enugu")
+@seo_nigeria.route('/AWS-Lambda-Specialists-in-Enugu')
+def enugu_137():
+    return render_template('public/landing_professionals_seo.html',data="AWS Lambda Specialists in Enugu")
+@seo_nigeria.route('/Azure-Professionals-in-Enugu')
+def enugu_138():
+    return render_template('public/landing_professionals_seo.html',data="Azure Professionals in Enugu")
+@seo_nigeria.route('/B2B-Marketers-in-Enugu')
+def enugu_139():
+    return render_template('public/landing_professionals_seo.html',data="B2B Marketers in Enugu")
+@seo_nigeria.route('/Backend-Rest-API-Professionals-in-Enugu')
+def enugu_140():
+    return render_template('public/landing_professionals_seo.html',data="Backend Rest API Professionals in Enugu")
+@seo_nigeria.route('/Background-Music-Professionals-in-Enugu')
+def enugu_141():
+    return render_template('public/landing_professionals_seo.html',data="Background Music Professionals in Enugu")
+@seo_nigeria.route('/Backlinking & Outreach-Professionals-in-Enugu')
+def enugu_142():
+    return render_template('public/landing_professionals_seo.html',data="Backlinking & Outreach Professionals in Enugu")
+@seo_nigeria.route('/Backup-Administration-Professionals-in-Enugu')
+def enugu_143():
+    return render_template('public/landing_professionals_seo.html',data="Backup Administration Professionals in Enugu")
+@seo_nigeria.route('/Bank-Reconciliation-Specialists-in-Enugu')
+def enugu_144():
+    return render_template('public/landing_professionals_seo.html',data="Bank Reconciliation Specialists in Enugu")
+@seo_nigeria.route('/Banner-Ads-Specialists-in-Enugu')
+def enugu_145():
+    return render_template('public/landing_professionals_seo.html',data="Banner Ads Specialists in Enugu")
+@seo_nigeria.route('/Banner-Designers-in-Enugu')
+def enugu_146():
+    return render_template('public/landing_professionals_seo.html',data="Banner Designers in Enugu")
+@seo_nigeria.route('/Bash-Shell-Scripting-Specialists-in-Enugu')
+def enugu_147():
+    return render_template('public/landing_professionals_seo.html',data="Bash Shell Scripting Specialists in Enugu")
+@seo_nigeria.route('/Beats-Professionals-in-Enugu')
+def enugu_148():
+    return render_template('public/landing_professionals_seo.html',data="Beats Professionals in Enugu")
+@seo_nigeria.route('/Bengali-to-English-Translators-in-Enugu')
+def enugu_149():
+    return render_template('public/landing_professionals_seo.html',data="Bengali to English Translators in Enugu")
+@seo_nigeria.route('/Beta-Reading-Professionals-in-Enugu')
+def enugu_150():
+    return render_template('public/landing_professionals_seo.html',data="Beta Reading Professionals in Enugu")
+@seo_nigeria.route('/Big-Data-Specialists-in-Enugu')
+def enugu_151():
+    return render_template('public/landing_professionals_seo.html',data="Big Data Specialists in Enugu")
+@seo_nigeria.route('/Biography-Writers-in-Enugu')
+def enugu_152():
+    return render_template('public/landing_professionals_seo.html',data="Biography Writers in Enugu")
+@seo_nigeria.route('/Blender3D-Specialists-in-Enugu')
+def enugu_153():
+    return render_template('public/landing_professionals_seo.html',data="Blender3D Specialists in Enugu")
+@seo_nigeria.route('/Blockchain-Developers-in-Enugu')
+def enugu_154():
+    return render_template('public/landing_professionals_seo.html',data="Blockchain Developers in Enugu")
+@seo_nigeria.route('/Blockchain-Development-Professionals-in-Enugu')
+def enugu_155():
+    return render_template('public/landing_professionals_seo.html',data="Blockchain Development Professionals in Enugu")
+@seo_nigeria.route('/Blog-Commenters-in-Enugu')
+def enugu_156():
+    return render_template('public/landing_professionals_seo.html',data="Blog Commenters in Enugu")
+@seo_nigeria.route('/Blog-Content-Professionals-in-Enugu')
+def enugu_157():
+    return render_template('public/landing_professionals_seo.html',data="Blog Content Professionals in Enugu")
+@seo_nigeria.route('/Blog-Development-Specialists-in-Enugu')
+def enugu_158():
+    return render_template('public/landing_professionals_seo.html',data="Blog Development Specialists in Enugu")
+@seo_nigeria.route('/Blog-Professionals-in-Enugu')
+def enugu_159():
+    return render_template('public/landing_professionals_seo.html',data="Blog Professionals in Enugu")
+@seo_nigeria.route('/Blog-Site-Professionals-in-Enugu')
+def enugu_160():
+    return render_template('public/landing_professionals_seo.html',data="Blog Site Professionals in Enugu")
+@seo_nigeria.route('/Blog-Writers-in-Enugu')
+def enugu_161():
+    return render_template('public/landing_professionals_seo.html',data="Blog Writers in Enugu")
+@seo_nigeria.route('/Book-Cover-Designers-in-Enugu')
+def enugu_162():
+    return render_template('public/landing_professionals_seo.html',data="Book Cover Designers in Enugu")
+@seo_nigeria.route('/Book-Designers-in-Enugu')
+def enugu_163():
+    return render_template('public/landing_professionals_seo.html',data="Book Designers in Enugu")
+@seo_nigeria.route('/Book-Editing-Professionals-in-Enugu')
+def enugu_164():
+    return render_template('public/landing_professionals_seo.html',data="Book Editing Professionals in Enugu")
+@seo_nigeria.route('/Book-Writers-in-Enugu')
+def enugu_165():
+    return render_template('public/landing_professionals_seo.html',data="Book Writers in Enugu")
+@seo_nigeria.route('/Bookkeepers-in-Enugu')
+def enugu_166():
+    return render_template('public/landing_professionals_seo.html',data="Bookkeepers in Enugu")
+@seo_nigeria.route('/Bootstrap-Specialists-in-Enugu')
+def enugu_167():
+    return render_template('public/landing_professionals_seo.html',data="Bootstrap Specialists in Enugu")
+@seo_nigeria.route('/Brand-Consulting-Specialists-in-Enugu')
+def enugu_168():
+    return render_template('public/landing_professionals_seo.html',data="Brand Consulting Specialists in Enugu")
+@seo_nigeria.route('/Brand-Identity&Guidelines-Professionals-in-Enugu')
+def enugu_169():
+    return render_template('public/landing_professionals_seo.html',data="Brand Identity & Guidelines Professionals in Enugu")
+@seo_nigeria.route('/Brand-Identity-Professionals-in-Enugu')
+def enugu_170():
+    return render_template('public/landing_professionals_seo.html',data="Brand Identity Professionals in Enugu")
+@seo_nigeria.route('/Brand-Managers-in-Enugu')
+def enugu_171():
+    return render_template('public/landing_professionals_seo.html',data="Brand Managers in Enugu")
+@seo_nigeria.route('/Brand-Marketers-in-Enugu')
+def enugu_172():
+    return render_template('public/landing_professionals_seo.html',data="Brand Marketers in Enugu")
+@seo_nigeria.route('/Brand-Research-Professionals-in-Enugu')
+def enugu_173():
+    return render_template('public/landing_professionals_seo.html',data="Brand Research Professionals in Enugu")
+@seo_nigeria.route('/Brand-Strategy-Professionals-in-Enugu')
+def enugu_174():
+    return render_template('public/landing_professionals_seo.html',data="Brand Strategy Professionals in Enugu")
+@seo_nigeria.route('/Branding-Professionals-in-Enugu')
+def enugu_175():
+    return render_template('public/landing_professionals_seo.html',data="Branding Professionals in Enugu")
+@seo_nigeria.route('/Branding-Strategy-Professionals-in-Enugu')
+def enugu_176():
+    return render_template('public/landing_professionals_seo.html',data="Branding Strategy Professionals in Enugu")
+@seo_nigeria.route('/Branding/Logo-Professionals-in-Enugu')
+def enugu_177():
+    return render_template('public/landing_professionals_seo.html',data="Branding/Logo Professionals in Enugu")
+@seo_nigeria.route('/Broadcast-Journalists-in-Enugu')
+def enugu_178():
+    return render_template('public/landing_professionals_seo.html',data="Broadcast Journalists in Enugu")
+@seo_nigeria.route('/Brochure-Designers-in-Enugu')
+def enugu_179():
+    return render_template('public/landing_professionals_seo.html',data="Brochure Designers in Enugu")
+@seo_nigeria.route('/Budget-Management-Professionals-in-Enugu')
+def enugu_180():
+    return render_template('public/landing_professionals_seo.html',data="Budget Management Professionals in Enugu")
+@seo_nigeria.route('/Budgeting & Forecasting-Specialists-in-Enugu')
+def enugu_181():
+    return render_template('public/landing_professionals_seo.html',data="Budgeting & Forecasting Specialists in Enugu")
+@seo_nigeria.route('/Building-Design-Professionals-in-Enugu')
+def enugu_182():
+    return render_template('public/landing_professionals_seo.html',data="Building Design Professionals in Enugu")
+@seo_nigeria.route('/Building-Estimators-in-Enugu')
+def enugu_183():
+    return render_template('public/landing_professionals_seo.html',data="Building Estimators in Enugu")
+@seo_nigeria.route('/Business-Analysis-Specialists-in-Enugu')
+def enugu_184():
+    return render_template('public/landing_professionals_seo.html',data="Business Analysis Specialists in Enugu")
+@seo_nigeria.route('/Business-Card-Designers-in-Enugu')
+def enugu_185():
+    return render_template('public/landing_professionals_seo.html',data="Business Card Designers in Enugu")
+@seo_nigeria.route('/Business-Card-Professionals-in-Enugu')
+def enugu_186():
+    return render_template('public/landing_professionals_seo.html',data="Business Card Professionals in Enugu")
+@seo_nigeria.route('/Business-Coaches-in-Enugu')
+def enugu_187():
+    return render_template('public/landing_professionals_seo.html',data="Business Coaches in Enugu")
+@seo_nigeria.route('/Business-Consultants-in-Enugu')
+def enugu_188():
+    return render_template('public/landing_professionals_seo.html',data="Business Consultants in Enugu")
+@seo_nigeria.route('/Business-Development-Specialists-in-Enugu')
+def enugu_189():
+    return render_template('public/landing_professionals_seo.html',data="Business Development Specialists in Enugu")
+@seo_nigeria.route('/Business-Innovation-Professionals-in-Enugu')
+def enugu_190():
+    return render_template('public/landing_professionals_seo.html',data="Business Innovation Professionals in Enugu")
+@seo_nigeria.route('/Business-Intelligence-Specialists-in-Enugu')
+def enugu_191():
+    return render_template('public/landing_professionals_seo.html',data="Business Intelligence Specialists in Enugu")
+@seo_nigeria.route('/Business-Law-Professionals-in-Enugu')
+def enugu_192():
+    return render_template('public/landing_professionals_seo.html',data="Business Law Professionals in Enugu")
+@seo_nigeria.route('/Business-Managers-in-Enugu')
+def enugu_193():
+    return render_template('public/landing_professionals_seo.html',data="Business Managers in Enugu")
+@seo_nigeria.route('/Business-Modeling-Specialists-in-Enugu')
+def enugu_194():
+    return render_template('public/landing_professionals_seo.html',data="Business Modeling Specialists in Enugu")
+@seo_nigeria.route('/Business-Plan-Professionals-in-Enugu')
+def enugu_195():
+    return render_template('public/landing_professionals_seo.html',data="Business Plan Professionals in Enugu")
+@seo_nigeria.route('/Business-Plan-or-Pitch-Professionals-in-Enugu')
+def enugu_196():
+    return render_template('public/landing_professionals_seo.html',data="Business Plan or Pitch Professionals in Enugu")
+@seo_nigeria.route('/Business-Presentation-Professionals-in-Enugu')
+def enugu_197():
+    return render_template('public/landing_professionals_seo.html',data="Business Presentation Professionals in Enugu")
+@seo_nigeria.route('/Business-Process-Management-(BPM)-Specialists-in-Enugu')
+def enugu_198():
+    return render_template('public/landing_professionals_seo.html',data="Business Process Management (BPM) Specialists in Enugu")
+@seo_nigeria.route('/Business-Process-Modeling-Specialists-in-Enugu')
+def enugu_199():
+    return render_template('public/landing_professionals_seo.html',data="Business Process Modeling Specialists in Enugu")
+@seo_nigeria.route('/Business-Process-Reengineering-Specialists-in-Enugu')
+def enugu_200():
+    return render_template('public/landing_professionals_seo.html',data="Business Process Reengineering Specialists in Enugu")
+#############################200#########
+@seo_nigeria.route('/Cartoonists-in-Enugu')
+def enugu_223():
+    return render_template('public/landing_professionals_seo.html',data="Cartoonists in Enugu")
+@seo_nigeria.route('/Case-Study-Professionals-in-Enugu')
+def enugu_224():
+    return render_template('public/landing_professionals_seo.html',data="Case Study Professionals in Enugu")
+@seo_nigeria.route('/Change-Management-Specialists-in-Enugu')
+def enugu_225():
+    return render_template('public/landing_professionals_seo.html',data="Change Management Specialists in Enugu")
+@seo_nigeria.route('/Character-Animators-in-Enugu')
+def enugu_226():
+    return render_template('public/landing_professionals_seo.html',data="Character Animators in Enugu")
+@seo_nigeria.route('/Character-Designers-in-Enugu')
+def enugu_227():
+    return render_template('public/landing_professionals_seo.html',data="Character Designers in Enugu")
+@seo_nigeria.route('/Chat-and-Messaging-Professionals-in-Enugu')
+def enugu_228():
+    return render_template('public/landing_professionals_seo.html',data="Chat and Messaging Professionals in Enugu")
+@seo_nigeria.route('/Chat-Support-Specialists-in-Enugu')
+def enugu_229():
+    return render_template('public/landing_professionals_seo.html',data="Chat Support Specialists in Enugu")
+@seo_nigeria.route('/Chatbot-Developers-in-Enugu')
+def enugu_230():
+    return render_template('public/landing_professionals_seo.html',data="Chatbot Developers in Enugu")
+@seo_nigeria.route('/Chemists-in-Enugu')
+def enugu_231():
+    return render_template('public/landing_professionals_seo.html',data="Chemists in Enugu")
+@seo_nigeria.route('/Childrens-Book-Illustrator-Professionals-in-Enugu')
+def enugu_232():
+    return render_template('public/landing_professionals_seo.html',data="Childrens Book Illustrator Professionals in Enugu")
+@seo_nigeria.route('/Childrens-Writers-in-Enugu')
+def enugu_233():
+    return render_template('public/landing_professionals_seo.html',data="Childrens Writers in Enugu")
+@seo_nigeria.route('/Chinese-to-English-Translators-in-Enugu')
+def enugu_234():
+    return render_template('public/landing_professionals_seo.html',data="Chinese to English Translators in Enugu")
+@seo_nigeria.route('/Christian-Theology-Specialists-in-Enugu')
+def enugu_235():
+    return render_template('public/landing_professionals_seo.html',data="Christian Theology Specialists in Enugu")
+@seo_nigeria.route('/Cinematographers-in-Enugu')
+def enugu_236():
+    return render_template('public/landing_professionals_seo.html',data="Cinematographers in Enugu")
+@seo_nigeria.route('/Cisco-ASA-Specialists-in-Enugu')
+def enugu_237():
+    return render_template('public/landing_professionals_seo.html',data="Cisco ASA Specialists in Enugu")
+@seo_nigeria.route('/Cisco-Certified-Network-Associate-(CCNA)-in-Enugu')
+def enugu_238():
+    return render_template('public/landing_professionals_seo.html',data="Cisco Certified Network Associate (CCNA) in Enugu")
+@seo_nigeria.route('/Cisco-Certified-Network-Professional-(CCNP)-in-Enugu')
+def enugu_239():
+    return render_template('public/landing_professionals_seo.html',data="Cisco Certified Network Professional (CCNP) in Enugu")
+@seo_nigeria.route('/Cisco-Routers-Specialists-in-Enugu')
+def enugu_240():
+    return render_template('public/landing_professionals_seo.html',data="Cisco Routers Specialists in Enugu")
+@seo_nigeria.route('/Civil-Engineers-in-Enugu')
+def enugu_241():
+    return render_template('public/landing_professionals_seo.html',data="Civil Engineers in Enugu")
+@seo_nigeria.route('/ClickFunnels-Specialists-in-Enugu')
+def enugu_242():
+    return render_template('public/landing_professionals_seo.html',data="ClickFunnels Specialists in Enugu")
+@seo_nigeria.route('/Client-Management-Professionals-in-Enugu')
+def enugu_243():
+    return render_template('public/landing_professionals_seo.html',data="Client Management Professionals in Enugu")
+@seo_nigeria.route('/Cloud-Computing-Specialists-in-Enugu')
+def enugu_244():
+    return render_template('public/landing_professionals_seo.html',data="Cloud Computing Specialists in Enugu")
+@seo_nigeria.route('/CMS-Development-Specialists-in-Enugu')
+def enugu_245():
+    return render_template('public/landing_professionals_seo.html',data="CMS Development Specialists in Enugu")
+@seo_nigeria.route('/CMS-Professionals-in-Enugu')
+def enugu_246():
+    return render_template('public/landing_professionals_seo.html',data="CMS Professionals in Enugu")
+@seo_nigeria.route('/CodeIgniter-Developers-in-Enugu')
+def enugu_247():
+    return render_template('public/landing_professionals_seo.html',data="CodeIgniter Developers in Enugu")
+@seo_nigeria.route('/Cold-Callers-in-Enugu')
+def enugu_248():
+    return render_template('public/landing_professionals_seo.html',data="Cold Callers in Enugu")
+@seo_nigeria.route('/Color-Grading-Specialists-in-Enugu')
+def enugu_249():
+    return render_template('public/landing_professionals_seo.html',data="Color Grading Specialists in Enugu")
+@seo_nigeria.route('/Comedy-Writers-in-Enugu')
+def enugu_250():
+    return render_template('public/landing_professionals_seo.html',data="Comedy Writers in Enugu")
+@seo_nigeria.route('/Comic-Artists-in-Enugu')
+def enugu_251():
+    return render_template('public/landing_professionals_seo.html',data="Comic Artists in Enugu")
+@seo_nigeria.route('/Comic-Writers-in-Enugu')
+def enugu_252():
+    return render_template('public/landing_professionals_seo.html',data="Comic Writers in Enugu")
+@seo_nigeria.route('/Commercial-Photographers-in-Enugu')
+def enugu_253():
+    return render_template('public/landing_professionals_seo.html',data="Commercial Photographers in Enugu")
+@seo_nigeria.route('/Communication-Design-Professionals-in-Enugu')
+def enugu_254():
+    return render_template('public/landing_professionals_seo.html',data="Communication Design Professionals in Enugu")
+@seo_nigeria.route('/Communication-etiquette-Professionals-in-Enugu')
+def enugu_255():
+    return render_template('public/landing_professionals_seo.html',data="Communication etiquette Professionals in Enugu")
+@seo_nigeria.route('/Communication-Professionals-in-Enugu')
+def enugu_256():
+    return render_template('public/landing_professionals_seo.html',data="Communication Professionals in Enugu")
+@seo_nigeria.route('/Communication-skills-Professionals-in-Enugu')
+def enugu_257():
+    return render_template('public/landing_professionals_seo.html',data="Communication skills Professionals in Enugu")
+@seo_nigeria.route('/Communication-Strategy-Professionals-in-Enugu')
+def enugu_258():
+    return render_template('public/landing_professionals_seo.html',data="Communication Strategy Professionals in Enugu")
+@seo_nigeria.route('/Communications-Specialists-in-Enugu')
+def enugu_259():
+    return render_template('public/landing_professionals_seo.html',data="Communications Specialists in Enugu")
+@seo_nigeria.route('/Company-Pitch-Professionals-in-Enugu')
+def enugu_260():
+    return render_template('public/landing_professionals_seo.html',data="Company Pitch Professionals in Enugu")
+@seo_nigeria.route('/Comptuer-Maintenance-Specialists-in-Enugu')
+def enugu_261():
+    return render_template('public/landing_professionals_seo.html',data="Comptuer Maintenance Specialists in Enugu")
+@seo_nigeria.route('/Computer-Assisted-Translation(CAT)Professionals-in-Enugu')
+def enugu_262():
+    return render_template('public/landing_professionals_seo.html',data="Computer Assisted Translation (CAT) Professionals in Enugu")
+@seo_nigeria.route('/Computer-Engineers-in-Enugu')
+def enugu_263():
+    return render_template('public/landing_professionals_seo.html',data="Computer Engineers in Enugu")
+@seo_nigeria.route('/Computer-Graphics-Programmers-in-Enugu')
+def enugu_264():
+    return render_template('public/landing_professionals_seo.html',data="Computer Graphics Programmers in Enugu")
+@seo_nigeria.route('/Computer-Hardware-Installation-Specialists-in-Enugu')
+def enugu_265():
+    return render_template('public/landing_professionals_seo.html',data="Computer Hardware Installation Specialists in Enugu")
+@seo_nigeria.route('/Computer-Network-Architects-in-Enugu')
+def enugu_266():
+    return render_template('public/landing_professionals_seo.html',data="Computer Network Architects in Enugu")
+@seo_nigeria.route('/Computer-Repair-Technicians-in-Enugu')
+def enugu_267():
+    return render_template('public/landing_professionals_seo.html',data="Computer Repair Technicians in Enugu")
+@seo_nigeria.route('/Computer-Scientists-in-Enugu')
+def enugu_268():
+    return render_template('public/landing_professionals_seo.html',data="Computer Scientists in Enugu")
+@seo_nigeria.route('/Computer-Skills-Specialists-in-Enugu')
+def enugu_269():
+    return render_template('public/landing_professionals_seo.html',data="Computer Skills Specialists in Enugu")
+@seo_nigeria.route('/Computer-Vision-Engineers-in-Enugu')
+def enugu_270():
+    return render_template('public/landing_professionals_seo.html',data="Computer Vision Engineers in Enugu")
+@seo_nigeria.route('/Concept-Design-Specialists-in-Enugu')
+def enugu_271():
+    return render_template('public/landing_professionals_seo.html',data="Concept Design Specialists in Enugu")
+@seo_nigeria.route('/Conflict-Resolution-Specialists-in-Enugu')
+def enugu_272():
+    return render_template('public/landing_professionals_seo.html',data="Conflict Resolution Specialists in Enugu")
+@seo_nigeria.route('/Construction-Consultants&Civil-Engineers-in-Enugu')
+def enugu_273():
+    return render_template('public/landing_professionals_seo.html',data="Construction Consultants & Civil Engineers in Enugu")
+@seo_nigeria.route('/Construction-Managers-in-Enugu')
+def enugu_274():
+    return render_template('public/landing_professionals_seo.html',data="Construction Managers in Enugu")
+@seo_nigeria.route('/Consultants-in-Enugu')
+def enugu_275():
+    return render_template('public/landing_professionals_seo.html',data="Consultants in Enugu")
+@seo_nigeria.route('/Consumer-Research-Professionals-in-Enugu')
+def enugu_276():
+    return render_template('public/landing_professionals_seo.html',data="Consumer Research Professionals in Enugu")
+@seo_nigeria.route('/Content-Creators-in-Enugu')
+def enugu_277():
+    return render_template('public/landing_professionals_seo.html',data="Content Creators in Enugu")
+@seo_nigeria.route('/Content-Developers-in-Enugu')
+def enugu_278():
+    return render_template('public/landing_professionals_seo.html',data="Content Developers in Enugu")
+@seo_nigeria.route('/Content-Editing-Professionals-in-Enugu')
+def enugu_279():
+    return render_template('public/landing_professionals_seo.html',data="Content Editing Professionals in Enugu")
+@seo_nigeria.route('/Content-Management-System-Specialists-in-Enugu')
+def enugu_280():
+    return render_template('public/landing_professionals_seo.html',data="Content Management System Specialists in Enugu")
+@seo_nigeria.route('/Content-Marketers-in-Enugu')
+def enugu_281():
+    return render_template('public/landing_professionals_seo.html',data="Content Marketers in Enugu")
+@seo_nigeria.route('/Content-Marketing-Strategy-Professionals-in-Enugu')
+def enugu_282():
+    return render_template('public/landing_professionals_seo.html',data="Content Marketing Strategy Professionals in Enugu")
+@seo_nigeria.route('/Content-Moderators-in-Enugu')
+def enugu_283():
+    return render_template('public/landing_professionals_seo.html',data="Content Moderators in Enugu")
+@seo_nigeria.route('/Content-SEO-Professionals-in-Enugu')
+def enugu_284():
+    return render_template('public/landing_professionals_seo.html',data="Content SEO Professionals in Enugu")
+@seo_nigeria.route('/Content-Strategists-in-Enugu')
+def enugu_285():
+    return render_template('public/landing_professionals_seo.html',data="Content Strategists in Enugu")
+@seo_nigeria.route('/Content-Writers-in-Enugu')
+def enugu_286():
+    return render_template('public/landing_professionals_seo.html',data="Content Writers in Enugu")
+@seo_nigeria.route('/Contract-Drafters-in-Enugu')
+def enugu_287():
+    return render_template('public/landing_professionals_seo.html',data="Contract Drafters in Enugu")
+@seo_nigeria.route('/Contract-Law-Lawyers&Legal-Professionals-in-Enugu')
+def enugu_288():
+    return render_template('public/landing_professionals_seo.html',data="Contract Law Lawyers & Legal Professionals in Enugu")
+@seo_nigeria.route('/Contract-Negotiations-Professionals-in-Enugu')
+def enugu_289():
+    return render_template('public/landing_professionals_seo.html',data="Contract Negotiations Professionals in Enugu")
+@seo_nigeria.route('/Contract-Translations-Professionals-in-Enugu')
+def enugu_290():
+    return render_template('public/landing_professionals_seo.html',data="Contract Translations Professionals in Enugu")
+@seo_nigeria.route('/Copy-Editors-in-Enugu')
+def enugu_291():
+    return render_template('public/landing_professionals_seo.html',data="Copy Editors in Enugu")
+@seo_nigeria.route('/Copyright-Lawyers&Legal-Professionals-in-Enugu')
+def enugu_292():
+    return render_template('public/landing_professionals_seo.html',data="Copyright Lawyers & Legal Professionals in Enugu")
+@seo_nigeria.route('/Copywriters-in-Enugu')
+def enugu_293():
+    return render_template('public/landing_professionals_seo.html',data="Copywriters in Enugu")
+@seo_nigeria.route('/Core-Java-Specialists-in-Enugu')
+def enugu_294():
+    return render_template('public/landing_professionals_seo.html',data="Core Java Specialists in Enugu")
+@seo_nigeria.route('/Core-PHP-Developers-in-Enugu')
+def enugu_295():
+    return render_template('public/landing_professionals_seo.html',data="Core PHP Developers in Enugu")
+@seo_nigeria.route('/Corel-Painter-Specialists-in-Enugu')
+def enugu_296():
+    return render_template('public/landing_professionals_seo.html',data="Corel Painter Specialists in Enugu")
+@seo_nigeria.route('/CorelDRAW-Specialists-in-Enugu')
+def enugu_297():
+    return render_template('public/landing_professionals_seo.html',data="CorelDRAW Specialists in Enugu")
+@seo_nigeria.route('/Corporate-Brand-Identity-Specialists-in-Enugu')
+def enugu_298():
+    return render_template('public/landing_professionals_seo.html',data="Corporate Brand Identity Specialists in Enugu")
+@seo_nigeria.route('/Corporate-Branding-Professionals-in-Enugu')
+def enugu_299():
+    return render_template('public/landing_professionals_seo.html',data="Corporate Branding Professionals in Enugu")
+@seo_nigeria.route('/Corporate Communications Specialists in Enugu')
+def enugu_300():
+    return render_template('public/landing_professionals_seo.html',data="Corporate Communications Specialists in Enugu")
+@seo_nigeria.route('/Corporate-Finance-Analysts-in-Enugu')
+def enugu_301():
+    return render_template('public/landing_professionals_seo.html',data="Corporate Finance Analysts in Enugu")
+@seo_nigeria.route('/Corporate-Law-Lawyers&Legal-Professionals-in-Enugu')
+def enugu_302():
+    return render_template('public/landing_professionals_seo.html',data="Corporate Law Lawyers & Legal Professionals in Enugu")
+@seo_nigeria.route('/Corporate-Strategy-Specialists-in-Enugu')
+def enugu_303():
+    return render_template('public/landing_professionals_seo.html',data="Corporate Strategy Specialists in Enugu")
+@seo_nigeria.route('/Cost-Accounting-Specialists-in-Enugu')
+def enugu_304():
+    return render_template('public/landing_professionals_seo.html',data="Cost Accounting Specialists in Enugu")
+@seo_nigeria.route('/Counseling-Psychology-Specialists-in-Enugu')
+def enugu_305():
+    return render_template('public/landing_professionals_seo.html',data="Counseling Psychology Specialists in Enugu")
+@seo_nigeria.route('/Cover-Art-Professionals-in-Enugu')
+def enugu_306():
+    return render_template('public/landing_professionals_seo.html',data="Cover Art Professionals in Enugu")
+@seo_nigeria.route('/Cover-Designers-in-Enugu')
+def enugu_307():
+    return render_template('public/landing_professionals_seo.html',data="Cover Designers in Enugu")
+@seo_nigeria.route('/Cover-Letter-Writers-in-Enugu')
+def enugu_308():
+    return render_template('public/landing_professionals_seo.html',data="Cover Letter Writers in Enugu")
+@seo_nigeria.route('/CPanel-Specialists-in-Enugu')
+def enugu_309():
+    return render_template('public/landing_professionals_seo.html',data="CPanel Specialists in Enugu")
+@seo_nigeria.route('/Creative&Talent-Specialists-in-Enugu')
+def enugu_310():
+    return render_template('public/landing_professionals_seo.html',data="Creative & Talent Specialists in Enugu")
+@seo_nigeria.route('/Creative-Direction-Professionals-in-Enugu')
+def enugu_311():
+    return render_template('public/landing_professionals_seo.html',data="Creative Direction Professionals in Enugu")
+@seo_nigeria.route('/Creative-Strategists-in-Enugu')
+def enugu_312():
+    return render_template('public/landing_professionals_seo.html',data="Creative Strategists in Enugu")
+@seo_nigeria.route('/Creative-Writers-in-Enugu')
+def enugu_313():
+    return render_template('public/landing_professionals_seo.html',data="Creative Writers in Enugu")
+@seo_nigeria.route('/Creativity-Professionals-in-Enugu')
+def enugu_314():
+    return render_template('public/landing_professionals_seo.html',data="Creativity Professionals in Enugu")
+@seo_nigeria.route('/Critical-Thinking-Professionals-in-Enugu')
+def enugu_315():
+    return render_template('public/landing_professionals_seo.html',data="Critical Thinking Professionals in Enugu")
+@seo_nigeria.route('/CRM-Entries-Professionals-in-Enugu')
+def enugu_316():
+    return render_template('public/landing_professionals_seo.html',data="CRM Entries Professionals in Enugu")
+@seo_nigeria.route('/CRM-Software-Professionals-in-Enugu')
+def enugu_317():
+    return render_template('public/landing_professionals_seo.html',data="CRM Software Professionals in Enugu")
+@seo_nigeria.route('/CRM-Specialists-in-Enugu')
+def enugu_318():
+    return render_template('public/landing_professionals_seo.html',data="CRM Specialists in Enugu")
+@seo_nigeria.route('/Cross-Functional-Team-Leadership-Specialists-in-Enugu')
+def enugu_319():
+    return render_template('public/landing_professionals_seo.html',data="Cross Functional Team Leadership Specialists in Enugu")
+@seo_nigeria.route('/Cryptocurrency-Professionals-in-Enugu')
+def enugu_320():
+    return render_template('public/landing_professionals_seo.html',data="Cryptocurrency Professionals in Enugu")
+@seo_nigeria.route('/CSS-Developers-in-Enugu')
+def enugu_321():
+    return render_template('public/landing_professionals_seo.html',data="CSS Developers in Enugu")
+@seo_nigeria.route('/CSS3-Developers-in-Enugu')
+def enugu_322():
+    return render_template('public/landing_professionals_seo.html',data="CSS3 Developers in Enugu")
+@seo_nigeria.route('/Customer-Acquistion-Professionals-in-Enugu')
+def enugu_323():
+    return render_template('public/landing_professionals_seo.html',data="Customer Acquistion Professionals in Enugu")
+@seo_nigeria.route('/Customer-Development-Professionals-in-Enugu')
+def enugu_324():
+    return render_template('public/landing_professionals_seo.html',data="Customer Development Professionals in Enugu")
+@seo_nigeria.route('/Customer-Engagement-Professionals-in-Enugu')
+def enugu_325():
+    return render_template('public/landing_professionals_seo.html',data="Customer Engagement Professionals in Enugu")
+@seo_nigeria.route('/Customer-Experience-Professionals-in-Enugu')
+def enugu_326():
+    return render_template('public/landing_professionals_seo.html',data="Customer Experience Professionals in Enugu")
+@seo_nigeria.route('/Customer-Experience-Research-Professionals-in-Enugu')
+def enugu_327():
+    return render_template('public/landing_professionals_seo.html',data="Customer Experience Research Professionals in Enugu")
+@seo_nigeria.route('/Customer-Insights-Professionals-in-Enugu')
+def enugu_328():
+    return render_template('public/landing_professionals_seo.html',data="Customer Insights Professionals in Enugu")
+@seo_nigeria.route('/Customer-Retention-Specialists-in-Enugu')
+def enugu_329():
+    return render_template('public/landing_professionals_seo.html',data="Customer Retention Specialists in Enugu")
+@seo_nigeria.route('/Customer-Retention-Strategy-Professionals-in-Enugu')
+def enugu_330():
+    return render_template('public/landing_professionals_seo.html',data="Customer Retention Strategy Professionals in Enugu")
+@seo_nigeria.route('/Customer-Satisfaction-Professionals-in-Enugu')
+def enugu_331():
+    return render_template('public/landing_professionals_seo.html',data="Customer Satisfaction Professionals in Enugu")
+@seo_nigeria.route('/Customer-Service-Representatives-in-Enugu')
+def enugu_332():
+    return render_template('public/landing_professionals_seo.html',data="Customer Service Representatives in Enugu")
+@seo_nigeria.route('/Customer-Support-Representatives-in-Enugu')
+def enugu_333():
+    return render_template('public/landing_professionals_seo.html',data="Customer Support Representatives in Enugu")
+@seo_nigeria.route('/CV-Professionals-in-Enugu')
+def enugu_334():
+    return render_template('public/landing_professionals_seo.html',data="CV Professionals in Enugu")
+@seo_nigeria.route('/Danish-to-English-Translators-in-Enugu')
+def enugu_335():
+    return render_template('public/landing_professionals_seo.html',data="Danish to English Translators in Enugu")
+@seo_nigeria.route('/DART-Developers-in-Enugu')
+def enugu_336():
+    return render_template('public/landing_professionals_seo.html',data="DART Developers in Enugu")
+@seo_nigeria.route('/Data-Analysis-Professionals-in-Enugu')
+def enugu_337():
+    return render_template('public/landing_professionals_seo.html',data="Data Analysis Professionals in Enugu")
+@seo_nigeria.route('/Data-Analysts-in-Enugu')
+def enugu_338():
+    return render_template('public/landing_professionals_seo.html',data="Data Analysts in Enugu")
+@seo_nigeria.route('/Data-Backup-Specialists-in-Enugu')
+def enugu_339():
+    return render_template('public/landing_professionals_seo.html',data="Data Backup Specialists in Enugu")
+@seo_nigeria.route('/Data-Cleansing-Specialists-in-Enugu')
+def enugu_340():
+    return render_template('public/landing_professionals_seo.html',data="Data Cleansing Specialists in Enugu")
+@seo_nigeria.route('/Data-Collection-Specialists-in-Enugu')
+def enugu_341():
+    return render_template('public/landing_professionals_seo.html',data="Data Collection Specialists in Enugu")
+@seo_nigeria.route('/Data-Encoding-Specialists-in-Enugu')
+def enugu_342():
+    return render_template('public/landing_professionals_seo.html',data="Data Encoding Specialists in Enugu")
+@seo_nigeria.route('/Data-Entry-Specialists-in-Enugu')
+def enugu_343():
+    return render_template('public/landing_professionals_seo.html',data="Data Entry Specialists in Enugu")
+@seo_nigeria.route('/Data-Extraction-Specialists-in-Enugu')
+def enugu_344():
+    return render_template('public/landing_professionals_seo.html',data="Data Extraction Specialists in Enugu")
+@seo_nigeria.route('/Data-Interpretation-Specialists-in-Enugu')
+def enugu_345():
+    return render_template('public/landing_professionals_seo.html',data="Data Interpretation Specialists in Enugu")
+@seo_nigeria.route('/Data-Managers-in-Enugu')
+def enugu_346():
+    return render_template('public/landing_professionals_seo.html',data="Data Managers in Enugu")
+@seo_nigeria.route('/Data-Migration-Specialists-in-Enugu')
+def enugu_347():
+    return render_template('public/landing_professionals_seo.html',data="Data Migration Specialists in Enugu")
+@seo_nigeria.route('/Data-Miners-in-Enugu')
+def enugu_348():
+    return render_template('public/landing_professionals_seo.html',data="Data Miners in Enugu")
+@seo_nigeria.route('/Data-Modeling-Specialists-in-Enugu')
+def enugu_349():
+    return render_template('public/landing_professionals_seo.html',data="Data Modeling Specialists in Enugu")
+@seo_nigeria.route('/Data-Processing-Specialists-in-Enugu')
+def enugu_350():
+    return render_template('public/landing_professionals_seo.html',data="Data Processing Specialists in Enugu")
+@seo_nigeria.route('/Data-Scientists-in-Enugu')
+def enugu_351():
+    return render_template('public/landing_professionals_seo.html',data="Data Scientists in Enugu")
+@seo_nigeria.route('/Data-Scrapers-in-Enugu')
+def enugu_352():
+    return render_template('public/landing_professionals_seo.html',data="Data Scrapers in Enugu")
+@seo_nigeria.route('/Data-Sheet-Writers-in-Enugu')
+def enugu_353():
+    return render_template('public/landing_professionals_seo.html',data="Data Sheet Writers in Enugu")
+@seo_nigeria.route('/Data-Visualization-Specialists-in-Enugu')
+def enugu_354():
+    return render_template('public/landing_professionals_seo.html',data="Data Visualization Specialists in Enugu")
+@seo_nigeria.route('/Data-Warehousing-Specialists-in-Enugu')
+def enugu_355():
+    return render_template('public/landing_professionals_seo.html',data="Data Warehousing Specialists in Enugu")
+@seo_nigeria.route('/Database-Administrators-in-Enugu')
+def enugu_356():
+    return render_template('public/landing_professionals_seo.html',data="Database Administrators in Enugu")
+@seo_nigeria.route('/Database-Designers-in-Enugu')
+def enugu_357():
+    return render_template('public/landing_professionals_seo.html',data="Database Designers in Enugu")
+@seo_nigeria.route('/Database-Professionals-in-Enugu')
+def enugu_358():
+    return render_template('public/landing_professionals_seo.html',data="Database Professionals in Enugu")
+@seo_nigeria.route('/Database-Managers-in-Enugu')
+def enugu_359():
+    return render_template('public/landing_professionals_seo.html',data="Database Managers in Enugu")
+@seo_nigeria.route('/Databases-Professionals-in-Enugu')
+def enugu_360():
+    return render_template('public/landing_professionals_seo.html',data="Databases Professionals in Enugu")
+@seo_nigeria.route('/DataTables-Professionals-in-Enugu')
+def enugu_361():
+    return render_template('public/landing_professionals_seo.html',data="DataTables Professionals in Enugu")
+@seo_nigeria.route('/DaVinci-Resolve-Specialists-in-Enugu')
+def enugu_362():
+    return render_template('public/landing_professionals_seo.html',data="DaVinci Resolve Specialists in Enugu")
+@seo_nigeria.route('/Decision-Making-Professionals-in-Enugu')
+def enugu_363():
+    return render_template('public/landing_professionals_seo.html',data="Decision Making Professionals in Enugu")
+@seo_nigeria.route('/Deep-Learning-Experts-in-Enugu')
+def enugu_364():
+    return render_template('public/landing_professionals_seo.html',data="Deep Learning Experts in Enugu")
+@seo_nigeria.route('/Design-Professionals-in-Enugu')
+def enugu_365():
+    return render_template('public/landing_professionals_seo.html',data="Design Professionals in Enugu")
+@seo_nigeria.route('/Design-Pattern-Specialists-in-Enugu')
+def enugu_366():
+    return render_template('public/landing_professionals_seo.html',data="Design Pattern Specialists in Enugu")
+@seo_nigeria.route('/Design-Researchers-in-Enugu')
+def enugu_367():
+    return render_template('public/landing_professionals_seo.html',data="Design Researchers in Enugu")
+@seo_nigeria.route('/Design-Thinking-Specialists-in-Enugu')
+def enugu_368():
+    return render_template('public/landing_professionals_seo.html',data="Design Thinking Specialists in Enugu")
+@seo_nigeria.route('/Desktop-Applications-Developers-in-Enugu')
+def enugu_369():
+    return render_template('public/landing_professionals_seo.html',data="Desktop Applications Developers in Enugu")
+@seo_nigeria.route('/Desktop-Publishing-Specialists-in-Enugu')
+def enugu_370():
+    return render_template('public/landing_professionals_seo.html',data="Desktop Publishing Specialists in Enugu")
+@seo_nigeria.route('/Desktop-Support-Specialists-in-Enugu')
+def enugu_371():
+    return render_template('public/landing_professionals_seo.html',data="Desktop Support Specialists in Enugu")
+@seo_nigeria.route('/Detailed-3D-modeling-Professionals-in-Enugu')
+def enugu_372():
+    return render_template('public/landing_professionals_seo.html',data="Detailed 3D modeling Professionals in Enugu")
+@seo_nigeria.route('/Detailing-Professionals-in-Enugu')
+def enugu_373():
+    return render_template('public/landing_professionals_seo.html',data="Detailing Professionals in Enugu")
+@seo_nigeria.route('/Developmental-Editing-Professionals-in-Enugu')
+def enugu_374():
+    return render_template('public/landing_professionals_seo.html',data="Developmental Editing Professionals in Enugu")
+@seo_nigeria.route('/DevOps-Engineers-in-Enugu')
+def enugu_375():
+    return render_template('public/landing_professionals_seo.html',data="DevOps Engineers in Enugu")
+@seo_nigeria.route('/DHCP-Specialists-in-Enugu')
+def enugu_376():
+    return render_template('public/landing_professionals_seo.html',data="DHCP Specialists in Enugu")
+@seo_nigeria.route('/Digital-Artists-in-Enugu')
+def enugu_377():
+    return render_template('public/landing_professionals_seo.html',data="Digital Artists in Enugu")
+@seo_nigeria.route('/Digital-Design-Professionals-in-Enugu')
+def enugu_378():
+    return render_template('public/landing_professionals_seo.html',data="Digital Design Professionals in Enugu")
+@seo_nigeria.route('/Digital-Illustrators-in-Enugu')
+def enugu_379():
+    return render_template('public/landing_professionals_seo.html',data="Digital Illustrators in Enugu")
+@seo_nigeria.route('/Digital-Marketers-in-Enugu')
+def enugu_380():
+    return render_template('public/landing_professionals_seo.html',data="Digital Marketers in Enugu")
+@seo_nigeria.route('/Digital-Marketing-Strategy-Professionals-in-Enugu')
+def enugu_381():
+    return render_template('public/landing_professionals_seo.html',data="Digital Marketing Strategy Professionals in Enugu")
+@seo_nigeria.route('/Digital-Media-Specialists-in-Enugu')
+def enugu_382():
+    return render_template('public/landing_professionals_seo.html',data="Digital Media Specialists in Enugu")
+@seo_nigeria.route('/Digital-Painters-in-Enugu')
+def enugu_383():
+    return render_template('public/landing_professionals_seo.html',data="Digital Painters in Enugu")
+@seo_nigeria.route('/Digital-Photographers-in-Enugu')
+def enugu_384():
+    return render_template('public/landing_professionals_seo.html',data="Digital Photographers in Enugu")
+@seo_nigeria.route('/Digital-Strategy-Specialists-in-Enugu')
+def enugu_385():
+    return render_template('public/landing_professionals_seo.html',data="Digital Strategy Specialists in Enugu")
+@seo_nigeria.route('/Digital-Video-Specialists-in-Enugu')
+def enugu_386():
+    return render_template('public/landing_professionals_seo.html',data="Digital Video Specialists in Enugu")
+@seo_nigeria.route('/Direct-Marketers-in-Enugu')
+def enugu_387():
+    return render_template('public/landing_professionals_seo.html',data="Direct Marketers in Enugu")
+@seo_nigeria.route('/Display-Ads-Specialists-in-Enugu')
+def enugu_388():
+    return render_template('public/landing_professionals_seo.html',data="Display Ads Specialists in Enugu")
+@seo_nigeria.route('/Django-Developers-in-Enugu')
+def enugu_389():
+    return render_template('public/landing_professionals_seo.html',data="Django Developers in Enugu")
+@seo_nigeria.route('/DNS-Specialists-in-Enugu')
+def enugu_390():
+    return render_template('public/landing_professionals_seo.html',data="DNS Specialists in Enugu")
+@seo_nigeria.route('/Docker-Specialists-in-Enugu')
+def enugu_391():
+    return render_template('public/landing_professionals_seo.html',data="Docker Specialists in Enugu")
+@seo_nigeria.route('/Document-Conversion-Specialists-in-Enugu')
+def enugu_392():
+    return render_template('public/landing_professionals_seo.html',data="Document Conversion Specialists in Enugu")
+@seo_nigeria.route('/Document-Reviewers-in-Enugu')
+def enugu_393():
+    return render_template('public/landing_professionals_seo.html',data="Document Reviewers in Enugu")
+@seo_nigeria.route('/Documentary-Films-Specialists-in-Enugu')
+def enugu_394():
+    return render_template('public/landing_professionals_seo.html',data="Documentary Films Specialists in Enugu")
+@seo_nigeria.route('/Drafting-Specialists-in-Enugu')
+def enugu_395():
+    return render_template('public/landing_professionals_seo.html',data="Drafting Specialists in Enugu")
+@seo_nigeria.route('/Drawing-Specialists-in-Enugu')
+def enugu_396():
+    return render_template('public/landing_professionals_seo.html',data="Drawing Specialists in Enugu")
+@seo_nigeria.route('/Dropshippers-in-Enugu')
+def enugu_397():
+    return render_template('public/landing_professionals_seo.html',data="Dropshippers in Enugu")
+@seo_nigeria.route('/Drupal-Developers-in-Enugu')
+def enugu_398():
+    return render_template('public/landing_professionals_seo.html',data="Drupal Developers in Enugu")
+@seo_nigeria.route('/Due-Diligence-Specialists-in-Enugu')
+def enugu_399():
+    return render_template('public/landing_professionals_seo.html',data="Due Diligence Specialists in Enugu")
+@seo_nigeria.route('/Dutch-to-English-Translators-in-Enugu')
+def enugu_400():
+    return render_template('public/landing_professionals_seo.html',data="Dutch to English Translators in Enugu")
+#############################################400############
+@seo_nigeria.route('/E-Commerce-Professionals-in-Enugu')
+def enugu_401():
+    return render_template('public/landing_professionals_seo.html',data="E-Commerce Professionals in Enugu")
+@seo_nigeria.route('/e-Commerce-Website-Professionals-in-Enugu')
+def enugu_402():
+    return render_template('public/landing_professionals_seo.html',data="e-Commerce Website Professionals in Enugu")
+@seo_nigeria.route('/e-Learning-Design-Professionals-in-Enugu')
+def enugu_403():
+    return render_template('public/landing_professionals_seo.html',data="e-Learning Design Professionals in Enugu")
+@seo_nigeria.route('/eBay-Listing-Writers-in-Enugu')
+def enugu_404():
+    return render_template('public/landing_professionals_seo.html',data="eBay Listing Writers in Enugu")
+@seo_nigeria.route('/Ebook-Designers-in-Enugu')
+def enugu_405():
+    return render_template('public/landing_professionals_seo.html',data="Ebook Designers in Enugu")
+@seo_nigeria.route('/Ebook-Writers-in-Enugu')
+def enugu_406():
+    return render_template('public/landing_professionals_seo.html',data="Ebook Writers in Enugu")
+@seo_nigeria.route('/eBooks-Specialists-in-Enugu')
+def enugu_407():
+    return render_template('public/landing_professionals_seo.html',data="eBooks Specialists in Enugu")
+@seo_nigeria.route('/Ecommerce-Consultants-in-Enugu')
+def enugu_408():
+    return render_template('public/landing_professionals_seo.html',data="Ecommerce Consultants in Enugu")
+@seo_nigeria.route('/eCommerce-Professionals-in-Enugu')
+def enugu_409():
+    return render_template('public/landing_professionals_seo.html',data="eCommerce Professionals in Enugu")
+@seo_nigeria.route('/Econometrics-Specialists-in-Enugu')
+def enugu_410():
+    return render_template('public/landing_professionals_seo.html',data="Econometrics Specialists in Enugu")
+@seo_nigeria.route('/Economic-Analysts-in-Enugu')
+def enugu_411():
+    return render_template('public/landing_professionals_seo.html',data="Economic Analysts in Enugu")
+@seo_nigeria.route('/Economics-Specialists-in-Enugu')
+def enugu_412():
+    return render_template('public/landing_professionals_seo.html',data="Economics Specialists in Enugu")
+@seo_nigeria.route('/Editing-Proofreading-Professionals-in-Enugu')
+def enugu_413():
+    return render_template('public/landing_professionals_seo.html',data="Editing - Proofreading Professionals in Enugu")
+@seo_nigeria.route('/Editorial-Design-Professionals-in-Enugu')
+def enugu_414():
+    return render_template('public/landing_professionals_seo.html',data="Editorial Design Professionals in Enugu")
+@seo_nigeria.route('/Editorial-Translation-Professionals-in-Enugu')
+def enugu_415():
+    return render_template('public/landing_professionals_seo.html',data="Editorial Translation Professionals in Enugu")
+@seo_nigeria.route('/Editorial-Writers-in-Enugu')
+def enugu_416():
+    return render_template('public/landing_professionals_seo.html',data="Editorial Writers in Enugu")
+@seo_nigeria.route('/Editors-in-Enugu')
+def enugu_417():
+    return render_template('public/landing_professionals_seo.html',data="Editors in Enugu")
+@seo_nigeria.route('/Elasticsearch-Developers-in-Enugu')
+def enugu_418():
+    return render_template('public/landing_professionals_seo.html',data="Elasticsearch Developers in Enugu")
+@seo_nigeria.route('/Electrical-Drawing-Specialists-in-Enugu')
+def enugu_419():
+    return render_template('public/landing_professionals_seo.html',data="Electrical Drawing Specialists in Enugu")
+@seo_nigeria.route('/Electrical-Engineers-in-Enugu')
+def enugu_420():
+    return render_template('public/landing_professionals_seo.html',data="Electrical Engineers in Enugu")
+@seo_nigeria.route('/Electronics-Specialists-in-Enugu')
+def enugu_421():
+    return render_template('public/landing_professionals_seo.html',data="Electronics Specialists in Enugu")
+@seo_nigeria.route('/Email-Campaign-Setup-Professionals-in-Enugu')
+def enugu_422():
+    return render_template('public/landing_professionals_seo.html',data="Email Campaign Setup Professionals in Enugu")
+@seo_nigeria.route('/Email-Communication-Professionals-in-Enugu')
+def enugu_423():
+    return render_template('public/landing_professionals_seo.html',data="Email Communication Professionals in Enugu")
+@seo_nigeria.route('/Email-Copywriting-Professionals-in-Enugu')
+def enugu_424():
+    return render_template('public/landing_professionals_seo.html',data="Email Copywriting Professionals in Enugu")
+@seo_nigeria.route('/Email-Deliverability-Specialists-in-Enugu')
+def enugu_425():
+    return render_template('public/landing_professionals_seo.html',data="Email Deliverability Specialists in Enugu")
+@seo_nigeria.route('/Email-Etiquette-Specialists-in-Enugu')
+def enugu_426():
+    return render_template('public/landing_professionals_seo.html',data="Email Etiquette Specialists in Enugu")
+@seo_nigeria.route('/Email-Professionals-in-Enugu')
+def enugu_427():
+    return render_template('public/landing_professionals_seo.html',data="Email Professionals in Enugu")
+@seo_nigeria.route('/Email-Handlers-in-Enugu')
+def enugu_428():
+    return render_template('public/landing_professionals_seo.html',data="Email Handlers in Enugu")
+@seo_nigeria.route('/Email-Marketers-in-Enugu')
+def enugu_429():
+    return render_template('public/landing_professionals_seo.html',data="Email Marketers in Enugu")
+@seo_nigeria.route('/Email-Support-Professionals-in-Enugu')
+def enugu_430():
+    return render_template('public/landing_professionals_seo.html',data="Email Support Professionals in Enugu")
+@seo_nigeria.route('/Email-Technical-Support-Specialists-in-Enugu')
+def enugu_431():
+    return render_template('public/landing_professionals_seo.html',data="Email Technical Support Specialists in Enugu")
+@seo_nigeria.route('/Employee-Training-Specialists-in-Enugu')
+def enugu_432():
+    return render_template('public/landing_professionals_seo.html',data="Employee Training Specialists in Enugu")
+@seo_nigeria.route('/Employment-Law-Lawyers-Legal-Professionals-in-Enugu')
+def enugu_433():
+    return render_template('public/landing_professionals_seo.html',data="Employment Law Lawyers - Legal Professionals in Enugu")
+@seo_nigeria.route('/Engineering-Designers-in-Enugu')
+def enugu_434():
+    return render_template('public/landing_professionals_seo.html',data="Engineering Designers in Enugu")
+@seo_nigeria.route('/Engineering-Drawing-Specialists-in-Enugu')
+def enugu_435():
+    return render_template('public/landing_professionals_seo.html',data="Engineering Drawing Specialists in Enugu")
+@seo_nigeria.route('/English-Grammar-Specialists-in-Enugu')
+def enugu_436():
+    return render_template('public/landing_professionals_seo.html',data="English Grammar Specialists in Enugu")
+@seo_nigeria.route('/English-Proofreaders-in-Enugu')
+def enugu_437():
+    return render_template('public/landing_professionals_seo.html',data="English Proofreaders in Enugu")
+@seo_nigeria.route('/English-Punctuation-Specialists-in-Enugu')
+def enugu_438():
+    return render_template('public/landing_professionals_seo.html',data="English Punctuation Specialists in Enugu")
+@seo_nigeria.route('/English-Specialists-in-Enugu')
+def enugu_439():
+    return render_template('public/landing_professionals_seo.html',data="English Specialists in Enugu")
+@seo_nigeria.route('/English-Spelling-Specialists-in-Enugu')
+def enugu_440():
+    return render_template('public/landing_professionals_seo.html',data="English Spelling Specialists in Enugu")
+@seo_nigeria.route('/English-Teachers-Tutors-in-Enugu')
+def enugu_441():
+    return render_template('public/landing_professionals_seo.html',data="English Teachers - Tutors in Enugu")
+@seo_nigeria.route('/English-to-Arabic-Translators-in-Enugu')
+def enugu_442():
+    return render_template('public/landing_professionals_seo.html',data="English to Arabic Translators in Enugu")
+@seo_nigeria.route('/English-to-Brazilian-Portuguese-Translators-in-Enugu')
+def enugu_443():
+    return render_template('public/landing_professionals_seo.html',data="English to Brazilian Portuguese Translators in Enugu")
+@seo_nigeria.route('/English-to-Chinese-Translators-in-Enugu')
+def enugu_444():
+    return render_template('public/landing_professionals_seo.html',data="English to Chinese Translators in Enugu")
+@seo_nigeria.route('/English-to-French-Translators-in-Enugu')
+def enugu_445():
+    return render_template('public/landing_professionals_seo.html',data="English to French Translators in Enugu")
+@seo_nigeria.route('/English-to-German-Translators-in-Enugu')
+def enugu_446():
+    return render_template('public/landing_professionals_seo.html',data="English to German Translators in Enugu")
+@seo_nigeria.route('/English-to-Greek-Translators-in-Enugu')
+def enugu_447():
+    return render_template('public/landing_professionals_seo.html',data="English to Greek Translators in Enugu")
+@seo_nigeria.route('/English-to-Hebrew-Translators-in-Enugu')
+def enugu_448():
+    return render_template('public/landing_professionals_seo.html',data="English to Hebrew Translators in Enugu")
+@seo_nigeria.route('/English-to-Italian-Translators-in-Enugu')
+def enugu_449():
+    return render_template('public/landing_professionals_seo.html',data="English to Italian Translators in Enugu")
+@seo_nigeria.route('/English-to-Japanese-Translators-in-Enugu')
+def enugu_450():
+    return render_template('public/landing_professionals_seo.html',data="English to Japanese Translators in Enugu")
+@seo_nigeria.route('/English-to-Norwegian-Translators-in-Enugu')
+def enugu_451():
+    return render_template('public/landing_professionals_seo.html',data="English to Norwegian Translators in Enugu")
+@seo_nigeria.route('/English-to-Portuguese-Translators-in-Enugu')
+def enugu_452():
+    return render_template('public/landing_professionals_seo.html',data="English to Portuguese Translators in Enugu")
+@seo_nigeria.route('/English-to-Romanian-Translators-in-Enugu')
+def enugu_453():
+    return render_template('public/landing_professionals_seo.html',data="English to Romanian Translators in Enugu")
+@seo_nigeria.route('/English-to-Russian-Translators-in-Enugu')
+def enugu_454():
+    return render_template('public/landing_professionals_seo.html',data="English to Russian Translators in Enugu")
+@seo_nigeria.route('/English-to-Serbian-Translators-in-Enugu')
+def enugu_455():
+    return render_template('public/landing_professionals_seo.html',data="English to Serbian Translators in Enugu")
+@seo_nigeria.route('/English-to-Spanish-Translators-in-Enugu')
+def enugu_456():
+    return render_template('public/landing_professionals_seo.html',data="English to Spanish Translators in Enugu")
+@seo_nigeria.route('/English-to-Thai-Translators-in-Enugu')
+def enugu_457():
+    return render_template('public/landing_professionals_seo.html',data="English to Thai Translators in Enugu")
+@seo_nigeria.route('/English-to-Urdu-Translators-in-Enugu')
+def enugu_458():
+    return render_template('public/landing_professionals_seo.html',data="English to Urdu Translators in Enugu")
+@seo_nigeria.route('/English-Tutors-in-Enugu')
+def enugu_459():
+    return render_template('public/landing_professionals_seo.html',data="English Tutors in Enugu")
+@seo_nigeria.route('/Enterprise-Resource-Planning(ERP)Specialists-in-Enugu')
+def enugu_460():
+    return render_template('public/landing_professionals_seo.html',data="Enterprise Resource Planning (ERP) Specialists in Enugu")
+@seo_nigeria.route('/Enterprise-Software-Developers-in-Enugu')
+def enugu_461():
+    return render_template('public/landing_professionals_seo.html',data="Enterprise Software Developers in Enugu")
+@seo_nigeria.route('/Entity-Framework-Specialists-in-Enugu')
+def enugu_462():
+    return render_template('public/landing_professionals_seo.html',data="Entity Framework Specialists in Enugu")
+@seo_nigeria.route('/Entrepreneurs-in-Enugu')
+def enugu_463():
+    return render_template('public/landing_professionals_seo.html',data="Entrepreneurs in Enugu")
+@seo_nigeria.route('/Environmental-Science-Specialists-in-Enugu')
+def enugu_464():
+    return render_template('public/landing_professionals_seo.html',data="Environmental Science Specialists in Enugu")
+@seo_nigeria.route('/ePub-Specialists-in-Enugu')
+def enugu_465():
+    return render_template('public/landing_professionals_seo.html',data="ePub Specialists in Enugu")
+@seo_nigeria.route('/Error-checking-Professionals-in-Enugu')
+def enugu_466():
+    return render_template('public/landing_professionals_seo.html',data="Error checking Professionals in Enugu")
+@seo_nigeria.route('/Es6-Professionals-in-Enugu')
+def enugu_467():
+    return render_template('public/landing_professionals_seo.html',data="Es6 Professionals in Enugu")
+@seo_nigeria.route('/Essay-Writers-in-Enugu')
+def enugu_468():
+    return render_template('public/landing_professionals_seo.html',data="Essay Writers in Enugu")
+@seo_nigeria.route('/Event-Managers-in-Enugu')
+def enugu_469():
+    return render_template('public/landing_professionals_seo.html',data="Event Managers in Enugu")
+@seo_nigeria.route('/Event-Photographers-in-Enugu')
+def enugu_470():
+    return render_template('public/landing_professionals_seo.html',data="Event Photographers in Enugu")
+@seo_nigeria.route('/Event-Planners-in-Enugu')
+def enugu_471():
+    return render_template('public/landing_professionals_seo.html',data="Event Planners in Enugu")
+@seo_nigeria.route('/Excel-Experts-in-Enugu')
+def enugu_472():
+    return render_template('public/landing_professionals_seo.html',data="Excel Experts in Enugu")
+@seo_nigeria.route('/Excel-Professionals-in-Enugu')
+def enugu_473():
+    return render_template('public/landing_professionals_seo.html',data="Excel Professionals in Enugu")
+@seo_nigeria.route('/Excel-VBA-Developers-in-Enugu')
+def enugu_474():
+    return render_template('public/landing_professionals_seo.html',data="Excel VBA Developers in Enugu")
+@seo_nigeria.route('/Exchange-Server-Professionals-in-Enugu')
+def enugu_475():
+    return render_template('public/landing_professionals_seo.html',data="Exchange Server Professionals in Enugu")
+@seo_nigeria.route('/Executive-Assistants-in-Enugu')
+def enugu_476():
+    return render_template('public/landing_professionals_seo.html',data="Executive Assistants in Enugu")
+@seo_nigeria.route('/Explainer-Video-Professionals-in-Enugu')
+def enugu_477():
+    return render_template('public/landing_professionals_seo.html',data="Explainer Video Professionals in Enugu")
+@seo_nigeria.route('/Explainer-Videos-Professionals-in-Enugu')
+def enugu_478():
+    return render_template('public/landing_professionals_seo.html',data="Explainer Videos Professionals in Enugu")
+@seo_nigeria.route('/Exploratory-Data-Analysis-Professionals-in-Enugu')
+def enugu_479():
+    return render_template('public/landing_professionals_seo.html',data="Exploratory Data Analysis Professionals in Enugu")
+@seo_nigeria.route('/Express-Professionals-in-Enugu')
+def enugu_480():
+    return render_template('public/landing_professionals_seo.html',data="Express Professionals in Enugu")
+@seo_nigeria.route('/Exterior-Rendering-Professionals-in-Enugu')
+def enugu_481():
+    return render_template('public/landing_professionals_seo.html',data="Exterior Rendering Professionals in Enugu")
+@seo_nigeria.route('/Facebook-Ad-Campaign-Professionals-in-Enugu')
+def enugu_482():
+    return render_template('public/landing_professionals_seo.html',data="Facebook Ad Campaign Professionals in Enugu")
+@seo_nigeria.route('/Facebook-Ads-Manager-Professionals-in-Enugu')
+def enugu_483():
+    return render_template('public/landing_professionals_seo.html',data="Facebook Ads Manager Professionals in Enugu")
+@seo_nigeria.route('/Facebook-Advertising-Professionals-in-Enugu')
+def enugu_484():
+    return render_template('public/landing_professionals_seo.html',data="Facebook Advertising Professionals in Enugu")
+@seo_nigeria.route('/Facebook-Marketers-in-Enugu')
+def enugu_485():
+    return render_template('public/landing_professionals_seo.html',data="Facebook Marketers in Enugu")
+@seo_nigeria.route('/Fact-Checkers-in-Enugu')
+def enugu_486():
+    return render_template('public/landing_professionals_seo.html',data="Fact Checkers in Enugu")
+@seo_nigeria.route('/Fashion-Designers-in-Enugu')
+def enugu_487():
+    return render_template('public/landing_professionals_seo.html',data="Fashion Designers in Enugu")
+@seo_nigeria.route('/Fashion-Illustrators-in-Enugu')
+def enugu_488():
+    return render_template('public/landing_professionals_seo.html',data="Fashion Illustrators in Enugu")
+@seo_nigeria.route('/Fashion-Models-in-Enugu')
+def enugu_489():
+    return render_template('public/landing_professionals_seo.html',data="Fashion Models in Enugu")
+@seo_nigeria.route('/Fashion-Photographers-in-Enugu')
+def enugu_490():
+    return render_template('public/landing_professionals_seo.html',data="Fashion Photographers in Enugu")
+@seo_nigeria.route('/Fashion-Writers-in-Enugu')
+def enugu_491():
+    return render_template('public/landing_professionals_seo.html',data="Fashion Writers in Enugu")
+@seo_nigeria.route('/Feature-Writers-in-Enugu')
+def enugu_492():
+    return render_template('public/landing_professionals_seo.html',data="Feature Writers in Enugu")
+@seo_nigeria.route('/Female-Voice-Over-Artists - Talent-in-Enugu')
+def enugu_493():
+    return render_template('public/landing_professionals_seo.html',data="Female Voice Over Artists - Talent in Enugu")
+@seo_nigeria.route('/Fiction-Writers-in-Enugu')
+def enugu_494():
+    return render_template('public/landing_professionals_seo.html',data="Fiction Writers in Enugu")
+@seo_nigeria.route('/Figma-Professionals-in-Enugu')
+def enugu_495():
+    return render_template('public/landing_professionals_seo.html',data="Figma Professionals in Enugu")
+@seo_nigeria.route('/File-Management-Professionals-in-Enugu')
+def enugu_496():
+    return render_template('public/landing_professionals_seo.html',data="File Management Professionals in Enugu")
+@seo_nigeria.route('/Film-Critics-in-Enugu')
+def enugu_497():
+    return render_template('public/landing_professionals_seo.html',data="Film Critics in Enugu")
+@seo_nigeria.route('/Film-Editors-in-Enugu')
+def enugu_498():
+    return render_template('public/landing_professionals_seo.html',data="Film Editors in Enugu")
+@seo_nigeria.route('/Finance-Professionals-in-Enugu')
+def enugu_499():
+    return render_template('public/landing_professionals_seo.html',data="Finance Professionals in Enugu")
+@seo_nigeria.route('/Financial-Accountants-in-Enugu')
+def enugu_500():
+    return render_template('public/landing_professionals_seo.html',data="Financial Accountants in Enugu")
+@seo_nigeria.route('/Financial-Analysts-in-Enugu')
+def enugu_501():
+    return render_template('public/landing_professionals_seo.html',data="Financial Analysts in Enugu")
+@seo_nigeria.route('/Financial-Audits-Professionals-in-Enugu')
+def enugu_502():
+    return render_template('public/landing_professionals_seo.html',data="Financial Audits Professionals in Enugu")
+@seo_nigeria.route('/Financial-Forecasting-Specialists-in-Enugu')
+def enugu_503():
+    return render_template('public/landing_professionals_seo.html',data="Financial Forecasting Specialists in Enugu")
+@seo_nigeria.route('/Financial-Managers-in-Enugu')
+def enugu_504():
+    return render_template('public/landing_professionals_seo.html',data="Financial Managers in Enugu")
+@seo_nigeria.route('/Financial-Model-Professionals-in-Enugu')
+def enugu_505():
+    return render_template('public/landing_professionals_seo.html',data="Financial Model Professionals in Enugu")
+@seo_nigeria.route('/Financial-Modelers-in-Enugu')
+def enugu_506():
+    return render_template('public/landing_professionals_seo.html',data="Financial Modelers in Enugu")
+@seo_nigeria.route('/Financial-Modelling-Professionals-in-Enugu')
+def enugu_507():
+    return render_template('public/landing_professionals_seo.html',data="Financial Modelling Professionals in Enugu")
+@seo_nigeria.route('/Financial-Planning-Professionals-in-Enugu')
+def enugu_508():
+    return render_template('public/landing_professionals_seo.html',data="Financial Planning Professionals in Enugu")
+@seo_nigeria.route('/Financial-Prospectus-Writers-in-Enugu')
+def enugu_509():
+    return render_template('public/landing_professionals_seo.html',data="Financial Prospectus Writers in Enugu")
+@seo_nigeria.route('/Financial-Reporting-Specialists-in-Enugu')
+def enugu_510():
+    return render_template('public/landing_professionals_seo.html',data="Financial Reporting Specialists in Enugu")
+@seo_nigeria.route('/Financial-Reports-Professionals-in-Enugu')
+def enugu_511():
+    return render_template('public/landing_professionals_seo.html',data="Financial Reports Professionals in Enugu")
+@seo_nigeria.route('/Financial-Translation-Professionals-in-Enugu')
+def enugu_512():
+    return render_template('public/landing_professionals_seo.html',data="Financial Translation Professionals in Enugu")
+@seo_nigeria.route('/Financial-Writers-in-Enugu')
+def enugu_513():
+    return render_template('public/landing_professionals_seo.html',data="Financial Writers in Enugu")
+@seo_nigeria.route('/Firebase-Specialists-in-Enugu')
+def enugu_514():
+    return render_template('public/landing_professionals_seo.html',data="Firebase Specialists in Enugu")
+@seo_nigeria.route('/Firewall-Specialists-in-Enugu')
+def enugu_515():
+    return render_template('public/landing_professionals_seo.html',data="Firewall Specialists in Enugu")
+@seo_nigeria.route('/Flask-Developers-Programmers-in-Enugu')
+def enugu_516():
+    return render_template('public/landing_professionals_seo.html',data="Flask Developers - Programmers in Enugu")
+@seo_nigeria.route('/Flutter-Professionals-in-Enugu')
+def enugu_517():
+    return render_template('public/landing_professionals_seo.html',data="Flutter Professionals in Enugu")
+@seo_nigeria.route('/Flyer-Designers-in-Enugu')
+def enugu_518():
+    return render_template('public/landing_professionals_seo.html',data="Flyer Designers in Enugu")
+@seo_nigeria.route('/Food-Photography-Professionals-in-Enugu')
+def enugu_519():
+    return render_template('public/landing_professionals_seo.html',data="Food Photography Professionals in Enugu")
+@seo_nigeria.route('/Forex-Traders-in-Enugu')
+def enugu_520():
+    return render_template('public/landing_professionals_seo.html',data="Forex Traders in Enugu")
+@seo_nigeria.route('/Format-Layout-Specialists-in-Enugu')
+def enugu_521():
+    return render_template('public/landing_professionals_seo.html',data="Format - Layout Specialists in Enugu")
+@seo_nigeria.route('/Freelance-Marketers-in-Enugu')
+def enugu_522():
+    return render_template('public/landing_professionals_seo.html',data="Freelance Marketers in Enugu")
+@seo_nigeria.route('/French-Proofreading-Professionals-in-Enugu')
+def enugu_523():
+    return render_template('public/landing_professionals_seo.html',data="French Proofreading Professionals in Enugu")
+@seo_nigeria.route('/French-Specialists-in-Enugu')
+def enugu_524():
+    return render_template('public/landing_professionals_seo.html',data="French Specialists in Enugu")
+@seo_nigeria.route('/French-to-English-Translators-in-Enugu')
+def enugu_525():
+    return render_template('public/landing_professionals_seo.html',data="French to English Translators in Enugu")
+@seo_nigeria.route('/French-to-German-Translators-in-Enugu')
+def enugu_526():
+    return render_template('public/landing_professionals_seo.html',data="French to German Translators in Enugu")
+@seo_nigeria.route('/French-to-Portuguese-Translators-in-Enugu')
+def enugu_527():
+    return render_template('public/landing_professionals_seo.html',data="French to Portuguese Translators in Enugu")
+@seo_nigeria.route('/French-to-Spanish-Translators-in-Enugu')
+def enugu_528():
+    return render_template('public/landing_professionals_seo.html',data="French to Spanish Translators in Enugu")
+@seo_nigeria.route('/Front-End-Developers-in-Enugu')
+def enugu_529():
+    return render_template('public/landing_professionals_seo.html',data="Front-End Developers in Enugu")
+@seo_nigeria.route('/Functional-Testing-Specialists-in-Enugu')
+def enugu_530():
+    return render_template('public/landing_professionals_seo.html',data="Functional Testing Specialists in Enugu")
+@seo_nigeria.route('/Game-Developers-in-Enugu')
+def enugu_531():
+    return render_template('public/landing_professionals_seo.html',data="Game Developers in Enugu")
+@seo_nigeria.route('/Gatsby-Professionals-in-Enugu')
+def enugu_532():
+    return render_template('public/landing_professionals_seo.html',data="Gatsby Professionals in Enugu")
+@seo_nigeria.route('/General-Office-Skills-Specialists-in-Enugu')
+def enugu_533():
+    return render_template('public/landing_professionals_seo.html',data="General Office Skills Specialists in Enugu")
+@seo_nigeria.route('/Geographic-Information-System(GIS)Developers-in-Enugu')
+def enugu_534():
+    return render_template('public/landing_professionals_seo.html',data="Geographic Information System (GIS) Developers in Enugu")
+@seo_nigeria.route('/Geologists-in-Enugu')
+def enugu_535():
+    return render_template('public/landing_professionals_seo.html',data="Geologists in Enugu")
+@seo_nigeria.route('/German-Translators-in-Enugu')
+def enugu_536():
+    return render_template('public/landing_professionals_seo.html',data="German Translators in Enugu")
+@seo_nigeria.route('/German-to-English-Translators-in-Enugu')
+def enugu_537():
+    return render_template('public/landing_professionals_seo.html',data="German to English Translators in Enugu")
+@seo_nigeria.route('/German-to-French-Translators-in-Enugu')
+def enugu_538():
+    return render_template('public/landing_professionals_seo.html',data="German to French Translators in Enugu")
+@seo_nigeria.route('/German-to-Spanish-Translators-in-Enugu')
+def enugu_539():
+    return render_template('public/landing_professionals_seo.html',data="German to Spanish Translators in Enugu")
+@seo_nigeria.route('/Ghostwriters-in-Enugu')
+def enugu_540():
+    return render_template('public/landing_professionals_seo.html',data="Ghostwriters in Enugu")
+@seo_nigeria.route('/GIMP-Specialists-in-Enugu')
+def enugu_541():
+    return render_template('public/landing_professionals_seo.html',data="GIMP Specialists in Enugu")
+@seo_nigeria.route('/Git-Developers-in-Enugu')
+def enugu_542():
+    return render_template('public/landing_professionals_seo.html',data="Git Developers in Enugu")
+@seo_nigeria.route('/Github-Developers-in-Enugu')
+def enugu_543():
+    return render_template('public/landing_professionals_seo.html',data="GitHub Developers in Enugu")
+@seo_nigeria.route('/Golang-Developers-in-Enugu')
+def enugu_544():
+    return render_template('public/landing_professionals_seo.html',data="Golang Developers in Enugu")
+@seo_nigeria.route('/GoodData-Specialists-in-Enugu')
+def enugu_545():
+    return render_template('public/landing_professionals_seo.html',data="GoodData Specialists in Enugu")
+@seo_nigeria.route('/Google-Ads-Professionals-in-Enugu')
+def enugu_546():
+    return render_template('public/landing_professionals_seo.html',data="Google Ads Professionals in Enugu")
+@seo_nigeria.route('/Google-AdSense-Specialists-in-Enugu')
+def enugu_547():
+    return render_template('public/landing_professionals_seo.html',data="Google AdSense Specialists in Enugu")
+@seo_nigeria.route('/Google-Analytics-Experts-in-Enugu')
+def enugu_548():
+    return render_template('public/landing_professionals_seo.html',data="Google Analytics Experts in Enugu")
+@seo_nigeria.route('/Google-Apps-Developers-in-Enugu')
+def enugu_549():
+    return render_template('public/landing_professionals_seo.html',data="Google Apps Developers in Enugu")
+@seo_nigeria.route('/Google-Cloud-Platform-Administration-Professionals-in-Enugu')
+def enugu_550():
+    return render_template('public/landing_professionals_seo.html',data="Google Cloud Platform Administration Professionals in Enugu")
+@seo_nigeria.route('/Google-Docs-Experts-in-Enugu')
+def enugu_551():
+    return render_template('public/landing_professionals_seo.html',data="Google Docs Experts in Enugu")
+@seo_nigeria.route('/Google-Search-Experts-in-Enugu')
+def enugu_552():
+    return render_template('public/landing_professionals_seo.html',data="Google Search Experts in Enugu")
+@seo_nigeria.route('/Google-Sheets-Experts-in-Enugu')
+def enugu_553():
+    return render_template('public/landing_professionals_seo.html',data="Google Sheets Experts in Enugu")
+@seo_nigeria.route('/Enugu')
+def enugu_554():
+    return render_template('public/landing_professionals_seo.html',data="Google Sheets Professionals in Enugu")
+@seo_nigeria.route('/Google-Shopping-Specialists-in-Enugu')
+def enugu_555():
+    return render_template('public/landing_professionals_seo.html',data="Google Shopping Specialists in Enugu")
+@seo_nigeria.route('/Google-Suite-Professionals-in-Enugu')
+def enugu_556():
+    return render_template('public/landing_professionals_seo.html',data="Google Suite Professionals in Enugu")
+@seo_nigeria.route('/Google-Tag-Manager-Specialists-in-Enugu')
+def enugu_557():
+    return render_template('public/landing_professionals_seo.html',data="Google Tag Manager Specialists in Enugu")
+@seo_nigeria.route('/Google-Web-Designer-Professionals-in-Enugu')
+def enugu_558():
+    return render_template('public/landing_professionals_seo.html',data="Google Web Designer Professionals in Enugu")
+@seo_nigeria.route('/Goolge-AdWords-Professionals-in-Enugu')
+def enugu_559():
+    return render_template('public/landing_professionals_seo.html',data="Goolge AdWords Professionals in Enugu")
+@seo_nigeria.route('/Grant-Writers-in-Enugu')
+def enugu_560():
+    return render_template('public/landing_professionals_seo.html',data="Grant Writers in Enugu")
+@seo_nigeria.route('/graphic-art-software-and-3D-computer-graphics-Professionals-in-Enugu')
+def enugu_561():
+    return render_template('public/landing_professionals_seo.html',data="graphic art software and 3D computer graphics Professionals in Enugu")
+@seo_nigeria.route('/Graphic-Designers-in-Enugu')
+def enugu_562():
+    return render_template('public/landing_professionals_seo.html',data="Graphic Designers in Enugu")
+@seo_nigeria.route('/Graphics-Programmers-in-Enugu')
+def enugu_563():
+    return render_template('public/landing_professionals_seo.html',data="Graphics Programmers in Enugu")
+@seo_nigeria.route('/GraphQL-Developers-in-Enugu')
+def enugu_564():
+    return render_template('public/landing_professionals_seo.html',data="GraphQL Developers in Enugu")
+@seo_nigeria.route('/Greek-to-English-Translators-in-Enugu')
+def enugu_565():
+    return render_template('public/landing_professionals_seo.html',data="Greek to English Translators in Enugu")
+@seo_nigeria.route('/H-in-Enugu')
+def enugu_566():
+    return render_template('public/landing_professionals_seo.html',data="H in Enugu")
+@seo_nigeria.route('/Hardware-Troubleshooting-Specialists-in-Enugu')
+def enugu_567():
+    return render_template('public/landing_professionals_seo.html',data="Hardware Troubleshooting Specialists in Enugu")
+@seo_nigeria.route('/Hausa-Professionals-in-Enugu')
+def enugu_568():
+    return render_template('public/landing_professionals_seo.html',data="Hausa Professionals in Enugu")
+@seo_nigeria.route('/Health-Fitness-Professionals-in-Enugu')
+def enugu_569():
+    return render_template('public/landing_professionals_seo.html',data="Health - Fitness Professionals in Enugu")
+@seo_nigeria.route('/Healthcare-Medical-Professionals-in-Enugu')
+def enugu_570():
+    return render_template('public/landing_professionals_seo.html',data="Healthcare - Medical Professionals in Enugu")
+@seo_nigeria.route('/Helpdesk-Specialists-in-Enugu')
+def enugu_571():
+    return render_template('public/landing_professionals_seo.html',data="Helpdesk Specialists in Enugu")
+@seo_nigeria.route('/Heroku-Specialists-in-Enugu')
+def enugu_572():
+    return render_template('public/landing_professionals_seo.html',data="Heroku Specialists in Enugu")
+@seo_nigeria.route('/Hibernate-Developers-in-Enugu')
+def enugu_573():
+    return render_template('public/landing_professionals_seo.html',data="Hibernate Developers in Enugu")
+@seo_nigeria.route('/HRM-Specialists-in-Enugu')
+def enugu_574():
+    return render_template('public/landing_professionals_seo.html',data="HRM Specialists in Enugu")
+@seo_nigeria.route('/HTML-Developers-in-Enugu')
+def enugu_575():
+    return render_template('public/landing_professionals_seo.html',data="HTML Developers in Enugu")
+@seo_nigeria.route('/HTML-Newsletter-Professionals-in-Enugu')
+def enugu_576():
+    return render_template('public/landing_professionals_seo.html',data="HTML Newsletter Professionals in Enugu")
+@seo_nigeria.route('/HTML5-Canvas-Developers-in-Enugu')
+def enugu_577():
+    return render_template('public/landing_professionals_seo.html',data="HTML5 Canvas Developers in Enugu")
+@seo_nigeria.route('/HTML5-Developers-in-Enugu')
+def enugu_578():
+    return render_template('public/landing_professionals_seo.html',data="HTML5 Developers in Enugu")
+@seo_nigeria.route('/HubSpot-Specialists-in-Enugu')
+def enugu_579():
+    return render_template('public/landing_professionals_seo.html',data="HubSpot Specialists in Enugu")
+@seo_nigeria.route('/Human-Resource-Managers-in-Enugu')
+def enugu_580():
+    return render_template('public/landing_professionals_seo.html',data="Human Resource Managers in Enugu")
+@seo_nigeria.route('/Human-Resources-Professionals-in-Enugu')
+def enugu_581():
+    return render_template('public/landing_professionals_seo.html',data="Human Resources Professionals in Enugu")
+@seo_nigeria.route('/Humor-Writers-in-Enugu')
+def enugu_582():
+    return render_template('public/landing_professionals_seo.html',data="Humor Writers in Enugu")
+@seo_nigeria.route('/IBM-Rational-Rose-Specialists-in-Enugu')
+def enugu_583():
+    return render_template('public/landing_professionals_seo.html',data="IBM Rational Rose Specialists in Enugu")
+@seo_nigeria.route('/IBM-SPSS-Specialists-in-Enugu')
+def enugu_584():
+    return render_template('public/landing_professionals_seo.html',data="IBM SPSS Specialists in Enugu")
+@seo_nigeria.route('/Icon-Designers-in-Enugu')
+def enugu_585():
+    return render_template('public/landing_professionals_seo.html',data="Icon Designers in Enugu")
+@seo_nigeria.route('/IFRS-Accounting-Experts-in-Enugu')
+def enugu_586():
+    return render_template('public/landing_professionals_seo.html',data="IFRS Accounting Experts in Enugu")
+@seo_nigeria.route('/Illustrations-Professionals-in-Enugu')
+def enugu_587():
+    return render_template('public/landing_professionals_seo.html',data="Illustrations Professionals in Enugu")
+@seo_nigeria.route('/Illustrators-in-Enugu')
+def enugu_588():
+    return render_template('public/landing_professionals_seo.html',data="Illustrators in Enugu")
+@seo_nigeria.route('/Image-Editors-in-Enugu')
+def enugu_589():
+    return render_template('public/landing_professionals_seo.html',data="Image Editors in Enugu")
+@seo_nigeria.route('/Inbound-Marketers-in-Enugu')
+def enugu_590():
+    return render_template('public/landing_professionals_seo.html',data="Inbound Marketers in Enugu")
+@seo_nigeria.route('/Influencer-Marketers-in-Enugu')
+def enugu_591():
+    return render_template('public/landing_professionals_seo.html',data="Influencer Marketers in Enugu")
+@seo_nigeria.route('/Infographic-Designers-in-Enugu')
+def enugu_592():
+    return render_template('public/landing_professionals_seo.html',data="Infographic Designers in Enugu")
+@seo_nigeria.route('/Infographic-Professionals-in-Enugu')
+def enugu_593():
+    return render_template('public/landing_professionals_seo.html',data="Infographic Professionals in Enugu")
+@seo_nigeria.route('/Information-Communications-Technology-Professionals-in-Enugu')
+def enugu_594():
+    return render_template('public/landing_professionals_seo.html',data="Information - Communications Technology Professionals in Enugu")
+@seo_nigeria.route('/Information-Security-Analysts-in-Enugu')
+def enugu_595():
+    return render_template('public/landing_professionals_seo.html',data="Information Security Analysts in Enugu")
+@seo_nigeria.route('/Information-Technology-Career-Coach-Professionals-in-Enugu')
+def enugu_596():
+    return render_template('public/landing_professionals_seo.html',data="Information Technology Career Coach Professionals in Enugu")
+@seo_nigeria.route('/Instagram-Ad-Campaign-Professionals-in-Enugu')
+def enugu_597():
+    return render_template('public/landing_professionals_seo.html',data="Instagram Ad Campaign Professionals in Enugu")
+@seo_nigeria.route('/Instagram-API-Developers-in-Enugu')
+def enugu_598():
+    return render_template('public/landing_professionals_seo.html',data="Instagram API Developers in Enugu")
+@seo_nigeria.route('/Instagram-Professionals-in-Enugu')
+def enugu_599():
+    return render_template('public/landing_professionals_seo.html',data="Instagram Professionals in Enugu")
+@seo_nigeria.route('/Instagram-Marketers-in-Enugu')
+def enugu_600():
+    return render_template('public/landing_professionals_seo.html',data="Instagram Marketers in Enugu")
+#####################################################600###################################################
+@seo_nigeria.route('/Instructional-Designers-in-Enugu')
+def enugu_601():
+    return render_template('public/landing_professionals_seo.html',data="Instructional Designers in Enugu")
+@seo_nigeria.route('/Instrumentation-Specialists-in-Enugu')
+def enugu_602():
+    return render_template('public/landing_professionals_seo.html',data="Instrumentation Specialists in Enugu")
+@seo_nigeria.route('/Intellectual-Property-Law-Lawyers-Legal-Professionals-in-Enugu')
+def enugu_603():
+    return render_template('public/landing_professionals_seo.html',data="Intellectual Property Law Lawyers - Legal Professionals in Enugu")
+@seo_nigeria.route('/Interactive-Advertising-Specialists-in-Enugu')
+def enugu_604():
+    return render_template('public/landing_professionals_seo.html',data="Interactive Advertising Specialists in Enugu")
+@seo_nigeria.route('/Interactive-Design-Professionals-in-Enugu')
+def enugu_605():
+    return render_template('public/landing_professionals_seo.html',data="Interactive Design Professionals in Enugu")
+@seo_nigeria.route('/Interactive-Voice-Response-Specialists-in-Enugu')
+def enugu_606():
+    return render_template('public/landing_professionals_seo.html',data="Interactive Voice Response Specialists in Enugu")
+@seo_nigeria.route('/Interior-Architecture-Specialists-in-Enugu')
+def enugu_607():
+    return render_template('public/landing_professionals_seo.html',data="Interior Architecture Specialists in Enugu")
+@seo_nigeria.route('/Interior-Designers-in-Enugu')
+def enugu_608():
+    return render_template('public/landing_professionals_seo.html',data="Interior Designers in Enugu")
+@seo_nigeria.route('/Internal-Auditing-Specialists-in-Enugu')
+def enugu_609():
+    return render_template('public/landing_professionals_seo.html',data="Internal Auditing Specialists in Enugu")
+@seo_nigeria.route('/Internal-Controls-Specialists-in-Enugu')
+def enugu_610():
+    return render_template('public/landing_professionals_seo.html',data="Internal Controls Specialists in Enugu")
+@seo_nigeria.route('/Internet-Marketers-in-Enugu')
+def enugu_611():
+    return render_template('public/landing_professionals_seo.html',data="Internet Marketers in Enugu")
+@seo_nigeria.route('/Internet-Researchers-in-Enugu')
+def enugu_612():
+    return render_template('public/landing_professionals_seo.html',data="Internet Researchers in Enugu")
+@seo_nigeria.route('/Internet-Security-Specialists-in-Enugu')
+def enugu_613():
+    return render_template('public/landing_professionals_seo.html',data="Internet Security Specialists in Enugu")
+@seo_nigeria.route('/Internet-Surveys-Specialists-in-Enugu')
+def enugu_614():
+    return render_template('public/landing_professionals_seo.html',data="Internet Surveys Specialists in Enugu")
+@seo_nigeria.route('/Interpersonal-skills-Professionals-in-Enugu')
+def enugu_615():
+    return render_template('public/landing_professionals_seo.html',data="Interpersonal skills Professionals in Enugu")
+@seo_nigeria.route('/Interpretation-Specialists-in-Enugu')
+def enugu_616():
+    return render_template('public/landing_professionals_seo.html',data="Interpretation Specialists in Enugu")
+@seo_nigeria.route('/Interviewers-in-Enugu')
+def enugu_617():
+    return render_template('public/landing_professionals_seo.html',data="Interviewers in Enugu")
+@seo_nigeria.route('/Intuit-QuickBooks-Specialists-in-Enugu')
+def enugu_618():
+    return render_template('public/landing_professionals_seo.html',data="Intuit QuickBooks Specialists in Enugu")
+@seo_nigeria.route('/Inventory-Management-Specialists-in-Enugu')
+def enugu_619():
+    return render_template('public/landing_professionals_seo.html',data="Inventory Management Specialists in Enugu")
+@seo_nigeria.route('/Investment-Researchers-in-Enugu')
+def enugu_620():
+    return render_template('public/landing_professionals_seo.html',data="Investment Researchers in Enugu")
+@seo_nigeria.route('/Invision-Specialists-in-Enugu')
+def enugu_621():
+    return render_template('public/landing_professionals_seo.html',data="Invision Specialists in Enugu")
+@seo_nigeria.route('/Invitation-Designers-in-Enugu')
+def enugu_622():
+    return render_template('public/landing_professionals_seo.html',data="Invitation Designers in Enugu")
+@seo_nigeria.route('/Invoicing-Specialists-in-Enugu')
+def enugu_623():
+    return render_template('public/landing_professionals_seo.html',data="Invoicing Specialists in Enugu")
+@seo_nigeria.route('/Ionic-Framework-Developers-in-Enugu')
+def enugu_624():
+    return render_template('public/landing_professionals_seo.html',data="Ionic Framework Developers in Enugu")
+@seo_nigeria.route('/Ionic-Professionals-in-Enugu')
+def enugu_625():
+    return render_template('public/landing_professionals_seo.html',data="Ionic Professionals in Enugu")
+@seo_nigeria.route('/iOS-Developers-in-Enugu')
+def enugu_626():
+    return render_template('public/landing_professionals_seo.html',data="iOS Developers in Enugu")
+@seo_nigeria.route('/iOS-Professionals-in-Enugu')
+def enugu_627():
+    return render_template('public/landing_professionals_seo.html',data="iOS Professionals in Enugu")
+@seo_nigeria.route('/iPhone-App-Developers-in-Enugu')
+def enugu_628():
+    return render_template('public/landing_professionals_seo.html',data="iPhone App Developers in Enugu")
+@seo_nigeria.route('/iPhone-UI-Designers-in-Enugu')
+def enugu_629():
+    return render_template('public/landing_professionals_seo.html',data="iPhone UI Designers in Enugu")
+@seo_nigeria.route('/IT-Professionals-in-Enugu')
+def enugu_630():
+    return render_template('public/landing_professionals_seo.html',data="IT Professionals in Enugu")
+@seo_nigeria.route('/IT-Managers-in-Enugu')
+def enugu_631():
+    return render_template('public/landing_professionals_seo.html',data="IT Managers in Enugu")
+@seo_nigeria.route('/IT-Operations-Specialists-in-Enugu')
+def enugu_632():
+    return render_template('public/landing_professionals_seo.html',data="IT Operations Specialists in Enugu")
+@seo_nigeria.route('/IT-Service-Management-Specialists-in-Enugu')
+def enugu_633():
+    return render_template('public/landing_professionals_seo.html',data="IT Service Management Specialists in Enugu")
+@seo_nigeria.route('/Italian-to-English-Translators-in-Enugu')
+def enugu_634():
+    return render_template('public/landing_professionals_seo.html',data="Italian to English Translators in Enugu")
+@seo_nigeria.route('/ITIL-Specialists-in-Enugu')
+def enugu_635():
+    return render_template('public/landing_professionals_seo.html',data="ITIL Specialists in Enugu")
+@seo_nigeria.route('/Japanese-to-English-Translators-in-Enugu')
+def enugu_636():
+    return render_template('public/landing_professionals_seo.html',data="Japanese to English Translators in Enugu")
+@seo_nigeria.route('/Java-Developers-in-Enugu')
+def enugu_637():
+    return render_template('public/landing_professionals_seo.html',data="Java Developers in Enugu")
+@seo_nigeria.route('/Java-EE-Specialists-in-Enugu')
+def enugu_638():
+    return render_template('public/landing_professionals_seo.html',data="Java EE Specialists in Enugu")
+@seo_nigeria.route('/Java-GUI-Professionals-in-Enugu')
+def enugu_639():
+    return render_template('public/landing_professionals_seo.html',data="Java GUI Professionals in Enugu")
+@seo_nigeria.route('/JavaFX-Developers-in-Enugu')
+def enugu_640():
+    return render_template('public/landing_professionals_seo.html',data="JavaFX Developers in Enugu")
+@seo_nigeria.route('/JavaScript-Developers-in-Enugu')
+def enugu_641():
+    return render_template('public/landing_professionals_seo.html',data="JavaScript Developers in Enugu")
+@seo_nigeria.route('/Jingle-Program-Production-Specialists-in-Enugu')
+def enugu_642():
+    return render_template('public/landing_professionals_seo.html',data="Jingle Program Production Specialists in Enugu")
+@seo_nigeria.route('/Joomla-Developers-in-Enugu')
+def enugu_643():
+    return render_template('public/landing_professionals_seo.html',data="Joomla Developers in Enugu")
+@seo_nigeria.route('/Journalists-in-Enugu')
+def enugu_644():
+    return render_template('public/landing_professionals_seo.html',data="Journalists in Enugu")
+@seo_nigeria.route('/JPA-Specialists-in-Enugu')
+def enugu_645():
+    return render_template('public/landing_professionals_seo.html',data="JPA Specialists in Enugu")
+@seo_nigeria.route('/jQuery-Developers-in-Enugu')
+def enugu_646():
+    return render_template('public/landing_professionals_seo.html',data="jQuery Developers in Enugu")
+@seo_nigeria.route('/JQuery-Mobile-Developers-in-Enugu')
+def enugu_647():
+    return render_template('public/landing_professionals_seo.html',data="JQuery Mobile Developers in Enugu")
+@seo_nigeria.route('/JSON-Developers-in-Enugu')
+def enugu_648():
+    return render_template('public/landing_professionals_seo.html',data="JSON Developers in Enugu")
+@seo_nigeria.route('/JSP-Developers-in-Enugu')
+def enugu_649():
+    return render_template('public/landing_professionals_seo.html',data="JSP Developers in Enugu")
+@seo_nigeria.route('/Keras-Professionals-in-Enugu')
+def enugu_650():
+    return render_template('public/landing_professionals_seo.html',data="Keras Professionals in Enugu")
+@seo_nigeria.route('/Khmer-to-English-Translators-in-Enugu')
+def enugu_651():
+    return render_template('public/landing_professionals_seo.html',data="Khmer to English Translators in Enugu")
+@seo_nigeria.route('/Kindle-Direct-Publishing-Professionals-in-Enugu')
+def enugu_652():
+    return render_template('public/landing_professionals_seo.html',data="Kindle Direct Publishing Professionals in Enugu")
+@seo_nigeria.route('/Klaviyo-Specialists-in-Enugu')
+def enugu_653():
+    return render_template('public/landing_professionals_seo.html',data="Klaviyo Specialists in Enugu")
+@seo_nigeria.route('/Korean-to-English-Translators-in-Enugu')
+def enugu_654():
+    return render_template('public/landing_professionals_seo.html',data="Korean to English Translators in Enugu")
+@seo_nigeria.route('/Kotlin-Developers-in-Enugu')
+def enugu_655():
+    return render_template('public/landing_professionals_seo.html',data="Kotlin Developers in Enugu")
+@seo_nigeria.route('/Label-and-Package-Designers-in-Enugu')
+def enugu_656():
+    return render_template('public/landing_professionals_seo.html',data="Label and Package Designers in Enugu")
+@seo_nigeria.route('/LAN-Administrators-in-Enugu')
+def enugu_657():
+    return render_template('public/landing_professionals_seo.html',data="LAN Administrators in Enugu")
+@seo_nigeria.route('/Landing-Pages-Specialists-in-Enugu')
+def enugu_658():
+    return render_template('public/landing_professionals_seo.html',data="Landing Pages Specialists in Enugu")
+@seo_nigeria.route('/Laravel-Developers-in-Enugu')
+def enugu_659():
+    return render_template('public/landing_professionals_seo.html',data="Laravel Developers in Enugu")
+@seo_nigeria.route('/Laravel-Professionals-in-Enugu')
+def enugu_660():
+    return render_template('public/landing_professionals_seo.html',data="Laravel Professionals in Enugu")
+@seo_nigeria.route('/Lead-Generation-Specialists-in-Enugu')
+def enugu_661():
+    return render_template('public/landing_professionals_seo.html',data="Lead Generation Specialists in Enugu")
+@seo_nigeria.route('/Leadership-Development-Specialists-in-Enugu')
+def enugu_662():
+    return render_template('public/landing_professionals_seo.html',data="Leadership Development Specialists in Enugu")
+@seo_nigeria.route('/Leadership-Professionals-in-Enugu')
+def enugu_663():
+    return render_template('public/landing_professionals_seo.html',data="Leadership Professionals in Enugu")
+@seo_nigeria.route('/Legal-Assistance-Specialists-in-Enugu')
+def enugu_664():
+    return render_template('public/landing_professionals_seo.html',data="Legal Assistance Specialists in Enugu")
+@seo_nigeria.route('/Legal-Consultants-in-Enugu')
+def enugu_665():
+    return render_template('public/landing_professionals_seo.html',data="Legal Consultants in Enugu")
+@seo_nigeria.route('/Legal-Researchers-in-Enugu')
+def enugu_666():
+    return render_template('public/landing_professionals_seo.html',data="Legal Researchers in Enugu")
+@seo_nigeria.route('/Legal-Transcriptionists-in-Enugu')
+def enugu_667():
+    return render_template('public/landing_professionals_seo.html',data="Legal Transcriptionists in Enugu")
+@seo_nigeria.route('/Legal-Translators-in-Enugu')
+def enugu_668():
+    return render_template('public/landing_professionals_seo.html',data="Legal Translators in Enugu")
+@seo_nigeria.route('/Legal-Writers-in-Enugu')
+def enugu_669():
+    return render_template('public/landing_professionals_seo.html',data="Legal Writers in Enugu")
+@seo_nigeria.route('/Lesson-Plan-Writers-in-Enugu')
+def enugu_670():
+    return render_template('public/landing_professionals_seo.html',data="Lesson Plan Writers in Enugu")
+@seo_nigeria.route('/Letter-Writers-in-Enugu')
+def enugu_671():
+    return render_template('public/landing_professionals_seo.html',data="Letter Writers in Enugu")
+@seo_nigeria.route('/Letterhead-Design-Professionals-in-Enugu')
+def enugu_672():
+    return render_template('public/landing_professionals_seo.html',data="Letterhead Design Professionals in Enugu")
+@seo_nigeria.route('/Lifestyle-Photography-Professionals-in-Enugu')
+def enugu_673():
+    return render_template('public/landing_professionals_seo.html',data="Lifestyle Photography Professionals in Enugu")
+@seo_nigeria.route('/LinkedIn-API-Developers-in-Enugu')
+def enugu_674():
+    return render_template('public/landing_professionals_seo.html',data="LinkedIn API Developers in Enugu")
+@seo_nigeria.route('/LinkedIn-Professionals-in-Enugu')
+def enugu_675():
+    return render_template('public/landing_professionals_seo.html',data="LinkedIn Professionals in Enugu")
+@seo_nigeria.route('/LinkedIn-Recruiters-in-Enugu')
+def enugu_676():
+    return render_template('public/landing_professionals_seo.html',data="LinkedIn Recruiters in Enugu")
+@seo_nigeria.route('/Linux-Professionals-in-Enugu')
+def enugu_677():
+    return render_template('public/landing_professionals_seo.html',data="Linux Professionals in Enugu")
+@seo_nigeria.route('/Linux-System-Administrators-in-Enugu')
+def enugu_678():
+    return render_template('public/landing_professionals_seo.html',data="Linux System Administrators in Enugu")
+@seo_nigeria.route('/Literature-Reviewers-in-Enugu')
+def enugu_679():
+    return render_template('public/landing_professionals_seo.html',data="Literature Reviewers in Enugu")
+@seo_nigeria.route('/Live-Chat-Operators-in-Enugu')
+def enugu_680():
+    return render_template('public/landing_professionals_seo.html',data="Live Chat Operators in Enugu")
+@seo_nigeria.route('/Logistics-Shipping-Specialists-in-Enugu')
+def enugu_681():
+    return render_template('public/landing_professionals_seo.html',data="Logistics - Shipping Specialists in Enugu")
+@seo_nigeria.route('/Logistics-Management-Professionals-in-Enugu')
+def enugu_682():
+    return render_template('public/landing_professionals_seo.html',data="Logistics Management Professionals in Enugu")
+@seo_nigeria.route('/Logo-Animation-Professionals-in-Enugu')
+def enugu_683():
+    return render_template('public/landing_professionals_seo.html',data="Logo Animation Professionals in Enugu")
+@seo_nigeria.route('/Logo-Designers-in-Enugu')
+def enugu_684():
+    return render_template('public/landing_professionals_seo.html',data="Logo Designers in Enugu")
+@seo_nigeria.route('/Logo-Professionals-in-Enugu')
+def enugu_685():
+    return render_template('public/landing_professionals_seo.html',data="Logo Professionals in Enugu")
+@seo_nigeria.route('/Lumion-Specialists-in-Enugu')
+def enugu_686():
+    return render_template('public/landing_professionals_seo.html',data="Lumion Specialists in Enugu")
+@seo_nigeria.route('/Lyrics-Writers-in-Enugu')
+def enugu_687():
+    return render_template('public/landing_professionals_seo.html',data="Lyrics Writers in Enugu")
+@seo_nigeria.route('/Machine-Designers-in-Enugu')
+def enugu_688():
+    return render_template('public/landing_professionals_seo.html',data="Machine Designers in Enugu")
+@seo_nigeria.route('/Machine-Learning-Experts-in-Enugu')
+def enugu_689():
+    return render_template('public/landing_professionals_seo.html',data="Machine Learning Experts in Enugu")
+@seo_nigeria.route('/Magazine-Professionals-in-Enugu')
+def enugu_690():
+    return render_template('public/landing_professionals_seo.html',data="Magazine Professionals in Enugu")
+@seo_nigeria.route('/Magazine-Layout-Designers-in-Enugu')
+def enugu_691():
+    return render_template('public/landing_professionals_seo.html',data="Magazine Layout Designers in Enugu")
+@seo_nigeria.route('/Magento-Developers-in-Enugu')
+def enugu_692():
+    return render_template('public/landing_professionals_seo.html',data="Magento Developers in Enugu")
+@seo_nigeria.route('/MailChimp-Specialists-in-Enugu')
+def enugu_693():
+    return render_template('public/landing_professionals_seo.html',data="MailChimp Specialists in Enugu")
+@seo_nigeria.route('/Male-Voice-Over-Artists-in-Enugu')
+def enugu_694():
+    return render_template('public/landing_professionals_seo.html',data="Male Voice Over Artists in Enugu")
+@seo_nigeria.route('/Management-Accounting-Specialists-in-Enugu')
+def enugu_695():
+    return render_template('public/landing_professionals_seo.html',data="Management Accounting Specialists in Enugu")
+@seo_nigeria.route('/Management-Consultants-in-Enugu')
+def enugu_696():
+    return render_template('public/landing_professionals_seo.html',data="Management Consultants in Enugu")
+@seo_nigeria.route('/Management-Skills-Specialists-in-Enugu')
+def enugu_697():
+    return render_template('public/landing_professionals_seo.html',data="Management Skills Specialists in Enugu")
+@seo_nigeria.route('/Manual-Test-Execution-Specialists-in-Enugu')
+def enugu_698():
+    return render_template('public/landing_professionals_seo.html',data="Manual Test Execution Specialists in Enugu")
+@seo_nigeria.route('/Market-Analysts-in-Enugu')
+def enugu_699():
+    return render_template('public/landing_professionals_seo.html',data="Market Analysts in Enugu")
+@seo_nigeria.route('/Market-Research-Analysts-in-Enugu')
+def enugu_700():
+    return render_template('public/landing_professionals_seo.html',data="Market Research Analysts in Enugu")
+@seo_nigeria.route('/Market-Segmentation-Professionals-in-Enugu')
+def enugu_701():
+    return render_template('public/landing_professionals_seo.html',data="Market Segmentation Professionals in Enugu")
+@seo_nigeria.route('/Marketing-Sales-Professionals-in-Enugu')
+def enugu_702():
+    return render_template('public/landing_professionals_seo.html',data="Marketing - Sales Professionals in Enugu")
+@seo_nigeria.route('/Marketing-Automation-Specialists-in-Enugu')
+def enugu_703():
+    return render_template('public/landing_professionals_seo.html',data="Marketing Automation Specialists in Enugu")
+@seo_nigeria.route('/Marketing-Communications-Specialists-in-Enugu')
+def enugu_704():
+    return render_template('public/landing_professionals_seo.html',data="Marketing Communications Specialists in Enugu")
+@seo_nigeria.route('/Marketing-Professionals-in-Enugu')
+def enugu_705():
+    return render_template('public/landing_professionals_seo.html',data="Marketing Professionals in Enugu")
+@seo_nigeria.route('/Marketing-Managers-in-Enugu')
+def enugu_706():
+    return render_template('public/landing_professionals_seo.html',data="Marketing Managers in Enugu")
+@seo_nigeria.route('/Marketing-Presentation-Professionals-in-Enugu')
+def enugu_707():
+    return render_template('public/landing_professionals_seo.html',data="Marketing Presentation Professionals in Enugu")
+@seo_nigeria.route('/Marketing-Researchers-in-Enugu')
+def enugu_708():
+    return render_template('public/landing_professionals_seo.html',data="Marketing Researchers in Enugu")
+@seo_nigeria.route('/Marketing-Strategists-in-Enugu')
+def enugu_709():
+    return render_template('public/landing_professionals_seo.html',data="Marketing Strategists in Enugu")
+@seo_nigeria.route('/Marriage-Counselors-in-Enugu')
+def enugu_710():
+    return render_template('public/landing_professionals_seo.html',data="Marriage Counselors in Enugu")
+@seo_nigeria.route('/Materialize-Professionals-in-Enugu')
+def enugu_711():
+    return render_template('public/landing_professionals_seo.html',data="Materialize Professionals in Enugu")
+@seo_nigeria.route('/Mathematics-Specialists-in-Enugu')
+def enugu_712():
+    return render_template('public/landing_professionals_seo.html',data="Mathematics Specialists in Enugu")
+@seo_nigeria.route('/Mathematics-Teachers-Tutors-in-Enugu')
+def enugu_713():
+    return render_template('public/landing_professionals_seo.html',data="Mathematics Teachers - Tutors in Enugu")
+@seo_nigeria.route('/MATLAB-Developers-in-Enugu')
+def enugu_714():
+    return render_template('public/landing_professionals_seo.html',data="MATLAB Developers in Enugu")
+@seo_nigeria.route('/Matplotlib-Professionals-in-Enugu')
+def enugu_715():
+    return render_template('public/landing_professionals_seo.html',data="Matplotlib Professionals in Enugu")
+@seo_nigeria.route('/Maxon-Cinema-4D-Specialists-in-Enugu')
+def enugu_716():
+    return render_template('public/landing_professionals_seo.html',data="Maxon Cinema 4D Specialists in Enugu")
+@seo_nigeria.route('/Mechanical-Designers-in-Enugu')
+def enugu_717():
+    return render_template('public/landing_professionals_seo.html',data="Mechanical Designers in Enugu")
+@seo_nigeria.route('/Mechanical-Engineers-in-Enugu')
+def enugu_718():
+    return render_template('public/landing_professionals_seo.html',data="Mechanical Engineers in Enugu")
+@seo_nigeria.route('/Media-Entertainment-Professionals-in-Enugu')
+def enugu_719():
+    return render_template('public/landing_professionals_seo.html',data="Media - Entertainment Professionals in Enugu")
+@seo_nigeria.route('/Media-Buyers-in-Enugu')
+def enugu_720():
+    return render_template('public/landing_professionals_seo.html',data="Media Buyers in Enugu")
+@seo_nigeria.route('/Media-Planners-in-Enugu')
+def enugu_721():
+    return render_template('public/landing_professionals_seo.html',data="Media Planners in Enugu")
+@seo_nigeria.route('/Media-Relations-Specialists-in-Enugu')
+def enugu_722():
+    return render_template('public/landing_professionals_seo.html',data="Media Relations Specialists in Enugu")
+@seo_nigeria.route('/Medical-Editing-Professionals-in-Enugu')
+def enugu_723():
+    return render_template('public/landing_professionals_seo.html',data="Medical Editing Professionals in Enugu")
+@seo_nigeria.route('/Medical-Professionals-in-Enugu')
+def enugu_724():
+    return render_template('public/landing_professionals_seo.html',data="Medical Professionals in Enugu")
+@seo_nigeria.route('/Medical-Transcriptionists-in-Enugu')
+def enugu_725():
+    return render_template('public/landing_professionals_seo.html',data="Medical Transcriptionists in Enugu")
+@seo_nigeria.route('/Medical-Translators-in-Enugu')
+def enugu_726():
+    return render_template('public/landing_professionals_seo.html',data="Medical Translators in Enugu")
+@seo_nigeria.route('/MetaTrader-4-(MT4)-Specialists-in-Enugu')
+def enugu_727():
+    return render_template('public/landing_professionals_seo.html',data="MetaTrader 4 (MT4) Specialists in Enugu")
+@seo_nigeria.route('/Meteor-Developers-Programmers-in-Enugu')
+def enugu_728():
+    return render_template('public/landing_professionals_seo.html',data="Meteor Developers - Programmers in Enugu")
+@seo_nigeria.route('/Microsoft-Access-Professionals-in-Enugu')
+def enugu_729():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft Access Professionals in Enugu")
+@seo_nigeria.route('/Microsoft-Access-Programming-Specialists-in-Enugu')
+def enugu_730():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft Access Programming Specialists in Enugu")
+@seo_nigeria.route('/Microsoft-Active-Directory-Specialists-in-Enugu')
+def enugu_731():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft Active Directory Specialists in Enugu")
+@seo_nigeria.route('/Microsoft-Azure-App-Services-Professionals-in-Enugu')
+def enugu_732():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft Azure App Services Professionals in Enugu")
+@seo_nigeria.route('/Microsoft-Data-Analysis-Expressions-Professionals-in-Enugu')
+def enugu_733():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft Data Analysis Expressions Professionals in Enugu")
+@seo_nigeria.route('/Microsoft-Dynamics-365-Professionals-in-Enugu')
+def enugu_734():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft Dynamics 365 Professionals in Enugu")
+@seo_nigeria.route('/Microsoft-Dynamics-CRM-Specialists-in-Enugu')
+def enugu_735():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft Dynamics CRM Specialists in Enugu")
+@seo_nigeria.route('/Microsoft-Excel-PowerPivot-Specialists-in-Enugu')
+def enugu_736():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft Excel PowerPivot Specialists in Enugu")
+@seo_nigeria.route('/Microsoft-Exchange-Online-Professionals-in-Enugu')
+def enugu_737():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft Exchange Online Professionals in Enugu")
+@seo_nigeria.route('/Microsoft-Exchange-Server-Specialists-in-Enugu')
+def enugu_738():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft Exchange Server Specialists in Enugu")
+@seo_nigeria.route('/Microsoft-Hyper-V-Specialists-in-Enugu')
+def enugu_739():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft Hyper V Specialists in Enugu")
+@seo_nigeria.route('/Microsoft-Hyper-V-Server-Specialists-in-Enugu')
+def enugu_740():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft Hyper-V Server Specialists in Enugu")
+@seo_nigeria.route('/Microsoft-Lync-Server-Specialists-in-Enugu')
+def enugu_741():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft Lync Server Specialists in Enugu")
+@seo_nigeria.route('/Microsoft-Office-365-Administration-Professionals-in-Enugu')
+def enugu_742():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft Office 365 Administration Professionals in Enugu")
+@seo_nigeria.route('/Microsoft-Office-365-Professionals-in-Enugu')
+def enugu_743():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft Office 365 Professionals in Enugu")
+@seo_nigeria.route('/Microsoft-Office-Specialists-in-Enugu')
+def enugu_744():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft Office Specialists in Enugu")
+@seo_nigeria.route('/Microsoft-OneNote-Specialists-in-Enugu')
+def enugu_745():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft OneNote Specialists in Enugu")
+@seo_nigeria.route('/Microsoft-Outlook-Specialists-in-Enugu')
+def enugu_746():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft Outlook Specialists in Enugu")
+@seo_nigeria.route('/Microsoft-Power-BI-Data-Visualization-Professionals-in-Enugu')
+def enugu_747():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft Power BI Data Visualization Professionals in Enugu")
+@seo_nigeria.route('/Microsoft-Power-BI-Specialists-in-Enugu')
+def enugu_748():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft Power BI Specialists in Enugu")
+@seo_nigeria.route('/Microsoft-Project-Specialists-in-Enugu')
+def enugu_749():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft Project Specialists in Enugu")
+@seo_nigeria.route('/Microsoft-Publisher-Specialists-in-Enugu')
+def enugu_750():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft Publisher Specialists in Enugu")
+@seo_nigeria.route('/Microsoft-SCCM-Specialists-in-Enugu')
+def enugu_751():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft SCCM Specialists in Enugu")
+@seo_nigeria.route('/Microsoft-Server-Specialists-in-Enugu')
+def enugu_752():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft Server Specialists in Enugu")
+@seo_nigeria.route('/Microsoft-SharePoint-Administrators-in-Enugu')
+def enugu_753():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft SharePoint Administrators in Enugu")
+@seo_nigeria.route('/Microsoft-SharePoint-Designers-in-Enugu')
+def enugu_754():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft SharePoint Designers in Enugu")
+@seo_nigeria.route('/Microsoft-SharePoint-Development-Specialists-in-Enugu')
+def enugu_755():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft SharePoint Development Specialists in Enugu")
+@seo_nigeria.route('/Microsoft-Small-Business-Server-Administrators-in-Enugu')
+def enugu_756():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft Small Business Server Administrators in Enugu")
+@seo_nigeria.route('/Microsoft-SQL-Server-Administrators-in-Enugu')
+def enugu_757():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft SQL Server Administrators in Enugu")
+@seo_nigeria.route('/Microsoft-SQL-Server-Developers-in-Enugu')
+def enugu_758():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft SQL Server Developers in Enugu")
+@seo_nigeria.route('/Microsoft-SQL-Server-Professionals-in-Enugu')
+def enugu_759():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft SQL Server Professionals in Enugu")
+@seo_nigeria.route('/Microsoft-SQL-SSRS-Specialists-in-Enugu')
+def enugu_760():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft SQL SSRS Specialists in Enugu")
+@seo_nigeria.route('/Microsoft-Teams-Professionals-in-Enugu')
+def enugu_761():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft Teams Professionals in Enugu")
+@seo_nigeria.route('/Microsoft-VB-Professionals-in-Enugu')
+def enugu_762():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft VB Professionals in Enugu")
+@seo_nigeria.route('/Microsoft-Visio-Specialists-in-Enugu')
+def enugu_763():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft Visio Specialists in Enugu")
+@seo_nigeria.route('/Microsoft-Visual-Studio-Specialists-in-Enugu')
+def enugu_764():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft Visual Studio Specialists in Enugu")
+@seo_nigeria.route('/Microsoft-Windows-Azure-Specialists-in-Enugu')
+def enugu_765():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft Windows Azure Specialists in Enugu")
+@seo_nigeria.route('/Microsoft-Windows-Powershell-Specialists-in-Enugu')
+def enugu_766():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft Windows Powershell Specialists in Enugu")
+@seo_nigeria.route('/Microsoft-Windows-Server-Specialists-in-Enugu')
+def enugu_767():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft Windows Server Specialists in Enugu")
+@seo_nigeria.route('/Microsoft-Word-Experts-in-Enugu')
+def enugu_768():
+    return render_template('public/landing_professionals_seo.html',data="Microsoft Word Experts in Enugu")
+@seo_nigeria.route('/Mobile-Advertising-Specialists-in-Enugu')
+def enugu_769():
+    return render_template('public/landing_professionals_seo.html',data="Mobile Advertising Specialists in Enugu")
+@seo_nigeria.route('/Mobile-App-Design-Professionals-in-Enugu')
+def enugu_770():
+    return render_template('public/landing_professionals_seo.html',data="Mobile App Design Professionals in Enugu")
+@seo_nigeria.route('/Mobile-App-Developers-in-Enugu')
+def enugu_771():
+    return render_template('public/landing_professionals_seo.html',data="Mobile App Developers in Enugu")
+@seo_nigeria.route('/Mobile-App-Testers-in-Enugu')
+def enugu_772():
+    return render_template('public/landing_professionals_seo.html',data="Mobile App Testers in Enugu")
+@seo_nigeria.route('/Mobile-Development-Framework-Specialists-in-Enugu')
+def enugu_773():
+    return render_template('public/landing_professionals_seo.html',data="Mobile Development Framework Specialists in Enugu")
+@seo_nigeria.route('/Mobile-Programmers-in-Enugu')
+def enugu_774():
+    return render_template('public/landing_professionals_seo.html',data="Mobile Programmers in Enugu")
+@seo_nigeria.route('/Mobile-UI-Designers-in-Enugu')
+def enugu_775():
+    return render_template('public/landing_professionals_seo.html',data="Mobile UI Designers in Enugu")
+@seo_nigeria.route('/Mobx-Professionals-in-Enugu')
+def enugu_776():
+    return render_template('public/landing_professionals_seo.html',data="Mobx Professionals in Enugu")
+@seo_nigeria.route('/Mockup-Professionals-in-Enugu')
+def enugu_777():
+    return render_template('public/landing_professionals_seo.html',data="Mockup Professionals in Enugu")
+@seo_nigeria.route('/Model-Photography-Professionals-in-Enugu')
+def enugu_778():
+    return render_template('public/landing_professionals_seo.html',data="Model Photography Professionals in Enugu")
+@seo_nigeria.route('/Model-View-Presenter(MVP)Professionals-in-Enugu')
+def enugu_779():
+    return render_template('public/landing_professionals_seo.html',data="Model View Presenter (MVP) Professionals in Enugu")
+@seo_nigeria.route('/MongoDB-Developers-in-Enugu')
+def enugu_780():
+    return render_template('public/landing_professionals_seo.html',data="MongoDB Developers in Enugu")
+@seo_nigeria.route('/Motion-Design-Professionals-in-Enugu')
+def enugu_781():
+    return render_template('public/landing_professionals_seo.html',data="Motion Design Professionals in Enugu")
+@seo_nigeria.route('/Motion-Graphics-Visual-Effects-Professionals-in-Enugu')
+def enugu_782():
+    return render_template('public/landing_professionals_seo.html',data="Motion Graphics - Visual Effects Professionals in Enugu")
+@seo_nigeria.route('/Motion-Graphics-Designers-in-Enugu')
+def enugu_783():
+    return render_template('public/landing_professionals_seo.html',data="Motion Graphics Designers in Enugu")
+@seo_nigeria.route('/Motivational-Speakers-in-Enugu')
+def enugu_784():
+    return render_template('public/landing_professionals_seo.html',data="Motivational Speakers in Enugu")
+@seo_nigeria.route('/MS-Excel-Professionals-in-Enugu')
+def enugu_785():
+    return render_template('public/landing_professionals_seo.html',data="MS Excel Professionals in Enugu")
+@seo_nigeria.route('/Multitasking-Professionals-in-Enugu')
+def enugu_786():
+    return render_template('public/landing_professionals_seo.html',data="Multitasking Professionals in Enugu")
+@seo_nigeria.route('/Music-Arrangers-in-Enugu')
+def enugu_787():
+    return render_template('public/landing_professionals_seo.html',data="Music Arrangers in Enugu")
+@seo_nigeria.route('/Music-Producers-in-Enugu')
+def enugu_788():
+    return render_template('public/landing_professionals_seo.html',data="Music Producers in Enugu")
+@seo_nigeria.route('/Music-Production-Professionals-in-Enugu')
+def enugu_789():
+    return render_template('public/landing_professionals_seo.html',data="Music Production Professionals in Enugu")
+@seo_nigeria.route('/Music-Specialists-in-Enugu')
+def enugu_790():
+    return render_template('public/landing_professionals_seo.html',data="Music Specialists in Enugu")
+@seo_nigeria.route('/Music-Supervision-Professionals-in-Enugu')
+def enugu_791():
+    return render_template('public/landing_professionals_seo.html',data="Music Supervision Professionals in Enugu")
+@seo_nigeria.route('/Music-Videos-Specialists-in-Enugu')
+def enugu_792():
+    return render_template('public/landing_professionals_seo.html',data="Music Videos Specialists in Enugu")
+@seo_nigeria.route('/Musical-Composition-Specialists-in-Enugu')
+def enugu_793():
+    return render_template('public/landing_professionals_seo.html',data="Musical Composition Specialists in Enugu")
+@seo_nigeria.route('/Musical-Transcription-Professionals-in-Enugu')
+def enugu_794():
+    return render_template('public/landing_professionals_seo.html',data="Musical Transcription Professionals in Enugu")
+@seo_nigeria.route('/MySQL-Professionals-in-Enugu')
+def enugu_795():
+    return render_template('public/landing_professionals_seo.html',data="MySQL Professionals in Enugu")
+@seo_nigeria.route('/MySQL-Programmers-in-Enugu')
+def enugu_796():
+    return render_template('public/landing_professionals_seo.html',data="MySQL Programmers in Enugu")
+@seo_nigeria.route('/.NET-CF-Professionals-in-Enugu')
+def enugu_797():
+    return render_template('public/landing_professionals_seo.html',data=".NET CF Professionals in Enugu")
+@seo_nigeria.route('/.NET-Core-Professionals-in-Enugu')
+def enugu_798():
+    return render_template('public/landing_professionals_seo.html',data=".NET Core Professionals in Enugu")
+@seo_nigeria.route('/.NET-Framework-Specialists-in-Enugu')
+def enugu_799():
+    return render_template('public/landing_professionals_seo.html',data=".NET Framework Specialists in Enugu")
+@seo_nigeria.route('/.NET-Remote-Developers-in-Enugu')
+def enugu_800():
+    return render_template('public/landing_professionals_seo.html',data=".NET Remote Developers in Enugu")
+########################################800###########################################################
+@seo_nigeria.route('/NativeScript-Specialists-in-Enugu')
+def enugu_801():
+    return render_template('public/landing_professionals_seo.html',data="NativeScript Specialists in Enugu")
+@seo_nigeria.route('/Natural-Language-Processing-Specialists-in-Enugu')
+def enugu_802():
+    return render_template('public/landing_professionals_seo.html',data="Natural Language Processing Specialists in Enugu")
+@seo_nigeria.route('/Negotiation-Specialists-in-Enugu')
+def enugu_803():
+    return render_template('public/landing_professionals_seo.html',data="Negotiation Specialists in Enugu")
+@seo_nigeria.route('/Network-Administrators-in-Enugu')
+def enugu_804():
+    return render_template('public/landing_professionals_seo.html',data="Network Administrators in Enugu")
+@seo_nigeria.route('/Network-Designers-in-Enugu')
+def enugu_805():
+    return render_template('public/landing_professionals_seo.html',data="Network Designers in Enugu")
+@seo_nigeria.route('/Network-Engineers-in-Enugu')
+def enugu_806():
+    return render_template('public/landing_professionals_seo.html',data="Network Engineers in Enugu")
+@seo_nigeria.route('/Network-Monitoring-Specialists-in-Enugu')
+def enugu_807():
+    return render_template('public/landing_professionals_seo.html',data="Network Monitoring Specialists in Enugu")
+@seo_nigeria.route('/Network-Planners-in-Enugu')
+def enugu_808():
+    return render_template('public/landing_professionals_seo.html',data="Network Planners in Enugu")
+@seo_nigeria.route('/Network-Security-Engineers-in-Enugu')
+def enugu_809():
+    return render_template('public/landing_professionals_seo.html',data="Network Security Engineers in Enugu")
+@seo_nigeria.route('/News-Writing-Style-Writers-in-Enugu')
+def enugu_810():
+    return render_template('public/landing_professionals_seo.html',data="News Writing Style Writers in Enugu")
+@seo_nigeria.route('/Newsletter-Writers-in-Enugu')
+def enugu_811():
+    return render_template('public/landing_professionals_seo.html',data="Newsletter Writers in Enugu")
+@seo_nigeria.route('/Nginx-Developers-in-Enugu')
+def enugu_812():
+    return render_template('public/landing_professionals_seo.html',data="Nginx Developers in Enugu")
+@seo_nigeria.route('/Node.js-Developers-Programmers-in-Enugu')
+def enugu_813():
+    return render_template('public/landing_professionals_seo.html',data="Node.js Developers - Programmers in Enugu")
+@seo_nigeria.route('/Non-fiction-Professionals-in-Enugu')
+def enugu_814():
+    return render_template('public/landing_professionals_seo.html',data="Non-fiction Professionals in Enugu")
+@seo_nigeria.route('/Non-Fiction-Writers-in-Enugu')
+def enugu_815():
+    return render_template('public/landing_professionals_seo.html',data="Non-Fiction Writers in Enugu")
+@seo_nigeria.route('/Norwegian-to-English-Translators-in-Enugu')
+def enugu_816():
+    return render_template('public/landing_professionals_seo.html',data="Norwegian to English Translators in Enugu")
+@seo_nigeria.route('/NoSQL-Developers-in-Enugu')
+def enugu_817():
+    return render_template('public/landing_professionals_seo.html',data="NoSQL Developers in Enugu")
+@seo_nigeria.route('/Novel-Professionals-in-Enugu')
+def enugu_818():
+    return render_template('public/landing_professionals_seo.html',data="Novel Professionals in Enugu")
+@seo_nigeria.route('/Object-Oriented-PHP-Developers-in-Enugu')
+def enugu_819():
+    return render_template('public/landing_professionals_seo.html',data="Object Oriented PHP Developers in Enugu")
+@seo_nigeria.route('/Object-Oriented-Programming(OOP)-Specialists-in-Enugu')
+def enugu_820():
+    return render_template('public/landing_professionals_seo.html',data="Object Oriented Programming (OOP) Specialists in Enugu")
+@seo_nigeria.route('/Objective-C-Developers-in-Enugu')
+def enugu_821():
+    return render_template('public/landing_professionals_seo.html',data="Objective-C Developers in Enugu")
+@seo_nigeria.route('/Observational-Data-Analysis-Professionals-in-Enugu')
+def enugu_822():
+    return render_template('public/landing_professionals_seo.html',data="Observational Data Analysis Professionals in Enugu")
+@seo_nigeria.route('/Occupational-Health-Specialists-in-Enugu')
+def enugu_823():
+    return render_template('public/landing_professionals_seo.html',data="Occupational Health Specialists in Enugu")
+@seo_nigeria.route('/Odoo-Specialists-in-Enugu')
+def enugu_824():
+    return render_template('public/landing_professionals_seo.html',data="Odoo Specialists in Enugu")
+@seo_nigeria.route('/Enugu')
+def enugu_825():
+    return render_template('public/landing_professionals_seo.html',data="Office 365 Professionals in Enugu")
+@seo_nigeria.route('/Office-365-Professionals-in-Enugu')
+def enugu_826():
+    return render_template('public/landing_professionals_seo.html',data="Office Administrators in Enugu")
+@seo_nigeria.route('/Official-Correspondence-Translation-Professionals-in-Enugu')
+def enugu_827():
+    return render_template('public/landing_professionals_seo.html',data="Official Correspondence Translation Professionals in Enugu")
+@seo_nigeria.route('/Official-Documents-Translation-Professionals-in-Enugu')
+def enugu_828():
+    return render_template('public/landing_professionals_seo.html',data="Official Documents Translation Professionals in Enugu")
+@seo_nigeria.route('/Online-Community-Managers-in-Enugu')
+def enugu_829():
+    return render_template('public/landing_professionals_seo.html',data="Online Community Managers in Enugu")
+@seo_nigeria.route('/Online-Help-Providers-in-Enugu')
+def enugu_830():
+    return render_template('public/landing_professionals_seo.html',data="Online Help Providers in Enugu")
+@seo_nigeria.route('/Online-Research-Professionals-in-Enugu')
+def enugu_831():
+    return render_template('public/landing_professionals_seo.html',data="Online Research Professionals in Enugu")
+@seo_nigeria.route('/Online-Sales-Management-Professionals-in-Enugu')
+def enugu_832():
+    return render_template('public/landing_professionals_seo.html',data="Online Sales Management Professionals in Enugu")
+@seo_nigeria.route('/Online-Writers-in-Enugu')
+def enugu_833():
+    return render_template('public/landing_professionals_seo.html',data="Online Writers in Enugu")
+@seo_nigeria.route('/OpenCart-Developers-in-Enugu')
+def enugu_834():
+    return render_template('public/landing_professionals_seo.html',data="OpenCart Developers in Enugu")
+@seo_nigeria.route('/Operations-Management-Specialists-in-Enugu')
+def enugu_835():
+    return render_template('public/landing_professionals_seo.html',data="Operations Management Specialists in Enugu")
+@seo_nigeria.route('/Oracle-Database-Administrators-in-Enugu')
+def enugu_836():
+    return render_template('public/landing_professionals_seo.html',data="Oracle Database Administrators in Enugu")
+@seo_nigeria.route('/Oracle-Database-Specialists-in-Enugu')
+def enugu_837():
+    return render_template('public/landing_professionals_seo.html',data="Oracle Database Specialists in Enugu")
+@seo_nigeria.route('/Oracle-Professionals-in-Enugu')
+def enugu_838():
+    return render_template('public/landing_professionals_seo.html',data="Oracle Professionals in Enugu")
+@seo_nigeria.route('/Oracle-Hyperion-Planning-Specialists-in-Enugu')
+def enugu_839():
+    return render_template('public/landing_professionals_seo.html',data="Oracle Hyperion Planning Specialists in Enugu")
+@seo_nigeria.route('/Oracle-PL/SQL-Specialists-in-Enugu')
+def enugu_840():
+    return render_template('public/landing_professionals_seo.html',data="Oracle PL/SQL Specialists in Enugu")
+@seo_nigeria.route('/Oracle-PLSQL-Specialists-in-Enugu')
+def enugu_841():
+    return render_template('public/landing_professionals_seo.html',data="Oracle PLSQL Specialists in Enugu")
+@seo_nigeria.route('/Oracle-Primavera-Specialists-in-Enugu')
+def enugu_842():
+    return render_template('public/landing_professionals_seo.html',data="Oracle Primavera Specialists in Enugu")
+@seo_nigeria.route('/Organic-Traffic-Growth-Professionals-in-Enugu')
+def enugu_843():
+    return render_template('public/landing_professionals_seo.html',data="Organic Traffic Growth Professionals in Enugu")
+@seo_nigeria.route('/Organizational-Behavior-Specialists-in-Enugu')
+def enugu_844():
+    return render_template('public/landing_professionals_seo.html',data="Organizational Behavior Specialists in Enugu")
+@seo_nigeria.route('/Organizational-Development-Consultants-in-Enugu')
+def enugu_845():
+    return render_template('public/landing_professionals_seo.html',data="Organizational Development Consultants in Enugu")
+@seo_nigeria.route('/Organizational-Plans-Professionals-in-Enugu')
+def enugu_846():
+    return render_template('public/landing_professionals_seo.html',data="Organizational Plans Professionals in Enugu")
+@seo_nigeria.route('/Organizer-Specialists-in-Enugu')
+def enugu_847():
+    return render_template('public/landing_professionals_seo.html',data="Organizer Specialists in Enugu")
+@seo_nigeria.route('/Other-Professionals-in-Enugu')
+def enugu_848():
+    return render_template('public/landing_professionals_seo.html',data="Other Professionals in Enugu")
+@seo_nigeria.route('/Packaging-Designers-in-Enugu')
+def enugu_849():
+    return render_template('public/landing_professionals_seo.html',data="Packaging Designers in Enugu")
+@seo_nigeria.route('/Pandas-Developers-in-Enugu')
+def enugu_850():
+    return render_template('public/landing_professionals_seo.html',data="Pandas Developers in Enugu")
+@seo_nigeria.route('/Payroll-Processing-Specialists-in-Enugu')
+def enugu_851():
+    return render_template('public/landing_professionals_seo.html',data="Payroll Processing Specialists in Enugu")
+@seo_nigeria.route('/PDF-Converters-in-Enugu')
+def enugu_852():
+    return render_template('public/landing_professionals_seo.html',data="PDF Converters in Enugu")
+@seo_nigeria.route('/PDF-Professionals-in-Enugu')
+def enugu_853():
+    return render_template('public/landing_professionals_seo.html',data="PDF Professionals in Enugu")
+@seo_nigeria.route('/Penetration-Testers-in-Enugu')
+def enugu_854():
+    return render_template('public/landing_professionals_seo.html',data="Penetration Testers in Enugu")
+@seo_nigeria.route('/People-Management-Professionals-in-Enugu')
+def enugu_855():
+    return render_template('public/landing_professionals_seo.html',data="People Management Professionals in Enugu")
+@seo_nigeria.route('/Performance-Management-Specialists-in-Enugu')
+def enugu_856():
+    return render_template('public/landing_professionals_seo.html',data="Performance Management Specialists in Enugu")
+@seo_nigeria.route('/Performance-Testing-Specialists-in-Enugu')
+def enugu_857():
+    return render_template('public/landing_professionals_seo.html',data="Performance Testing Specialists in Enugu")
+@seo_nigeria.route('/Personal-Development-Specialists-in-Enugu')
+def enugu_858():
+    return render_template('public/landing_professionals_seo.html',data="Personal Development Specialists in Enugu")
+@seo_nigeria.route('/Personal-Professionals-in-Enugu')
+def enugu_859():
+    return render_template('public/landing_professionals_seo.html',data="Personal Professionals in Enugu")
+@seo_nigeria.route('/Personal/Blog-Professionals-in-Enugu')
+def enugu_860():
+    return render_template('public/landing_professionals_seo.html',data="Personal/ Blog Professionals in Enugu")
+@seo_nigeria.route('/Pharmaceutical-Industry-Specialists-in-Enugu')
+def enugu_861():
+    return render_template('public/landing_professionals_seo.html',data="Pharmaceutical Industry Specialists in Enugu")
+@seo_nigeria.route('/Phone-Communication-Professionals-in-Enugu')
+def enugu_862():
+    return render_template('public/landing_professionals_seo.html',data="Phone Communication Professionals in Enugu")
+@seo_nigeria.route('/Phone-Support-Agents-in-Enugu')
+def enugu_863():
+    return render_template('public/landing_professionals_seo.html',data="Phone Support Agents in Enugu")
+@seo_nigeria.route('/Photo-Editors-in-Enugu')
+def enugu_864():
+    return render_template('public/landing_professionals_seo.html',data="Photo Editors in Enugu")
+@seo_nigeria.route('/Photo-Manipulation-Experts-in-Enugu')
+def enugu_865():
+    return render_template('public/landing_professionals_seo.html',data="Photo Manipulation Experts in Enugu")
+@seo_nigeria.route('/Photo-Retouchers-in-Enugu')
+def enugu_866():
+    return render_template('public/landing_professionals_seo.html',data="Photo Retouchers in Enugu")
+@seo_nigeria.route('/Photo-Slideshow-Professionals-in-Enugu')
+def enugu_867():
+    return render_template('public/landing_professionals_seo.html',data="Photo Slideshow Professionals in Enugu")
+@seo_nigeria.route('/Photograph-Color-Correction-Specialists-in-Enugu')
+def enugu_868():
+    return render_template('public/landing_professionals_seo.html',data="Photograph Color Correction Specialists in Enugu")
+@seo_nigeria.route('/Photographers-in-Enugu')
+def enugu_869():
+    return render_template('public/landing_professionals_seo.html',data="Photographers in Enugu")
+@seo_nigeria.route('/Photorealistic-Rendering-Professionals-in-Enugu')
+def enugu_870():
+    return render_template('public/landing_professionals_seo.html',data="Photorealistic Rendering Professionals in Enugu")
+@seo_nigeria.route('/PHP-Developers-in-Enugu')
+def enugu_871():
+    return render_template('public/landing_professionals_seo.html',data="PHP Developers in Enugu")
+@seo_nigeria.route('/PHP-Script-Professionals-in-Enugu')
+def enugu_872():
+    return render_template('public/landing_professionals_seo.html',data="PHP Script Professionals in Enugu")
+@seo_nigeria.route('/phpMyAdmin-Specialists-in-Enugu')
+def enugu_873():
+    return render_template('public/landing_professionals_seo.html',data="phpMyAdmin Specialists in Enugu")
+@seo_nigeria.route('/Physics-Teachers-Tutors-in-Enugu')
+def enugu_874():
+    return render_template('public/landing_professionals_seo.html',data="Physics Teachers - Tutors in Enugu")
+@seo_nigeria.route('/Pinterest-Marketers-in-Enugu')
+def enugu_875():
+    return render_template('public/landing_professionals_seo.html',data="Pinterest Marketers in Enugu")
+@seo_nigeria.route('/Pitch-Decks-Professionals-in-Enugu')
+def enugu_876():
+    return render_template('public/landing_professionals_seo.html',data="Pitch Decks Professionals in Enugu")
+@seo_nigeria.route('/Pitchdeck-Professionals-in-Enugu')
+def enugu_877():
+    return render_template('public/landing_professionals_seo.html',data="Pitchdeck Professionals in Enugu")
+@seo_nigeria.route('/Pixologic-Zbrush-Specialists-in-Enugu')
+def enugu_878():
+    return render_template('public/landing_professionals_seo.html',data="Pixologic Zbrush Specialists in Enugu")
+@seo_nigeria.route('/Planning-Professionals-in-Enugu')
+def enugu_879():
+    return render_template('public/landing_professionals_seo.html',data="Planning Professionals in Enugu")
+@seo_nigeria.route('/Poem-Professionals-in-Enugu')
+def enugu_880():
+    return render_template('public/landing_professionals_seo.html',data="Poem Professionals in Enugu")
+@seo_nigeria.route('/Poets-in-Enugu')
+def enugu_881():
+    return render_template('public/landing_professionals_seo.html',data="Poets in Enugu")
+@seo_nigeria.route('/Policy-Writers-in-Enugu')
+def enugu_882():
+    return render_template('public/landing_professionals_seo.html',data="Policy Writers in Enugu")
+@seo_nigeria.route('/Portrait-Painters-in-Enugu')
+def enugu_883():
+    return render_template('public/landing_professionals_seo.html',data="Portrait Painters in Enugu")
+@seo_nigeria.route('/Portrait-Photographers-in-Enugu")')
+def enugu_884():
+    return render_template('public/landing_professionals_seo.html',data="Portrait Photographers in Enugu")
+@seo_nigeria.route('/Portuguese-to-English-Translators-in-Enugu')
+def enugu_885():
+    return render_template('public/landing_professionals_seo.html',data="Portuguese to English Translators in Enugu")
+@seo_nigeria.route('/Poster-Designers-in-Enugu')
+def enugu_886():
+    return render_template('public/landing_professionals_seo.html',data="Poster Designers in Enugu")
+@seo_nigeria.route('/Poster-Professionals-Designers-in-Enugu')
+def enugu_887():
+    return render_template('public/landing_professionals_seo.html',data="Poster Professionals in Enugu")
+@seo_nigeria.route('/PostgreSQL-Professionals-in-Enugu')
+def enugu_888():
+    return render_template('public/landing_professionals_seo.html',data="PostgreSQL Professionals in Enugu")
+@seo_nigeria.route('/PostgreSQL-Programmers-in-Enugu')
+def enugu_889():
+    return render_template('public/landing_professionals_seo.html',data="PostgreSQL Programmers in Enugu")
+@seo_nigeria.route('/PowerBI-Professionals-in-Enugu')
+def enugu_890():
+    return render_template('public/landing_professionals_seo.html',data="PowerBI Professionals in Enugu")
+@seo_nigeria.route('/PowerPoint-Animation-Professionals-in-Enugu')
+def enugu_891():
+    return render_template('public/landing_professionals_seo.html',data="PowerPoint Animation Professionals in Enugu")
+@seo_nigeria.route('/PowerPoint-Experts-in-Enugu')
+def enugu_892():
+    return render_template('public/landing_professionals_seo.html',data="PowerPoint Experts in Enugu")
+@seo_nigeria.route('/PowerPoint-Professionals-in-Enugu')
+def enugu_893():
+    return render_template('public/landing_professionals_seo.html',data="PowerPoint Professionals in Enugu")
+@seo_nigeria.route('/PPC-Advertisers-in-Enugu')
+def enugu_894():
+    return render_template('public/landing_professionals_seo.html',data="PPC Advertisers in Enugu")
+@seo_nigeria.route('/PPC Campaign-Setup-Management-Professionals-in-Enugu')
+def enugu_895():
+    return render_template('public/landing_professionals_seo.html',data="PPC Campaign Setup - Management Professionals in Enugu")
+@seo_nigeria.route('/Presentation-Designers-in-Enugu')
+def enugu_896():
+    return render_template('public/landing_professionals_seo.html',data="Presentation Designers in Enugu")
+@seo_nigeria.route('/Presentation-Designers-in-Enugu')
+def enugu_897():
+    return render_template('public/landing_professionals_seo.html',data="Presentation Professionals in Enugu")
+@seo_nigeria.route('/Press-Release-Writers-in-Enugu')
+def enugu_898():
+    return render_template('public/landing_professionals_seo.html',data="Press Release Writers in Enugu")
+@seo_nigeria.route('/PrestaShop-Developers-in-Enugu')
+def enugu_899():
+    return render_template('public/landing_professionals_seo.html',data="PrestaShop Developers in Enugu")
+@seo_nigeria.route('/Prezi-Specialists-in-Enugu')
+def enugu_900():
+    return render_template('public/landing_professionals_seo.html',data="Prezi Specialists in Enugu")
+@seo_nigeria.route('/Print-Advertisers-in-Enugu')
+def enugu_901():
+    return render_template('public/landing_professionals_seo.html',data="Print Advertisers in Enugu")
+@seo_nigeria.route('/Print-Designers-in-Enugu')
+def enugu_902():
+    return render_template('public/landing_professionals_seo.html',data="Print Designers in Enugu")
+@seo_nigeria.route('/Print-Layout-Designers-in-Enugu')
+def enugu_903():
+    return render_template('public/landing_professionals_seo.html',data="Print Layout Designers in Enugu")
+@seo_nigeria.route('/Print-Production-Professionals-in-Enugu')
+def enugu_904():
+    return render_template('public/landing_professionals_seo.html',data="Print Production Professionals in Enugu")
+@seo_nigeria.route('/Problem-diagnosis-resolution-escalation-Professionals-in-Enugu')
+def enugu_905():
+    return render_template('public/landing_professionals_seo.html',data="Problem resolution Professionals in Enugu")
+@seo_nigeria.route('/Problem-Solution-Professionals-in-Enugu')
+def enugu_906():
+    return render_template('public/landing_professionals_seo.html',data="Problem Solution Professionals in Enugu")
+@seo_nigeria.route('/Process-Improvement-Specialists-in-Enugu')
+def enugu_907():
+    return render_template('public/landing_professionals_seo.html',data="Process Improvement Specialists in Enugu")
+@seo_nigeria.route('/Procurement-Specialists-in-Enugu')
+def enugu_908():
+    return render_template('public/landing_professionals_seo.html',data="Procurement Specialists in Enugu")
+@seo_nigeria.route('/Product-Description-Writers-in-Enugu')
+def enugu_909():
+    return render_template('public/landing_professionals_seo.html',data="Product Description Writers in Enugu")
+@seo_nigeria.route('/Product-Designers-in-Enugu')
+def enugu_910():
+    return render_template('public/landing_professionals_seo.html',data="Product Designers in Enugu")
+@seo_nigeria.route('/Product-Developers-in-Enugu')
+def enugu_911():
+    return render_template('public/landing_professionals_seo.html',data="Product Developers in Enugu")
+@seo_nigeria.route('/Product-Listing-Professionals-in-Enugu')
+def enugu_912():
+    return render_template('public/landing_professionals_seo.html',data="Product Listing Professionals in Enugu")
+@seo_nigeria.route('/Product-Listings-Professionals-in-Enugu')
+def enugu_913():
+    return render_template('public/landing_professionals_seo.html',data="Product Listings Professionals in Enugu")
+@seo_nigeria.route('/Product-Managers-in-Enugu')
+def enugu_914():
+    return render_template('public/landing_professionals_seo.html',data="Product Managers in Enugu")
+@seo_nigeria.route('/Product-Marketers-in-Enugu')
+def enugu_915():
+    return render_template('public/landing_professionals_seo.html',data="Product Marketers in Enugu")
+@seo_nigeria.route('/Product-Photography-Professionals-in-Enugu')
+def enugu_916():
+    return render_template('public/landing_professionals_seo.html',data="Product Photography Professionals in Enugu")
+@seo_nigeria.route('/Product-Roadmap-Professionals-in-Enugu')
+def enugu_917():
+    return render_template('public/landing_professionals_seo.html',data="Product Roadmap Professionals in Enugu")
+@seo_nigeria.route('/Product-Support-Professionals-in-Enugu')
+def enugu_918():
+    return render_template('public/landing_professionals_seo.html',data="Product Support Professionals in Enugu")
+@seo_nigeria.route('/Product-Upload-Professionals-in-Enugu')
+def enugu_919():
+    return render_template('public/landing_professionals_seo.html',data="Product Upload Professionals in Enugu")
+@seo_nigeria.route('/Production-Sound-Mixing-Professionals-in-Enugu')
+def enugu_920():
+    return render_template('public/landing_professionals_seo.html',data="Production Sound Mixing Professionals in Enugu")
+@seo_nigeria.route('/Programming-Languages-Professionals-in-Enugu')
+def enugu_921():
+    return render_template('public/landing_professionals_seo.html',data="Programming Languages Professionals in Enugu")
+@seo_nigeria.route('/Project-Analysis-Professionals-in-Enugu')
+def enugu_922():
+    return render_template('public/landing_professionals_seo.html',data="Project Analysis Professionals in Enugu")
+@seo_nigeria.route('/Project-Delivery-Professionals-in-Enugu')
+def enugu_923():
+    return render_template('public/landing_professionals_seo.html',data="Project Delivery Professionals in Enugu")
+@seo_nigeria.route('/Project-Management-Professionals-in-Enugu')
+def enugu_924():
+    return render_template('public/landing_professionals_seo.html',data="Project Management Professionals in Enugu")
+@seo_nigeria.route('/Project-Managers-in-Enugu')
+def enugu_925():
+    return render_template('public/landing_professionals_seo.html',data="Project Managers in Enugu")
+@seo_nigeria.route('/Project-Planners-in-Enugu')
+def enugu_926():
+    return render_template('public/landing_professionals_seo.html',data="Project Planners in Enugu")
+@seo_nigeria.route('/Project-Schedulers-in-Enugu')
+def enugu_927():
+    return render_template('public/landing_professionals_seo.html',data="Project Schedulers in Enugu")
+@seo_nigeria.route('/Proofreaders-in-Enugu')
+def enugu_928():
+    return render_template('public/landing_professionals_seo.html',data="Proofreaders in Enugu")
+@seo_nigeria.route('/Proofreading-marks-Professionals-in-Enugu')
+def enugu_929():
+    return render_template('public/landing_professionals_seo.html',data="Proofreading marks Professionals in Enugu")
+@seo_nigeria.route('/Proposal-Writers-in-Enugu')
+def enugu_930():
+    return render_template('public/landing_professionals_seo.html',data="Proposal Writers in Enugu")
+@seo_nigeria.route('/Prototyping-Professionals-in-Enugu')
+def enugu_931():
+    return render_template('public/landing_professionals_seo.html',data="Prototyping Professionals in Enugu")
+@seo_nigeria.route('/PSD-to-HTML-Converters-in-Enugu')
+def enugu_932():
+    return render_template('public/landing_professionals_seo.html',data="PSD to HTML Converters in Enugu")
+@seo_nigeria.route('/PSD-to-Wordpress-Specialists-in-Enugu')
+def enugu_933():
+    return render_template('public/landing_professionals_seo.html',data="PSD to Wordpress Specialists in Enugu")
+@seo_nigeria.route('/Public-Health-Professionals-in-Enugu')
+def enugu_934():
+    return render_template('public/landing_professionals_seo.html',data="Public Health Professionals in Enugu")
+@seo_nigeria.route('/Public-Relations-Specialists-in-Enugu')
+def enugu_935():
+    return render_template('public/landing_professionals_seo.html',data="Public Relations Specialists in Enugu")
+@seo_nigeria.route('/Public-Speakers-in-Enugu')
+def enugu_936():
+    return render_template('public/landing_professionals_seo.html',data="Public Speakers in Enugu")
+@seo_nigeria.route('/Python-Developers-in-Enugu')
+def enugu_937():
+    return render_template('public/landing_professionals_seo.html',data="Python Developers in Enugu")
+@seo_nigeria.route('/Python-Numpy-Specialists-in-Enugu')
+def enugu_938():
+    return render_template('public/landing_professionals_seo.html',data="Python Numpy Specialists in Enugu")
+@seo_nigeria.route('/Python-Pandas-Professionals-in-Enugu')
+def enugu_939():
+    return render_template('public/landing_professionals_seo.html',data="Python Pandas Professionals in Enugu")
+@seo_nigeria.route('/Python-Scikit-Learn-Professionals-in-Enugu')
+def enugu_940():
+    return render_template('public/landing_professionals_seo.html',data="Python Scikit-Learn Professionals in Enugu")
+@seo_nigeria.route('/Python-Script-Professionals-in-Enugu')
+def enugu_941():
+    return render_template('public/landing_professionals_seo.html',data="Python Script Professionals in Enugu")
+@seo_nigeria.route('/PyTorch-Professionals-in-Enugu')
+def enugu_942():
+    return render_template('public/landing_professionals_seo.html',data="PyTorch Professionals in Enugu")
+@seo_nigeria.route('/Qualitative-Researchers-in-Enugu')
+def enugu_943():
+    return render_template('public/landing_professionals_seo.html',data="Qualitative Researchers in Enugu")
+@seo_nigeria.route('/Quality-Control-Professionals-in-Enugu')
+def enugu_944():
+    return render_template('public/landing_professionals_seo.html',data="Quality Control Professionals in Enugu")
+@seo_nigeria.route('/Quantitative-Analysts-in-Enugu')
+def enugu_945():
+    return render_template('public/landing_professionals_seo.html',data="Quantitative Analysts in Enugu")
+@seo_nigeria.route('/Quantity-Surveying-Specialists-in-Enugu')
+def enugu_946():
+    return render_template('public/landing_professionals_seo.html',data="Quantity Surveying Specialists in Enugu")
+@seo_nigeria.route('/Quickbooks-Professionals-in-Enugu')
+def enugu_947():
+    return render_template('public/landing_professionals_seo.html',data="Quickbooks Professionals in Enugu")
+@seo_nigeria.route('/R-Developers-Programmers-in-Enugu')
+def enugu_948():
+    return render_template('public/landing_professionals_seo.html',data="R Developers - Programmers in Enugu")
+@seo_nigeria.route('/Radio-Broadcasters-in-Enugu')
+def enugu_949():
+    return render_template('public/landing_professionals_seo.html',data="Radio Broadcasters in Enugu")
+@seo_nigeria.route('/Radio-Show-Hosts-in-Enugu')
+def enugu_950():
+    return render_template('public/landing_professionals_seo.html',data="Radio Show Hosts in Enugu")
+@seo_nigeria.route('/React-Professionals-in-Enugu')
+def enugu_951():
+    return render_template('public/landing_professionals_seo.html',data="React Professionals in Enugu")
+@seo_nigeria.route('/React-Native-Developers-in-Enugu')
+def enugu_952():
+    return render_template('public/landing_professionals_seo.html',data="React Native Developers in Enugu")
+@seo_nigeria.route('/Real-Estate-Law-Lawyers-Legal-Professionals-in-Enugu')
+def enugu_953():
+    return render_template('public/landing_professionals_seo.html',data="Real Estate Law Lawyers - Legal Professionals in Enugu")
+@seo_nigeria.route('/Recipe-Writers-in-Enugu')
+def enugu_954():
+    return render_template('public/landing_professionals_seo.html',data="Recipe Writers in Enugu")
+@seo_nigeria.route('/Recruiters-Recruitment-Consultants-in-Enugu')
+def enugu_955():
+    return render_template('public/landing_professionals_seo.html',data="Recruiters - Recruitment Consultants in Enugu")
+@seo_nigeria.route('/Redux-Framework-Professionals-in-Enugu')
+def enugu_956():
+    return render_template('public/landing_professionals_seo.html',data="Redux Framework Professionals in Enugu")
+@seo_nigeria.route('/Redux-Professionals-in-Enugu')
+def enugu_957():
+    return render_template('public/landing_professionals_seo.html',data="Redux Professionals in Enugu")
+@seo_nigeria.route('/Regulatory-Compliance-Professionals-in-Enugu')
+def enugu_958():
+    return render_template('public/landing_professionals_seo.html',data="Regulatory Compliance Professionals in Enugu")
+@seo_nigeria.route('/Relational-Databases-Specialists-in-Enugu')
+def enugu_959():
+    return render_template('public/landing_professionals_seo.html',data="Relational Databases Specialists in Enugu")
+@seo_nigeria.route('/Relationship-Managers-in-Enugu')
+def enugu_960():
+    return render_template('public/landing_professionals_seo.html',data="Relationship Managers in Enugu")
+@seo_nigeria.route('/Report-Writers-in-Enugu')
+def enugu_961():
+    return render_template('public/landing_professionals_seo.html',data="Report Writers in Enugu")
+@seo_nigeria.route('/Requirements-Analysts-in-Enugu')
+def enugu_962():
+    return render_template('public/landing_professionals_seo.html',data="Requirements Analysts in Enugu")
+@seo_nigeria.route('/Research-Documentation-Professionals-in-Enugu')
+def enugu_963():
+    return render_template('public/landing_professionals_seo.html',data="Research Documentation Professionals in Enugu")
+@seo_nigeria.route('/Research-Methods-Professionals-in-Enugu')
+def enugu_964():
+    return render_template('public/landing_professionals_seo.html',data="Research Methods Professionals in Enugu")
+@seo_nigeria.route('/Research-Paper-Writers-in-Enugu')
+def enugu_965():
+    return render_template('public/landing_professionals_seo.html',data="Research Paper Writers in Enugu")
+@seo_nigeria.route('/Research-Proposal-Professionals-in-Enugu')
+def enugu_966():
+    return render_template('public/landing_professionals_seo.html',data="Research Proposal Professionals in Enugu")
+@seo_nigeria.route('/Research-Reports-Professionals-in-Enugu')
+def enugu_967():
+    return render_template('public/landing_professionals_seo.html',data="Research Reports Professionals in Enugu")
+@seo_nigeria.route('/Research-Specialists-in-Enugu')
+def enugu_968():
+    return render_template('public/landing_professionals_seo.html',data="Research Specialists in Enugu")
+@seo_nigeria.route('/Responsive-Web-Designers-in-Enugu')
+def enugu_969():
+    return render_template('public/landing_professionals_seo.html',data="Responsive Web Designers in Enugu")
+@seo_nigeria.route('/REST-Specialists-in-Enugu')
+def enugu_970():
+    return render_template('public/landing_professionals_seo.html',data="REST Specialists in Enugu")
+@seo_nigeria.route('/Resume-Design-Professionals-in-Enugu')
+def enugu_971():
+    return render_template('public/landing_professionals_seo.html',data="Resume Design Professionals in Enugu")
+@seo_nigeria.route('/Resume-Professionals-in-Enugu')
+def enugu_972():
+    return render_template('public/landing_professionals_seo.html',data="Resume Professionals in Enugu")
+@seo_nigeria.route('/Resume-Screening-Professionals-in-Enugu')
+def enugu_973():
+    return render_template('public/landing_professionals_seo.html',data="Resume Screening Professionals in Enugu")
+@seo_nigeria.route('/Resume-Writers-in-Enugu')
+def enugu_974():
+    return render_template('public/landing_professionals_seo.html',data="Resume Writers in Enugu")
+@seo_nigeria.route('/Retail-Merchandisers-in-Enugu')
+def enugu_975():
+    return render_template('public/landing_professionals_seo.html',data="Retail Merchandisers in Enugu")
+@seo_nigeria.route('/Reviews-Writers-in-Enugu')
+def enugu_976():
+    return render_template('public/landing_professionals_seo.html',data="Reviews Writers in Enugu")
+@seo_nigeria.route('/Risk-Management-Specialists-in-Enugu')
+def enugu_977():
+    return render_template('public/landing_professionals_seo.html',data="Risk Management Specialists in Enugu")
+@seo_nigeria.route('/Romance-Writers-in-Enugu')
+def enugu_978():
+    return render_template('public/landing_professionals_seo.html',data="Romance Writers in Enugu")
+@seo_nigeria.route('/Ruby-Developers - Programmers-in-Enugu')
+def enugu_979():
+    return render_template('public/landing_professionals_seo.html',data="Ruby Developers - Programmers in Enugu")
+@seo_nigeria.route('/Ruby-on-Rails-Developers-in-Enugu')
+def enugu_980():
+    return render_template('public/landing_professionals_seo.html',data="Ruby on Rails Developers in Enugu")
+@seo_nigeria.route('/Russian-to-English-Translators-in-Enugu')
+def enugu_981():
+    return render_template('public/landing_professionals_seo.html',data="Russian to English Translators in Enugu")
+@seo_nigeria.route('/SaaS-Specialists-in-Enugu')
+def enugu_982():
+    return render_template('public/landing_professionals_seo.html',data="SaaS Specialists in Enugu")
+@seo_nigeria.route('/Sage-50-Accounting-Specialists-in-Enugu')
+def enugu_983():
+    return render_template('public/landing_professionals_seo.html',data="Sage 50 Accounting Specialists in Enugu")
+@seo_nigeria.route('/Sales-Copywriting-Professionals-in-Enugu')
+def enugu_984():
+    return render_template('public/landing_professionals_seo.html',data="Sales Copywriting Professionals in Enugu")
+@seo_nigeria.route('/Sales-Development-Professionals-in-Enugu')
+def enugu_985():
+    return render_template('public/landing_professionals_seo.html',data="Sales Development Professionals in Enugu")
+@seo_nigeria.route('/Sales-Funnel-Copywriting-Professionals-in-Enugu')
+def enugu_986():
+    return render_template('public/landing_professionals_seo.html',data="Sales Funnel Copywriting Professionals in Enugu")
+@seo_nigeria.route('/Sales-Letters-Specialists-in-Enugu')
+def enugu_987():
+    return render_template('public/landing_professionals_seo.html',data="Sales Letters Specialists in Enugu")
+@seo_nigeria.route('/Sales-Managers-in-Enugu')
+def enugu_988():
+    return render_template('public/landing_professionals_seo.html',data="Sales Managers in Enugu")
+@seo_nigeria.route('/Sales-Managers-in-Enugu')
+def enugu_989():
+    return render_template('public/landing_professionals_seo.html',data="Sales Managers in Enugu")
+@seo_nigeria.route('/Sales-Operations-Professionals-in-Enugu')
+def enugu_990():
+    return render_template('public/landing_professionals_seo.html',data="Sales Operations Professionals in Enugu")
+@seo_nigeria.route('/Sales-Presentation-Professionals-in-Enugu')
+def enugu_991():
+    return render_template('public/landing_professionals_seo.html',data="Sales Presentation Professionals in Enugu")
+@seo_nigeria.route('/Sales-Presentations-Professionals-in-Enugu')
+def enugu_992():
+    return render_template('public/landing_professionals_seo.html',data="Sales Presentations Professionals in Enugu")
+@seo_nigeria.route('/Sales-Process-Professionals-in-Enugu')
+def enugu_993():
+    return render_template('public/landing_professionals_seo.html',data="Sales Process Professionals in Enugu")
+@seo_nigeria.route('/Sales-Promotion-Managers-in-Enugu')
+def enugu_994():
+    return render_template('public/landing_professionals_seo.html',data="Sales Promotion Managers in Enugu")
+@seo_nigeria.route('/Sales-Strategy-Professionals-in-Enugu')
+def enugu_995():
+    return render_template('public/landing_professionals_seo.html',data="Sales Strategy Professionals in Enugu")
+@seo_nigeria.route('/Sales-Writing-Specialists-in-Enugu')
+def enugu_996():
+    return render_template('public/landing_professionals_seo.html',data="Sales Writing Specialists in Enugu")
+@seo_nigeria.route('/SAP-Specialists-in-Enugu')
+def enugu_997():
+    return render_template('public/landing_professionals_seo.html',data="SAP Specialists in Enugu")
+@seo_nigeria.route('/SAS-Specialists-in-Enugu')
+def enugu_998():
+    return render_template('public/landing_professionals_seo.html',data="SAS Specialists in Enugu")
+@seo_nigeria.route('/Sass-Specialists-in-Enugu')
+def enugu_999():
+    return render_template('public/landing_professionals_seo.html',data="Sass Specialists in Enugu")
+@seo_nigeria.route('/Scheduling-Professionals-in-Enugu')
+def enugu_1000():
+    return render_template('public/landing_professionals_seo.html',data="Scheduling Professionals in Enugu")
+@seo_nigeria.route('/Scientific-Researchers-in-Enugu')
+def enugu_1001():
+    return render_template('public/landing_professionals_seo.html',data="Scientific Researchers in Enugu")
+@seo_nigeria.route('/Scientific-Writers-in-Enugu')
+def enugu_1002():
+    return render_template('public/landing_professionals_seo.html',data="Scientific Writers in Enugu")
+@seo_nigeria.route('/SciPy-Professionals-in-Enugu')
+def enugu_1003():
+    return render_template('public/landing_professionals_seo.html',data="SciPy Professionals in Enugu")
+@seo_nigeria.route('/Screenwriting-Specialists-in-Enugu')
+def enugu_1004():
+    return render_template('public/landing_professionals_seo.html',data="Screenwriting Specialists in Enugu")
+@seo_nigeria.route('/Scripting-Specialists-in-Enugu')
+def enugu_1005():
+    return render_template('public/landing_professionals_seo.html',data="Scripting Specialists in Enugu")
+@seo_nigeria.route('/Scripts-Utilities-Specialists-in-Enugu')
+def enugu_1006():
+    return render_template('public/landing_professionals_seo.html',data="Scripts - Utilities Specialists in Enugu")
+@seo_nigeria.route('/Scriptwriting-Professionals-in-Enugu')
+def enugu_1007():
+    return render_template('public/landing_professionals_seo.html',data="Scriptwriting Professionals in Enugu")
+@seo_nigeria.route('/Scrum-Specialists-in-Enugu')
+def enugu_1008():
+    return render_template('public/landing_professionals_seo.html',data="Scrum Specialists in Enugu")
+@seo_nigeria.route('/SCSS-Professionals-in-Enugu')
+def enugu_1009():
+    return render_template('public/landing_professionals_seo.html',data="SCSS Professionals in Enugu")
+@seo_nigeria.route('/Selenium-Developers-in-Enugu')
+def enugu_1010():
+    return render_template('public/landing_professionals_seo.html',data="Selenium Developers in Enugu")
+@seo_nigeria.route('/SEM-Specialists-in-Enugu')
+def enugu_1011():
+    return render_template('public/landing_professionals_seo.html',data="SEM Specialists in Enugu")
+@seo_nigeria.route('/Semantic-UI-Specialists-in-Enugu')
+def enugu_1012():
+    return render_template('public/landing_professionals_seo.html',data="Semantic UI Specialists in Enugu")
+@seo_nigeria.route('/SEO-Audit-Specialists-in-Enugu')
+def enugu_1013():
+    return render_template('public/landing_professionals_seo.html',data="SEO Audit Specialists in Enugu")
+@seo_nigeria.route('/SEO-Auditing-Professionals-in-Enugu')
+def enugu_1014():
+    return render_template('public/landing_professionals_seo.html',data="SEO Auditing Professionals in Enugu")
+@seo_nigeria.route('/SEO-Backlinking-Specialists-in-Enugu')
+def enugu_1015():
+    return render_template('public/landing_professionals_seo.html',data="SEO Backlinking Specialists in Enugu")
+@seo_nigeria.route('/SEO-Experts-in-Enugu')
+def enugu_1016():
+    return render_template('public/landing_professionals_seo.html',data="SEO Experts in Enugu")
+@seo_nigeria.route('/SEO-Keyword-Researchers-in-Enugu')
+def enugu_1017():
+    return render_template('public/landing_professionals_seo.html',data="SEO Keyword Researchers in Enugu")
+@seo_nigeria.route('/SEO-Report-Professionals-in-Enugu')
+def enugu_1018():
+    return render_template('public/landing_professionals_seo.html',data="SEO Report Professionals in Enugu")
+@seo_nigeria.route('/SEO-Writers-in-Enugu')
+def enugu_1019():
+    return render_template('public/landing_professionals_seo.html',data="SEO Writers in Enugu")
+@seo_nigeria.route('/SEO-based-Website-Professionals-in-Enugu')
+def enugu_1020():
+    return render_template('public/landing_professionals_seo.html',data="SEO-based Website Professionals in Enugu")
+@seo_nigeria.route('/Sermon-Writers-in-Enugu')
+def enugu_1021():
+    return render_template('public/landing_professionals_seo.html',data="Sermon Writers in Enugu")
+@seo_nigeria.route('/Sharepoint-Professionals-in-Enugu')
+def enugu_1022():
+    return render_template('public/landing_professionals_seo.html',data="Sharepoint Professionals in Enugu")
+@seo_nigeria.route('/Shopify-Developers-in-Enugu')
+def enugu_1023():
+    return render_template('public/landing_professionals_seo.html',data="Shopify Developers in Enugu")
+@seo_nigeria.route('/Shopify-Templates-Specialists-in-Enugu')
+def enugu_1024():
+    return render_template('public/landing_professionals_seo.html',data="Shopify Templates Specialists in Enugu")
+@seo_nigeria.route('/Short-Story-Writers-in-Enugu')
+def enugu_1025():
+    return render_template('public/landing_professionals_seo.html',data="Short Story Writers in Enugu")
+@seo_nigeria.route('/Singers-in-Enugu')
+def enugu_1026():
+    return render_template('public/landing_professionals_seo.html',data="Singers in Enugu")
+@seo_nigeria.route('/Six-Sigma-Specialists-in-Enugu')
+def enugu_1027():
+    return render_template('public/landing_professionals_seo.html',data="Six Sigma Specialists in Enugu")
+@seo_nigeria.route('/Sketch-Specialists-in-Enugu')
+def enugu_1028():
+    return render_template('public/landing_professionals_seo.html',data="Sketch Specialists in Enugu")
+@seo_nigeria.route('/Sketching-Specialists-in-Enugu')
+def enugu_1029():
+    return render_template('public/landing_professionals_seo.html',data="Sketching Specialists in Enugu")
+@seo_nigeria.route('/SketchUp-Specialists-in-Enugu')
+def enugu_1030():
+    return render_template('public/landing_professionals_seo.html',data="SketchUp Specialists in Enugu")
+@seo_nigeria.route('/Skype-For-Business-Professionals-in-Enugu')
+def enugu_1031():
+    return render_template('public/landing_professionals_seo.html',data="Skype For Business Professionals in Enugu")
+@seo_nigeria.route('/Slang-style-Writing-Specialists-in-Enugu')
+def enugu_1032():
+    return render_template('public/landing_professionals_seo.html',data="Slang-style Writing Specialists in Enugu")
+@seo_nigeria.route('/Social-campaigns-Professionals-in-Enugu')
+def enugu_1033():
+    return render_template('public/landing_professionals_seo.html',data="Social campaigns Professionals in Enugu")
+@seo_nigeria.route('/Social-Customer-Service-Specialists-in-Enugu')
+def enugu_1034():
+    return render_template('public/landing_professionals_seo.html',data="Social Customer Service Specialists in Enugu")
+@seo_nigeria.route('/Social-Listening-Professionals-in-Enugu')
+def enugu_1035():
+    return render_template('public/landing_professionals_seo.html',data="Social Listening Professionals in Enugu")
+@seo_nigeria.route('/Social-Media-Account-Integration-Professionals-in-Enugu')
+def enugu_1036():
+    return render_template('public/landing_professionals_seo.html',data="Social Media Account Integration Professionals in Enugu")
+@seo_nigeria.route('/Social-Media-Account-Setup-Professionals-in-Enugu')
+def enugu_1037():
+    return render_template('public/landing_professionals_seo.html',data="Social Media Account Setup Professionals in Enugu")
+@seo_nigeria.route('/Social-Media-Advertising-Professionals-in-Enugu')
+def enugu_1038():
+    return render_template('public/landing_professionals_seo.html',data="Social Media Advertising Professionals in Enugu")
+@seo_nigeria.route('/Social-Media-Content-Creation-Professionals-in-Enugu')
+def enugu_1039():
+    return render_template('public/landing_professionals_seo.html',data="Social Media Content Creation Professionals in Enugu")
+@seo_nigeria.route('/Social-Media-Content-Professionals-in-Enugu')
+def enugu_1040():
+    return render_template('public/landing_professionals_seo.html',data="Social Media Content Professionals in Enugu")
+@seo_nigeria.route('/Social-Media-Design-Professionals-in-Enugu')
+def enugu_1041():
+    return render_template('public/landing_professionals_seo.html',data="Social Media Design Professionals in Enugu")
+@seo_nigeria.route('/Social-Media-Professionals-in-Enugu')
+def enugu_1042():
+    return render_template('public/landing_professionals_seo.html',data="Social Media Professionals in Enugu")
+@seo_nigeria.route('/Social-Media-Management-Plan-Professionals-in-Enugu')
+def enugu_1043():
+    return render_template('public/landing_professionals_seo.html',data="Social Media Management Plan Professionals in Enugu")
+@seo_nigeria.route('/Social-Media-Managers-in-Enugu')
+def enugu_1044():
+    return render_template('public/landing_professionals_seo.html',data="Social Media Managers in Enugu")
+@seo_nigeria.route('/Social-Media-Marketers-in-Enugu')
+def enugu_1045():
+    return render_template('public/landing_professionals_seo.html',data="Social Media Marketers in Enugu")
+@seo_nigeria.route('/Social-Media-Marketing-Plan-Professionals-in-Enugu')
+def enugu_1046():
+    return render_template('public/landing_professionals_seo.html',data="Social Media Marketing Plan Professionals in Enugu")
+@seo_nigeria.route('/Social-Media-Optimization-(SMO)-Specialists-in-Enugu')
+def enugu_1047():
+    return render_template('public/landing_professionals_seo.html',data="Social Media Optimization (SMO) Specialists in Enugu")
+@seo_nigeria.route('/Social-Media-Post-Professionals-in-Enugu')
+def enugu_1048():
+    return render_template('public/landing_professionals_seo.html',data="Social Media Post Professionals in Enugu")
+@seo_nigeria.route('/Social Media-Posts-Professionals-in-Enugu')
+def enugu_1049():
+    return render_template('public/landing_professionals_seo.html',data="Social Media Posts Professionals in Enugu")
+@seo_nigeria.route('/Social-Media-Strategy-Professionals-in-Enugu')
+def enugu_1050():
+    return render_template('public/landing_professionals_seo.html',data="Social Media Strategy Professionals in Enugu")
+@seo_nigeria.route('/Social-Media-Training-Professionals-in-Enugu')
+def enugu_1051():
+    return render_template('public/landing_professionals_seo.html',data="Social Media Training Professionals in Enugu")
+@seo_nigeria.route('/Social-Network-Administrators-in-Enugu')
+def enugu_1052():
+    return render_template('public/landing_professionals_seo.html',data="Social Network Administrators in Enugu")
+@seo_nigeria.route('/Social-Networking-Development-Specialists-in-Enugu')
+def enugu_1053():
+    return render_template('public/landing_professionals_seo.html',data="Social Networking Development Specialists in Enugu")
+@seo_nigeria.route('/Software-Design-Professionals-in-Enugu')
+def enugu_1054():
+    return render_template('public/landing_professionals_seo.html',data="Software Design Professionals in Enugu")
+@seo_nigeria.route('/Software-Documentation-Writers-in-Enugu')
+def enugu_1055():
+    return render_template('public/landing_professionals_seo.html',data="Software Documentation Writers in Enugu")
+@seo_nigeria.route('/Software-QA-Testers-in-Enugu')
+def enugu_1056():
+    return render_template('public/landing_professionals_seo.html',data="Software QA Testers in Enugu")
+@seo_nigeria.route('/Software-Testers-in-Enugu')
+def enugu_1057():
+    return render_template('public/landing_professionals_seo.html',data="Software Testers in Enugu")
+@seo_nigeria.route('/SolidWorks-Designers-in-Enugu')
+def enugu_1058():
+    return render_template('public/landing_professionals_seo.html',data="SolidWorks Designers in Enugu")
+@seo_nigeria.route('/Songwriting-Professionals-in-Enugu')
+def enugu_1059():
+    return render_template('public/landing_professionals_seo.html',data="Songwriting Professionals in Enugu")
+@seo_nigeria.route('/Sound-Designers-in-Enugu')
+def enugu_1060():
+    return render_template('public/landing_professionals_seo.html',data="Sound Designers in Enugu")
+@seo_nigeria.route('/Sound-Editors-in-Enugu')
+def enugu_1061():
+    return render_template('public/landing_professionals_seo.html',data="Sound Editors in Enugu")
+@seo_nigeria.route('/Sound-Effects-Specialists-in-Enugu')
+def enugu_1062():
+    return render_template('public/landing_professionals_seo.html',data="Sound Effects Specialists in Enugu")
+@seo_nigeria.route('/Sound-Recording-Professionals-in-Enugu')
+def enugu_1063():
+    return render_template('public/landing_professionals_seo.html',data="Sound Recording Professionals in Enugu")
+@seo_nigeria.route('/Sourcing-Specialists-in-Enugu')
+def enugu_1064():
+    return render_template('public/landing_professionals_seo.html',data="Sourcing Specialists in Enugu")
+@seo_nigeria.route('/Space-Planning-Professionals-in-Enugu')
+def enugu_1065():
+    return render_template('public/landing_professionals_seo.html',data="Space Planning Professionals in Enugu")
+@seo_nigeria.route('/Spanish-to-English-Translators-in-Enugu')
+def enugu_1066():
+    return render_template('public/landing_professionals_seo.html',data="Spanish to English Translators in Enugu")
+@seo_nigeria.route('/Spanish-to-French-Translators-in-Enugu')
+def enugu_1067():
+    return render_template('public/landing_professionals_seo.html',data="Spanish to French Translators in Enugu")
+@seo_nigeria.route('/Spanish-to-German-Translators-in-Enugu')
+def enugu_1068():
+    return render_template('public/landing_professionals_seo.html',data="Spanish to German Translators in Enugu")
+@seo_nigeria.route('/Spanish-Translators-Writers-in-Enugu')
+def enugu_1069():
+    return render_template('public/landing_professionals_seo.html',data="Spanish Translators - Writers in Enugu")
+@seo_nigeria.route('/Speech-Writers-in-Enugu')
+def enugu_1070():
+    return render_template('public/landing_professionals_seo.html',data="Speech Writers in Enugu")
+@seo_nigeria.route('/Spoken-Communications-Spoken-Specialists-in-Enugu')
+def enugu_1071():
+    return render_template('public/landing_professionals_seo.html',data="Spoken Communications Spoken Specialists in Enugu")
+@seo_nigeria.route('/Sports-Fitness-Professionals-in-Enugu')
+def enugu_1072():
+    return render_template('public/landing_professionals_seo.html',data="Sports - Fitness Professionals in Enugu")
+@seo_nigeria.route('/Sports-Writers-in-Enugu')
+def enugu_1073():
+    return render_template('public/landing_professionals_seo.html',data="Sports Writers in Enugu")
+@seo_nigeria.route('/Spreadsheets-Specialists-in-Enugu')
+def enugu_1074():
+    return render_template('public/landing_professionals_seo.html',data="Spreadsheets Specialists in Enugu")
+@seo_nigeria.route('/Spring-Boot-Professionals-in-Enugu')
+def enugu_1075():
+    return render_template('public/landing_professionals_seo.html',data="Spring Boot Professionals in Enugu")
+@seo_nigeria.route('/Spring-Framework-Specialists-in-Enugu')
+def enugu_1076():
+    return render_template('public/landing_professionals_seo.html',data="Spring Framework Specialists in Enugu")
+@seo_nigeria.route('/SQL-Developers-in-Enugu')
+def enugu_1077():
+    return render_template('public/landing_professionals_seo.html',data="SQL Developers in Enugu")
+@seo_nigeria.route('/SQL-Programming-Specialists-in-Enugu')
+def enugu_1078():
+    return render_template('public/landing_professionals_seo.html',data="SQL Programming Specialists in Enugu")
+@seo_nigeria.route('/SQL-Server-Integration-Services(SSIS)Specialists-in-Enugu')
+def enugu_1079():
+    return render_template('public/landing_professionals_seo.html',data="SQL Server Integration Services (SSIS) Specialists in Enugu")
+@seo_nigeria.route('/SQLite-Programmers-in-Enugu')
+def enugu_1080():
+    return render_template('public/landing_professionals_seo.html',data="SQLite Programmers in Enugu")
+@seo_nigeria.route('/SquareSpace-Developers-in-Enugu')
+def enugu_1081():
+    return render_template('public/landing_professionals_seo.html',data="SquareSpace Developers in Enugu")
+@seo_nigeria.route('/Stakeholder-Management-Specialists-in-Enugu')
+def enugu_1082():
+    return render_template('public/landing_professionals_seo.html',data="Stakeholder Management Specialists in Enugu")
+@seo_nigeria.route('/Startup-Consultants-in-Enugu')
+def enugu_1083():
+    return render_template('public/landing_professionals_seo.html',data="Startup Consultants in Enugu")
+@seo_nigeria.route('/Stata-Specialists-in-Enugu')
+def enugu_1084():
+    return render_template('public/landing_professionals_seo.html',data="Stata Specialists in Enugu")
+@seo_nigeria.route('/Stationery-Designers-in-Enugu')
+def enugu_1085():
+    return render_template('public/landing_professionals_seo.html',data="Stationery Designers in Enugu")
+@seo_nigeria.route('/Statistical-Analysis-Professionals-in-Enugu')
+def enugu_1086():
+    return render_template('public/landing_professionals_seo.html',data="Statistical Analysis Professionals in Enugu")
+@seo_nigeria.route('/Statistical-Computing-Specialists-in-Enugu')
+def enugu_1087():
+    return render_template('public/landing_professionals_seo.html',data="Statistical Computing Specialists in Enugu")
+@seo_nigeria.route('/Statistics-Specialists-in-Enugu')
+def enugu_1088():
+    return render_template('public/landing_professionals_seo.html',data="Statistics Specialists in Enugu")
+@seo_nigeria.route('/Steinberg-Cubase-Specialists-in-Enugu')
+def enugu_1089():
+    return render_template('public/landing_professionals_seo.html',data="Steinberg Cubase Specialists in Enugu")
+@seo_nigeria.route('/Sticker-Designers-in-Enugu')
+def enugu_1090():
+    return render_template('public/landing_professionals_seo.html',data="Sticker Designers in Enugu")
+@seo_nigeria.route('/Story-Editing-Professionals-in-Enugu')
+def enugu_1091():
+    return render_template('public/landing_professionals_seo.html',data="Story Editing Professionals in Enugu")
+@seo_nigeria.route('/Storyboard-Artists-in-Enugu')
+def enugu_1092():
+    return render_template('public/landing_professionals_seo.html',data="Storyboard Artists in Enugu")
+@seo_nigeria.route('/Storybook-Professionals-in-Enugu')
+def enugu_1093():
+    return render_template('public/landing_professionals_seo.html',data="Storybook Professionals in Enugu")
+@seo_nigeria.route('/Storytelling-Professionals-in-Enugu')
+def enugu_1094():
+    return render_template('public/landing_professionals_seo.html',data="Storytelling Professionals in Enugu")
+@seo_nigeria.route('/Strategic-Planning-Specialists-in-Enugu')
+def enugu_1095():
+    return render_template('public/landing_professionals_seo.html',data="Strategic Planning Specialists in Enugu")
+@seo_nigeria.route('/Strategic-Thinking-Professionals-in-Enugu')
+def enugu_1096():
+    return render_template('public/landing_professionals_seo.html',data="Strategic Thinking Professionals in Enugu")
+@seo_nigeria.route('/Structural-Analysis-Specialists-in-Enugu')
+def enugu_1097():
+    return render_template('public/landing_professionals_seo.html',data="Structural Analysis Specialists in Enugu")
+@seo_nigeria.route('/Structural-Engineers-in-Enugu')
+def enugu_1098():
+    return render_template('public/landing_professionals_seo.html',data="Structural Engineers in Enugu")
+@seo_nigeria.route('/Subtitling-Specialists-in-Enugu')
+def enugu_1099():
+    return render_template('public/landing_professionals_seo.html',data="Subtitling Specialists in Enugu")
+@seo_nigeria.route('/Summary-Reports-(written and verbal)-Professionals-in-Enugu')
+def enugu_1100():
+    return render_template('public/landing_professionals_seo.html',data="Summary Reports (written and verbal) Professionals in Enugu")
+@seo_nigeria.route('/Supervisory-Skills-Specialists-in-Enugu')
+def enugu_1101():
+    return render_template('public/landing_professionals_seo.html',data="Supervisory Skills Specialists in Enugu")
+@seo_nigeria.route('/Supply-Chain-Management-Consultants-in-Enugu')
+def enugu_1102():
+    return render_template('public/landing_professionals_seo.html',data="Supply Chain Management Consultants in Enugu")
+@seo_nigeria.route('/Survey-Designers-in-Enugu')
+def enugu_1103():
+    return render_template('public/landing_professionals_seo.html',data="Survey Designers in Enugu")
+@seo_nigeria.route('/Swedish-to-English-Translators-in-Enugu')
+def enugu_1104():
+    return render_template('public/landing_professionals_seo.html',data="Swedish to English Translators in Enugu")
+@seo_nigeria.route('/Swift-Developers-in-Enugu')
+def enugu_1105():
+    return render_template('public/landing_professionals_seo.html',data="Swift Developers in Enugu")
+@seo_nigeria.route('/System-Administrators-in-Enugu')
+def enugu_1106():
+    return render_template('public/landing_professionals_seo.html',data="System Administrators in Enugu")
+@seo_nigeria.route('/System-Programmers-in-Enugu')
+def enugu_1107():
+    return render_template('public/landing_professionals_seo.html',data="System Programmers in Enugu")
+@seo_nigeria.route('/Systems-Developers-in-Enugu')
+def enugu_1108():
+    return render_template('public/landing_professionals_seo.html',data="Systems Developers in Enugu")
+@seo_nigeria.route('/T-Shirt-Designers-in-Enugu')
+def enugu_1109():
+    return render_template('public/landing_professionals_seo.html',data="T-Shirt Designers in Enugu")
+@seo_nigeria.route('/Tableau-Professionals-in-Enugu')
+def enugu_1110():
+    return render_template('public/landing_professionals_seo.html',data="Tableau Professionals in Enugu")
+@seo_nigeria.route('/Tax-Law-Lawyers-Legal-Professionals-in-Enugu')
+def enugu_1111():
+    return render_template('public/landing_professionals_seo.html',data="Tax Law Lawyers - Legal Professionals in Enugu")
+@seo_nigeria.route('/Tax-Preparers-in-Enugu')
+def enugu_1112():
+    return render_template('public/landing_professionals_seo.html',data="Tax Preparers in Enugu")
+@seo_nigeria.route('/Teaching-French-Professionals-in-Enugu')
+def enugu_1113():
+    return render_template('public/landing_professionals_seo.html',data="Teaching French Professionals in Enugu")
+@seo_nigeria.route('/Team-Building-Professionals-in-Enugu')
+def enugu_1114():
+    return render_template('public/landing_professionals_seo.html',data="Team Building Professionals in Enugu")
+@seo_nigeria.route('/Technical-Advisor-Professionals-in-Enugu')
+def enugu_1115():
+    return render_template('public/landing_professionals_seo.html',data="Technical Advisor Professionals in Enugu")
+@seo_nigeria.route('/Technical-Documentation-Writers-in-Enugu')
+def enugu_1116():
+    return render_template('public/landing_professionals_seo.html',data="Technical Documentation Writers in Enugu")
+@seo_nigeria.route('/Technical-Editors-in-Enugu')
+def enugu_1117():
+    return render_template('public/landing_professionals_seo.html',data="Technical Editors in Enugu")
+@seo_nigeria.route('/Technical-Report-Professionals-in-Enugu')
+def enugu_1118():
+    return render_template('public/landing_professionals_seo.html',data="Technical Report Professionals in Enugu")
+@seo_nigeria.route('/Technical-Support-Specialists-in-Enugu')
+def enugu_1119():
+    return render_template('public/landing_professionals_seo.html',data="Technical Support Specialists in Enugu")
+@seo_nigeria.route('/Technical-Translators-in-Enugu')
+def enugu_1120():
+    return render_template('public/landing_professionals_seo.html',data="Technical Translators in Enugu")
+@seo_nigeria.route('/Technical-Writers-in-Enugu')
+def enugu_1121():
+    return render_template('public/landing_professionals_seo.html',data="Technical Writers in Enugu")
+@seo_nigeria.route('/Technology-Digital-Professionals-in-Enugu')
+def enugu_1122():
+    return render_template('public/landing_professionals_seo.html',data="Technology - Digital Professionals in Enugu")
+@seo_nigeria.route('/Telecommunications-Engineers-in-Enugu')
+def enugu_1123():
+    return render_template('public/landing_professionals_seo.html',data="Telecommunications Engineers in Enugu")
+@seo_nigeria.route('/Telemarketers-in-Enugu')
+def enugu_1124():
+    return render_template('public/landing_professionals_seo.html',data="Telemarketers in Enugu")
+@seo_nigeria.route('/TensorFlow-Developers-in-Enugu')
+def enugu_1125():
+    return render_template('public/landing_professionals_seo.html',data="TensorFlow Developers in Enugu")
+@seo_nigeria.route('/Time-Management-Specialists-in-Enugu')
+def enugu_1126():
+    return render_template('public/landing_professionals_seo.html',data="Time Management Specialists in Enugu")
+@seo_nigeria.route('/Trade-Marketing-Specialists-in-Enugu')
+def enugu_1127():
+    return render_template('public/landing_professionals_seo.html',data="Trade Marketing Specialists in Enugu")
+@seo_nigeria.route('/Training-Professionals-in-Enugu')
+def enugu_1128():
+    return render_template('public/landing_professionals_seo.html',data="Training Professionals in Enugu")
+@seo_nigeria.route('/Training-Online-LMS-Specialists-in-Enugu')
+def enugu_1129():
+    return render_template('public/landing_professionals_seo.html',data="Training Online LMS Specialists in Enugu")
+@seo_nigeria.route('/Training-Presentation-Professionals-in-Enugu')
+def enugu_1130():
+    return render_template('public/landing_professionals_seo.html',data="Training Presentation Professionals in Enugu")
+@seo_nigeria.route('/Transaction-SQL-Professionals-in-Enugu')
+def enugu_1131():
+    return render_template('public/landing_professionals_seo.html',data="Transaction SQL Professionals in Enugu")
+@seo_nigeria.route('/Transaction-Data-Entry-Professionals-in-Enugu')
+def enugu_1132():
+    return render_template('public/landing_professionals_seo.html',data="Transaction Data Entry Professionals in Enugu")
+@seo_nigeria.route('/Transcriptionists-in-Enugu')
+def enugu_1133():
+    return render_template('public/landing_professionals_seo.html',data="Transcriptionists in Enugu")
+@seo_nigeria.route('/Transcripts-Professionals-in-Enugu')
+def enugu_1134():
+    return render_template('public/landing_professionals_seo.html',data="Transcripts Professionals in Enugu")
+@seo_nigeria.route('/Translation-Arabic-Hebrew-Professionals-in-Enugu')
+def enugu_1135():
+    return render_template('public/landing_professionals_seo.html',data="Translation Arabic Hebrew Professionals in Enugu")
+@seo_nigeria.route('/Translation-Arabic-Italian-Professionals-in-Enugu')
+def enugu_1136():
+    return render_template('public/landing_professionals_seo.html',data="Translation Arabic Italian Professionals in Enugu")
+@seo_nigeria.route('/Translation-Arabic-Spanish-Professionals-in-Enugu')
+def enugu_1137():
+    return render_template('public/landing_professionals_seo.html',data="Translation Arabic Spanish Professionals in Enugu")
+@seo_nigeria.route('/Translation-Arabic-Turkish-Professionals-in-Enugu')
+def enugu_1138():
+    return render_template('public/landing_professionals_seo.html',data="Translation Arabic Turkish Professionals in Enugu")
+@seo_nigeria.route('/Translation-Dutch-French-Professionals-in-Enugu')
+def enugu_1139():
+    return render_template('public/landing_professionals_seo.html',data="Translation Dutch French Professionals in Enugu")
+@seo_nigeria.route('/Translation-English-Marathi-Professionals-in-Enugu')
+def enugu_1140():
+    return render_template('public/landing_professionals_seo.html',data="Translation English Marathi Professionals in Enugu")
+@seo_nigeria.route('/Translation-French-Korean-Professionals-in-Enugu')
+def enugu_1141():
+    return render_template('public/landing_professionals_seo.html',data="Translation French Korean Professionals in Enugu")
+@seo_nigeria.route('/Translation-Russian-Chinese-Professionals-in-Enugu')
+def enugu_1142():
+    return render_template('public/landing_professionals_seo.html',data="Translation Russian Chinese Professionals in Enugu")
+@seo_nigeria.route('/Translators-in-Enugu')
+def enugu_1143():
+    return render_template('public/landing_professionals_seo.html',data="Translators in Enugu")
+@seo_nigeria.route('/Travel-Planners-in-Enugu')
+def enugu_1144():
+    return render_template('public/landing_professionals_seo.html',data="Travel Planners in Enugu")
+@seo_nigeria.route('/Troubleshooting-Professionals-in-Enugu')
+def enugu_1145():
+    return render_template('public/landing_professionals_seo.html',data="Troubleshooting Professionals in Enugu")
+@seo_nigeria.route('/Tutoring-Professionals-in-Enugu')
+def enugu_1146():
+    return render_template('public/landing_professionals_seo.html',data="Tutoring Professionals in Enugu")
+@seo_nigeria.route('/TV-Broadcasters-in-Enugu')
+def enugu_1147():
+    return render_template('public/landing_professionals_seo.html',data="TV Broadcasters in Enugu")
+@seo_nigeria.route('/Twitter-Bootstrap-Specialists-in-Enugu')
+def enugu_1148():
+    return render_template('public/landing_professionals_seo.html',data="Twitter Bootstrap Specialists in Enugu")
+@seo_nigeria.route('/Twitter-Marketers-in-Enugu')
+def enugu_1149():
+    return render_template('public/landing_professionals_seo.html',data="Twitter Marketers in Enugu")
+@seo_nigeria.route('/TypeScript-Developers-in-Enugu')
+def enugu_1150():
+    return render_template('public/landing_professionals_seo.html',data="TypeScript Developers in Enugu")
+@seo_nigeria.route('/Typesetters-in-Enugu')
+def enugu_1151():
+    return render_template('public/landing_professionals_seo.html',data="Typesetters in Enugu")
+@seo_nigeria.route('/Typists-in-Enugu')
+def enugu_1152():
+    return render_template('public/landing_professionals_seo.html',data="Typists in Enugu")
+@seo_nigeria.route('/Typography-Designers-in-Enugu')
+def enugu_1153():
+    return render_template('public/landing_professionals_seo.html',data="Typography Designers in Enugu")
+@seo_nigeria.route('/UI-Designers-in-Enugu')
+def enugu_1154():
+    return render_template('public/landing_professionals_seo.html',data="UI Designers in Enugu")
+@seo_nigeria.route('/UI-Graphics-Professionals-in-Enugu')
+def enugu_1155():
+    return render_template('public/landing_professionals_seo.html',data="UI Graphics Professionals in Enugu")
+@seo_nigeria.route('/UI/UX-Professionals-in-Enugu')
+def enugu_1156():
+    return render_template('public/landing_professionals_seo.html',data="UI/UX Professionals in Enugu")
+@seo_nigeria.route('/UI/UX-Prototyping-Professionals-in-Enugu')
+def enugu_1157():
+    return render_template('public/landing_professionals_seo.html',data="UI/UX Prototyping Professionals in Enugu")
+@seo_nigeria.route('/Unit-Testing-Specialists-in-Enugu')
+def enugu_1158():
+    return render_template('public/landing_professionals_seo.html',data="Unit Testing Specialists in Enugu")
+@seo_nigeria.route('/Unix-System-Administrators-in-Enugu')
+def enugu_1159():
+    return render_template('public/landing_professionals_seo.html',data="Unix System Administrators in Enugu")
+@seo_nigeria.route('/Urdu-to-English-Translators-in-Enugu')
+def enugu_1160():
+    return render_template('public/landing_professionals_seo.html',data="Urdu to English Translators in Enugu")
+@seo_nigeria.route('/Usability-Testing-Specialists-in-Enugu')
+def enugu_1161():
+    return render_template('public/landing_professionals_seo.html',data="Usability Testing Specialists in Enugu")
+@seo_nigeria.route('/User-Acceptance-Testing-Specialists-in-Enugu')
+def enugu_1162():
+    return render_template('public/landing_professionals_seo.html',data="User Acceptance Testing Specialists in Enugu")
+@seo_nigeria.route('/User-Centered-Design-Professionals-in-Enugu')
+def enugu_1163():
+    return render_template('public/landing_professionals_seo.html',data="User Centered Design Professionals in Enugu")
+@seo_nigeria.route('/UX-Design-Professionals-in-Enugu')
+def enugu_1164():
+    return render_template('public/landing_professionals_seo.html',data="UX Design Professionals in Enugu")
+@seo_nigeria.route('/UX-Designers-in-Enugu')
+def enugu_1165():
+    return render_template('public/landing_professionals_seo.html',data="UX Designers in Enugu")
+@seo_nigeria.route('/UX-Research-Professionals-in-Enugu')
+def enugu_1166():
+    return render_template('public/landing_professionals_seo.html',data="UX Research Professionals in Enugu")
+@seo_nigeria.route('/UX-Writing-Professionals-in-Enugu')
+def enugu_1167():
+    return render_template('public/landing_professionals_seo.html',data="UX Writing Professionals in Enugu")
+@seo_nigeria.route('/V-Ray-Specialists-in-Enugu')
+def enugu_1168():
+    return render_template('public/landing_professionals_seo.html',data="V-Ray Specialists in Enugu")
+@seo_nigeria.route('/VB.NET-Developers-in-Enugu')
+def enugu_1169():
+    return render_template('public/landing_professionals_seo.html',data="VB.NET Developers in Enugu")
+@seo_nigeria.route('/VBA-Developers-in-Enugu')
+def enugu_1170():
+    return render_template('public/landing_professionals_seo.html',data="VBA Developers in Enugu")
+@seo_nigeria.route('/vCita-Specialists-in-Enugu')
+def enugu_1171():
+    return render_template('public/landing_professionals_seo.html',data="vCita Specialists in Enugu")
+@seo_nigeria.route('/Vector-Illustration-Professionals-in-Enugu')
+def enugu_1172():
+    return render_template('public/landing_professionals_seo.html',data="Vector Illustration Professionals in Enugu")
+@seo_nigeria.route('/VectorWorks-Specialists-in-Enugu')
+def enugu_1173():
+    return render_template('public/landing_professionals_seo.html',data="VectorWorks Specialists in Enugu")
+@seo_nigeria.route('/VFX-Animation-Specialists-in-Enugu')
+def enugu_1174():
+    return render_template('public/landing_professionals_seo.html',data="VFX Animation Specialists in Enugu")
+@seo_nigeria.route('/Video-Advertising-Professionals-in-Enugu')
+def enugu_1175():
+    return render_template('public/landing_professionals_seo.html',data="Video Advertising Professionals in Enugu")
+@seo_nigeria.route('/Video-Animation-Professionals-in-Enugu')
+def enugu_1176():
+    return render_template('public/landing_professionals_seo.html',data="Video Animation Professionals in Enugu")
+@seo_nigeria.route('/Video-Color-Correction-Specialists-in-Enugu')
+def enugu_1177():
+    return render_template('public/landing_professionals_seo.html',data="Video Color Correction Specialists in Enugu")
+@seo_nigeria.route('/Video-Converters-in-Enugu')
+def enugu_1178():
+    return render_template('public/landing_professionals_seo.html',data="Video Converters in Enugu")
+@seo_nigeria.route('/Video-Design-Professionals-in-Enugu')
+def enugu_1179():
+    return render_template('public/landing_professionals_seo.html',data="Video Design Professionals in Enugu")
+@seo_nigeria.route('/Video-Editors-in-Enugu')
+def enugu_1180():
+    return render_template('public/landing_professionals_seo.html',data="Video Editors in Enugu")
+@seo_nigeria.route('/Video-Journalism-Professionals-in-Enugu')
+def enugu_1181():
+    return render_template('public/landing_professionals_seo.html',data="Video Journalism Professionals in Enugu")
+@seo_nigeria.route('/Video-Post-Editing-Specialists-in-Enugu')
+def enugu_1182():
+    return render_template('public/landing_professionals_seo.html',data="Video Post Editing Specialists in Enugu")
+@seo_nigeria.route('/Video-Producers-in-Enugu')
+def enugu_1183():
+    return render_template('public/landing_professionals_seo.html',data="Video Producers in Enugu")
+@seo_nigeria.route('/Video-Publishers-in-Enugu')
+def enugu_1184():
+    return render_template('public/landing_professionals_seo.html',data="Video Publishers in Enugu")
+@seo_nigeria.route('/Video-Streaming-Experts-in-Enugu')
+def enugu_1185():
+    return render_template('public/landing_professionals_seo.html',data="Video Streaming Experts in Enugu")
+@seo_nigeria.route('/Video-Uploaders-in-Enugu')
+def enugu_1186():
+    return render_template('public/landing_professionals_seo.html',data="Video Uploaders in Enugu")
+@seo_nigeria.route('/Videographers-in-Enugu')
+def enugu_1187():
+    return render_template('public/landing_professionals_seo.html',data="Videographers in Enugu")
+@seo_nigeria.route('/VideoScribe-Specialists-in-Enugu')
+def enugu_1188():
+    return render_template('public/landing_professionals_seo.html',data="VideoScribe Specialists in Enugu")
+@seo_nigeria.route('/Virtual-Assistants-in-Enugu')
+def enugu_1189():
+    return render_template('public/landing_professionals_seo.html',data="Virtual Assistants in Enugu")
+@seo_nigeria.route('/Virtual-Professionals-in-Enugu')
+def enugu_1190():
+    return render_template('public/landing_professionals_seo.html',data="Virtual Professionals in Enugu")
+@seo_nigeria.route('/Virtual-Machine-Specialists-in-Enugu')
+def enugu_1191():
+    return render_template('public/landing_professionals_seo.html',data="Virtual Machine Specialists in Enugu")
+@seo_nigeria.route('/Virtualization-Specialists-in-Enugu')
+def enugu_1192():
+    return render_template('public/landing_professionals_seo.html',data="Virtualization Specialists in Enugu")
+@seo_nigeria.route('/Visual-Arts-Specialists-in-Enugu')
+def enugu_1193():
+    return render_template('public/landing_professionals_seo.html',data="Visual Arts Specialists in Enugu")
+@seo_nigeria.route('/Visual-Design-Professionals-in-Enugu')
+def enugu_1194():
+    return render_template('public/landing_professionals_seo.html',data="Visual Design Professionals in Enugu")
+@seo_nigeria.route('/Visualization-Specialists-in-Enugu')
+def enugu_1195():
+    return render_template('public/landing_professionals_seo.html',data="Visualization Specialists in Enugu")
+@seo_nigeria.route('/VMware-Administrators-in-Enugu')
+def enugu_1196():
+    return render_template('public/landing_professionals_seo.html',data="VMware Administrators in Enugu")
+@seo_nigeria.route('/Voice-Acting-Professionals-in-Enugu')
+def enugu_1197():
+    return render_template('public/landing_professionals_seo.html',data="Voice Acting Professionals in Enugu")
+@seo_nigeria.route('/Voice-Over-American-Accent-Specialists-in-Enugu')
+def enugu_1198():
+    return render_template('public/landing_professionals_seo.html',data="Voice Over American Accent Specialists in Enugu")
+@seo_nigeria.route('/Voice-Over-Artists-Talent-with-British-Accent-in-Enugu')
+def enugu_1199():
+    return render_template('public/landing_professionals_seo.html',data="Voice Over Artists - Talent with British Accent in Enugu")
+@seo_nigeria.route('/Voice-Over-English-Professionals-in-Enugu')
+def enugu_1200():
+    return render_template('public/landing_professionals_seo.html',data="Voice Over English Professionals in Enugu")
+@seo_nigeria.route('/Voice-Over-Specialists-in-Enugu')
+def enugu_1201():
+    return render_template('public/landing_professionals_seo.html',data="Voice Over Specialists in Enugu")
+@seo_nigeria.route('/Voice-Recording-Professionals-in-Enugu')
+def enugu_1202():
+    return render_template('public/landing_professionals_seo.html',data="Voice Recording Professionals in Enugu")
+@seo_nigeria.route('/Voice-Talent-in-Enugu')
+def enugu_1203():
+    return render_template('public/landing_professionals_seo.html',data="Voice Talent in Enugu")
+@seo_nigeria.route('/Voice-over-Recording-Professionals-in-Enugu')
+def enugu_1204():
+    return render_template('public/landing_professionals_seo.html',data="Voice-over Recording Professionals in Enugu")
+@seo_nigeria.route('/VPN-Specialists-in-Enugu')
+def enugu_1205():
+    return render_template('public/landing_professionals_seo.html',data="VPN Specialists in Enugu")
+@seo_nigeria.route('/Vue.js-Developers-in-Enugu')
+def enugu_1206():
+    return render_template('public/landing_professionals_seo.html',data="Vue.js Developers in Enugu")
+@seo_nigeria.route('/Vuex-Professionals-in-Enugu')
+def enugu_1207():
+    return render_template('public/landing_professionals_seo.html',data="Vuex Professionals in Enugu")
+@seo_nigeria.route('/Vulnerability-Assessment-Specialists-in-Enugu')
+def enugu_1208():
+    return render_template('public/landing_professionals_seo.html',data="Vulnerability Assessment Specialists in Enugu")
+@seo_nigeria.route('/WAN-Specialists-in-Enugu')
+def enugu_1209():
+    return render_template('public/landing_professionals_seo.html',data="WAN Specialists in Enugu")
+@seo_nigeria.route('/Web-Analytics-Specialists-in-Enugu')
+def enugu_1210():
+    return render_template('public/landing_professionals_seo.html',data="Web Analytics Specialists in Enugu")
+@seo_nigeria.route('/Web-Application-Professionals-in-Enugu')
+def enugu_1211():
+    return render_template('public/landing_professionals_seo.html',data="Web Application Professionals in Enugu")
+@seo_nigeria.route('/Web-Apps-Professionals-in-Enugu')
+def enugu_1212():
+    return render_template('public/landing_professionals_seo.html',data="Web Apps Professionals in Enugu")
+@seo_nigeria.route('/Web-Content-Development-Professionals-in-Enugu')
+def enugu_1213():
+    return render_template('public/landing_professionals_seo.html',data="Web Content Development Professionals in Enugu")
+@seo_nigeria.route('/Web-Content-Professionals-in-Enugu')
+def enugu_1214():
+    return render_template('public/landing_professionals_seo.html',data="Web Content Professionals in Enugu")
+@seo_nigeria.route('/Web-Content-Strategy-Professionals-in-Enugu')
+def enugu_1215():
+    return render_template('public/landing_professionals_seo.html',data="Web Content Strategy Professionals in Enugu")
+@seo_nigeria.route('/Web-Designers-in-Enugu')
+def enugu_1216():
+    return render_template('public/landing_professionals_seo.html',data="Web Designers in Enugu")
+@seo_nigeria.route('/Web-Host-Manager-Specialists-in-Enugu')
+def enugu_1217():
+    return render_template('public/landing_professionals_seo.html',data="Web Host Manager Specialists in Enugu")
+@seo_nigeria.route('/Web-Hosting-Specialists-in-Enugu')
+def enugu_1218():
+    return render_template('public/landing_professionals_seo.html',data="Web Hosting Specialists in Enugu")
+@seo_nigeria.route('/Web-Programming-Specialists-in-Enugu')
+def enugu_1219():
+    return render_template('public/landing_professionals_seo.html',data="Web Programming Specialists in Enugu")
+@seo_nigeria.route('/Web-Research-Professionals-in-Enugu')
+def enugu_1220():
+    return render_template('public/landing_professionals_seo.html',data="Web Research Professionals in Enugu")
+@seo_nigeria.route('/Web-Scrapers-in-Enugu')
+def enugu_1221():
+    return render_template('public/landing_professionals_seo.html',data="Web Scrapers in Enugu")
+@seo_nigeria.route('/Web-Services-Specialists-in-Enugu')
+def enugu_1222():
+    return render_template('public/landing_professionals_seo.html',data="Web Services Specialists in Enugu")
+@seo_nigeria.route('/Web-Testing-Specialists-in-Enugu')
+def enugu_1223():
+    return render_template('public/landing_professionals_seo.html',data="Web Testing Specialists in Enugu")
+@seo_nigeria.route('/Web-UI-Professionals-in-Enugu')
+def enugu_1224():
+    return render_template('public/landing_professionals_seo.html',data="Web UI Professionals in Enugu")
+@seo_nigeria.route('/Web/graphic-design-Professionals-in-Enugu')
+def enugu_1225():
+    return render_template('public/landing_professionals_seo.html',data="Web/graphic design Professionals in Enugu")
+@seo_nigeria.route('/Webflow-Specialists-in-Enugu')
+def enugu_1226():
+    return render_template('public/landing_professionals_seo.html',data="Webflow Specialists in Enugu")
+@seo_nigeria.route('/WebGL-Developers-in-Enugu')
+def enugu_1227():
+    return render_template('public/landing_professionals_seo.html',data="WebGL Developers in Enugu")
+@seo_nigeria.route('/Website-Analytics-Specialists-in-Enugu')
+def enugu_1228():
+    return render_template('public/landing_professionals_seo.html',data="Website Analytics Specialists in Enugu")
+@seo_nigeria.route('/Website-Content-Managers-in-Enugu')
+def enugu_1229():
+    return render_template('public/landing_professionals_seo.html',data="Website Content Managers in Enugu")
+@seo_nigeria.route('/Website-Copywriting-Professionals-in-Enugu')
+def enugu_1230():
+    return render_template('public/landing_professionals_seo.html',data="Website Copywriting Professionals in Enugu")
+@seo_nigeria.route('/Website-Customization-Professionals-in-Enugu')
+def enugu_1231():
+    return render_template('public/landing_professionals_seo.html',data="Website Customization Professionals in Enugu")
+@seo_nigeria.route('/Website-Developers-in-Enugu')
+def enugu_1232():
+    return render_template('public/landing_professionals_seo.html',data="Website Developers in Enugu")
+@seo_nigeria.route('/Website-Professionals-in-Enugu')
+def enugu_1233():
+    return render_template('public/landing_professionals_seo.html',data="Website Professionals in Enugu")
+@seo_nigeria.route('/Website-redesign-Professionals-in-Enugu')
+def enugu_1234():
+    return render_template('public/landing_professionals_seo.html',data="Website redesign Professionals in Enugu")
+@seo_nigeria.route('/Website-Security-Professionals-in-Enugu')
+def enugu_1235():
+    return render_template('public/landing_professionals_seo.html',data="Website Security Professionals in Enugu")
+@seo_nigeria.route('/Website-Translation-Professionals-in-Enugu')
+def enugu_1236():
+    return render_template('public/landing_professionals_seo.html',data="Website Translation Professionals in Enugu")
+@seo_nigeria.route('/Website-Wireframing-Specialists-in-Enugu')
+def enugu_1237():
+    return render_template('public/landing_professionals_seo.html',data="Website Wireframing Specialists in Enugu")
+@seo_nigeria.route('/Wedding-Photography-Professionals-in-Enugu')
+def enugu_1238():
+    return render_template('public/landing_professionals_seo.html',data="Wedding Photography Professionals in Enugu")
+@seo_nigeria.route('/White-Paper-Writers-in-Enugu')
+def enugu_1239():
+    return render_template('public/landing_professionals_seo.html',data="White Paper Writers in Enugu")
+@seo_nigeria.route('/Whiteboard-Animators-in-Enugu')
+def enugu_1240():
+    return render_template('public/landing_professionals_seo.html',data="Whiteboard Animators in Enugu")
+@seo_nigeria.route('/Whiteboard-Videos-Professionals-in-Enugu')
+def enugu_1241():
+    return render_template('public/landing_professionals_seo.html',data="Whiteboard Videos Professionals in Enugu")
+@seo_nigeria.route('/Whitepaper-Writing-Professionals-in-Enugu')
+def enugu_1242():
+    return render_template('public/landing_professionals_seo.html',data="Whitepaper Writing Professionals in Enugu")
+@seo_nigeria.route('/Wikipedia-Specialists-in-Enugu')
+def enugu_1243():
+    return render_template('public/landing_professionals_seo.html',data="Wikipedia Specialists in Enugu")
+@seo_nigeria.route('/Windows-7-Administrators-in-Enugu')
+def enugu_1244():
+    return render_template('public/landing_professionals_seo.html',data="Windows 7 Administrators in Enugu")
+@seo_nigeria.route('/Windows-8-Administrators-in-Enugu')
+def enugu_1245():
+    return render_template('public/landing_professionals_seo.html',data="Windows 8 Administrators in Enugu")
+@seo_nigeria.route('/Windows-Administrators-in-Enugu')
+def enugu_1246():
+    return render_template('public/landing_professionals_seo.html',data="Windows Administrators in Enugu")
+@seo_nigeria.route('/Windows-Media-Connect-Specialists-in-Enugu')
+def enugu_1247():
+    return render_template('public/landing_professionals_seo.html',data="Windows Media Connect Specialists in Enugu")
+@seo_nigeria.route('/Windows-PowerShell-Developers-in-Enugu')
+def enugu_1248():
+    return render_template('public/landing_professionals_seo.html',data="Windows PowerShell Developers in Enugu")
+@seo_nigeria.route('/Windows-Presentation-Foundation-Professionals-in-Enugu')
+def enugu_1249():
+    return render_template('public/landing_professionals_seo.html',data="Windows Presentation Foundation Professionals in Enugu")
+@seo_nigeria.route('/Windows-Server-Professionals-in-Enugu')
+def enugu_1250():
+    return render_template('public/landing_professionals_seo.html',data="Windows Server Professionals in Enugu")
+@seo_nigeria.route('/Wireframing-Specialists-in-Enugu')
+def enugu_1251():
+    return render_template('public/landing_professionals_seo.html',data="Wireframing Specialists in Enugu")
+@seo_nigeria.route('/WiX-Specialists-in-Enugu')
+def enugu_1252():
+    return render_template('public/landing_professionals_seo.html',data="WiX Specialists in Enugu")
+@seo_nigeria.route('/Woocommerce-Developers-in-Enugu')
+def enugu_1253():
+    return render_template('public/landing_professionals_seo.html',data="Woocommerce Developers in Enugu")
+@seo_nigeria.route('/Word-Processing-Experts-in-Enugu')
+def enugu_1254():
+    return render_template('public/landing_professionals_seo.html',data="Word Processing Experts in Enugu")
+@seo_nigeria.route('/WordPress-Developers-in-Enugu')
+def enugu_1255():
+    return render_template('public/landing_professionals_seo.html',data="WordPress Developers in Enugu")
+@seo_nigeria.route('/WordPress-e-Commerce-Specialists-in-Enugu')
+def enugu_1256():
+    return render_template('public/landing_professionals_seo.html',data="WordPress e-Commerce Specialists in Enugu")
+@seo_nigeria.route('/Wordpress-Malware-Removal-Professionals-in-Enugu')
+def enugu_1257():
+    return render_template('public/landing_professionals_seo.html',data="Wordpress Malware Removal Professionals in Enugu")
+@seo_nigeria.route('/Wordpress-Multisite-Specialists-in-Enugu')
+def enugu_1258():
+    return render_template('public/landing_professionals_seo.html',data="Wordpress Multisite Specialists in Enugu")
+@seo_nigeria.route('/Wordpress-Plugin-Developers-in-Enugu')
+def enugu_1259():
+    return render_template('public/landing_professionals_seo.html',data="Wordpress Plugin Developers in Enugu")
+@seo_nigeria.route('/Wordpress-Theme-Professionals-in-Enugu')
+def enugu_1260():
+    return render_template('public/landing_professionals_seo.html',data="Wordpress Theme Professionals in Enugu")
+@seo_nigeria.route('/Wordpress-Website-Professionals-in-Enugu')
+def enugu_1261():
+    return render_template('public/landing_professionals_seo.html',data="Wordpress Website Professionals in Enugu")
+@seo_nigeria.route('/Writers-in-Enugu')
+def enugu_1262():
+    return render_template('public/landing_professionals_seo.html',data="Writers in Enugu")
+@seo_nigeria.route('/Written-Professionals-in-Enugu')
+def enugu_1263():
+    return render_template('public/landing_professionals_seo.html',data="Written Professionals in Enugu")
+@seo_nigeria.route('/Xamarin-Specialists-in-Enugu')
+def enugu_1264():
+    return render_template('public/landing_professionals_seo.html',data="Xamarin Specialists in Enugu")
+@seo_nigeria.route('/XML-Developers-in-Enugu')
+def enugu_1265():
+    return render_template('public/landing_professionals_seo.html',data="XML Developers in Enugu")
+@seo_nigeria.route('/Yiddish-to-English-Translators-in-Enugu')
+def enugu_1266():
+    return render_template('public/landing_professionals_seo.html',data="Yiddish to English Translators in Enugu")
+@seo_nigeria.route('/Yoast-SEO-Specialists-in-Enugu')
+def enugu_1267():
+    return render_template('public/landing_professionals_seo.html',data="Yoast SEO Specialists in Enugu")
+@seo_nigeria.route('/YouTube-Professionals-in-Enugu')
+def enugu_1268():
+    return render_template('public/landing_professionals_seo.html',data="YouTube Professionals in Enugu")
+
+
 

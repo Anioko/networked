@@ -1,12 +1,22 @@
 import operator
 from datetime import datetime, timedelta
 
-from flask import Blueprint, render_template, url_for, make_response, current_app
+from flask import Blueprint, render_template, url_for, make_response, current_app, request, send_from_directory
 
 from app.models import Job, Question, User, Organisation, Service, Event, Promo, Product
 
 sitemaps = Blueprint('sitemaps', __name__)
 
+
+@sitemaps.errorhandler(Exception)
+def page_not_found(error):
+    return render_template('errors/404.html')
+
+
+###@sitemaps.route('/robots.txt')
+##@sitemaps.route('/sitemap_main.xml')
+##def static_from_root():
+##    return send_from_directory(redirect(url_for('static', request.path[1:])))
 
 def return_xml(view, **kwargs):
     data = render_template(view, **kwargs)
@@ -80,7 +90,7 @@ def companies_xml():
     urlset = []
     companies = Organisation.query.all()
     for company in companies:
-        urlset.append({'loc': url_for('organisations.org_view', org_id=company.id, _external=True),
+        urlset.append({'loc': url_for('organisations.public_org', org_id=company.id, org_name=company.org_name, _external=True),
                        'lastmod': '{}'.format(sitemap_date(company.updated_at) if company.updated_at is not None else ''),
                        'changefreq': 'daily'})
     return return_xml('public/sitemap.html', urlset=urlset)
@@ -91,7 +101,7 @@ def questions_xml():
     urlset = []
     questions = Question.query.all()
     for question in questions:
-        urlset.append({'loc': url_for('main.question_details', title=question.title, _external=True),
+        urlset.append({'loc': url_for('main.question_details', question_id=question.id, title=question.title, _external=True),
                        'lastmod': '{}'.format(sitemap_date(question.updated_at) if question.updated_at is not None else ''),
                        'changefreq': 'daily'})
     return return_xml('public/sitemap.html', urlset=urlset)
