@@ -8,11 +8,11 @@
 
             {% elif not current_user.is_following(user) %}
                 <div class="ui button">
-                    <a href="{{ url_for('main.follow', id=user.id, full_name=user.full_name) }}">
+                    <a target="_self" href="{{ url_for('main.follow', id=user.id, full_name=user.full_name) }}">
                         <i class="add icon"></i> Follow</a>
                 </div>
             {% else %}
-                <div class="ui button"><a
+                <div class="ui button"><a target="_self"
                         href="{{ url_for('main.unfollow', id=user.id, full_name=user.full_name) }}">
                     <i class="add icon"></i> UnFollow</a>
                 </div>

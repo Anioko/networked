@@ -59,11 +59,11 @@
                                 <div class="extra">
                                     {% if not current_user.is_following(user) %}
                                         <div class="ui button">
-                                            <a href="{{ url_for('main.follow', id=user.id, full_name=user.full_name) }}">Follow</a>
+                                            <a target="_self" href="{{ url_for('main.follow', id=user.id, full_name=user.full_name) }}">Follow</a>
                                         </div>
                                     {% else %}
                                         <div class="ui button">
-                                            <a href="{{ url_for('main.unfollow', id=user.id, full_name=user.full_name) }}">Unfollow</a>
+                                            <a target="_self" href="{{ url_for('main.unfollow', id=user.id, full_name=user.full_name) }}">Unfollow</a>
                                         </div>
                                     {% endif %}
                                     <div class="ui button">
@@ -82,13 +82,13 @@
                 <div class="ui two column very relaxed grid">
                     <div class="column">
                         <p>Following</p>
-                        <a href="{{ url_for('main.following', user_id=user.id) }}">
+                        <a target="_self" href="{{ url_for('main.following', user_id=user.id) }}">
                             <p>( {{ user.followed.all() | length }} )</p>
                         </a>
                     </div>
                     <div class="column">
                         <p>Followers</p>
-                        <a href="{{ url_for('main.followers', user_id=user.id) }}">
+                        <a target="_self" href="{{ url_for('main.followers', user_id=user.id) }}">
                             <p>( {{ user.followers.all() | length }} )</p>
                         </a>
                     </div>
