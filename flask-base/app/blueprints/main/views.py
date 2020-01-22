@@ -85,6 +85,12 @@ def profile():
     return redirect(url_for('account.profile'))
 
 
+@main.route('/professionals/list/', defaults={'page': 1})
+@main.route('/professionals/list/page/<int:page>', methods=['GET'])
+def professionals_list(page):
+    paginated = User.query.order_by(User.id.desc()).paginate(page, per_page=10)
+    return render_template('main/selection.html', paginated=paginated)
+
 @main.route('/list/', defaults={'page': 1})
 @main.route('/list/page/<int:page>', methods=['GET'])
 @login_required
@@ -423,6 +429,11 @@ def question():
     return render_template('main/create_question.html', form=form,
                            follow_lists=follow_lists, users=users, results=questions,jobs=jobs, edit_form=edit_form)
 
+@main.route('/questions/list/all')
+def questions_list():
+    appts = Question.query.filter(Question.timestamp != None).all()
+    return render_template('main/allquestions.html', appts=appts)
+
 @main.route('/question/<int:question_id>/<title>/')
 def question_details(question_id, title):
     """Provide HTML page with all details on a given question.
@@ -451,7 +462,7 @@ def edit_answer(answer_id):
     answer.body = body
     db.session.add(answer)
     db.session.commit()
-    return redirect(url_for('main.question_details', title=question.title))
+    return redirect(url_for('main.question_details', question_id=question.id, title=question.title))
 
 
 @main.route('/question/answer/<answer_id>/delete', methods=['POST'])
@@ -461,7 +472,7 @@ def delete_answer(answer_id):
     db.session.delete(answer)
     db.session.commit()
     flash("Deleted Successfully.", 'success')
-    return redirect(url_for('main.question_details', title=question.title))
+    return redirect(url_for('main.question_details', question_id=question.id, title=question.title))
 
 
 @main.route('/question/answer', methods=['GET', 'POST'])
@@ -486,8 +497,9 @@ def parent_answers():
         db.session.commit()
         question.user.add_notification('answer', len(question.answers.all()), question.id)
         # return json.dumps({'status': 'OK', 'data':body});
-        return redirect(url_for('main.question_details', title=question.title))
+        return redirect(url_for('main.question_details', question_id=question.id, title=question.title))
     return render_template('main/create_question.html')
+
 
 
 @main.route('/notification/read/<notification_id>')

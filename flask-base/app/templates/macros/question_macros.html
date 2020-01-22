@@ -4,9 +4,7 @@
                     <div class="extra content">
                         <h2 class="left floated ui header">
                             <img class="left floated mini ui image" src="{{ question.user.get_photo() }}">
-							<a href="{{ url_for('main.user_public_profile', id=question.user.id, full_name=question.user.full_name) }}">{{ question.user.full_name }}</a>
-
-                           
+							<a href="{{ url_for('main.public_profile', user_id=question.user.id, full_name=question.user.full_name) }}">{{ question.user.full_name }}</a>    
                         </h2>
 			<div class="meta">
 				<span class="date">{{question.user.kw_seeker_badge}}</span>
@@ -20,10 +18,10 @@
                                 <ul style="list-style-type: none;padding:0;margin-bottom: 1px;margin-top: 0">
                                     <li class="item" style="padding: 5px 35px 3px 15px"
                                         onclick='editQuestion("{{ question.id }}", {{ question.title | tojson  }}, {{ question.description | tojson }})'>
-                                        <a href="{{ url_for('main.question_details', title=question.title) }}">Edit Question</a>
+                                        <a href="{{ url_for('main.question_details', question_id=question.id, title=question.title) }}">Edit Question</a>
                                     </li>
                                     <li class="item" style="padding: 5px 35px 3px 15px" onclick='deleteQuestion("{{ question.id }}")'>
-                                        <a href="{{ url_for('main.question_details', title=question.title) }}">Delete Question</a>
+                                        <a href="{{ url_for('main.question_details', question_id=question.id, title=question.title) }}">Delete Question</a>
                                     </li>
                                 </ul>
                             </div>
@@ -32,7 +30,7 @@
                     </div>
                     <div class="content">
                         <div class="header">
-                            <a href="{{ url_for('main.question_details', title=question.title ) }}">{{ question.title }}</a>
+                            <a href="{{ url_for('main.question_details', question_id=question.id, title=question.title ) }}">{{ question.title }}</a>
                         </div>
                         <div class="meta">
                             <span class="right floated time">{{ moment(question.timestamp).fromNow() }}</span>

@@ -178,6 +178,9 @@ def create_app(config_name):
     from .blueprints.sitemaps import sitemaps as sitemaps_blueprint
     app.register_blueprint(sitemaps_blueprint)
 
+    from .blueprints.crawlers import crawlers as crawlers_blueprint
+    app.register_blueprint(crawlers_blueprint)
+
     main_api.init_app(app)
     app.jinja_env.globals.update(json_load=json_load)
 

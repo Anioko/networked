@@ -31,7 +31,7 @@
                         <div class="content">
                             <img class="right floated mini ui image" src="{{ user.get_photo() }}">
                             <div class="header">
-                                <a href="{{ url_for('main.user', id=user.id, full_name=user.full_name) }}">{{ user.full_name }}</a>
+                                <a href="{{ url_for('main.public_profile', user_id=user.id, full_name=user.full_name) }}">{{ user.full_name }}</a>
                             </div>
                             <div class="meta">
                                 {{ user.profession }}, {{ user.state }}, {{ user.country }}
@@ -40,6 +40,7 @@
 
                             </div>
                             <div class="extra content">
+							{% if current_user.is_authenticated %}
                                 {% if user == current_user %}
 
                                 {% elif not current_user.is_following(user) %}
@@ -53,6 +54,12 @@
                                         <i class="add icon"></i> UnFollow</a>
                                     </div>
                                 {% endif %} 
+								{% else %}
+                                    <div class="ui bottom attached button"><a target="_self"
+                                            href="{{ url_for('main.follow', id=user.id, full_name=user.full_name) }}">
+                                        <i class="add icon"></i> Follow</a>
+                                    </div>
+								{% endif %} 
                             </div>
                         </div>
                     </div>

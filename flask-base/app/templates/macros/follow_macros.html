@@ -19,7 +19,7 @@
             {% endif %}
             <div class="meta">
                 <span class="author"><a
-                        href="{{ url_for('main.user', id=user.id, full_name=user.full_name) }}">{{ user.full_name }}</a></span>
+                        href="{{ url_for('main.public_profile', user_id=user.id, full_name=user.full_name) }}">{{ user.full_name }}</a></span>
             </div>
         </div>
     </div>

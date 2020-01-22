@@ -5,7 +5,7 @@ from flask import Blueprint, render_template, url_for, make_response, current_ap
 
 from app.models import Job, Question, User, Organisation, Service, Event, Promo, Product
 
-sitemaps = Blueprint('sitemaps', __name__)
+sitemaps = Blueprint('sitemaps', __name__, static_folder="static")
 
 
 @sitemaps.errorhandler(Exception)
@@ -14,9 +14,10 @@ def page_not_found(error):
 
 
 ###@sitemaps.route('/robots.txt')
-##@sitemaps.route('/sitemap_main.xml')
-##def static_from_root():
-##    return send_from_directory(redirect(url_for('static', request.path[1:])))
+@sitemaps.route('/sitemap_main.xml')
+def static_from_root():
+    return send_from_directory(sitemaps.static_folder, request.path[1:])
+
 
 def return_xml(view, **kwargs):
     data = render_template(view, **kwargs)

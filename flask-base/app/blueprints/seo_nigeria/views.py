@@ -1,13 +1,1845 @@
 from flask import Blueprint, render_template, redirect, url_for, request, flash
 from flask_login import current_user
+from app import cache
 
 seo_nigeria = Blueprint('seo_nigeria', __name__)
+
+
+@seo_nigeria.errorhandler(Exception)
+def page_not_found(error):
+    return render_template('errors/500.html')
+
+@cache.cached(timeout=300)  # cache this view for 5 minutes
+@seo_nigeria.route('/sitemap/all')
+def site_map_for_site_maps():
+    return render_template('public/sitemap_sitemap.html')
+
+"""
+
+Company SEO begins
+
+"""
+
+@seo_nigeria.route('/<product>-<role>-in-<location>')
+def data_location(product, role, location):
+    return render_template('public/landing_companies_seo.html', product=product, role=role, location=location)
+
+###########################################################################
+@cache.cached(timeout=300)  # cache this view for 5 minutes
+@seo_nigeria.route('/sitemap/wholesalers/')
+def sitemaps_wholesalers():
+    return render_template('public/sitemap_wholesalers.html')
+
+@cache.cached(timeout=300)  # cache this view for 5 minutes
+@seo_nigeria.route('/sitemap/retailers/')
+def sitemaps_retailers():
+    return render_template('public/sitemap_retailers.html')
+
+@cache.cached(timeout=300)  # cache this view for 5 minutes
+@seo_nigeria.route('/sitemap/manufacturers/')
+def sitemaps_manufacturers():
+    return render_template('public/sitemap_manufacturers.html')
+
+@cache.cached(timeout=300)  # cache this view for 5 minutes
+@seo_nigeria.route('/sitemap/importers/')
+def sitemaps_importers():
+    return render_template('public/sitemap_importers.html')
+
+@cache.cached(timeout=300)  # cache this view for 5 minutes
+@seo_nigeria.route('/sitemap/suppliers/')
+def sitemaps_suppliers():
+    return render_template('public/sitemap_suppliers.html')
+
+@cache.cached(timeout=300)  # cache this view for 5 minutes
+@seo_nigeria.route('/sitemap/distributors/')
+def sitemaps_distributors():
+    return render_template('public/sitemap_distributors.html')
+
+
+
+####################################################################
+
+
+##### Sitemap for importers in cities ###
+
+
+@seo_nigeria.route('/sitemap/importers/lagos')
+def importers_lagos():
+    return render_template('public/nigeria/importers_sitemap_lagos.html')
+
+@seo_nigeria.route('/sitemap/importers/abuja')
+def importers_abuja():
+    return render_template('public/nigeria/importers_sitemap_abuja.html')
+	
+@seo_nigeria.route('/sitemap/importers/kaduna')
+def importers_kaduna():
+    return render_template('public/nigeria/importers_sitemap_kaduna.html')
+
+@seo_nigeria.route('/sitemap/importers/enugu')
+def importers_enugu():
+    return render_template('public/nigeria/importers_sitemap_enugu.html')
+	
+@seo_nigeria.route('/sitemap/importers/zaria')
+def importers_zaria():
+    return render_template('public/nigeria/importers_sitemap_zaria.html')
+
+@seo_nigeria.route('/sitemap/importers/warri')
+def importers_warri():
+    return render_template('public/nigeria/importers_sitemap_warri.html')
+
+@seo_nigeria.route('/sitemap/importers/ikorodu')
+def importers_ikorodu():
+    return render_template('public/nigeria/importers_sitemap_ikorodu.html')
+
+@seo_nigeria.route('/sitemap/importers/maiduguri')
+def importers_maiduguri():
+    return render_template('public/nigeria/importers_sitemap_maiduguri.html')
+
+@seo_nigeria.route('/sitemap/importers/aba')
+def importers_aba():
+    return render_template('public/nigeria/importers_sitemap_aba.html')
+
+@seo_nigeria.route('/sitemap/importers/ife')
+def importers_ife():
+    return render_template('public/nigeria/importers_sitemap_ife.html')
+
+@seo_nigeria.route('/sitemap/importers/bauchi')
+def importers_bauchi():
+    return render_template('public/nigeria/importers_sitemap_bauchi.html')
+	
+@seo_nigeria.route('/sitemap/importers/akure')
+def importers_akure():
+    return render_template('public/nigeria/importers_sitemap_akure.html')
+
+@seo_nigeria.route('/sitemap/importers/abeokuta')
+def importers_abeokuta():
+    return render_template('public/nigeria/importers_sitemap_abeokuta.html')
+	
+@seo_nigeria.route('/sitemap/importers/oyo')
+def importers_oyo():
+    return render_template('public/nigeria/importers_sitemap_oyo.html')
+
+@seo_nigeria.route('/sitemap/importers/uyo')
+def importers_uyo():
+    return render_template('public/nigeria/importers_sitemap_uyo.html')
+
+@seo_nigeria.route('/sitemap/importers/sokoto')
+def importers_sokoto():
+    return render_template('public/nigeria/importers_sitemap_sokoto.html')
+
+@seo_nigeria.route('/sitemap/importers/osogbo')
+def importers_osogbo():
+    return render_template('public/nigeria/importers_sitemap_osogbo.html')
+
+@seo_nigeria.route('/sitemap/importers/owerri')
+def importers_owerri():
+    return render_template('public/nigeria/importers_sitemap_owerri.html')
+
+@seo_nigeria.route('/sitemap/importers/yola')
+def importers_yola():
+    return render_template('public/nigeria/importers_sitemap_yola.html')
+	
+@seo_nigeria.route('/sitemap/importers/calabar')
+def importers_calabar():
+    return render_template('public/nigeria/importers_sitemap_calabar.html')
+	
+@seo_nigeria.route('/sitemap/importers/umuahia')
+def importers_umuahia():
+    return render_template('public/nigeria/importers_sitemap_umuahia.html')
+
+@seo_nigeria.route('/sitemap/importers/ondo-city')
+def importers_ondo_city():
+    return render_template('public/nigeria/importers_sitemap_ondo_city.html')
+	
+@seo_nigeria.route('/sitemap/importers/minna')
+def importers_minna():
+    return render_template('public/nigeria/importers_sitemap_minna.html')
+
+@seo_nigeria.route('/sitemap/importers/lafia')
+def importers_lafia():
+    return render_template('public/nigeria/importers_sitemap_lafia.html')
+
+@seo_nigeria.route('/sitemap/importers/okene')
+def importers_okene():
+    return render_template('public/nigeria/importers_sitemap_okene.html')
+
+@seo_nigeria.route('/sitemap/importers/katsina')
+def importers_katsina():
+    return render_template('public/nigeria/importers_sitemap_katsina.html')
+
+@seo_nigeria.route('/sitemap/importers/ikeja')
+def importers_ikeja():
+    return render_template('public/nigeria/importers_sitemap_ikeja.html')
+
+@seo_nigeria.route('/sitemap/importers/nsukka')
+def importers_nsukka():
+    return render_template('public/nigeria/importers_sitemap_nsukka.html')
+
+@seo_nigeria.route('/sitemap/importers/ado-ekiti')
+def importers_ado_ekiti():
+    return render_template('public/nigeria/importers_sitemap_ado_ekiti.html')
+	
+@seo_nigeria.route('/sitemap/importers/awka')
+def importers_awka():
+    return render_template('public/nigeria/importers_sitemap_awka.html')
+
+@seo_nigeria.route('/sitemap/importers/ogbomosho')
+def importers_ogbomosho():
+    return render_template('public/nigeria/importers_sitemap_ogbomosho.html')
+	
+@seo_nigeria.route('/sitemap/importers/iseyin')
+def importers_iseyin():
+    return render_template('public/nigeria/importers_sitemap_iseyin.html')
+
+@seo_nigeria.route('/sitemap/importers/mubi')
+def importers_mubi():
+    return render_template('public/nigeria/importers_sitemap_mubi.html')
+
+@seo_nigeria.route('/sitemap/importers/onitsha')
+def importers_onitsha():
+    return render_template('public/nigeria/importers_sitemap_onitsha.html')
+
+@seo_nigeria.route('/sitemap/importers/sagamu')
+def importers_sagamu():
+    return render_template('public/nigeria/importers_sitemap_sagamu.html')
+
+@seo_nigeria.route('/sitemap/importers/makurdi')
+def importers_makurdi():
+    return render_template('public/nigeria/importers_sitemap_makurdi.html')
+
+@seo_nigeria.route('/sitemap/importers/badagry')
+def importers_badagry():
+    return render_template('public/nigeria/importers_sitemap_badagry.html')
+
+@seo_nigeria.route('/sitemap/importers/ilesa')
+def importers_ilesa():
+    return render_template('public/nigeria/importers_sitemap_ilesa.html')
+	
+@seo_nigeria.route('/sitemap/importers/gombe')
+def importers_gombe():
+    return render_template('public/nigeria/importers_sitemap_gombe.html')
+
+@seo_nigeria.route('/sitemap/importers/obafemi-owode')
+def importers_obafemi_owode():
+    return render_template('public/nigeria/importers_sitemap_obafemi_owode.html')
+	
+@seo_nigeria.route('/sitemap/importers/owo')
+def importers_owo():
+    return render_template('public/nigeria/importers_sitemap_owo.html')
+
+@seo_nigeria.route('/sitemap/importers/jimeta')
+def importers_jimeta():
+    return render_template('public/nigeria/importers_sitemap_jimeta.html')
+
+@seo_nigeria.route('/sitemap/importers/suleja')
+def importers_suleja():
+    return render_template('public/nigeria/importers_sitemap_suleja.html')
+
+@seo_nigeria.route('/sitemap/importers/potiskum')
+def importers_potiskum():
+    return render_template('public/nigeria/importers_sitemap_potiskum.html')
+
+@seo_nigeria.route('/sitemap/importers/kukawa')
+def importers_kukawa():
+    return render_template('public/nigeria/importers_sitemap_kukawa.html')
+
+@seo_nigeria.route('/sitemap/importers/gusau')
+def importers_gusau():
+    return render_template('public/nigeria/importers_sitemap_gusau.html')
+
+@seo_nigeria.route('/sitemap/importers/iwo')
+def importers_iwo():
+    return render_template('public/nigeria/importers_sitemap_iwo.html')
+	
+@seo_nigeria.route('/sitemap/importers/bida')
+def importers_bida():
+    return render_template('public/nigeria/importers_sitemap_bida.html')
+
+@seo_nigeria.route('/sitemap/importers/ugep')
+def importers_ugep():
+    return render_template('public/nigeria/importers_sitemap_ugep.html')
+	
+@seo_nigeria.route('/sitemap/importers/ijebu-ode')
+def importers_ijebu_ode():
+    return render_template('public/nigeria/importers_sitemap_ijebu_ode.html')
+
+@seo_nigeria.route('/sitemap/importers/epe')
+def importers_epe():
+    return render_template('public/nigeria/importers_sitemap_epe.html')
+
+@seo_nigeria.route('/sitemap/importers/ise-ekiti')
+def importers_ise_ekiti():
+    return render_template('public/nigeria/importers_sitemap_ise_ekiti.html')
+
+@seo_nigeria.route('/sitemap/importers/ikare')
+def importers_ikare():
+    return render_template('public/nigeria/importers_sitemap_ikare.html')
+
+@seo_nigeria.route('/sitemap/importers/okpoko')
+def importers_okpoko():
+    return render_template('public/nigeria/importers_sitemap_okpoko.html')
+
+@seo_nigeria.route('/sitemap/importers/garki')
+def importers_garki():
+    return render_template('public/nigeria/importers_sitemap_garki.html')
+
+@seo_nigeria.route('/sitemap/importers/sapele')
+def importers_sapele():
+    return render_template('public/nigeria/importers_sitemap_sapele.html')
+	
+@seo_nigeria.route('/sitemap/importers/ila')
+def importers_ila():
+    return render_template('public/nigeria/importers_sitemap_ila.html')
+
+@seo_nigeria.route('/sitemap/importers/shaki')
+def importers_shaki():
+    return render_template('public/nigeria/importers_sitemap_shaki.html')
+	
+@seo_nigeria.route('/sitemap/importers/ijero')
+def importers_ijero():
+    return render_template('public/nigeria/importers_sitemap_ijero.html')
+
+@seo_nigeria.route('/sitemap/importers/ikot-ekpene')
+def importers_ikot_ekpene():
+    return render_template('public/nigeria/importers_sitemap_ikot_ekpene.html')
+
+@seo_nigeria.route('/sitemap/importers/jalingo')
+def importers_jalingo():
+    return render_template('public/nigeria/importers_sitemap_jalingo.html')
+
+@seo_nigeria.route('/sitemap/importers/otukpo')
+def importers_otukpo():
+    return render_template('public/nigeria/importers_sitemap_otukpo.html')
+
+@seo_nigeria.route('/sitemap/importers/okigwe')
+def importers_okigwe():
+    return render_template('public/nigeria/importers_sitemap_okigwe.html')
+
+@seo_nigeria.route('/sitemap/importers/kisi')
+def importers_kisi():
+    return render_template('public/nigeria/importers_sitemap_kisi.html')
+
+@seo_nigeria.route('/sitemap/importers/buguma')
+def importers_buguma():
+    return render_template('public/nigeria/importers_sitemap_buguma.html')
+	
+@seo_nigeria.route('/sitemap/importers/funtua')
+def importers_funtua():
+    return render_template('public/nigeria/importers_sitemap_funtua.html')
+
+@seo_nigeria.route('/sitemap/importers/abakaliki')
+def importers_abakaliki():
+    return render_template('public/nigeria/importers_sitemap_abakaliki.html')
+	
+@seo_nigeria.route('/sitemap/importers/asaba')
+def importers_asaba():
+    return render_template('public/nigeria/importers_sitemap_asaba.html')
+
+@seo_nigeria.route('/sitemap/importers/gbongan')
+def importers_gbongan():
+    return render_template('public/nigeria/importers_sitemap_gbongan.html')
+
+@seo_nigeria.route('/sitemap/importers/igboho')
+def importers_igboho():
+    return render_template('public/nigeria/importers_sitemap_igboho.html')
+
+@seo_nigeria.route('/sitemap/importers/gashua')
+def importers_gashua():
+    return render_template('public/nigeria/importers_sitemap_gashua.html')
+
+@seo_nigeria.route('/sitemap/importers/bama')
+def importers_bama():
+    return render_template('public/nigeria/importers_sitemap_bama.html')
+
+@seo_nigeria.route('/sitemap/importers/uromi')
+def importers_uromi():
+    return render_template('public/nigeria/importers_sitemap_uromi.html')
+
+
+##### Sitemap for retailers in cities ###
+
+
+@seo_nigeria.route('/sitemap/retailers/lagos')
+def retailers_lagos():
+    return render_template('public/nigeria/retailers_sitemap_lagos.html')
+
+@seo_nigeria.route('/sitemap/retailers/abuja')
+def retailers_abuja():
+    return render_template('public/nigeria/retailers_sitemap_abuja.html')
+	
+@seo_nigeria.route('/sitemap/retailers/kaduna')
+def retailers_kaduna():
+    return render_template('public/nigeria/retailers_sitemap_kaduna.html')
+
+@seo_nigeria.route('/sitemap/retailers/enugu')
+def retailers_enugu():
+    return render_template('public/nigeria/retailers_sitemap_enugu.html')
+	
+@seo_nigeria.route('/sitemap/retailers/zaria')
+def retailers_zaria():
+    return render_template('public/nigeria/retailers_sitemap_zaria.html')
+
+@seo_nigeria.route('/sitemap/retailers/warri')
+def retailers_warri():
+    return render_template('public/nigeria/retailers_sitemap_warri.html')
+
+@seo_nigeria.route('/sitemap/retailers/ikorodu')
+def retailers_ikorodu():
+    return render_template('public/nigeria/retailers_sitemap_ikorodu.html')
+
+@seo_nigeria.route('/sitemap/retailers/maiduguri')
+def retailers_maiduguri():
+    return render_template('public/nigeria/retailers_sitemap_maiduguri.html')
+
+@seo_nigeria.route('/sitemap/retailers/aba')
+def retailers_aba():
+    return render_template('public/nigeria/retailers_sitemap_aba.html')
+
+@seo_nigeria.route('/sitemap/retailers/ife')
+def retailers_ife():
+    return render_template('public/nigeria/retailers_sitemap_ife.html')
+
+@seo_nigeria.route('/sitemap/retailers/bauchi')
+def retailers_bauchi():
+    return render_template('public/nigeria/retailers_sitemap_bauchi.html')
+	
+@seo_nigeria.route('/sitemap/retailers/akure')
+def retailers_akure():
+    return render_template('public/nigeria/retailers_sitemap_akure.html')
+
+@seo_nigeria.route('/sitemap/retailers/abeokuta')
+def retailers_abeokuta():
+    return render_template('public/nigeria/retailers_sitemap_abeokuta.html')
+	
+@seo_nigeria.route('/sitemap/retailers/oyo')
+def retailers_oyo():
+    return render_template('public/nigeria/retailers_sitemap_oyo.html')
+
+@seo_nigeria.route('/sitemap/retailers/uyo')
+def retailers_uyo():
+    return render_template('public/nigeria/retailers_sitemap_uyo.html')
+
+@seo_nigeria.route('/sitemap/retailers/sokoto')
+def retailers_sokoto():
+    return render_template('public/nigeria/retailers_sitemap_sokoto.html')
+
+@seo_nigeria.route('/sitemap/retailers/osogbo')
+def retailers_osogbo():
+    return render_template('public/nigeria/retailers_sitemap_osogbo.html')
+
+@seo_nigeria.route('/sitemap/retailers/owerri')
+def retailers_owerri():
+    return render_template('public/nigeria/retailers_sitemap_owerri.html')
+
+@seo_nigeria.route('/sitemap/retailers/yola')
+def retailers_yola():
+    return render_template('public/nigeria/retailers_sitemap_yola.html')
+	
+@seo_nigeria.route('/sitemap/retailers/calabar')
+def retailers_calabar():
+    return render_template('public/nigeria/retailers_sitemap_calabar.html')
+	
+@seo_nigeria.route('/sitemap/retailers/umuahia')
+def retailers_umuahia():
+    return render_template('public/nigeria/retailers_sitemap_umuahia.html')
+
+@seo_nigeria.route('/sitemap/retailers/ondo-city')
+def retailers_ondo_city():
+    return render_template('public/nigeria/retailers_sitemap_ondo_city.html')
+	
+@seo_nigeria.route('/sitemap/retailers/minna')
+def retailers_minna():
+    return render_template('public/nigeria/retailers_sitemap_minna.html')
+
+@seo_nigeria.route('/sitemap/retailers/lafia')
+def retailers_lafia():
+    return render_template('public/nigeria/retailers_sitemap_lafia.html')
+
+@seo_nigeria.route('/sitemap/retailers/okene')
+def retailers_okene():
+    return render_template('public/nigeria/retailers_sitemap_okene.html')
+
+@seo_nigeria.route('/sitemap/retailers/katsina')
+def retailers_katsina():
+    return render_template('public/nigeria/retailers_sitemap_katsina.html')
+
+@seo_nigeria.route('/sitemap/retailers/ikeja')
+def retailers_ikeja():
+    return render_template('public/nigeria/retailers_sitemap_ikeja.html')
+
+@seo_nigeria.route('/sitemap/retailers/nsukka')
+def retailers_nsukka():
+    return render_template('public/nigeria/retailers_sitemap_nsukka.html')
+
+@seo_nigeria.route('/sitemap/retailers/ado-ekiti')
+def retailers_ado_ekiti():
+    return render_template('public/nigeria/retailers_sitemap_ado_ekiti.html')
+	
+@seo_nigeria.route('/sitemap/retailers/awka')
+def retailers_awka():
+    return render_template('public/nigeria/retailers_sitemap_awka.html')
+
+@seo_nigeria.route('/sitemap/retailers/ogbomosho')
+def retailers_ogbomosho():
+    return render_template('public/nigeria/retailers_sitemap_ogbomosho.html')
+	
+@seo_nigeria.route('/sitemap/retailers/iseyin')
+def retailers_iseyin():
+    return render_template('public/nigeria/retailers_sitemap_iseyin.html')
+
+@seo_nigeria.route('/sitemap/retailers/mubi')
+def retailers_mubi():
+    return render_template('public/nigeria/retailers_sitemap_mubi.html')
+
+@seo_nigeria.route('/sitemap/retailers/onitsha')
+def retailers_onitsha():
+    return render_template('public/nigeria/retailers_sitemap_onitsha.html')
+
+@seo_nigeria.route('/sitemap/retailers/sagamu')
+def retailers_sagamu():
+    return render_template('public/nigeria/retailers_sitemap_sagamu.html')
+
+@seo_nigeria.route('/sitemap/retailers/makurdi')
+def retailers_makurdi():
+    return render_template('public/nigeria/retailers_sitemap_makurdi.html')
+
+@seo_nigeria.route('/sitemap/retailers/badagry')
+def retailers_badagry():
+    return render_template('public/nigeria/retailers_sitemap_badagry.html')
+
+@seo_nigeria.route('/sitemap/retailers/ilesa')
+def retailers_ilesa():
+    return render_template('public/nigeria/retailers_sitemap_ilesa.html')
+	
+@seo_nigeria.route('/sitemap/retailers/gombe')
+def retailers_gombe():
+    return render_template('public/nigeria/retailers_sitemap_gombe.html')
+
+@seo_nigeria.route('/sitemap/retailers/obafemi-owode')
+def retailers_obafemi_owode():
+    return render_template('public/nigeria/retailers_sitemap_obafemi_owode.html')
+	
+@seo_nigeria.route('/sitemap/retailers/owo')
+def retailers_owo():
+    return render_template('public/nigeria/retailers_sitemap_owo.html')
+
+@seo_nigeria.route('/sitemap/retailers/jimeta')
+def retailers_jimeta():
+    return render_template('public/nigeria/retailers_sitemap_jimeta.html')
+
+@seo_nigeria.route('/sitemap/retailers/suleja')
+def retailers_suleja():
+    return render_template('public/nigeria/retailers_sitemap_suleja.html')
+
+@seo_nigeria.route('/sitemap/retailers/potiskum')
+def retailers_potiskum():
+    return render_template('public/nigeria/retailers_sitemap_potiskum.html')
+
+@seo_nigeria.route('/sitemap/retailers/kukawa')
+def retailers_kukawa():
+    return render_template('public/nigeria/retailers_sitemap_kukawa.html')
+
+@seo_nigeria.route('/sitemap/retailers/gusau')
+def retailers_gusau():
+    return render_template('public/nigeria/retailers_sitemap_gusau.html')
+
+@seo_nigeria.route('/sitemap/retailers/iwo')
+def retailers_iwo():
+    return render_template('public/nigeria/retailers_sitemap_iwo.html')
+	
+@seo_nigeria.route('/sitemap/retailers/bida')
+def retailers_bida():
+    return render_template('public/nigeria/retailers_sitemap_bida.html')
+
+@seo_nigeria.route('/sitemap/retailers/ugep')
+def retailers_ugep():
+    return render_template('public/nigeria/retailers_sitemap_ugep.html')
+	
+@seo_nigeria.route('/sitemap/retailers/ijebu-ode')
+def retailers_ijebu_ode():
+    return render_template('public/nigeria/retailers_sitemap_ijebu_ode.html')
+
+@seo_nigeria.route('/sitemap/retailers/epe')
+def retailers_epe():
+    return render_template('public/nigeria/retailers_sitemap_epe.html')
+
+@seo_nigeria.route('/sitemap/retailers/ise-ekiti')
+def retailers_ise_ekiti():
+    return render_template('public/nigeria/retailers_sitemap_ise_ekiti.html')
+
+@seo_nigeria.route('/sitemap/retailers/ikare')
+def retailers_ikare():
+    return render_template('public/nigeria/retailers_sitemap_ikare.html')
+
+@seo_nigeria.route('/sitemap/retailers/okpoko')
+def retailers_okpoko():
+    return render_template('public/nigeria/retailers_sitemap_okpoko.html')
+
+@seo_nigeria.route('/sitemap/retailers/garki')
+def retailers_garki():
+    return render_template('public/nigeria/retailers_sitemap_garki.html')
+
+@seo_nigeria.route('/sitemap/retailers/sapele')
+def retailers_sapele():
+    return render_template('public/nigeria/retailers_sitemap_sapele.html')
+	
+@seo_nigeria.route('/sitemap/retailers/ila')
+def retailers_ila():
+    return render_template('public/nigeria/retailers_sitemap_ila.html')
+
+@seo_nigeria.route('/sitemap/retailers/shaki')
+def retailers_shaki():
+    return render_template('public/nigeria/retailers_sitemap_shaki.html')
+	
+@seo_nigeria.route('/sitemap/retailers/ijero')
+def retailers_ijero():
+    return render_template('public/nigeria/retailers_sitemap_ijero.html')
+
+@seo_nigeria.route('/sitemap/retailers/ikot-ekpene')
+def retailers_ikot_ekpene():
+    return render_template('public/nigeria/retailers_sitemap_ikot_ekpene.html')
+
+@seo_nigeria.route('/sitemap/retailers/jalingo')
+def retailers_jalingo():
+    return render_template('public/nigeria/retailers_sitemap_jalingo.html')
+
+@seo_nigeria.route('/sitemap/retailers/otukpo')
+def retailers_otukpo():
+    return render_template('public/nigeria/retailers_sitemap_otukpo.html')
+
+@seo_nigeria.route('/sitemap/retailers/okigwe')
+def retailers_okigwe():
+    return render_template('public/nigeria/retailers_sitemap_okigwe.html')
+
+@seo_nigeria.route('/sitemap/retailers/kisi')
+def retailers_kisi():
+    return render_template('public/nigeria/retailers_sitemap_kisi.html')
+
+@seo_nigeria.route('/sitemap/retailers/buguma')
+def retailers_buguma():
+    return render_template('public/nigeria/retailers_sitemap_buguma.html')
+	
+@seo_nigeria.route('/sitemap/retailers/funtua')
+def retailers_funtua():
+    return render_template('public/nigeria/retailers_sitemap_funtua.html')
+
+@seo_nigeria.route('/sitemap/retailers/abakaliki')
+def retailers_abakaliki():
+    return render_template('public/nigeria/retailers_sitemap_abakaliki.html')
+	
+@seo_nigeria.route('/sitemap/retailers/asaba')
+def retailers_asaba():
+    return render_template('public/nigeria/retailers_sitemap_asaba.html')
+
+@seo_nigeria.route('/sitemap/retailers/gbongan')
+def retailers_gbongan():
+    return render_template('public/nigeria/retailers_sitemap_gbongan.html')
+
+@seo_nigeria.route('/sitemap/retailers/igboho')
+def retailers_igboho():
+    return render_template('public/nigeria/retailers_sitemap_igboho.html')
+
+@seo_nigeria.route('/sitemap/retailers/gashua')
+def retailers_gashua():
+    return render_template('public/nigeria/retailers_sitemap_gashua.html')
+
+@seo_nigeria.route('/sitemap/retailers/bama')
+def retailers_bama():
+    return render_template('public/nigeria/retailers_sitemap_bama.html')
+
+@seo_nigeria.route('/sitemap/retailers/uromi')
+def retailers_uromi():
+    return render_template('public/nigeria/retailers_sitemap_uromi.html')
+
+
+
+##### Sitemap for suppliers in cities ###
+
+
+@seo_nigeria.route('/sitemap/suppliers/lagos')
+def suppliers_lagos():
+    return render_template('public/nigeria/suppliers_sitemap_lagos.html')
+
+@seo_nigeria.route('/sitemap/suppliers/abuja')
+def suppliers_abuja():
+    return render_template('public/nigeria/suppliers_sitemap_abuja.html')
+	
+@seo_nigeria.route('/sitemap/suppliers/kaduna')
+def suppliers_kaduna():
+    return render_template('public/nigeria/suppliers_sitemap_kaduna.html')
+
+@seo_nigeria.route('/sitemap/suppliers/enugu')
+def suppliers_enugu():
+    return render_template('public/nigeria/suppliers_sitemap_enugu.html')
+	
+@seo_nigeria.route('/sitemap/suppliers/zaria')
+def suppliers_zaria():
+    return render_template('public/nigeria/suppliers_sitemap_zaria.html')
+
+@seo_nigeria.route('/sitemap/suppliers/warri')
+def suppliers_warri():
+    return render_template('public/nigeria/suppliers_sitemap_warri.html')
+
+@seo_nigeria.route('/sitemap/suppliers/ikorodu')
+def suppliers_ikorodu():
+    return render_template('public/nigeria/suppliers_sitemap_ikorodu.html')
+
+@seo_nigeria.route('/sitemap/suppliers/maiduguri')
+def suppliers_maiduguri():
+    return render_template('public/nigeria/suppliers_sitemap_maiduguri.html')
+
+@seo_nigeria.route('/sitemap/suppliers/aba')
+def suppliers_aba():
+    return render_template('public/nigeria/suppliers_sitemap_aba.html')
+
+@seo_nigeria.route('/sitemap/suppliers/ife')
+def suppliers_ife():
+    return render_template('public/nigeria/suppliers_sitemap_ife.html')
+
+@seo_nigeria.route('/sitemap/suppliers/bauchi')
+def suppliers_bauchi():
+    return render_template('public/nigeria/suppliers_sitemap_bauchi.html')
+	
+@seo_nigeria.route('/sitemap/suppliers/akure')
+def suppliers_akure():
+    return render_template('public/nigeria/suppliers_sitemap_akure.html')
+
+@seo_nigeria.route('/sitemap/suppliers/abeokuta')
+def suppliers_abeokuta():
+    return render_template('public/nigeria/suppliers_sitemap_abeokuta.html')
+	
+@seo_nigeria.route('/sitemap/suppliers/oyo')
+def suppliers_oyo():
+    return render_template('public/nigeria/suppliers_sitemap_oyo.html')
+
+@seo_nigeria.route('/sitemap/suppliers/uyo')
+def suppliers_uyo():
+    return render_template('public/nigeria/suppliers_sitemap_uyo.html')
+
+@seo_nigeria.route('/sitemap/suppliers/sokoto')
+def suppliers_sokoto():
+    return render_template('public/nigeria/suppliers_sitemap_sokoto.html')
+
+@seo_nigeria.route('/sitemap/suppliers/osogbo')
+def suppliers_osogbo():
+    return render_template('public/nigeria/suppliers_sitemap_osogbo.html')
+
+@seo_nigeria.route('/sitemap/suppliers/owerri')
+def suppliers_owerri():
+    return render_template('public/nigeria/suppliers_sitemap_owerri.html')
+
+@seo_nigeria.route('/sitemap/suppliers/yola')
+def suppliers_yola():
+    return render_template('public/nigeria/suppliers_sitemap_yola.html')
+	
+@seo_nigeria.route('/sitemap/suppliers/calabar')
+def suppliers_calabar():
+    return render_template('public/nigeria/suppliers_sitemap_calabar.html')
+	
+@seo_nigeria.route('/sitemap/suppliers/umuahia')
+def suppliers_umuahia():
+    return render_template('public/nigeria/suppliers_sitemap_umuahia.html')
+
+@seo_nigeria.route('/sitemap/suppliers/ondo-city')
+def suppliers_ondo_city():
+    return render_template('public/nigeria/suppliers_sitemap_ondo_city.html')
+	
+@seo_nigeria.route('/sitemap/suppliers/minna')
+def suppliers_minna():
+    return render_template('public/nigeria/suppliers_sitemap_minna.html')
+
+@seo_nigeria.route('/sitemap/suppliers/lafia')
+def suppliers_lafia():
+    return render_template('public/nigeria/suppliers_sitemap_lafia.html')
+
+@seo_nigeria.route('/sitemap/suppliers/okene')
+def suppliers_okene():
+    return render_template('public/nigeria/suppliers_sitemap_okene.html')
+
+@seo_nigeria.route('/sitemap/suppliers/katsina')
+def suppliers_katsina():
+    return render_template('public/nigeria/suppliers_sitemap_katsina.html')
+
+@seo_nigeria.route('/sitemap/suppliers/ikeja')
+def suppliers_ikeja():
+    return render_template('public/nigeria/suppliers_sitemap_ikeja.html')
+
+@seo_nigeria.route('/sitemap/suppliers/nsukka')
+def suppliers_nsukka():
+    return render_template('public/nigeria/suppliers_sitemap_nsukka.html')
+
+@seo_nigeria.route('/sitemap/suppliers/ado-ekiti')
+def suppliers_ado_ekiti():
+    return render_template('public/nigeria/suppliers_sitemap_ado_ekiti.html')
+	
+@seo_nigeria.route('/sitemap/suppliers/awka')
+def suppliers_awka():
+    return render_template('public/nigeria/suppliers_sitemap_awka.html')
+
+@seo_nigeria.route('/sitemap/suppliers/ogbomosho')
+def suppliers_ogbomosho():
+    return render_template('public/nigeria/suppliers_sitemap_ogbomosho.html')
+	
+@seo_nigeria.route('/sitemap/suppliers/iseyin')
+def suppliers_iseyin():
+    return render_template('public/nigeria/suppliers_sitemap_iseyin.html')
+
+@seo_nigeria.route('/sitemap/suppliers/mubi')
+def suppliers_mubi():
+    return render_template('public/nigeria/suppliers_sitemap_mubi.html')
+
+@seo_nigeria.route('/sitemap/suppliers/onitsha')
+def suppliers_onitsha():
+    return render_template('public/nigeria/suppliers_sitemap_onitsha.html')
+
+@seo_nigeria.route('/sitemap/suppliers/sagamu')
+def suppliers_sagamu():
+    return render_template('public/nigeria/suppliers_sitemap_sagamu.html')
+
+@seo_nigeria.route('/sitemap/suppliers/makurdi')
+def suppliers_makurdi():
+    return render_template('public/nigeria/suppliers_sitemap_makurdi.html')
+
+@seo_nigeria.route('/sitemap/suppliers/badagry')
+def suppliers_badagry():
+    return render_template('public/nigeria/suppliers_sitemap_badagry.html')
+
+@seo_nigeria.route('/sitemap/suppliers/ilesa')
+def suppliers_ilesa():
+    return render_template('public/nigeria/suppliers_sitemap_ilesa.html')
+	
+@seo_nigeria.route('/sitemap/suppliers/gombe')
+def suppliers_gombe():
+    return render_template('public/nigeria/suppliers_sitemap_gombe.html')
+
+@seo_nigeria.route('/sitemap/suppliers/obafemi-owode')
+def suppliers_obafemi_owode():
+    return render_template('public/nigeria/suppliers_sitemap_obafemi_owode.html')
+	
+@seo_nigeria.route('/sitemap/suppliers/owo')
+def suppliers_owo():
+    return render_template('public/nigeria/suppliers_sitemap_owo.html')
+
+@seo_nigeria.route('/sitemap/suppliers/jimeta')
+def suppliers_jimeta():
+    return render_template('public/nigeria/suppliers_sitemap_jimeta.html')
+
+@seo_nigeria.route('/sitemap/suppliers/suleja')
+def suppliers_suleja():
+    return render_template('public/nigeria/suppliers_sitemap_suleja.html')
+
+@seo_nigeria.route('/sitemap/suppliers/potiskum')
+def suppliers_potiskum():
+    return render_template('public/nigeria/suppliers_sitemap_potiskum.html')
+
+@seo_nigeria.route('/sitemap/suppliers/kukawa')
+def suppliers_kukawa():
+    return render_template('public/nigeria/suppliers_sitemap_kukawa.html')
+
+@seo_nigeria.route('/sitemap/suppliers/gusau')
+def suppliers_gusau():
+    return render_template('public/nigeria/suppliers_sitemap_gusau.html')
+
+@seo_nigeria.route('/sitemap/suppliers/iwo')
+def suppliers_iwo():
+    return render_template('public/nigeria/suppliers_sitemap_iwo.html')
+	
+@seo_nigeria.route('/sitemap/suppliers/bida')
+def suppliers_bida():
+    return render_template('public/nigeria/suppliers_sitemap_bida.html')
+
+@seo_nigeria.route('/sitemap/suppliers/ugep')
+def suppliers_ugep():
+    return render_template('public/nigeria/suppliers_sitemap_ugep.html')
+	
+@seo_nigeria.route('/sitemap/suppliers/ijebu-ode')
+def suppliers_ijebu_ode():
+    return render_template('public/nigeria/suppliers_sitemap_ijebu_ode.html')
+
+@seo_nigeria.route('/sitemap/suppliers/epe')
+def suppliers_epe():
+    return render_template('public/nigeria/suppliers_sitemap_epe.html')
+
+@seo_nigeria.route('/sitemap/suppliers/ise-ekiti')
+def suppliers_ise_ekiti():
+    return render_template('public/nigeria/suppliers_sitemap_ise_ekiti.html')
+
+@seo_nigeria.route('/sitemap/suppliers/ikare')
+def suppliers_ikare():
+    return render_template('public/nigeria/suppliers_sitemap_ikare.html')
+
+@seo_nigeria.route('/sitemap/suppliers/okpoko')
+def suppliers_okpoko():
+    return render_template('public/nigeria/suppliers_sitemap_okpoko.html')
+
+@seo_nigeria.route('/sitemap/suppliers/garki')
+def suppliers_garki():
+    return render_template('public/nigeria/suppliers_sitemap_garki.html')
+
+@seo_nigeria.route('/sitemap/suppliers/sapele')
+def suppliers_sapele():
+    return render_template('public/nigeria/suppliers_sitemap_sapele.html')
+	
+@seo_nigeria.route('/sitemap/suppliers/ila')
+def suppliers_ila():
+    return render_template('public/nigeria/suppliers_sitemap_ila.html')
+
+@seo_nigeria.route('/sitemap/suppliers/shaki')
+def suppliers_shaki():
+    return render_template('public/nigeria/suppliers_sitemap_shaki.html')
+	
+@seo_nigeria.route('/sitemap/suppliers/ijero')
+def suppliers_ijero():
+    return render_template('public/nigeria/suppliers_sitemap_ijero.html')
+
+@seo_nigeria.route('/sitemap/suppliers/ikot-ekpene')
+def suppliers_ikot_ekpene():
+    return render_template('public/nigeria/suppliers_sitemap_ikot_ekpene.html')
+
+@seo_nigeria.route('/sitemap/suppliers/jalingo')
+def suppliers_jalingo():
+    return render_template('public/nigeria/suppliers_sitemap_jalingo.html')
+
+@seo_nigeria.route('/sitemap/suppliers/otukpo')
+def suppliers_otukpo():
+    return render_template('public/nigeria/suppliers_sitemap_otukpo.html')
+
+@seo_nigeria.route('/sitemap/suppliers/okigwe')
+def suppliers_okigwe():
+    return render_template('public/nigeria/suppliers_sitemap_okigwe.html')
+
+@seo_nigeria.route('/sitemap/suppliers/kisi')
+def suppliers_kisi():
+    return render_template('public/nigeria/suppliers_sitemap_kisi.html')
+
+@seo_nigeria.route('/sitemap/suppliers/buguma')
+def suppliers_buguma():
+    return render_template('public/nigeria/suppliers_sitemap_buguma.html')
+	
+@seo_nigeria.route('/sitemap/suppliers/funtua')
+def suppliers_funtua():
+    return render_template('public/nigeria/suppliers_sitemap_funtua.html')
+
+@seo_nigeria.route('/sitemap/suppliers/abakaliki')
+def suppliers_abakaliki():
+    return render_template('public/nigeria/suppliers_sitemap_abakaliki.html')
+	
+@seo_nigeria.route('/sitemap/suppliers/asaba')
+def suppliers_asaba():
+    return render_template('public/nigeria/suppliers_sitemap_asaba.html')
+
+@seo_nigeria.route('/sitemap/suppliers/gbongan')
+def suppliers_gbongan():
+    return render_template('public/nigeria/suppliers_sitemap_gbongan.html')
+
+@seo_nigeria.route('/sitemap/suppliers/igboho')
+def suppliers_igboho():
+    return render_template('public/nigeria/suppliers_sitemap_igboho.html')
+
+@seo_nigeria.route('/sitemap/suppliers/gashua')
+def suppliers_gashua():
+    return render_template('public/nigeria/suppliers_sitemap_gashua.html')
+
+@seo_nigeria.route('/sitemap/suppliers/bama')
+def suppliers_bama():
+    return render_template('public/nigeria/suppliers_sitemap_bama.html')
+
+@seo_nigeria.route('/sitemap/suppliers/uromi')
+def suppliers_uromi():
+    return render_template('public/nigeria/suppliers_sitemap_uromi.html')
+
+
+##### Sitemap for distributors in cities ###
+
+
+@seo_nigeria.route('/sitemap/distributors/lagos')
+def distributors_lagos():
+    return render_template('public/nigeria/distributors_sitemap_lagos.html')
+
+@seo_nigeria.route('/sitemap/distributors/abuja')
+def distributors_abuja():
+    return render_template('public/nigeria/distributors_sitemap_abuja.html')
+	
+@seo_nigeria.route('/sitemap/distributors/kaduna')
+def distributors_kaduna():
+    return render_template('public/nigeria/distributors_sitemap_kaduna.html')
+
+@seo_nigeria.route('/sitemap/distributors/enugu')
+def distributors_enugu():
+    return render_template('public/nigeria/distributors_sitemap_enugu.html')
+	
+@seo_nigeria.route('/sitemap/distributors/zaria')
+def distributors_zaria():
+    return render_template('public/nigeria/distributors_sitemap_zaria.html')
+
+@seo_nigeria.route('/sitemap/distributors/warri')
+def distributors_warri():
+    return render_template('public/nigeria/distributors_sitemap_warri.html')
+
+@seo_nigeria.route('/sitemap/distributors/ikorodu')
+def distributors_ikorodu():
+    return render_template('public/nigeria/distributors_sitemap_ikorodu.html')
+
+@seo_nigeria.route('/sitemap/distributors/maiduguri')
+def distributors_maiduguri():
+    return render_template('public/nigeria/distributors_sitemap_maiduguri.html')
+
+@seo_nigeria.route('/sitemap/distributors/aba')
+def distributors_aba():
+    return render_template('public/nigeria/distributors_sitemap_aba.html')
+
+@seo_nigeria.route('/sitemap/distributors/ife')
+def distributors_ife():
+    return render_template('public/nigeria/distributors_sitemap_ife.html')
+
+@seo_nigeria.route('/sitemap/distributors/bauchi')
+def distributors_bauchi():
+    return render_template('public/nigeria/distributors_sitemap_bauchi.html')
+	
+@seo_nigeria.route('/sitemap/distributors/akure')
+def distributors_akure():
+    return render_template('public/nigeria/distributors_sitemap_akure.html')
+
+@seo_nigeria.route('/sitemap/distributors/abeokuta')
+def distributors_abeokuta():
+    return render_template('public/nigeria/distributors_sitemap_abeokuta.html')
+	
+@seo_nigeria.route('/sitemap/distributors/oyo')
+def distributors_oyo():
+    return render_template('public/nigeria/distributors_sitemap_oyo.html')
+
+@seo_nigeria.route('/sitemap/distributors/uyo')
+def distributors_uyo():
+    return render_template('public/nigeria/distributors_sitemap_uyo.html')
+
+@seo_nigeria.route('/sitemap/distributors/sokoto')
+def distributors_sokoto():
+    return render_template('public/nigeria/distributors_sitemap_sokoto.html')
+
+@seo_nigeria.route('/sitemap/distributors/osogbo')
+def distributors_osogbo():
+    return render_template('public/nigeria/distributors_sitemap_osogbo.html')
+
+@seo_nigeria.route('/sitemap/distributors/owerri')
+def distributors_owerri():
+    return render_template('public/nigeria/distributors_sitemap_owerri.html')
+
+@seo_nigeria.route('/sitemap/distributors/yola')
+def distributors_yola():
+    return render_template('public/nigeria/distributors_sitemap_yola.html')
+	
+@seo_nigeria.route('/sitemap/distributors/calabar')
+def distributors_calabar():
+    return render_template('public/nigeria/distributors_sitemap_calabar.html')
+	
+@seo_nigeria.route('/sitemap/distributors/umuahia')
+def distributors_umuahia():
+    return render_template('public/nigeria/distributors_sitemap_umuahia.html')
+
+@seo_nigeria.route('/sitemap/distributors/ondo-city')
+def distributors_ondo_city():
+    return render_template('public/nigeria/distributors_sitemap_ondo_city.html')
+	
+@seo_nigeria.route('/sitemap/distributors/minna')
+def distributors_minna():
+    return render_template('public/nigeria/distributors_sitemap_minna.html')
+
+@seo_nigeria.route('/sitemap/distributors/lafia')
+def distributors_lafia():
+    return render_template('public/nigeria/distributors_sitemap_lafia.html')
+
+@seo_nigeria.route('/sitemap/distributors/okene')
+def distributors_okene():
+    return render_template('public/nigeria/distributors_sitemap_okene.html')
+
+@seo_nigeria.route('/sitemap/distributors/katsina')
+def distributors_katsina():
+    return render_template('public/nigeria/distributors_sitemap_katsina.html')
+
+@seo_nigeria.route('/sitemap/distributors/ikeja')
+def distributors_ikeja():
+    return render_template('public/nigeria/distributors_sitemap_ikeja.html')
+
+@seo_nigeria.route('/sitemap/distributors/nsukka')
+def distributors_nsukka():
+    return render_template('public/nigeria/distributors_sitemap_nsukka.html')
+
+@seo_nigeria.route('/sitemap/distributors/ado-ekiti')
+def distributors_ado_ekiti():
+    return render_template('public/nigeria/distributors_sitemap_ado_ekiti.html')
+	
+@seo_nigeria.route('/sitemap/distributors/awka')
+def distributors_awka():
+    return render_template('public/nigeria/distributors_sitemap_awka.html')
+
+@seo_nigeria.route('/sitemap/distributors/ogbomosho')
+def distributors_ogbomosho():
+    return render_template('public/nigeria/distributors_sitemap_ogbomosho.html')
+	
+@seo_nigeria.route('/sitemap/distributors/iseyin')
+def distributors_iseyin():
+    return render_template('public/nigeria/distributors_sitemap_iseyin.html')
+
+@seo_nigeria.route('/sitemap/distributors/mubi')
+def distributors_mubi():
+    return render_template('public/nigeria/distributors_sitemap_mubi.html')
+
+@seo_nigeria.route('/sitemap/distributors/onitsha')
+def distributors_onitsha():
+    return render_template('public/nigeria/distributors_sitemap_onitsha.html')
+
+@seo_nigeria.route('/sitemap/distributors/sagamu')
+def distributors_sagamu():
+    return render_template('public/nigeria/distributors_sitemap_sagamu.html')
+
+@seo_nigeria.route('/sitemap/distributors/makurdi')
+def distributors_makurdi():
+    return render_template('public/nigeria/distributors_sitemap_makurdi.html')
+
+@seo_nigeria.route('/sitemap/distributors/badagry')
+def distributors_badagry():
+    return render_template('public/nigeria/distributors_sitemap_badagry.html')
+
+@seo_nigeria.route('/sitemap/distributors/ilesa')
+def distributors_ilesa():
+    return render_template('public/nigeria/distributors_sitemap_ilesa.html')
+	
+@seo_nigeria.route('/sitemap/distributors/gombe')
+def distributors_gombe():
+    return render_template('public/nigeria/distributors_sitemap_gombe.html')
+
+@seo_nigeria.route('/sitemap/distributors/obafemi-owode')
+def distributors_obafemi_owode():
+    return render_template('public/nigeria/distributors_sitemap_obafemi_owode.html')
+	
+@seo_nigeria.route('/sitemap/distributors/owo')
+def distributors_owo():
+    return render_template('public/nigeria/distributors_sitemap_owo.html')
+
+@seo_nigeria.route('/sitemap/distributors/jimeta')
+def distributors_jimeta():
+    return render_template('public/nigeria/distributors_sitemap_jimeta.html')
+
+@seo_nigeria.route('/sitemap/distributors/suleja')
+def distributors_suleja():
+    return render_template('public/nigeria/distributors_sitemap_suleja.html')
+
+@seo_nigeria.route('/sitemap/distributors/potiskum')
+def distributors_potiskum():
+    return render_template('public/nigeria/distributors_sitemap_potiskum.html')
+
+@seo_nigeria.route('/sitemap/distributors/kukawa')
+def distributors_kukawa():
+    return render_template('public/nigeria/distributors_sitemap_kukawa.html')
+
+@seo_nigeria.route('/sitemap/distributors/gusau')
+def distributors_gusau():
+    return render_template('public/nigeria/distributors_sitemap_gusau.html')
+
+@seo_nigeria.route('/sitemap/distributors/iwo')
+def distributors_iwo():
+    return render_template('public/nigeria/distributors_sitemap_iwo.html')
+	
+@seo_nigeria.route('/sitemap/distributors/bida')
+def distributors_bida():
+    return render_template('public/nigeria/distributors_sitemap_bida.html')
+
+@seo_nigeria.route('/sitemap/distributors/ugep')
+def distributors_ugep():
+    return render_template('public/nigeria/distributors_sitemap_ugep.html')
+	
+@seo_nigeria.route('/sitemap/distributors/ijebu-ode')
+def distributors_ijebu_ode():
+    return render_template('public/nigeria/distributors_sitemap_ijebu_ode.html')
+
+@seo_nigeria.route('/sitemap/distributors/epe')
+def distributors_epe():
+    return render_template('public/nigeria/distributors_sitemap_epe.html')
+
+@seo_nigeria.route('/sitemap/distributors/ise-ekiti')
+def distributors_ise_ekiti():
+    return render_template('public/nigeria/distributors_sitemap_ise_ekiti.html')
+
+@seo_nigeria.route('/sitemap/distributors/ikare')
+def distributors_ikare():
+    return render_template('public/nigeria/distributors_sitemap_ikare.html')
+
+@seo_nigeria.route('/sitemap/distributors/okpoko')
+def distributors_okpoko():
+    return render_template('public/nigeria/distributors_sitemap_okpoko.html')
+
+@seo_nigeria.route('/sitemap/distributors/garki')
+def distributors_garki():
+    return render_template('public/nigeria/distributors_sitemap_garki.html')
+
+@seo_nigeria.route('/sitemap/distributors/sapele')
+def distributors_sapele():
+    return render_template('public/nigeria/distributors_sitemap_sapele.html')
+	
+@seo_nigeria.route('/sitemap/distributors/ila')
+def distributors_ila():
+    return render_template('public/nigeria/distributors_sitemap_ila.html')
+
+@seo_nigeria.route('/sitemap/distributors/shaki')
+def distributors_shaki():
+    return render_template('public/nigeria/distributors_sitemap_shaki.html')
+	
+@seo_nigeria.route('/sitemap/distributors/ijero')
+def distributors_ijero():
+    return render_template('public/nigeria/distributors_sitemap_ijero.html')
+
+@seo_nigeria.route('/sitemap/distributors/ikot-ekpene')
+def distributors_ikot_ekpene():
+    return render_template('public/nigeria/distributors_sitemap_ikot_ekpene.html')
+
+@seo_nigeria.route('/sitemap/distributors/jalingo')
+def distributors_jalingo():
+    return render_template('public/nigeria/distributors_sitemap_jalingo.html')
+
+@seo_nigeria.route('/sitemap/distributors/otukpo')
+def distributors_otukpo():
+    return render_template('public/nigeria/distributors_sitemap_otukpo.html')
+
+@seo_nigeria.route('/sitemap/distributors/okigwe')
+def distributors_okigwe():
+    return render_template('public/nigeria/distributors_sitemap_okigwe.html')
+
+@seo_nigeria.route('/sitemap/distributors/kisi')
+def distributors_kisi():
+    return render_template('public/nigeria/distributors_sitemap_kisi.html')
+
+@seo_nigeria.route('/sitemap/distributors/buguma')
+def distributors_buguma():
+    return render_template('public/nigeria/distributors_sitemap_buguma.html')
+	
+@seo_nigeria.route('/sitemap/distributors/funtua')
+def distributors_funtua():
+    return render_template('public/nigeria/distributors_sitemap_funtua.html')
+
+@seo_nigeria.route('/sitemap/distributors/abakaliki')
+def distributors_abakaliki():
+    return render_template('public/nigeria/distributors_sitemap_abakaliki.html')
+	
+@seo_nigeria.route('/sitemap/distributors/asaba')
+def distributors_asaba():
+    return render_template('public/nigeria/distributors_sitemap_asaba.html')
+
+@seo_nigeria.route('/sitemap/distributors/gbongan')
+def distributors_gbongan():
+    return render_template('public/nigeria/distributors_sitemap_gbongan.html')
+
+@seo_nigeria.route('/sitemap/distributors/igboho')
+def distributors_igboho():
+    return render_template('public/nigeria/distributors_sitemap_igboho.html')
+
+@seo_nigeria.route('/sitemap/distributors/gashua')
+def distributors_gashua():
+    return render_template('public/nigeria/distributors_sitemap_gashua.html')
+
+@seo_nigeria.route('/sitemap/distributors/bama')
+def distributors_bama():
+    return render_template('public/nigeria/distributors_sitemap_bama.html')
+
+@seo_nigeria.route('/sitemap/distributors/uromi')
+def distributors_uromi():
+    return render_template('public/nigeria/distributors_sitemap_uromi.html')
+
+##### Sitemap for wholesalers in cities ###
+
+
+@seo_nigeria.route('/sitemap/wholesalers/lagos')
+def data_location_lagos():
+    return render_template('public/nigeria/wholesalers_sitemap_lagos.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/abuja')
+def data_location_abuja():
+    return render_template('public/nigeria/wholesalers_sitemap_abuja.html')
+	
+@seo_nigeria.route('/sitemap/wholesalers/kaduna')
+def data_location_kaduna():
+    return render_template('public/nigeria/wholesalers_sitemap_kaduna.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/enugu')
+def data_location_enugu():
+    return render_template('public/nigeria/wholesalers_sitemap_enugu.html')
+	
+@seo_nigeria.route('/sitemap/wholesalers/zaria')
+def data_location_zaria():
+    return render_template('public/nigeria/wholesalers_sitemap_zaria.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/warri')
+def data_location_warri():
+    return render_template('public/nigeria/wholesalers_sitemap_warri.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/ikorodu')
+def data_location_ikorodu():
+    return render_template('public/nigeria/wholesalers_sitemap_ikorodu.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/maiduguri')
+def data_location_maiduguri():
+    return render_template('public/nigeria/wholesalers_sitemap_maiduguri.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/aba')
+def data_location_aba():
+    return render_template('public/nigeria/wholesalers_sitemap_aba.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/ife')
+def data_location_ife():
+    return render_template('public/nigeria/wholesalers_sitemap_ife.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/bauchi')
+def data_location_bauchi():
+    return render_template('public/nigeria/wholesalers_sitemap_bauchi.html')
+	
+@seo_nigeria.route('/sitemap/wholesalers/akure')
+def data_location_akure():
+    return render_template('public/nigeria/wholesalers_sitemap_akure.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/abeokuta')
+def data_location_abeokuta():
+    return render_template('public/nigeria/wholesalers_sitemap_abeokuta.html')
+	
+@seo_nigeria.route('/sitemap/wholesalers/oyo')
+def data_location_oyo():
+    return render_template('public/nigeria/wholesalers_sitemap_oyo.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/uyo')
+def data_location_uyo():
+    return render_template('public/nigeria/wholesalers_sitemap_uyo.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/sokoto')
+def data_location_sokoto():
+    return render_template('public/nigeria/wholesalers_sitemap_sokoto.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/osogbo')
+def data_location_osogbo():
+    return render_template('public/nigeria/wholesalers_sitemap_osogbo.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/owerri')
+def data_location_owerri():
+    return render_template('public/nigeria/wholesalers_sitemap_owerri.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/yola')
+def data_location_yola():
+    return render_template('public/nigeria/wholesalers_sitemap_yola.html')
+	
+@seo_nigeria.route('/sitemap/wholesalers/calabar')
+def data_location_calabar():
+    return render_template('public/nigeria/wholesalers_sitemap_calabar.html')
+	
+@seo_nigeria.route('/sitemap/wholesalers/umuahia')
+def data_location_umuahia():
+    return render_template('public/nigeria/wholesalers_sitemap_umuahia.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/ondo-city')
+def data_location_ondo_city():
+    return render_template('public/nigeria/wholesalers_sitemap_ondo_city.html')
+	
+@seo_nigeria.route('/sitemap/wholesalers/minna')
+def data_location_minna():
+    return render_template('public/nigeria/wholesalers_sitemap_minna.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/lafia')
+def data_location_lafia():
+    return render_template('public/nigeria/wholesalers_sitemap_lafia.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/okene')
+def data_location_okene():
+    return render_template('public/nigeria/wholesalers_sitemap_okene.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/katsina')
+def data_location_katsina():
+    return render_template('public/nigeria/wholesalers_sitemap_katsina.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/ikeja')
+def data_location_ikeja():
+    return render_template('public/nigeria/wholesalers_sitemap_ikeja.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/nsukka')
+def data_location_nsukka():
+    return render_template('public/nigeria/wholesalers_sitemap_nsukka.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/ado-ekiti')
+def data_location_ado_ekiti():
+    return render_template('public/nigeria/wholesalers_sitemap_ado_ekiti.html')
+	
+@seo_nigeria.route('/sitemap/wholesalers/awka')
+def data_location_awka():
+    return render_template('public/nigeria/wholesalers_sitemap_awka.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/ogbomosho')
+def data_location_ogbomosho():
+    return render_template('public/nigeria/wholesalers_sitemap_ogbomosho.html')
+	
+@seo_nigeria.route('/sitemap/wholesalers/iseyin')
+def data_location_iseyin():
+    return render_template('public/nigeria/wholesalers_sitemap_iseyin.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/mubi')
+def data_location_mubi():
+    return render_template('public/nigeria/wholesalers_sitemap_mubi.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/onitsha')
+def data_location_onitsha():
+    return render_template('public/nigeria/wholesalers_sitemap_onitsha.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/sagamu')
+def data_location_sagamu():
+    return render_template('public/nigeria/wholesalers_sitemap_sagamu.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/makurdi')
+def data_location_makurdi():
+    return render_template('public/nigeria/wholesalers_sitemap_makurdi.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/badagry')
+def data_location_badagry():
+    return render_template('public/nigeria/wholesalers_sitemap_badagry.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/ilesa')
+def data_location_ilesa():
+    return render_template('public/nigeria/wholesalers_sitemap_ilesa.html')
+	
+@seo_nigeria.route('/sitemap/wholesalers/gombe')
+def data_location_gombe():
+    return render_template('public/nigeria/wholesalers_sitemap_gombe.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/obafemi-owode')
+def data_location_obafemi_owode():
+    return render_template('public/nigeria/wholesalers_sitemap_obafemi_owode.html')
+	
+@seo_nigeria.route('/sitemap/wholesalers/owo')
+def data_location_owo():
+    return render_template('public/nigeria/wholesalers_sitemap_owo.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/jimeta')
+def data_location_jimeta():
+    return render_template('public/nigeria/wholesalers_sitemap_jimeta.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/suleja')
+def data_location_suleja():
+    return render_template('public/nigeria/wholesalers_sitemap_suleja.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/potiskum')
+def data_location_potiskum():
+    return render_template('public/nigeria/wholesalers_sitemap_potiskum.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/kukawa')
+def data_location_kukawa():
+    return render_template('public/nigeria/wholesalers_sitemap_kukawa.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/gusau')
+def data_location_gusau():
+    return render_template('public/nigeria/wholesalers_sitemap_gusau.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/iwo')
+def data_location_iwo():
+    return render_template('public/nigeria/wholesalers_sitemap_iwo.html')
+	
+@seo_nigeria.route('/sitemap/wholesalers/bida')
+def data_location_bida():
+    return render_template('public/nigeria/wholesalers_sitemap_bida.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/ugep')
+def data_location_ugep():
+    return render_template('public/nigeria/wholesalers_sitemap_ugep.html')
+	
+@seo_nigeria.route('/sitemap/wholesalers/ijebu-ode')
+def data_location_ijebu_ode():
+    return render_template('public/nigeria/wholesalers_sitemap_ijebu_ode.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/epe')
+def data_location_epe():
+    return render_template('public/nigeria/wholesalers_sitemap_epe.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/ise-ekiti')
+def data_location_ise_ekiti():
+    return render_template('public/nigeria/wholesalers_sitemap_ise_ekiti.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/ikare')
+def data_location_ikare():
+    return render_template('public/nigeria/wholesalers_sitemap_ikare.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/okpoko')
+def data_location_okpoko():
+    return render_template('public/nigeria/wholesalers_sitemap_okpoko.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/garki')
+def data_location_garki():
+    return render_template('public/nigeria/wholesalers_sitemap_garki.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/sapele')
+def data_location_sapele():
+    return render_template('public/nigeria/wholesalers_sitemap_sapele.html')
+	
+@seo_nigeria.route('/sitemap/wholesalers/ila')
+def data_location_ila():
+    return render_template('public/nigeria/wholesalers_sitemap_ila.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/shaki')
+def data_location_shaki():
+    return render_template('public/nigeria/wholesalers_sitemap_shaki.html')
+	
+@seo_nigeria.route('/sitemap/wholesalers/ijero')
+def data_location_ijero():
+    return render_template('public/nigeria/wholesalers_sitemap_ijero.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/ikot-ekpene')
+def data_location_ikot_ekpene():
+    return render_template('public/nigeria/wholesalers_sitemap_ikot_ekpene.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/jalingo')
+def data_location_jalingo():
+    return render_template('public/nigeria/wholesalers_sitemap_jalingo.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/otukpo')
+def data_location_otukpo():
+    return render_template('public/nigeria/wholesalers_sitemap_otukpo.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/okigwe')
+def data_location_okigwe():
+    return render_template('public/nigeria/wholesalers_sitemap_okigwe.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/kisi')
+def data_location_kisi():
+    return render_template('public/nigeria/wholesalers_sitemap_kisi.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/buguma')
+def data_location_buguma():
+    return render_template('public/nigeria/wholesalers_sitemap_buguma.html')
+	
+@seo_nigeria.route('/sitemap/wholesalers/funtua')
+def data_location_funtua():
+    return render_template('public/nigeria/wholesalers_sitemap_funtua.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/abakaliki')
+def data_location_abakaliki():
+    return render_template('public/nigeria/wholesalers_sitemap_abakaliki.html')
+	
+@seo_nigeria.route('/sitemap/wholesalers/asaba')
+def data_location_asaba():
+    return render_template('public/nigeria/wholesalers_sitemap_asaba.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/gbongan')
+def data_location_gbongan():
+    return render_template('public/nigeria/wholesalers_sitemap_gbongan.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/igboho')
+def data_location_igboho():
+    return render_template('public/nigeria/wholesalers_sitemap_igboho.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/gashua')
+def data_location_gashua():
+    return render_template('public/nigeria/wholesalers_sitemap_gashua.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/bama')
+def data_location_bama():
+    return render_template('public/nigeria/wholesalers_sitemap_bama.html')
+
+@seo_nigeria.route('/sitemap/wholesalers/uromi')
+def data_location_uromi():
+    return render_template('public/nigeria/wholesalers_sitemap_uromi.html')
+
+
+##### Sitemap for manufacturers in cities ###
+
+
+@seo_nigeria.route('/sitemap/manufacturers/lagos')
+def manufacturers_lagos():
+    return render_template('public/nigeria/manufacturers_sitemap_lagos.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/abuja')
+def manufacturers_abuja():
+    return render_template('public/nigeria/manufacturers_sitemap_abuja.html')
+	
+@seo_nigeria.route('/sitemap/manufacturers/kaduna')
+def manufacturers_kaduna():
+    return render_template('public/nigeria/manufacturers_sitemap_kaduna.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/enugu')
+def manufacturers_enugu():
+    return render_template('public/nigeria/manufacturers_sitemap_enugu.html')
+	
+@seo_nigeria.route('/sitemap/manufacturers/zaria')
+def manufacturers_zaria():
+    return render_template('public/nigeria/manufacturers_sitemap_zaria.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/warri')
+def manufacturers_warri():
+    return render_template('public/nigeria/manufacturers_sitemap_warri.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/ikorodu')
+def manufacturers_ikorodu():
+    return render_template('public/nigeria/manufacturers_sitemap_ikorodu.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/maiduguri')
+def manufacturers_maiduguri():
+    return render_template('public/nigeria/manufacturers_sitemap_maiduguri.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/aba')
+def manufacturers_aba():
+    return render_template('public/nigeria/manufacturers_sitemap_aba.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/ife')
+def manufacturers_ife():
+    return render_template('public/nigeria/manufacturers_sitemap_ife.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/bauchi')
+def manufacturers_bauchi():
+    return render_template('public/nigeria/manufacturers_sitemap_bauchi.html')
+	
+@seo_nigeria.route('/sitemap/manufacturers/akure')
+def manufacturers_akure():
+    return render_template('public/nigeria/manufacturers_sitemap_akure.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/abeokuta')
+def manufacturers_abeokuta():
+    return render_template('public/nigeria/manufacturers_sitemap_abeokuta.html')
+	
+@seo_nigeria.route('/sitemap/manufacturers/oyo')
+def manufacturers_oyo():
+    return render_template('public/nigeria/manufacturers_sitemap_oyo.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/uyo')
+def manufacturers_uyo():
+    return render_template('public/nigeria/manufacturers_sitemap_uyo.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/sokoto')
+def manufacturers_sokoto():
+    return render_template('public/nigeria/manufacturers_sitemap_sokoto.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/osogbo')
+def manufacturers_osogbo():
+    return render_template('public/nigeria/manufacturers_sitemap_osogbo.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/owerri')
+def manufacturers_owerri():
+    return render_template('public/nigeria/manufacturers_sitemap_owerri.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/yola')
+def manufacturers_yola():
+    return render_template('public/nigeria/manufacturers_sitemap_yola.html')
+	
+@seo_nigeria.route('/sitemap/manufacturers/calabar')
+def manufacturers_calabar():
+    return render_template('public/nigeria/manufacturers_sitemap_calabar.html')
+	
+@seo_nigeria.route('/sitemap/manufacturers/umuahia')
+def manufacturers_umuahia():
+    return render_template('public/nigeria/manufacturers_sitemap_umuahia.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/ondo-city')
+def manufacturers_ondo_city():
+    return render_template('public/nigeria/manufacturers_sitemap_ondo_city.html')
+	
+@seo_nigeria.route('/sitemap/manufacturers/minna')
+def manufacturers_minna():
+    return render_template('public/nigeria/manufacturers_sitemap_minna.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/lafia')
+def manufacturers_lafia():
+    return render_template('public/nigeria/manufacturers_sitemap_lafia.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/okene')
+def manufacturers_okene():
+    return render_template('public/nigeria/manufacturers_sitemap_okene.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/katsina')
+def manufacturers_katsina():
+    return render_template('public/nigeria/manufacturers_sitemap_katsina.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/ikeja')
+def manufacturers_ikeja():
+    return render_template('public/nigeria/manufacturers_sitemap_ikeja.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/nsukka')
+def manufacturers_nsukka():
+    return render_template('public/nigeria/manufacturers_sitemap_nsukka.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/ado-ekiti')
+def manufacturers_ado_ekiti():
+    return render_template('public/nigeria/manufacturers_sitemap_ado_ekiti.html')
+	
+@seo_nigeria.route('/sitemap/manufacturers/awka')
+def manufacturers_awka():
+    return render_template('public/nigeria/manufacturers_sitemap_awka.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/ogbomosho')
+def manufacturers_ogbomosho():
+    return render_template('public/nigeria/manufacturers_sitemap_ogbomosho.html')
+	
+@seo_nigeria.route('/sitemap/manufacturers/iseyin')
+def manufacturers_iseyin():
+    return render_template('public/nigeria/manufacturers_sitemap_iseyin.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/mubi')
+def manufacturers_mubi():
+    return render_template('public/nigeria/manufacturers_sitemap_mubi.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/onitsha')
+def manufacturers_onitsha():
+    return render_template('public/nigeria/manufacturers_sitemap_onitsha.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/sagamu')
+def manufacturers_sagamu():
+    return render_template('public/nigeria/manufacturers_sitemap_sagamu.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/makurdi')
+def manufacturers_makurdi():
+    return render_template('public/nigeria/manufacturers_sitemap_makurdi.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/badagry')
+def manufacturers_badagry():
+    return render_template('public/nigeria/manufacturers_sitemap_badagry.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/ilesa')
+def manufacturers_ilesa():
+    return render_template('public/nigeria/manufacturers_sitemap_ilesa.html')
+	
+@seo_nigeria.route('/sitemap/manufacturers/gombe')
+def manufacturers_gombe():
+    return render_template('public/nigeria/manufacturers_sitemap_gombe.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/obafemi-owode')
+def manufacturers_obafemi_owode():
+    return render_template('public/nigeria/manufacturers_sitemap_obafemi_owode.html')
+	
+@seo_nigeria.route('/sitemap/manufacturers/owo')
+def manufacturers_owo():
+    return render_template('public/nigeria/manufacturers_sitemap_owo.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/jimeta')
+def manufacturers_jimeta():
+    return render_template('public/nigeria/manufacturers_sitemap_jimeta.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/suleja')
+def manufacturers_suleja():
+    return render_template('public/nigeria/manufacturers_sitemap_suleja.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/potiskum')
+def manufacturers_potiskum():
+    return render_template('public/nigeria/manufacturers_sitemap_potiskum.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/kukawa')
+def manufacturers_kukawa():
+    return render_template('public/nigeria/manufacturers_sitemap_kukawa.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/gusau')
+def manufacturers_gusau():
+    return render_template('public/nigeria/manufacturers_sitemap_gusau.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/iwo')
+def manufacturers_iwo():
+    return render_template('public/nigeria/manufacturers_sitemap_iwo.html')
+	
+@seo_nigeria.route('/sitemap/manufacturers/bida')
+def manufacturers_bida():
+    return render_template('public/nigeria/manufacturers_sitemap_bida.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/ugep')
+def manufacturers_ugep():
+    return render_template('public/nigeria/manufacturers_sitemap_ugep.html')
+	
+@seo_nigeria.route('/sitemap/manufacturers/ijebu-ode')
+def manufacturers_ijebu_ode():
+    return render_template('public/nigeria/manufacturers_sitemap_ijebu_ode.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/epe')
+def manufacturers_epe():
+    return render_template('public/nigeria/manufacturers_sitemap_epe.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/ise-ekiti')
+def manufacturers_ise_ekiti():
+    return render_template('public/nigeria/manufacturers_sitemap_ise_ekiti.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/ikare')
+def manufacturers_ikare():
+    return render_template('public/nigeria/manufacturers_sitemap_ikare.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/okpoko')
+def manufacturers_okpoko():
+    return render_template('public/nigeria/manufacturers_sitemap_okpoko.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/garki')
+def manufacturers_garki():
+    return render_template('public/nigeria/manufacturers_sitemap_garki.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/sapele')
+def manufacturers_sapele():
+    return render_template('public/nigeria/manufacturers_sitemap_sapele.html')
+	
+@seo_nigeria.route('/sitemap/manufacturers/ila')
+def manufacturers_ila():
+    return render_template('public/nigeria/manufacturers_sitemap_ila.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/shaki')
+def manufacturers_shaki():
+    return render_template('public/nigeria/manufacturers_sitemap_shaki.html')
+	
+@seo_nigeria.route('/sitemap/manufacturers/ijero')
+def manufacturers_ijero():
+    return render_template('public/nigeria/manufacturers_sitemap_ijero.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/ikot-ekpene')
+def manufacturers_ikot_ekpene():
+    return render_template('public/nigeria/manufacturers_sitemap_ikot_ekpene.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/jalingo')
+def manufacturers_jalingo():
+    return render_template('public/nigeria/manufacturers_sitemap_jalingo.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/otukpo')
+def manufacturers_otukpo():
+    return render_template('public/nigeria/manufacturers_sitemap_otukpo.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/okigwe')
+def manufacturers_okigwe():
+    return render_template('public/nigeria/manufacturers_sitemap_okigwe.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/kisi')
+def manufacturers_kisi():
+    return render_template('public/nigeria/manufacturers_sitemap_kisi.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/buguma')
+def manufacturers_buguma():
+    return render_template('public/nigeria/manufacturers_sitemap_buguma.html')
+	
+@seo_nigeria.route('/sitemap/manufacturers/funtua')
+def manufacturers_funtua():
+    return render_template('public/nigeria/manufacturers_sitemap_funtua.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/abakaliki')
+def manufacturers_abakaliki():
+    return render_template('public/nigeria/manufacturers_sitemap_abakaliki.html')
+	
+@seo_nigeria.route('/sitemap/manufacturers/asaba')
+def manufacturers_asaba():
+    return render_template('public/nigeria/manufacturers_sitemap_asaba.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/gbongan')
+def manufacturers_gbongan():
+    return render_template('public/nigeria/manufacturers_sitemap_gbongan.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/igboho')
+def manufacturers_igboho():
+    return render_template('public/nigeria/manufacturers_sitemap_igboho.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/gashua')
+def manufacturers_gashua():
+    return render_template('public/nigeria/manufacturers_sitemap_gashua.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/bama')
+def manufacturers_bama():
+    return render_template('public/nigeria/manufacturers_sitemap_bama.html')
+
+@seo_nigeria.route('/sitemap/manufacturers/uromi')
+def manufacturers_uromi():
+    return render_template('public/nigeria/manufacturers_sitemap_uromi.html')
+#####################################################################
 
 """
 Aba Keywords
 
 """
-
 
 @seo_nigeria.route('/sitemap/aba')
 def aba_sitemap():
