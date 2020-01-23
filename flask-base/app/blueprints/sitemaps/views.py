@@ -1,23 +1,31 @@
 import operator
+import pandas as pd
 from datetime import datetime, timedelta
 
 from flask import Blueprint, render_template, url_for, make_response, current_app, request, send_from_directory
 
 from app.models import Job, Question, User, Organisation, Service, Event, Promo, Product
+#from flask_sitemap import Sitemap
 
-sitemaps = Blueprint('sitemaps', __name__, static_folder="static")
-
+sitemaps = Blueprint('sitemaps', __name__)
 
 @sitemaps.errorhandler(Exception)
 def page_not_found(error):
+    print(error)
     return render_template('errors/404.html')
 
+#@app.route('/uploads/<path:filename>')
+#def download_file(filename):
+    #return send_from_directory(app.config['UPLOAD_FOLDER'],
+                               #filename, as_attachment=True)
 
 ###@sitemaps.route('/robots.txt')
-@sitemaps.route('/sitemap_main.xml')
-def static_from_root():
-    return send_from_directory(sitemaps.static_folder, request.path[1:])
-
+@sitemaps.route('/<path:filename>')
+def static_from_root(filename):
+    #return send_from_directory("/home/ubuntu/flaskapp/flask-base/static/", "sitemap_main.xml")
+    file = request.url.split("/")[-1]
+    urlset = generate_sitemap(file)
+    return return_xml('public/sitemap.html', urlset=urlset)
 
 def return_xml(view, **kwargs):
     data = render_template(view, **kwargs)
@@ -25,6 +33,17 @@ def return_xml(view, **kwargs):
     response.headers["Content-Type"] = "application/xml"
     return response
 
+def generate_sitemap(link):
+    file = link.split("/")[-1].split("\\")[-1].split(".")[0]
+    filename = url_for('static', filename=file+'.txt')
+    df = pd.read_csv("/home/ubuntu/flaskapp/flask-base/app/"+filename, sep="\n", header = None)
+    urlset = []
+    ten_days_ago = datetime.now() - timedelta(days=10)
+    for route in range(0,len(df)):
+        urlset.append({'loc': df[0][route],
+                       'lastmod': '{}'.format(sitemap_date(ten_days_ago)),
+                       'changefreq': 'daily'})
+    return urlset
 
 def routes():
     rules = []
@@ -45,7 +64,6 @@ def routes():
 def sitemap_date(val):
     return datetime.date(val)
 
-
 @sitemaps.route('/sitemap.xml')
 def index():
     sitemaps_list = [
@@ -57,10 +75,27 @@ def index():
         {'loc': url_for('sitemaps.events_xml', _external=True)},
         {'loc': url_for('sitemaps.services_xml', _external=True)},
         {'loc': url_for('sitemaps.services_xml', _external=True)},
+        {'loc':"https://networked.ng/sitemap_one_distributors.xml"},
+        {'loc':"https://networked.ng/sitemap_two_distributors.xml"},
+        {'loc':"https://networked.ng/sitemap_three_distributors.xml"},
+        {'loc':"https://networked.ng/sitemap_one_retailers.xml"},
+        {'loc':"https://networked.ng/sitemap_two_retailers.xml"},
+        {'loc':"https://networked.ng/sitemap_three_retailers.xml"},
+        {'loc':"https://networked.ng/sitemap_one_wholesalers.xml"},
+        {'loc':"https://networked.ng/sitemap_two_wholesalers.xml"},
+        {'loc':"https://networked.ng/sitemap_three_wholesalers.xml"},
+        {'loc':"https://networked.ng/sitemap_one_manufacturers.xml"},
+        {'loc':"https://networked.ng/sitemap_two_manufacturers.xml"},
+        {'loc':"https://networked.ng/sitemap_three_manufacturers.xml"},
+        {'loc':"https://networked.ng/sitemap_one_suppliers.xml"},
+        {'loc':"https://networked.ng/sitemap_two_suppliers.xml"},
+        {'loc':"https://networked.ng/sitemap_three_suppliers.xml"},
+        {'loc':"https://networked.ng/sitemap_one_importers.xml"},
+        {'loc':"https://networked.ng/sitemap_two_importers.xml"},
+        {'loc':"https://networked.ng/sitemap_three_importers.xml"}
 
     ]
     return return_xml('public/sitemapindex.html', sitemaps=sitemaps_list)
-
 
 @sitemaps.route('/main.xml')
 def main_xml():
@@ -94,7 +129,8 @@ def companies_xml():
         urlset.append({'loc': url_for('organisations.public_org', org_id=company.id, org_name=company.org_name, _external=True),
                        'lastmod': '{}'.format(sitemap_date(company.updated_at) if company.updated_at is not None else ''),
                        'changefreq': 'daily'})
-    return return_xml('public/sitemap.html', urlset=urlset)
+    return return_xml('public/sitemap_main.html', urlset=urlset)
+
 
 
 @sitemaps.route('/questions.xml')
