@@ -1,18 +1,21 @@
 from flask import render_template
 
-from app.blueprints.main.views import main
+from app.blueprints.products.views import products
 
 
-@main.app_errorhandler(403)
-def forbidden(_):
-    return render_template('errors/403.html'), 403
+@products.errorhandler(Exception)
+def forbidden(error):
+    print(error)
+    return render_template('errors/403.html')
 
 
-@main.app_errorhandler(404)
-def page_not_found(_):
-    return render_template('errors/404.html'), 404
+@products.errorhandler(Exception)
+def page_not_found(error):
+    print(error)
+    return render_template('errors/404.html')
 
 
-@main.app_errorhandler(500)
-def internal_server_error(_):
-    return render_template('errors/500.html'), 500
+@products.errorhandler(Exception)
+def internal_server_error(error):
+    print(error)
+    return render_template('errors/500.html')

@@ -6,6 +6,12 @@ from app.models import *
 jobs = Blueprint('jobs', __name__)
 
 
+@jobs.errorhandler(Exception)
+def page_not_found(error):
+    print(error)
+    return render_template('errors/404.html')
+
+
 @jobs.route('/list/')
 def jobs_list():
     appts = Job.query.filter(Job.organisation != None).filter(Job.end_date >= datetime.now()).order_by(Job.pub_date.asc()).all()

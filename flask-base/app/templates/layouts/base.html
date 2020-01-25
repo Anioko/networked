@@ -268,6 +268,14 @@
     <!-- Start of networkedng Zendesk Widget script -->
     <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=0dc70f78-cc2b-4846-8aa0-294432e620bc"> </script>
     <!-- End of networkedng Zendesk Widget script -->
+
+<script type="text/javascript">
+    function preventRedirecting() {
+        var href = window.location.href; // https://example.com/index.html
+        window.location.replace(href); // Replaces URL with current URL thereby preventing redirection to another page
+    }
+</script>
+
 {% block scripts %}{% endblock %}
 </body>
 </html>

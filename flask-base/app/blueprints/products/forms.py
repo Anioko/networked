@@ -1,7 +1,7 @@
 from flask_uploads import UploadSet, IMAGES
 from flask_wtf import FlaskForm
 from flask_wtf.file import FileField, FileAllowed, FileRequired
-from wtforms import StringField, SubmitField, SelectField, TextAreaField, IntegerField
+from wtforms import StringField, SubmitField, SelectField, TextAreaField, IntegerField, FloatField
 from wtforms.validators import Length, Required
 
 images = UploadSet('images', IMAGES)
@@ -2153,11 +2153,11 @@ class ProductForm(FlaskForm):
                                                             ('Yo-Yos','Yo-Yos'),
                                                             ('Yukata','Yukata')])
     product_availability = SelectField(u'Is it currently available?', choices=[('Yes', 'Yes'), ('No', 'No')])
-    min_order_quantity = IntegerField('Min units in numbers only')
-    product_length = IntegerField('Length in numbers only')
-    product_weight = IntegerField('Weight in numbers only')
-    product_height = IntegerField('Height in numbers only')
-    product_price = IntegerField('Figures only')
+    min_order_quantity = IntegerField('Min number of units e.g 1')
+    product_length = FloatField('Length in numbers only e.g 0.99')
+    product_weight = FloatField('Weight in numbers only e.g 0.21')
+    product_height = FloatField('Height in numbers only e.g 10')
+    product_price = FloatField('Figures only e.g 16.99')
     price_currency = SelectField(u'Select One', choices=[('NGR', 'NGR'), ('GBP', 'GBP'), ('USD', 'USD')])
     delivery_terms = SelectField(u'Select one', choices=[('EXW', 'Ex Works Factory'),
         ('FCA','Free Carrier'),

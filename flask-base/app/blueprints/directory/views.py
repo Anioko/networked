@@ -4,7 +4,15 @@ from flask_login import current_user, login_required
 from app.models import *
 directory = Blueprint('directory', __name__)
 
+"""
+This is where I intend to render all directory related data from the database into the views
+"""
 
+
+@directory.errorhandler(Exception)
+def page_not_found(error):
+    print(error)
+    return render_template('errors/404.html')
 
 @directory.route('/companies/', methods=['GET'])
 def list_companies():
