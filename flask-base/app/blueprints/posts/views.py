@@ -10,9 +10,16 @@ from app import cache
 post_blueprint = Blueprint('post', __name__)
 
 
+@post_blueprint.errorhandler(Exception)
+def page_not_found(error):
+    print(error)
+    return render_template('errors/404.html')
+
+
 def clean(posts):
     for post in posts:
         post.text = bleach.clean(post.text)
+
 
 
 @post_blueprint.route('/posts', methods=['GET', 'POST'])
@@ -47,7 +54,7 @@ def post_create():
             list_of_posts = cache.get("p")
             if list_of_posts is None or not list_of_posts:
                 list_of_posts = []
-            list_of_posts.append(posts)
+            #list_of_posts.append(posts) I disabled it because it showed "{ post_wid.post_wid(post, moment, current_user) } on the post page and some post timestamp issue"
             cache.set("p", list_of_posts)
             author.newscaster_points = author.newscaster_points + 1
             author.newscaster_badge = get_level(author.newscaster_points) + " Newscaster"

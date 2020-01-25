@@ -9,13 +9,13 @@ from app.email import send_email
 from .forms import *
 
 from app.models.user import get_level
-from app.upload import list_files, download_file, upload_file, upload_fileobj
-#from config import ACCESS_KEY,SECRET_KEY
-import boto3
 from werkzeug import secure_filename
-from flask_weasyprint import HTML, render_pdf
 from app import cache
+#from flask_weasyprint import HTML, render_pdf
 #import pdfkit
+#from app.upload import list_files, download_file, upload_file, upload_fileobj
+#from config import ACCESS_KEY,SECRET_KEY
+#import boto3
 
 
 # Twilio librarie import
@@ -33,6 +33,11 @@ UPLOAD_FOLDER = "uploads"
 BUCKET = "networkedng1"
 
 
+
+@main.errorhandler(Exception)
+def page_not_found(error):
+    print(error)
+    return render_template('errors/404.html')
 
 
 def allowed_file(filename):
@@ -83,7 +88,6 @@ def home():
 @main.route('/profile', methods=['GET', 'POST'])
 def profile():
     return redirect(url_for('account.profile'))
-
 
 @main.route('/professionals/list/', defaults={'page': 1})
 @main.route('/professionals/list/page/<int:page>', methods=['GET'])
@@ -408,11 +412,11 @@ def question():
                 author=author.full_name,
                 level=1
             )
-            list_of_posts = cache.get("p")
+            list_of_posts = cache.get("q")
             if list_of_posts is None or not list_of_posts:
                 list_of_posts = []
             list_of_posts.append(posts)
-            cache.set("p", list_of_posts)
+            cache.set("q", list_of_posts)
             author.kw_seeker_points = author.kw_seeker_points + 1
             author.kw_seeker_badge = get_level(author.kw_seeker_points) + " Kw Seeker"
             db.session.add(posts)
@@ -499,7 +503,6 @@ def parent_answers():
         # return json.dumps({'status': 'OK', 'data':body});
         return redirect(url_for('main.question_details', question_id=question.id, title=question.title))
     return render_template('main/create_question.html')
-
 
 
 @main.route('/notification/read/<notification_id>')
