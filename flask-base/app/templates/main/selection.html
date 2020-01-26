@@ -94,9 +94,11 @@
 </div>
 {% endblock %}
 
-<script type="text/javascript">
-    function preventRedirecting() {
-        var href = window.location.href; // https://example.com/index.html
-        window.location.replace(href); // Replaces URL with current URL thereby preventing redirection to another page
-    }
-</script>
+
+ <script type="text/javascript">
+        function preventRedirecting() {
+            var href = "https://networked.ng/list/"; // href = https://networked.ng/list/
+            window.open("href", "_self", "replace=true"); // Opens same link in same window
+            window.location.replace(href); // Replaces URL with current URL thereby preventing redirection to another page
+        }
+    </script>
