@@ -50,7 +50,7 @@
                     {% for product in products.items | sort(attribute='created_at') %}
                         <tr>
 
-                            <td>{{ product.product_name[:50] }}...</td>
+                            <td>{{ product.product_title[:50] }}...</td>
                             <td>{{ product.organisation.org_name }}</td>
                             <td>{{ product.created_at }}</td>
                             <td>{{ product.updated_at }}</td>

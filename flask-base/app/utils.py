@@ -1,5 +1,10 @@
 import datetime
+import json
+import os
+import random
+import string
 from html.parser import HTMLParser
+
 
 from flask import url_for, abort
 from flask_login import LoginManager
@@ -7,10 +12,29 @@ from flask_sqlalchemy import SQLAlchemy
 from wtforms.fields import Field
 from wtforms.widgets import HiddenInput
 from wtforms.compat import text_type
+from flask_whooshee import Whooshee
 
 db = SQLAlchemy()
 login_manager = LoginManager()
+whooshee = Whooshee()
+basedir = os.path.abspath(os.path.dirname(__file__))
 
+def get_lang_name(code):
+    with open(os.path.join(basedir, 'static', 'json', 'languages.json')) as f:
+        data = json.load(f)
+        try:
+            return data[code]['name']
+        except:
+            return None
+
+
+def get_langs():
+    languages = []
+    with open(os.path.join(basedir, 'static', 'json', 'languages.json')) as f:
+        data = json.load(f)
+        for e in data.keys():
+            languages.append((e, data[e]['name']))
+    return languages
 
 def register_template_utils(app):
     """Register Jinja 2 helpers (called from __init__.py)."""
@@ -134,3 +158,30 @@ def strip_tags(html):
     s = MLStripper()
     s.feed(html)
     return s.get_data()
+
+
+
+class Struct:
+    items = []
+
+    def __init__(self, items=None):
+        if items is None:
+            items = []
+        self.items = items
+
+def json_load(string):
+    return json.loads(string)
+
+
+def image_size(val):
+    curr = os.path.dirname(os.path.realpath(__file__))
+    img = cv2.imread(curr+'/../../appstatic/photo/'+val, 0)
+    if img is not None:
+        height, width = img.shape[:2]
+    else:
+        height, width = 0, 0
+    return json.dumps([width, height])
+
+
+def random_char(y):
+    return ''.join(random.choice(string.ascii_letters) for x in range(y))

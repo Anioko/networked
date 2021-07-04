@@ -4,8 +4,7 @@ from flask_login import current_user, login_required
 from sqlalchemy import desc, func
 from .forms import *
 from app.models import * 
-import flask_profiler
-from app import cache
+
 
 post_blueprint = Blueprint('post', __name__)
 
@@ -23,8 +22,7 @@ def clean(posts):
 
 
 @post_blueprint.route('/posts', methods=['GET', 'POST'])
-@flask_profiler.profile()
-#@cache.memoize(timeout=5)
+
 @login_required
 def post_create():
     form = PostForm()
@@ -89,8 +87,6 @@ def post_create():
                            author=author, edit_form=edit_form, data = data)#, #questions=questions, users=users)
 
 @post_blueprint.route('/load_more/<count>')
-@flask_profiler.profile()
-#@cache.memoize(timeout=5)
 def load_more(count):
     count = int(count)
     followed_ids = [f.id for f in current_user.followed.all()]
@@ -109,7 +105,6 @@ def load_more(count):
 
 
 @post_blueprint.route('/post/<post_id>', methods=['GET'])
-@flask_profiler.profile()
 #@cache.memoize(timeout=5)
 @login_required
 def view_post(post_id):
@@ -163,7 +158,6 @@ def delete_post(post_id):
 
 
 @post_blueprint.route('/like_post/<post_id>/<user_id>', methods=['POST'])
-@flask_profiler.profile()
 @login_required
 def like_post(post_id, user_id):
     post_like = db.session.query(PostLike).filter_by(post_id=post_id).filter_by(user_id=user_id).first()
@@ -192,7 +186,6 @@ def like_post(post_id, user_id):
 
 
 @post_blueprint.route('/comment/<comment_id>/edit', methods=["POST"])
-@flask_profiler.profile()
 def edit_comment(comment_id):
     comment_text = request.form['comment_text']
     if not comment_text:
@@ -279,7 +272,6 @@ def delete_comment(comment_id):
 
 
 @post_blueprint.route('/comments/submit/', methods=['POST'])
-@flask_profiler.profile()
 @login_required
 def submit_comment():
     post_id = int(request.form['post_id'])
@@ -297,7 +289,6 @@ def submit_comment():
 
 
 @post_blueprint.route('/posts/vote/', methods=['POST'])
-@flask_profiler.profile()
 @login_required
 def vote_post():
     post_id = int(request.form['post_id'])
@@ -312,7 +303,6 @@ def vote_post():
 
 
 @post_blueprint.route('/comments/vote/', methods=['POST'])
-@flask_profiler.profile()
 @login_required
 def vote_comment():
     comment_id = int(request.form['comment_id'])

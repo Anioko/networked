@@ -29,25 +29,16 @@
             <td><img height="200" src="{{ org.get_photo() }}"></td>
         </tr>
         <tr>
-            <td>Creator</td>
-            <td><a href="{{ url_for('main.user_public_profile', id=org.user.id, full_name=org.user.full_name) }}">{{ org.user.full_name }}</a>
-	</td>
-        </tr>
-        <tr>
             <td>City</td>
             <td>{{ org.org_city }}</td>
         </tr>
         <tr>
             <td>State</td>
-            <td>{{ org.org_state }}</td>
-        </tr>
-        <tr>
-            <td>Country</td>
             <td>{{ org.org_country }}</td>
         </tr>
         <tr>
             <td>Company Website</td>
-            <td><a href="http://{{ org.org_website }}">{{ org.org_website }}</td>
+            <td>{{ org.org_website }}</td>
         </tr>
         <tr>
             <td>Industry</td>

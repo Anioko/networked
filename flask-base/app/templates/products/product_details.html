@@ -7,7 +7,7 @@
     <meta name="og:title" content="{{ appt.product_name }}, {{ appt.product_category }}, {{ appt.product_price }}"/>
     <meta name="og:type" content="website"/>
     <meta name="og:url" content="https://www.{{ config.APP_NAME }}"/>
-    <meta name="og:image" content="{{ appt.get_photo() }}"/>
+    <meta name="og:image" content="{{ url_for('static', filename='images/home/slider/hill.png') }}"/>
     <meta name="og:site_name" content="{{ config.APP_NAME }}"/>
     <meta name="og:description"
           content="{{ appt.product_description }}"/>
@@ -19,13 +19,6 @@
 {% block content %}
 <div class="ui stackable centered grid container">
    <div class="twelve wide column">
-               <h2 class="ui header">
-                <span class="right floated ui">
-                    <a href="{{ url_for('products.edit_product', org_id=appt.organisation.id, product_id=appt.id  )}}">
-                        <i class="icon edit"></i>
-                    </a>
-                </span>
-            </h2>
     <table class="ui compact definition table">
         <tr>
             <td>Product Name</td>

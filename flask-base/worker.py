@@ -1,11 +1,10 @@
 import os, sys
 
-sys.path.append("/var/www/FlaskApp/flask-base")
+sys.path.append(os.path.dirname(os.path.realpath(__file__)))
 import redis
 from rq import Worker, Queue, Connection
 
 if os.path.exists('config.env'):
-    print('Importing environment from .env file')
     for line in open('config.env'):
         var = line.strip().split('=')
         if len(var) == 2:

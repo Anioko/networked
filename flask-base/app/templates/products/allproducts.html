@@ -6,14 +6,7 @@
         <div class="column">
             <h1>Available products</h1>
         </div>
-{% if current_user.is_authenticated %}
-        <div class="ui header">
-            <a class="ui green right floated button" href="{{ url_for('products.create_product', org_id=org.id) }}">Add your product</a>
-        </div>
-      {% else %}
-       {% endif %}
     </div>
-
     <div class="ui grid">
         <div class="four wide column"></div>
         <div class="eight wide column">

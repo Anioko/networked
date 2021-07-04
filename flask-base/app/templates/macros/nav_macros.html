@@ -25,8 +25,8 @@
 {% macro header_items(current_user) %}
     {% if current_user.is_authenticated %}
         {% set endpoints = [
-      ('post.post_create', config.APP_NAME, 'home', ''),
-      
+      ('main.index', config.APP_NAME, 'home', ''),
+
     ] %}
         {% set user = [] %}
         {% if current_user.is_authenticated and current_user.role.is_admin %}
@@ -48,7 +48,7 @@
 #}
 {% macro account_items(current_user) %}
     {% if current_user.is_authenticated %}
-        {% set endpoints = [	  ('main.index', 'Dashboard', 'find', ''),
+        {% set endpoints = [	  ('post.post_create', 'Posts', 'write', ''),
       ('main.question', 'Questions', 'edit', ''),
       ('organisations.org_home', 'Organizations', 'user outline', ''),
 	  ('jobs.jobs_list', 'Jobs', 'suitcase', ''),

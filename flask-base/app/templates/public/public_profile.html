@@ -16,7 +16,7 @@
     <meta name="og:description"
           content="{{ user.first_name }} {{ user.last_name }}, {{ user.profession }},{{ user.summary_text }}, {{ user.city }}, {{ user.state }}, {{ user.country }}"/>
     <meta name="twitter:card" content="summary"/>
-    <meta name="twitter:site" content="@networkedng"/>
+    <meta name="twitter:site" content="@medivillenetwork"/>
     <meta name="twitter:creator" content="@anioko1"/>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='slick/slick.css') }}"/>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='slick/slick-theme.css') }}"/>
@@ -41,256 +41,285 @@
     </style>
 {% endblock %}
 {% block content %}
-    <div class="ui grid container">
-        <div class="one wide column"></div>
-        <div class="ten wide computer sixteen wide mobile centered column">
-            <div class="ui very padded segment">
-                <div class="ui relaxed divided items">
-                        <div class="content">
-					    <div class="ui small image">
-                            <img src="{{ user.get_photo() }}">
-                        </div>
-						    <h1 class="ui header">{{ user.first_name }} {{ user.last_name }}</h1>
-									<div class="meta"><a>Profession: {{ user.profession or ''}}</a></div>
+<div class="ui page grid">
+ <div class="ui segment">
+							 <div class="ui items">
+							  <div class="item">
+								<div class="image">
+								  <img src="{{ user.get_photo() }}">
+								</div>
+								<div class="content">
+									<a class="header">{{ user.first_name or ''}} {{ user.last_name or ''}}</a>
+									<!---full name goes here --->
+									<div class="meta"><a>Profession:{{ user.profession or ''}}</a></div>
 									<div class="meta"><a>Badges Earned:
 									{% if user.newscaster_badge is not none %}
 									 {{ user.newscaster_badge or ''}}
-									 		{% else %}
-											{% endif %}
-										</a>
-									</div>
-									 <div class="meta"><a>{% if user.ambassador_badge is not none %}
+									 {% elif user.ambassador_badge is not none %}
 									 {{ user.ambassador_badge or ''}}
-									 		{% else %}
-											{% endif %}
-										</a>
-									</div>
-									 <div class="meta"><a>{% if user.networker_badge is not none %}
+									 {% elif user.networker_badge is not none %}
 									 {{ user.networker_badge or ''}}
-									 		{% else %}
-											{% endif %}
-										</a>
-									</div>
-									 <div class="meta"><a>{% if user.kw_builder_badge is not none %}
+									 {% elif user.kw_builder_badge is not none %}
 									 {{ user.kw_builder_badge or ''}}	
-									 		{% else %}
-											{% endif %}
-										</a>
-									</div>
-									 <div class="meta"><a>{% if user.kw_seeker_badge is not none %}
+									 {% elif user.kw_seeker_badge is not none %}
 									 {{ user.kw_seeker_badge or ''}}										 
 											{% else %}
 											{% endif %}
+									 
 									</a></div><!---- The code for the badges is not correct, because it doesn't show the badges in multiple areas. Investigate!--->										
 									<div class="meta"><a>Joined : {{ user.created_day or ''}}</a></div>
-									<div class="meta"><a>Location : {{ user.city or ''}}, {{ user.state or ''}}, {{ user.country or ''}}</a></div>
-                            {% if user.summary_text %}
-							<div class="ui section divider"></div>
-							<h2 class="header">Profile Summary</h2>
-                            <div class="description"> <!---Profile description or summary goes here--->
-                                {{ user.summary_text or '' }}
-                            </div>
-							{% endif %}
-
-							{% if current_user.is_authenticated %}
-                            {% if user != current_user %}
-							    <div class="ui section divider"></div>
-                                <div class="extra">
-                                    {% if not current_user.is_following(user) %}
-                                        <div class="ui button">
-                                            <a target="_self" href="{{ url_for('main.follow', id=user.id, full_name=user.full_name) }}">Follow</a>
-                                        </div>
-                                    {% else %}
-                                        <div class="ui button">
-                                            <a target="_self" href="{{ url_for('main.unfollow', id=user.id, full_name=user.full_name) }}">Unfollow</a>
-                                        </div>
-                                    {% endif %}
-                                    <div class="ui button">
-                                        <a href="{{ url_for('main.send_message', recipient=user.id, full_name=user.full_name) }}">Message</a>
-                                    </div>
-                                </div>
-                            {% endif %}
-
-							{% else %}
-
-							{% endif %}
-
-							{% if resume  %}
-				<h2 class="header">Work Experience</h2>
-							{% if resume.location_city_one  %}
+									<div class="meta"><a>Joined : {{ resume.location_city_one or ''}}</a></div>
+									<!----year joined goes here---->
+									<div class="meta"><a> {{ user.city or ''}}</a></div>
+									<div class="meta"><a> {{ user.state or ''}}</a></div>
+									<div class="meta"><a> {{ user.country or ''}}</a></div>
+								</div>
+							  </div>
+							  </div>
+								{% if resume.location_city_one is not none %}
+							<div class="ui divided items">
+								  <div class="item">
+									<div class="content">
+									 <a class="header">Profile Summary</a>
+									  <div class="description"> <!---Profile description or summary goes here--->
+										{{ user.summary_text or ''}}
+										</div>
 										 <div class="ui hidden divider"></div>
-										  <a class="header">{{ resume.role_one or ''}}{{", " ~ resume.company_name_one or ''}}{{", " ~ resume.location_city_one or ''}} {{ resume.location_state_one or ''}}{{", " ~ resume.location_country_one or ''}}</a>
+										  <a class="header">{{ resume.role_one or ''}}</a>
 										  <div class="meta">
-											<span class="cinema">{{ resume.start_date_one or ''}}  </span>
+											<span class="cinema">{{ resume.company_name_one or ''}} {{ resume.start_date_one or ''}}  </span>
 										  </div>
-										  <div class="metan">
+										  <div class="description">
 											<p>{{ resume.role_description_one or ''}}</p>
 										  </div>
 										  <div class="extra">
-											<span class="cinema">{{ resume.location_city_one or ''}}{{", " ~ resume.location_state_one or ''}} </span>
-											<span class="cinema">{{ resume.location_country_one or ''}}</span>	
-											</div>
+											<span class="cinema">{{ resume.location_city_one or ''}} {{ resume.location_state_one or ''}} </span>
+											<span class="cinema">{{ resume.location_country_one or ''}}</span>
+										  </div>
+									</div>
+								  </div>		
+							</div>
+							{% elif resume.location_city_one is none %}
 								{% else %}
 								{% endif %}
-								{% if resume.location_city_two %}
-
-									  <a class="header">{{ resume.role_two or ''}}{{", " ~ resume.company_name_two or ''}}{{", " ~ resume.location_city_two or ''}} {{ resume.location_state_two or ''}}{{", " ~ resume.location_country_two or ''}}</a>
+								{% if resume.location_city_two is not none %}
+							<div class="ui divided items">
+								  <div class="item">
+									<div class="content">
+									  <a class="header">{{ resume.role_two or ''}}</a>
 									  <div class="meta">
-										<span class="cinema">{{ resume.start_date_two or ''}} </span>
+										<span class="cinema">{{ resume.company_name_two or ''}} {{ resume.start_date_two or ''}} </span>
 									  </div>
-									  <div class="meta">
+									  <div class="description">
 										<p>{{ resume.role_description_two or ''}}</p>
 									  </div>
 									  <div class="extra">
-										<span class="cinema">{{ resume.location_city_two or ''}}{{", " ~ resume.location_state_two or ''}} </span>
+										<span class="cinema">{{ resume.location_city_two or ''}} {{ resume.location_state_two or ''}} </span>
 										<span class="cinema">{{ resume.location_country_two or ''}}</span>
 									  </div>
-
+									</div>
+								  </div>		
+							</div>
+							{% elif resume.location_city_two is none %}
 								{% else %}
 								{% endif %}
-								{% if resume.location_city_three  %}
-
+								{% if resume.location_city_two is not none %}
+							<div class="ui divided items">
+								  <div class="item">
+									<div class="content">
+									  <a class="header">{{ resume.role_two or ''}}</a>
+									  <div class="meta">
+										<span class="cinema">{{ resume.company_name_two or ''}} {{ resume.start_date_two or ''}} </span>
+									  </div>
+									  <div class="description">
+										<p>{{ resume.role_description_two or ''}}</p>
+									  </div>
+									  <div class="extra">
+										<span class="cinema">{{ resume.location_city_two or ''}} {{ resume.location_state_two or ''}} </span>
+										<span class="cinema">{{ resume.location_country_two or ''}}</span>
+									  </div>
+									</div>
+								  </div>		
+							</div>
+							{% elif resume.location_city_two is none %}
+								{% else %}
+								{% endif %}
+								{% if resume.location_city_three is not none %}
+							<div class="ui divided items">
+								  <div class="item">
+									<div class="content">
 									  <a class="header">{{ resume.role_three or ''}}</a>
 									  <div class="meta">
-										<span class="cinema">{{ resume.start_date_three or ''}} </span>
+										<span class="cinema">{{ resume.company_name_three or ''}} {{ resume.start_date_three or ''}} </span>
 									  </div>
-									  <div class="meta">
+									  <div class="description">
 										<p>{{ resume.role_description_three or ''}}</p>
 									  </div>
 									  <div class="extra">
-										<span class="cinema">{{ resume.location_city_three or ''}}{{", " ~ resume.location_state_three or ''}} </span>
+										<span class="cinema">{{ resume.location_city_three or ''}} {{ resume.location_state_three or ''}} </span>
 										<span class="cinema">{{ resume.location_country_three or ''}}</span>
 									  </div>
+									</div>
+								  </div>		
+							</div>
+							{% elif resume.location_city_three is none %}
 								{% else %}
 								{% endif %}
-								{% if resume.location_city_four  %}
+								{% if resume.location_city_four is not none %}
+							<div class="ui divided items">
+								  <div class="item">
+									<div class="content">
 									  <a class="header">{{ resume.role_four or ''}}</a>
 									  <div class="meta">
-										<span class="cinema">{{ resume.start_date_four or ''}} </span>
+										<span class="cinema">{{ resume.company_name_four or ''}} {{ resume.start_date_four or ''}} </span>
 									  </div>
-									  <div class="meta">
+									  <div class="description">
 										<p>{{ resume.role_description_four or ''}}</p>
 									  </div>
 									  <div class="extra">
-										<span class="cinema">{{ resume.location_city_four or ''}}{{", " ~ resume.location_state_four or ''}} </span>
+										<span class="cinema">{{ resume.location_city_four or ''}} {{ resume.location_state_four or ''}} </span>
 										<span class="cinema">{{ resume.location_country_four or ''}}</span>
 									  </div>
+									</div>
+								  </div>		
+							</div>
+							{% elif resume.location_city_four is none %}
 								{% else %}
 								{% endif %}
-								{% if resume.location_city_five %}
+								{% if resume.location_city_five is not none %}
+							<div class="ui divided items">
+								  <div class="item">
+									<div class="content">
 									  <a class="header">{{ resume.role_five or ''}}</a>
 									  <div class="meta">
-										<span class="cinema"> {{ resume.start_date_five or ''}} </span>
+										<span class="cinema">{{ resume.company_name_five or ''}} {{ resume.start_date_five or ''}} </span>
 									  </div>
-									  <div class="meta">
+									  <div class="description">
 										<p>{{ resume.role_description_five or ''}}</p>
 									  </div>
 									  <div class="extra">
-										<span class="cinema">{{ resume.location_city_five or ''}}{{", " ~ resume.location_state_five or ''}} </span>
+										<span class="cinema">{{ resume.location_city_five or ''}} {{ resume.location_state_five or ''}} </span>
 										<span class="cinema">{{ resume.location_country_five or ''}}</span>
 									  </div>
+									</div>
+								  </div>		
+							</div>
+							{% elif resume.location_city_five is none %}
 								{% else %}
 								{% endif %}
-								{% if resume.location_city_six %}
+								{% if resume.location_city_six is not none %}
+							<div class="ui divided items">
+								  <div class="item">
+									<div class="content">
 									  <a class="header">{{ resume.role_six or ''}}</a>
 									  <div class="meta">
-										<span class="cinema"> {{ resume.start_date_six or ''}} </span>
+										<span class="cinema">{{ resume.company_name_six or ''}} {{ resume.start_date_six or ''}} </span>
 									  </div>
-									  <div class="meta">
+									  <div class="description">
 										<p>{{ resume.role_description_six or ''}}</p>
 									  </div>
 									  <div class="extra">
-										<span class="cinema">{{ resume.location_city_six or ''}}{{", " ~ resume.location_state_six or ''}} </span>
+										<span class="cinema">{{ resume.location_city_six or ''}} {{ resume.location_state_six or ''}} </span>
 										<span class="cinema">{{ resume.location_country_six or ''}}</span>
 									  </div>
-
+									</div>
+								  </div>		
+							</div>
+							{% elif resume.location_city_six is none %}
 								{% else %}
 								{% endif %}
-								{% endif %}
-								{% if resume  %}
-						   <h2 class="header">Education</h2>
-                            <div class="ui section divider"></div>
-
-								{% if resume.school_name_one  %}
+								{% if resume.school_name_one is not none %}
+							<div class="ui divided items">
+								  <div class="item">
+									<div class="content">
 									  <a class="header">{{ resume.school_name_one or ''}}</a>
 									  <div class="meta">
-										<span class="cinema">{{ resume.degree_description_one or ''}}{{", " ~ resume.school_end_date_one or ''}} </span>
+										<span class="cinema">{{ resume.degree_description_one or ''}} {{ resume.school_end_date_one or ''}} </span>
 									  </div>
 									  <div class="extra">
-										<span class="cinema">{{ resume.city_school_one or ''}}{{", " ~ resume.state_school_one or ''}} </span>
+										<span class="cinema">{{ resume.city_school_one or ''}} {{ resume.state_school_one or ''}} </span>
 										<span class="cinema">{{ resume.country_school_one or ''}}</span>
 									  </div>
+									</div>
+								  </div>		
+							</div>
+							{% elif resume.school_name_one is none %}
 								{% else %}
 								{% endif %}
-								{% if resume.school_name_two %}
+								{% if resume.school_name_two is not none %}
+							<div class="ui divided items">
+								  <div class="item">
+									<div class="content">
 									  <a class="header">{{ resume.school_name_two or ''}}</a>
 									  <div class="meta">
-										<span class="cinema">{{ resume.degree_description_two or ''}}{{", " ~ resume.school_end_date_two or ''}} </span>
+										<span class="cinema">{{ resume.degree_description_two or ''}} {{ resume.school_end_date_two or ''}} </span>
 									  </div>
 									  <div class="extra">
-										<span class="cinema">{{ resume.city_school_two or ''}}{{", " ~ resume.state_school_two or ''}} </span>
+										<span class="cinema">{{ resume.city_school_two or ''}} {{ resume.state_school_two or ''}} </span>
 										<span class="cinema">{{ resume.country_school_two or ''}}</span>
 									  </div>
+									</div>
+								  </div>		
+							</div>
+							{% elif resume.school_name_two is none %}
 								{% else %}
 								{% endif %}
-								{% if resume.school_name_three  %}
+								{% if resume.school_name_three is not none %}
+							<div class="ui divided items">
+								  <div class="item">
+									<div class="content">
 									  <a class="header">{{ resume.school_name_three or ''}}</a>
 									  <div class="meta">
-										<span class="cinema">{{ resume.degree_description_three or ''}}{{", " ~ resume.school_end_date_three or ''}} </span>
+										<span class="cinema">{{ resume.degree_description_three or ''}} {{ resume.school_end_date_three or ''}} </span>
 									  </div>
 									  <div class="extra">
-										<span class="cinema">{{ resume.city_school_three or ''}}{{", " ~ resume.state_school_three or ''}} </span>
+										<span class="cinema">{{ resume.city_school_three or ''}} {{ resume.state_school_three or ''}} </span>
 										<span class="cinema">{{ resume.country_school_three or ''}}</span>
 									  </div>
+									</div>
+								  </div>		
+							</div>
+							{% elif resume.school_name_three is none %}
 								{% else %}
 								{% endif %}
-								{% if resume.school_name_four %}
+								{% if resume.school_name_four is not none %}
+							<div class="ui divided items">
+								  <div class="item">
+									<div class="content">
 									  <a class="header">{{ resume.school_name_four or ''}}</a>
 									  <div class="meta">
-										<span class="cinema">{{ resume.degree_description_four or ''}}{{", " ~ resume.school_end_date_four or ''}} </span>
+										<span class="cinema">{{ resume.degree_description_four or ''}} {{ resume.school_end_date_four or ''}} </span>
 									  </div>
 									  <div class="extra">
-										<span class="cinema">{{ resume.city_school_four or ''}}{{", " ~ resume.state_school_four or ''}} </span>
+										<span class="cinema">{{ resume.city_school_four or ''}} {{ resume.state_school_four or ''}} </span>
 										<span class="cinema">{{ resume.country_school_four or ''}}</span>
 									  </div>
+									</div>
+								  </div>		
+							</div>
+							{% elif resume.school_name_four is none %}
 								{% else %}
 								{% endif %}
-								{% if resume.school_name_five %}
+								{% if resume.school_name_five is not none %}
+							<div class="ui divided items">
+								  <div class="item">
+									<div class="content">
 									  <a class="header">{{ resume.school_name_five or ''}}</a>
 									  <div class="meta">
-										<span class="cinema">{{ resume.degree_description_five or ''}}{{", " ~ resume.school_end_date_five or ''}} </span>
+										<span class="cinema">{{ resume.degree_description_five or ''}} {{ resume.school_end_date_five or ''}} </span>
 									  </div>
 									  <div class="extra">
-										<span class="cinema">{{ resume.city_school_five or ''}}{{", " ~ resume.state_school_five or ''}} </span>
+										<span class="cinema">{{ resume.city_school_five or ''}} {{ resume.state_school_five or ''}} </span>
 										<span class="cinema">{{ resume.country_school_five or ''}}</span>
 									  </div>
+									</div>
+								  </div>		
+							</div>
+							{% elif resume.school_name_five is none %}
 								{% else %}
 								{% endif %}
-								{% endif %}
-		
-								{% if extra %}
-						   <h2 class="header">Skills</h2>
-                            <div class="ui section divider"></div>	
-									  <div class="ui list">
-										<li>{{ extra.required_skill_one or ''}}</li>
-										<li>{{ extra.required_skill_two or ''}}</li>
-										<li>{{ extra.required_skill_three or ''}}</li>
-										<li>{{ extra.required_skill_four or ''}}</li>
-										<li>{{ extra.required_skill_five or ''}}</li>
-										<li>{{ extra.required_skill_six or ''}} </li>
-										<li>{{ extra.required_skill_seven or ''}}</li>
-										<li>{{ extra.required_skill_eight or ''}}</li>
-										<li>{{ extra.required_skill_nine or ''}}</li>
-										<li>{{ extra.required_skill_ten or ''}}</li>
-									  </div>
-								{% else %}
-								{% endif %}		
-										  
-			  </div>
-            </div>
-        </div>
-    </div>
-
+  </div>						
+</div>
 {% endblock %}
 {% block scripts %}
     <script type="text/javascript" src="{{ url_for('static', filename='slick/slick.min.js') }}"></script>

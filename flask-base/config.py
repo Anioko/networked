@@ -1,5 +1,6 @@
 import os
 import sys
+from sqlalchemy import create_engine
 
 from raygun4py.middleware import flask as flask_raygun
 
@@ -28,9 +29,6 @@ class Config:
         SECRET_KEY = 'SECRET_KEY_ENV_VAR_NOT_SET'
         print('SECRET KEY ENV VAR NOT SET! SHOULD NOT SEE IN PRODUCTION')
     SQLALCHEMY_COMMIT_ON_TEARDOWN = True
-    SQLALCHEMY_ENGINE_OPTIONS = {
-    "pool_pre_ping": True,
-    "pool_recycle": 300,}
     
 
     # Email
@@ -51,7 +49,9 @@ class Config:
     SEGMENT_API_KEY = os.environ.get('SEGMENT_API_KEY') or 'fmBge3EWLw3KPoi1rdzeUyz9Yxzc6bjo'
 
     # Admin account
-    ADMIN_PASSWORD = os.environ.get('ADMIN_PASSWORD') or 'ub_dev+WhenTo'
+    ADMIN_PASSWORD = os.environ.get('ADMIN_PASSWORD') or 'PasswordAnicHANGEmE12309JA'
+    ADMIN_MOBILE_PHONE='07548129001'
+    ADMIN_AREA_CODE='+44'
     ADMIN_EMAIL = os.environ.get(
         'ADMIN_EMAIL') or 'aniekanokono@gmail.com'
     EMAIL_SUBJECT_PREFIX = '[{}]'.format(APP_NAME)
@@ -66,11 +66,8 @@ class Config:
     #AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID') or 'AKIAJNQ5ECCZMGUNDJTA'
     #AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY') or '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'
     #ACL = 'public-read'
-    #FLASKS3_BUCKET_NAME = os.environ.get('FLASKS3_BUCKET_NAME') or 'networkedng1'
+    #FLASKS3_BUCKET_NAME = os.environ.get('FLASKS3_BUCKET_NAME') or 'networkedng2'
     #FLASKS3_REGION = os.environ.get('FLASKS3_REGION') or 'us-east-1'
-    S3_LOCATION = 'http://{}.s3.amazonaws.com/'.format('/networkedng1')
-    ACCESS_KEY =  'AKIAJNQ5ECCZMGUNDJTA'
-    SECRET_KEY = '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'
 
     # Parse the REDIS_URL to set RQ config variables
     if PYTHON_VERSION == 3:
@@ -96,7 +93,7 @@ class DevelopmentConfig(Config):
     ###seems like the app doesn't connect to config.env to get Database URI
     ### so I am commenting it out. Maybe it can be re-enabled once a solution is found
     SQLALCHEMY_DATABASE_URI = os.environ.get('DEV_DATABASE_URL') or \
-                              'postgresql+psycopg2://postgres:newPasswordUbuntuDevSi@localhost:5432/postgres'
+                              'postgresql+psycopg2://postgres:ub_dev+WhenToChangePAssW0rd_pst_pg_db@localhost:5432/postgres'
 
     @classmethod
     def init_app(cls, app):
@@ -118,7 +115,7 @@ class TestingConfig(Config):
 
 class ProductionConfig(Config):
     SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL') or \
-                              'postgresql+psycopg2://postgres:newPasswordUbuntuDevSi@localhost:5432/postgres'    
+                              'postgresql+psycopg2://postgres:ub_dev+WhenToChangePAssW0rd_pst_pg_db@localhost:5432/postgres'    
     SSL_DISABLE = (os.environ.get('SSL_DISABLE') or 'True') == 'True'
 
     @classmethod

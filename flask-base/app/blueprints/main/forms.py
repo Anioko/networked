@@ -6,17 +6,15 @@ from flask_wtf.file import FileField, FileAllowed, FileRequired
 from wtforms import IntegerField, StringField, SubmitField, DateField, TextAreaField, FormField, MultipleFileField, \
     RadioField
 from wtforms.fields.html5 import EmailField
+#from email_validator import ValidationError
 from wtforms.validators import DataRequired, Length, Required, ValidationError, InputRequired, Email
-from wtforms_alchemy import Unique, ModelForm
-from wtforms_alchemy import model_form_factory
-BaseModelForm = model_form_factory(FlaskForm)
 
 images = UploadSet('images', IMAGES)
 docs = UploadSet('docs', ('rtf', 'odf', 'ods', 'gnumeric', 'abw', 'doc', 'docx', 'xls', 'xlsx', 'pdf'))
 
 
 class ExtraForm(FlaskForm):
-    photo = FileField('Upload CV only', validators=[FileRequired(), FileAllowed(docs, 'Documents only!')])
+    photo = FileField('Upload resume or documents only. No images here!', validators=[FileRequired(), FileAllowed(docs, 'Documents only!')])
     required_skill_one = StringField('Specify skill here', [Length(max=255)])
     required_skill_two = StringField('Specify skill here', [Length(max=255)])
     required_skill_three = StringField('Specify skill here', [Length(max=255)])
@@ -54,8 +52,8 @@ class TagForm(FlaskForm):
 
 class QuestionForm(FlaskForm):
     """ This is the question form  """
-    title = StringField('Question Title', validators=[DataRequired(), Length(min=2, max=500)])
-    description = TextAreaField('Question Description')
+    title = StringField('Title', validators=[DataRequired(), Length(min=2, max=500)])
+    description = TextAreaField('Description')
     submit = SubmitField('Ask')
 
 
@@ -106,7 +104,7 @@ class InterestForm(FlaskForm):
     submit = SubmitField('Submit')
 
 
-class InviteUserForm(BaseModelForm):
+class InviteUserForm(FlaskForm):
     first_name = StringField(
         'First name', validators=[InputRequired(),
                                   Length(1, 64)])
@@ -117,8 +115,6 @@ class InviteUserForm(BaseModelForm):
 ##        'Email', validators=[InputRequired(),
 ##                             Length(1, 64),
 ##                             Email()])
-    area_code = StringField('Phone area code only e.g +234 or +44 or +1', validators=[DataRequired()])
-    mobile_phone = IntegerField('Phone numbers only', validators=[DataRequired(), Unique(User.mobile_phone)])
     submit = SubmitField('Invite')
 
     def validate_email(self, field):

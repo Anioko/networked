@@ -35,11 +35,10 @@
                                     description='Find colleagues to add', icon='add user icon') }}
                 {{ dashboard_option('Invite a colleague', 'main.invite_user',
                                     description='Invite a fellow co worker to create their own account', icon='add user icon') }}
-                {% if check_org_exist is none %}
-                    {{ dashboard_option('Add a business or organization', 'organisations.create_org',description='Add an organization or company', icon='building icon') }}
-				{% elif check_org_exist is not none %}
-				{{ dashboard_option('Organisation', 'organisations.org_home',description='Manage your organizations or company', icon='suitcase icon') }}
+                {% if check_org_exist.user_id is none %}
+                    {{ dashboard_option('Add an organisation', 'organisations.create_org',description='Add an organizations or companies', icon='building icon') }}
                 {% else %}
+                    {{ dashboard_option('Organisation', 'organisations.org_home',description='Manage your organizations or company', icon='suitcase icon') }}
                 {% endif %}
                 {{ dashboard_option('Apply to jobs', 'jobs.jobs_list',
                                     description='Find and apply for health and or allied care jobs which are posted here.', icon='search icon') }}

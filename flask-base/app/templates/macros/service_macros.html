@@ -2,7 +2,7 @@
     <div class="card">
         <div class="content">
             <div class="header">
-                <a href="{{ url_for('services.service_details', service_id=service.id, service_category=service.service_category, service_title=service.service_title, service_city=service.service_city, service_state=service.service_state, service_country=service.service_country) }}">{{ service.service_title }}</a>
+                <a href="{{ url_for('services.service_details', service_id=service.id, service_title=service.service_title, service_category=service.category, service_city=service.service_city, service_state=service.service_state, service_country=service.service_country) }}">{{ service.service_title }}</a>
             </div>
             <div class="meta">Offered By :<span class="ui primary label">{{ service.organisation.org_name }}</span></div>
             <div class="meta">City : {{ service.service_city }}</div>

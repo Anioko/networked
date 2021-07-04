@@ -152,7 +152,7 @@
 
                 {{ share.load() }}
                 <h3><i class="calendar outline icon"></i> Posted on: {{ post.timestamp.strftime( '%d %B, %Y ') }}</h3>
-                <h3><i class="building outline icon"></i> Posted by: {{ post.user.full_name or '(No Name)' }}</h3>
+                <h3><i class="building outkine icon"></i> Posted by: {{ post.user.full_name or '(No Name)' }}</h3>
 
                 <div class="ui two column centered grid">
                     <div class="column question">
@@ -267,28 +267,28 @@
             <div class="column">
                 <!--<div style="text-align:center;" class="row btn-group">-->
 
-                <a href="http://www.facebook.com/sharer.php?u={{ url_for('main.question_details',question_id=post.id, title=post.title, _external=True) }}"
+                <a href="http://www.facebook.com/sharer.php?u={{ url_for('main.question_details',id=post.id, title=post.title, _external=True) }}"
                    title="On Facebook" target="_blank" class="btn btn-default" style="margin-right:-10px;">
                     <i class="fa fa-facebook fa-2x"></i>
                 </a>
 
-                <a href="http://www.facebook.com/sharer.php?u={{ url_for('main.question_details',question_id=post.id, title=post.title, _external=True) }}"
+                <a href="http://www.facebook.com/sharer.php?u={{ url_for('main.question_details',id=post.id, title=post.title, _external=True) }}"
                    title="On Facebook" target="_blank" class="btn btn-default" style="margin-right:-10px;">
                     <i class="fa fa-facebook fa-2x"></i>
                 </a>
 
-                <a href="https://twitter.com/intent/tweet?url={{ url_for('main.question_details',question_id=post.id, title=post.title, _external=True) }}&via=Teachera&text={{ post.title }}%20-%20Teachera.org!&hashtags={{ post.title }},{{ post.position_city }}"
+                <a href="https://twitter.com/intent/tweet?url={{ url_for('main.question_details',id=post.id, title=post.title, _external=True) }}&via=Teachera&text={{ post.title }}%20-%20Teachera.org!&hashtags={{ post.title }},{{ post.position_city }}"
                    title="On Twitter" target="_blank" class="btn btn-default" style="margin-right:-10px;">
                     <i class="fa fa-twitter fa-2x"></i>
                 </a>
 
 
-                <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ url_for('main.question_details',question_id=post.id, title=post.title, _external=True) }}&title={{ post.title }}&summary=Teachera.org!&source=http://website.com"
+                <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ url_for('main.question_details',id=post.id, title=post.title, _external=True) }}&title={{ post.title }}&summary=Teachera.org!&source=http://website.com"
                    title="On LinkedIn" target="_blank" class="btn btn-default" style="margin-right:-10px;">
                     <i class="fa fa-linkedin fa-2x"></i>
                 </a>
 
-                <a href="http://vk.com/share.php?url={{ url_for('main.question_details',question_id=post.id, title=post.title, _external=True) }}&title={{ post.title }}&description=Teachera.org!&image=https%3A%2F%2Ffbcdn-sphotos-g-a.akamaihd.net%2Fhphotos-ak-frc3%2Ft1%2F10007500_219483098251971_1640217409_n.jpg"
+                <a href="http://vk.com/share.php?url={{ url_for('main.question_details',id=post.id, title=post.title, _external=True) }}&title={{ post.title }}&description=Teachera.org!&image=https%3A%2F%2Ffbcdn-sphotos-g-a.akamaihd.net%2Fhphotos-ak-frc3%2Ft1%2F10007500_219483098251971_1640217409_n.jpg"
                    title="On VK.com" target="_blank" class="btn btn-default" style="margin-right:-10px;">
                     <i class="fa fa-vk fa-2x"></i>
                 </a>

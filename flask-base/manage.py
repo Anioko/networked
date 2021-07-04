@@ -80,8 +80,10 @@ def setup_general():
     if admin_query.first() is not None:
         if User.query.filter_by(email=Config.ADMIN_EMAIL).first() is None:
             user = User(
-                first_name='Admin',
-                last_name='Account',
+                first_name='Aniekan',
+                last_name='Okono',
+		mobile_phone=Config.ADMIN_MOBILE_PHONE,
+		area_code=Config.ADMIN_AREA_CODE,
                 password=Config.ADMIN_PASSWORD,
                 confirmed=True,
                 email=Config.ADMIN_EMAIL)

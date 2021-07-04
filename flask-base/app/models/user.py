@@ -1,6 +1,5 @@
-import json
 import os
-
+import json
 import cv2
 from datetime import datetime
 from logging import log
@@ -17,7 +16,10 @@ from sqlalchemy.orm import backref
 from sqlalchemy_mptt.mixins import BaseNestedSets
 from werkzeug.security import check_password_hash, generate_password_hash
 
-from app.utils import pretty_date, db, login_manager
+from app.utils import pretty_date, db, login_manager, whooshee
+
+#from .. import whooshee
+import app
 
 
 ###Helper functions
@@ -88,7 +90,7 @@ class Follower(db.Model):
     created_at = db.Column(db.DateTime, default=db.func.now())
     updated_at = db.Column(db.DateTime, default=db.func.now(), onupdate=db.func.now())
 
-
+@whooshee.register_model('first_name', 'last_name', 'city', 'state', 'country', 'profession')
 class User(UserMixin, db.Model):
     __tablename__ = 'users'
     id = db.Column(db.Integer, primary_key=True)
@@ -129,6 +131,9 @@ class User(UserMixin, db.Model):
 
     messages_received = db.relationship('Message',
                                         foreign_keys='Message.recipient_id',
+                                        backref='recipient', lazy='dynamic')
+    professional_messages_received = db.relationship('ProfileMessage',
+                                        foreign_keys='ProfileMessage.recipient_id',
                                         backref='recipient', lazy='dynamic')
     last_message_read_time = db.Column(db.DateTime)
     notifications = db.relationship('Notification', backref='user',
@@ -300,18 +305,40 @@ class User(UserMixin, db.Model):
                        and_(Message.recipient_id == self.id, Message.user_id == user_id))).first()
         return message
 
+    def last_professional_message(self, user_id, profile_id):
+        from app.models import ProfileMessage
+        message = ProfileMessage.query.filter_by(profile_id=profile_id).order_by(ProfileMessage.timestamp.desc()). \
+            filter(or_(and_(ProfileMessage.recipient_id == user_id, ProfileMessage.user_id == self.id),
+                       and_(ProfileMessage.recipient_id == self.id, ProfileMessage.user_id == user_id))).first()
+        return message
+
     def history(self, user_id, unread=False):
         messages = Message.query.order_by(Message.timestamp.asc()). \
             filter(or_(and_(Message.recipient_id == user_id, Message.user_id == self.id),
                        and_(Message.recipient_id == self.id, Message.user_id == user_id))).all()
         return messages
-
+    
+    def professional_message_history(self, user_id, profile_id, unread=False):
+        from app.models import ProfileMessage
+        messages = ProfileMessage.query.filter_by(profile_id=profile_id).order_by(ProfileMessage.timestamp.asc()). \
+            filter(or_(and_(ProfileMessage.recipient_id == user_id, ProfileMessage.user_id == self.id),
+                       and_(ProfileMessage.recipient_id == self.id, ProfileMessage.user_id == user_id))).all()
+        return messages
+    
     def new_messages(self, user_id=None):
         if not user_id:
             return Message.query.filter_by(recipient=self).filter(Message.read_at == None).distinct('user_id').count()
         else:
             return Message.query.filter_by(recipient=self).filter(Message.read_at == None).filter(
                 Message.user_id == user_id).count()
+
+    def new_professional_messages(self, profile_id, user_id=None):
+        from app.models import ProfileMessage
+        if not user_id:
+            return ProfileMessage.query.filter_by(profile_id=profile_id).filter_by(recipient=self).filter(ProfileMessage.read_at == None).distinct('user_id').count()
+        else:
+            return ProfileMessage.query.filter_by(profile_id=profile_id).filter_by(recipient=self).filter(ProfileMessage.read_at == None).filter(
+                ProfileMessage.user_id == user_id).count()
 
     def add_notification(self, name, data, related_id=0):
         from app.email import send_email
@@ -559,15 +586,15 @@ class Product(db.Model):
     image_url = db.Column(db.String, default=None, nullable=True)
     product_name = db.Column(db.String(255))
     product_description = db.Column(db.Text)
-    product_price = db.Column(db.Float)
+    product_price = db.Column(db.Integer)
     price_currency = db.Column(db.String(255))
     min_order_quantity = db.Column(db.Integer)
     product_availability = db.Column(db.String(255))
     product_category = db.Column(db.String(255))
     product_images = db.relationship('Product_Image', backref='product', lazy='dynamic')
-    product_length = db.Column(db.Float)
-    product_weight = db.Column(db.Float)
-    product_height = db.Column(db.Float)
+    product_length = db.Column(db.Integer)
+    product_weight = db.Column(db.Integer)
+    product_height = db.Column(db.Integer)
     delivery_terms = db.Column(db.String(255))
     lead_time = db.Column(db.String(255))
     #organisation = db.relationship('Organisation', backref='products', cascade='all, delete')
@@ -780,7 +807,7 @@ class Service(db.Model):
     service_city = db.Column(db.String(255))
     service_state = db.Column(db.String(255))
     service_country = db.Column(db.String(255))
-    mobile_phone = db.Column(db.BigInteger, unique=True, index=True)
+    mobile_phone = db.Column(db.BigInteger, index=True)
     street_address = db.Column(db.String(255))
     description = db.Column(db.Text)
     creator_id = db.Column(db.Integer, db.ForeignKey('users.id', ondelete="CASCADE"), nullable=False)

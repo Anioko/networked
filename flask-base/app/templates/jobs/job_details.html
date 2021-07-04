@@ -1,7 +1,8 @@
 {% extends 'layouts/base.html' %}
 {% block page_title %}{{ appt.position_title or '(No Title)' }} job vacancy in {{ appt.position_city|default('') }}{% endblock %}
 {% block custom_head_tags %}
-	    <meta name="description" content="{{ appt.position_title or '(No Title)' }} on {{ config.APP_NAME }} by {{ appt.organisation.org_name }} Posted on {{ appt.pub_date.strftime( '%d %B, %Y ') }}, application deadline {{ appt.end_date.strftime( '%d %B, %Y ') }}">
+	
+    <meta name="description" content="{{ appt.position_title or '(No Title)' }} on {{ config.APP_NAME }} by {{ appt.organisation.org_name }} Posted on {{ appt.pub_date.strftime( '%d %B, %Y ') }}, application deadline {{ appt.end_date.strftime( '%d %B, %Y ') }}">
     <meta name="image" content="{{ url_for('static', filename='img/rsz_dreamstime_m_141105914.jpg') }}">
     <!-- Schema.org for Google -->
     <meta itemprop="name" content="{{ appt.position_title or '(No Title)' }} job vacancy in {{ appt.position_city|default('') }}">

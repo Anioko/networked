@@ -1,6 +1,8 @@
 import json
 import operator
 import os
+import uuid
+from hashlib import sha512
 
 from flask import Flask
 from flask_assets import Environment
@@ -15,14 +17,18 @@ from flask_wtf import CSRFProtect
 #import flask_monitoringdashboard as dashboard
 #from werkzeug.contrib.profiler import ProfilerMiddleware
 #from flask_s3 import FlaskS3
-import flask_profiler
-#from flask_profiler import Profiler
+#from flask_jwt_extended import JWTManager
+from flask_session import Session
+
+from flask_whooshee import Whooshee
 
 from app.blueprints.api.views import main_api
 from app.utils import db, login_manager
 from config import config
 from .assets import app_css, app_js, vendor_css, vendor_js
 from flask_caching import Cache
+
+from flask_recaptcha import ReCaptcha
 
 # from app.models import Notification
 
@@ -32,11 +38,14 @@ mail = Mail()
 csrf = CSRFProtect()
 compress = Compress()
 images = UploadSet('images', IMAGES)
-docs = UploadSet('docs', ('rtf', 'odf', 'ods', 'doc', 'docx', 'pdf'))
+docs = UploadSet('docs', ('rtf', 'odf', 'ods', 'gnumeric', 'abw', 'doc', 'docx', 'xls', 'xlsx', 'pdf'))
 share = Share()
 moment = Moment()
-cache = Cache()
-#profiler = Profiler()
+#jwt = JWTManager()
+sess = Session()
+# Set up Flask-Login
+login_manager.session_protection = 'strong'
+login_manager.login_view = 'account.login'
 #s3 = FlaskS3()
 
 # Set up Flask-Login
@@ -45,6 +54,9 @@ login_manager.login_view = 'account.login'
 
 import app.models as models
 
+whooshee = Whooshee()
+recaptcha = ReCaptcha()
+
 
 def json_load(string):
     return json.loads(string)
@@ -52,6 +64,7 @@ def json_load(string):
 
 def create_app(config_name):
     app = Flask(__name__)
+    #whooshee = Whooshee(app)
     app.config.from_object(config[config_name])
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     app.config['SQLALCHEMY_POOL_RECYCLE']=280
@@ -74,22 +87,6 @@ def create_app(config_name):
     #app.config['FLASKS3_BUCKET_NAME'] = 'networkedng1'
     #s3 = FlaskS3(app)
     app.config["DEBUG"] = True
-    # flask-profiler as follows:
-    app.config["flask_profiler"] = {
-        "enabled": app.config["DEBUG"],
-        "storage": {
-        "engine": "sqlalchemy",
-        "db_url": "postgresql+psycopg2://postgres:newPasswordUbuntuDevSi@localhost:5432/flask_profiler"  # optional, if no db_url specified then sqlite will be used.
-        },
-        #"basicAuth":{
-            #"enabled": True,
-            #"username": "admin",
-            #"password": "admin"
-        #},
-        "ignore": [
-                "^/static/.*"
-            ]
-    }
     
     app.config['CACHE_TYPE'] = 'simple'
     config[config_name].init_app(app)
@@ -101,17 +98,15 @@ def create_app(config_name):
     csrf.init_app(app)
     compress.init_app(app)
     RQ(app)
-    configure_uploads(app, (images))
+    configure_uploads(app, images)
     configure_uploads(app, docs)
-    ckeditor = CKEditor(app)
+    CKEditor(app)
     share.init_app(app)
     moment.init_app(app)
-    #profiler.init_app(app)
-    flask_profiler.init_app(app)
-    #s3.init_app(app)
-    #dashboard.config.init_from(app)
-    #dashboard.bind(app)
-    cache.init_app(app)
+    #jwt.init_app(app)
+    sess.init_app(app)
+    #whooshee.init_app(app)
+
 
     # Register Jinja template functions
     from .utils import register_template_utils
@@ -178,11 +173,19 @@ def create_app(config_name):
     from .blueprints.sitemaps import sitemaps as sitemaps_blueprint
     app.register_blueprint(sitemaps_blueprint)
 
-    from .blueprints.crawlers import crawlers as crawlers_blueprint
-    app.register_blueprint(crawlers_blueprint)
+    from .blueprints.employer import employer
+    app.register_blueprint(employer, url_prefix='/employer')
+
+    #from .blueprints.crawlers import crawlers as crawlers_blueprint
+    #app.register_blueprint(crawlers_blueprint)
 
     main_api.init_app(app)
     app.jinja_env.globals.update(json_load=json_load)
+
+    @app.cli.command()
+    def reindex():
+        with app.app_context():
+            whooshee.reindex()
 
     @app.cli.command()
     def routes():
@@ -197,5 +200,7 @@ def create_app(config_name):
             route = '{:50s} {:25s} {}'.format(endpoint, methods, rule)
             print(route)
         
-
+    whooshee.init_app(app)
+    recaptcha.init_app(app)
+    
     return app

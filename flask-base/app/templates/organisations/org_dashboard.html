@@ -24,13 +24,13 @@
     <div class="ui stackable grid container">
         <div class="sixteen wide tablet twelve wide computer centered column">
             <h2 class="ui header">
-                Your organizations, companies or businesses
+                Your Organisations
                 <div class="sub header">
-                    View and manage your organizations and its products, events, positions (job vacancies), services and promos. Click on enter section to proceed.
+                    View and manage your organisations and its events, positions (job vacancies), services and promos. Click on select to proceed.
                 </div>
             </h2>
             <div class="ui header" style="width: 100%; height: 50px">
-                <a class="ui green right floated button" href="{{ url_for('organisations.create_org') }}">Add business or organisation</a>
+                <a class="ui green right floated button" href="{{ url_for('organisations.create_org') }}">Create New</a>
             </div>
             {# Use overflow-x: scroll so that mobile views don't freak out
              # when the table is too wide #}
@@ -39,6 +39,10 @@
                     <thead>
                     <tr>
                         <th class="sorted ascending" >Name</th>
+                        <th>Creator</th>
+                        <th>City</th>
+                        <th>State</th>
+                        <th>Country</th>
                         <th>Actions</th>
                     </tr>
                     </thead>
@@ -47,8 +51,12 @@
                         <tr onclick="window.location.href = '{{ url_for('admin.user_info', user_id=u.id) }}';">
 
                             <td>{{ u.org_name }}</td>
+                            <td>{{ u.user.full_name }}</td>
+                            <td>{{ u.org_city }}</td>
+                            <td>{{ u.org_state }}</td>
+                            <td>{{ u.org_country }}</td>
                             <td>
-                                <a class="ui primary button" href="{{ url_for('organisations.select_org', org_id=u.id) }}">Enter Section</a>
+                                <a class="ui primary button" href="{{ url_for('organisations.select_org', org_id=u.id) }}">Select</a>
                             </td>
                         </tr>
                     {% endfor %}

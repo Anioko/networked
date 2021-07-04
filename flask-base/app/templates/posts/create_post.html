@@ -4,7 +4,6 @@
 {% import 'macros/job_macros.html' as job_wid %}
 {% import 'macros/follow_macros.html' as follow_wid %}
 
-
 {% block custom_head_tags %}
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='slick/slick.css') }}"/>
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='slick/slick-theme.css') }}"/>
@@ -45,7 +44,7 @@
                     <div class="left ui rail">
                         <p></p>
                         <div class="ui sticky">
-                            <h3 class="ui header">Professionals to follow</h3>
+                            <h3 class="ui header">Colleagues to follow</h3>
                             <div class="ui divided items">
                                 {% for user in follow_lists %}
                                     {{ follow_wid.follow_wid(user, current_user) }}
@@ -93,12 +92,9 @@
                     </form>
                 </div>
             </div>
-            {% for post in data %}
-                { post_wid.post_wid(post, moment, current_user) }
+            {% for post in posts %}
+                {{ post_wid.post_wid(post, moment, current_user) }}
             {% endfor %}
-			
-
-                
         </div>
         <div class="ui grid">
             <div class="mobile only tablet only row">
