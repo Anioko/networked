@@ -85,3 +85,7 @@ WTForms==2.2.1
 WTForms-Alchemy==0.16.9
 WTForms-Components==0.10.4
 wtforms-html5==0.1.3
+gunicorn 
+flask-s3
+flask-boto3
+flask-debugtoolbar
